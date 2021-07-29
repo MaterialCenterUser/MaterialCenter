@@ -1,0 +1,383 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 10682113200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user has already logged in to Material Center application",
+            "match": {
+              "location": "HomePageStepDef.user_has_already_logged_in_to_Material_Center_application(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "smroot",
+                  "sdm"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 550485800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "homepage is displayed",
+            "match": {
+              "location": "EnhancementsInMatSODandMODStepDef.homepage_is_displayed()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-28T04:38:41.066Z",
+        "line": 33,
+        "name": "Check if Manage Process UI can be launched on Material MOD",
+        "description": "",
+        "id": "process-management;check-if-manage-process-ui-can-be-launched-on-material-mod",
+        "after": [
+          {
+            "result": {
+              "duration": 764760100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.after(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 645672300,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "user comes on search WS",
+            "match": {
+              "location": "SearchStepDef.user_is_on_search_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2461705600,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "user click on material from search page",
+            "match": {
+              "location": "SearchStepDef.user_click_on_material_from_search_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 351883100,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "materials search results displayed",
+            "match": {
+              "location": "EnhancementsInMatSODandMODStepDef.materials_search_results_displayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 753790200,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "Click on rows per page",
+            "match": {
+              "location": "UIPerformanceStepDef.Click_on_rows_per_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 601981200,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Click on three",
+            "match": {
+              "location": "UIPerformanceStepDef.click_on_three()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 867782000,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "select first material",
+            "match": {
+              "location": "EnhancementsInMatSODandMODStepDef.click_on_material()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2876219400,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "click on edit",
+            "match": {
+              "location": "ProcessManagementStepDef.click_on_Edit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 663824200,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "click on manage process from edit menu on search results MOD",
+            "match": {
+              "location": "ProcessManagementStepDef.click_on_manage_process_from_edit_menu_on_search_results_MOD()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4453025000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "manage process page is displayed",
+            "match": {
+              "location": "ProcessManagementStepDef.manage_process_page_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MAT-21744"
+          },
+          {
+            "name": "@Regression1"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8846318000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user has already logged in to Material Center application",
+            "match": {
+              "location": "HomePageStepDef.user_has_already_logged_in_to_Material_Center_application(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "smroot",
+                  "sdm"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 359063100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "homepage is displayed",
+            "match": {
+              "location": "EnhancementsInMatSODandMODStepDef.homepage_is_displayed()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-28T04:39:06.747Z",
+        "line": 45,
+        "name": "Check if Manage Process UI can be launched from Material SOD",
+        "description": "",
+        "id": "process-management;check-if-manage-process-ui-can-be-launched-from-material-sod",
+        "after": [
+          {
+            "result": {
+              "duration": 784835300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.after(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 799381700,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "user comes on search WS",
+            "match": {
+              "location": "SearchStepDef.user_is_on_search_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2606685000,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "user click on material from search page",
+            "match": {
+              "location": "SearchStepDef.user_click_on_material_from_search_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 301894800,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "materials search results displayed",
+            "match": {
+              "location": "EnhancementsInMatSODandMODStepDef.materials_search_results_displayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 681567700,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "Click on rows per page",
+            "match": {
+              "location": "UIPerformanceStepDef.Click_on_rows_per_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 456391800,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "Click on three",
+            "match": {
+              "location": "UIPerformanceStepDef.click_on_three()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1211272700,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "double click on first result",
+            "match": {
+              "location": "EnhancementsInMatSODandMODStepDef.double_click_on_first_result()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5115050700,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "click on edit on MatSOD",
+            "match": {
+              "location": "EditDeleteStepDef.click_on_edit_on_MatSOD()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 605147000,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "click on manage process from edit menu on SOD",
+            "match": {
+              "location": "ProcessManagementStepDef.click_on_manage_process_from_edit_menu_on_SOD()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2351902100,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "manage process page is displayed",
+            "match": {
+              "location": "ProcessManagementStepDef.manage_process_page_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MAT-21744"
+          },
+          {
+            "name": "@Regression1"
+          }
+        ]
+      }
+    ],
+    "name": "Process Management",
+    "description": "",
+    "id": "process-management",
+    "keyword": "Feature",
+    "uri": "file:Features/ProcessManagement/MAT-13044_ProcessManagement.feature",
+    "tags": []
+  }
+]

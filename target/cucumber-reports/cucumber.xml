@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="49.797424">
+<testcase classname="Process Management" name="Check if Manage Process UI can be launched on Material MOD" time="25.676805">
+<system-out><![CDATA[Given user has already logged in to Material Center application.............passed
+And homepage is displayed...................................................passed
+When user comes on search WS................................................passed
+And user click on material from search page.................................passed
+And materials search results displayed......................................passed
+And Click on rows per page..................................................passed
+And Click on three..........................................................passed
+And select first material...................................................passed
+And click on edit...........................................................passed
+And click on manage process from edit menu on search results MOD............passed
+Then manage process page is displayed.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Process Management" name="Check if Manage Process UI can be launched from Material SOD" time="24.120619">
+<system-out><![CDATA[Given user has already logged in to Material Center application.............passed
+And homepage is displayed...................................................passed
+When user comes on search WS................................................passed
+And user click on material from search page.................................passed
+And materials search results displayed......................................passed
+And Click on rows per page..................................................passed
+And Click on three..........................................................passed
+And double click on first result............................................passed
+And click on edit on MatSOD.................................................passed
+And click on manage process from edit menu on SOD...........................passed
+Then manage process page is displayed.......................................passed
+]]></system-out>
+</testcase>
+</testsuite>

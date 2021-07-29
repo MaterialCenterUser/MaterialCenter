@@ -1,0 +1,92 @@
+[
+  {
+    "source": "click on arrow button",
+    "steps": [
+      {
+        "name": "click on arrow button",
+        "aggregatedDurations": {
+          "average": 0.623004,
+          "median": 0.623004
+        },
+        "durations": [
+          {
+            "duration": 0.623004,
+            "location": "file:Features/ExportImportExcel.feature:33"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "select rows per page as hundred",
+    "steps": [
+      {
+        "name": "select rows per page as hundred",
+        "aggregatedDurations": {
+          "average": 2.0209163,
+          "median": 2.0209163
+        },
+        "durations": [
+          {
+            "duration": 2.0209163,
+            "location": "file:Features/ExportImportExcel.feature:32"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on select page option",
+    "steps": [
+      {
+        "name": "click on select page option",
+        "aggregatedDurations": {
+          "average": 0.8800973,
+          "median": 0.8800973
+        },
+        "durations": [
+          {
+            "duration": 0.8800973,
+            "location": "file:Features/ExportImportExcel.feature:34"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user comes on Navigate WS",
+    "steps": [
+      {
+        "name": "user comes on Navigate WS",
+        "aggregatedDurations": {
+          "average": 0.9752687,
+          "median": 0.9752687
+        },
+        "durations": [
+          {
+            "duration": 0.9752687,
+            "location": "file:Features/ExportImportExcel.feature:30"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user clicks on Metals to open MOD",
+    "steps": [
+      {
+        "name": "user clicks on Metals to open MOD",
+        "aggregatedDurations": {
+          "average": 2.4912822,
+          "median": 2.4912822
+        },
+        "durations": [
+          {
+            "duration": 2.4912822,
+            "location": "file:Features/ExportImportExcel.feature:31"
+          }
+        ]
+      }
+    ]
+  }
+]

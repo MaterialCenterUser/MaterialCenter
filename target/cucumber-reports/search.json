@@ -1,0 +1,748 @@
+[
+  {
+    "source": "user gives text to search in materials for plot",
+    "steps": [
+      {
+        "name": "user gives text to search in materials for plot",
+        "aggregatedDurations": {
+          "average": 0.9348495,
+          "median": 0.9348495
+        },
+        "durations": [
+          {
+            "duration": 0.9348495,
+            "location": "file:Features/Search.feature:98"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user gives some numerical values to search in materials",
+    "steps": [
+      {
+        "name": "user gives some numerical values to search in materials",
+        "aggregatedDurations": {
+          "average": 0.9860758,
+          "median": 0.9263394
+        },
+        "durations": [
+          {
+            "duration": 1.1955354,
+            "location": "file:Features/Search.feature:8"
+          },
+          {
+            "duration": 0.8363526,
+            "location": "file:Features/Search.feature:42"
+          },
+          {
+            "duration": 0.9263394,
+            "location": "file:Features/Search.feature:90"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "search result is displayed",
+    "steps": [
+      {
+        "name": "search result is displayed",
+        "aggregatedDurations": {
+          "average": 0.210182766,
+          "median": 0.1784877
+        },
+        "durations": [
+          {
+            "duration": 0.1772241,
+            "location": "file:Features/Search.feature:7"
+          },
+          {
+            "duration": 0.1814839,
+            "location": "file:Features/Search.feature:9"
+          },
+          {
+            "duration": 0.179553,
+            "location": "file:Features/Search.feature:37"
+          },
+          {
+            "duration": 0.1834389,
+            "location": "file:Features/Search.feature:43"
+          },
+          {
+            "duration": 0.169503,
+            "location": "file:Features/Search.feature:49"
+          },
+          {
+            "duration": 0.4682528,
+            "location": "file:Features/Search.feature:77"
+          },
+          {
+            "duration": 0.1784877,
+            "location": "file:Features/Search.feature:82"
+          },
+          {
+            "duration": 0.1758769,
+            "location": "file:Features/Search.feature:91"
+          },
+          {
+            "duration": 0.1778246,
+            "location": "file:Features/Search.feature:99"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Click on rows per page",
+    "steps": [
+      {
+        "name": "Click on rows per page",
+        "aggregatedDurations": {
+          "average": 1.747718533,
+          "median": 1.2780602
+        },
+        "durations": [
+          {
+            "duration": 2.7408159,
+            "location": "file:Features/Search.feature:57"
+          },
+          {
+            "duration": 1.2780602,
+            "location": "file:Features/Search.feature:83"
+          },
+          {
+            "duration": 1.2242795,
+            "location": "file:Features/Search.feature:92"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "relaunch the recently saved search template",
+    "steps": [
+      {
+        "name": "relaunch the recently saved search template",
+        "aggregatedDurations": {
+          "average": 0.4706672,
+          "median": 0.4706672
+        },
+        "durations": [
+          {
+            "duration": 0.3254796,
+            "location": "file:Features/Search.feature:70"
+          },
+          {
+            "duration": 0.6158548,
+            "location": "file:Features/Search.feature:109"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user click on material from search page",
+    "steps": [
+      {
+        "name": "user click on material from search page",
+        "aggregatedDurations": {
+          "average": 2.21360265,
+          "median": 2.21360265
+        },
+        "durations": [
+          {
+            "duration": 2.2252952,
+            "location": "file:Features/Search.feature:15"
+          },
+          {
+            "duration": 2.2019101,
+            "location": "file:Features/Search.feature:26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user adds density attribute condition",
+    "steps": [
+      {
+        "name": "user adds density attribute condition",
+        "aggregatedDurations": {
+          "average": 1.66080955,
+          "median": 1.66080955
+        },
+        "durations": [
+          {
+            "duration": 1.5480323,
+            "location": "file:Features/Search.feature:17"
+          },
+          {
+            "duration": 1.7735868,
+            "location": "file:Features/Search.feature:28"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Click on three",
+    "steps": [
+      {
+        "name": "Click on three",
+        "aggregatedDurations": {
+          "average": 0.3603911,
+          "median": 0.3603911
+        },
+        "durations": [
+          {
+            "duration": 0.3603911,
+            "location": "file:Features/Search.feature:93"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on my searches",
+    "steps": [
+      {
+        "name": "click on my searches",
+        "aggregatedDurations": {
+          "average": 0.27447685,
+          "median": 0.27447685
+        },
+        "durations": [
+          {
+            "duration": 0.2524726,
+            "location": "file:Features/Search.feature:69"
+          },
+          {
+            "duration": 0.2964811,
+            "location": "file:Features/Search.feature:108"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "verify that correct numerical search result is displayed",
+    "steps": [
+      {
+        "name": "verify that correct numerical search result is displayed",
+        "aggregatedDurations": {
+          "average": 0.7758589,
+          "median": 0.7758589
+        },
+        "durations": [
+          {
+            "duration": 0.7758589,
+            "location": "file:Features/Search.feature:44"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user comes on search page",
+    "steps": [
+      {
+        "name": "user comes on search page",
+        "aggregatedDurations": {
+          "average": 2.33340535,
+          "median": 2.33340535
+        },
+        "durations": [
+          {
+            "duration": 2.3752923,
+            "location": "file:Features/Search.feature:64"
+          },
+          {
+            "duration": 2.2915184,
+            "location": "file:Features/Search.feature:74"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on arrow button",
+    "steps": [
+      {
+        "name": "click on arrow button",
+        "aggregatedDurations": {
+          "average": 1.6471405,
+          "median": 1.6471405
+        },
+        "durations": [
+          {
+            "duration": 1.6471405,
+            "location": "file:Features/Search.feature:117"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "select metals option",
+    "steps": [
+      {
+        "name": "select metals option",
+        "aggregatedDurations": {
+          "average": 0.6912629,
+          "median": 0.6912629
+        },
+        "durations": [
+          {
+            "duration": 0.6912629,
+            "location": "file:Features/Search.feature:66"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user saves the search template by entering the name",
+    "steps": [
+      {
+        "name": "user saves the search template by entering the name",
+        "aggregatedDurations": {
+          "average": 0.689555166,
+          "median": 0.7442964
+        },
+        "durations": [
+          {
+            "duration": 0.5422616,
+            "location": "file:Features/Search.feature:51"
+          },
+          {
+            "duration": 0.7821075,
+            "location": "file:Features/Search.feature:68"
+          },
+          {
+            "duration": 0.7442964,
+            "location": "file:Features/Search.feature:120"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "relaunch the saved search template",
+    "steps": [
+      {
+        "name": "relaunch the saved search template",
+        "aggregatedDurations": {
+          "average": 0.93925895,
+          "median": 0.93925895
+        },
+        "durations": [
+          {
+            "duration": 0.8913225,
+            "location": "file:Features/Search.feature:52"
+          },
+          {
+            "duration": 0.9871954,
+            "location": "file:Features/Search.feature:121"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "search result for given condition",
+    "steps": [
+      {
+        "name": "search result for given condition",
+        "aggregatedDurations": {
+          "average": 0.57908045,
+          "median": 0.57908045
+        },
+        "durations": [
+          {
+            "duration": 0.5654312,
+            "location": "file:Features/Search.feature:19"
+          },
+          {
+            "duration": 0.5927297,
+            "location": "file:Features/Search.feature:30"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "expand material type filter",
+    "steps": [
+      {
+        "name": "expand material type filter",
+        "aggregatedDurations": {
+          "average": 1.0479546,
+          "median": 1.0479546
+        },
+        "durations": [
+          {
+            "duration": 1.0479546,
+            "location": "file:Features/Search.feature:65"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "select rows per page as hundred",
+    "steps": [
+      {
+        "name": "select rows per page as hundred",
+        "aggregatedDurations": {
+          "average": 0.7482663,
+          "median": 0.7482663
+        },
+        "durations": [
+          {
+            "duration": 0.6769731,
+            "location": "file:Features/Search.feature:59"
+          },
+          {
+            "duration": 0.8195595,
+            "location": "file:Features/Search.feature:85"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "add yield strength attribute condition",
+    "steps": [
+      {
+        "name": "add yield strength attribute condition",
+        "aggregatedDurations": {
+          "average": 1.00642715,
+          "median": 1.00642715
+        },
+        "durations": [
+          {
+            "duration": 0.9963745,
+            "location": "file:Features/Search.feature:21"
+          },
+          {
+            "duration": 1.0164798,
+            "location": "file:Features/Search.feature:32"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user selects test data type from search dropdown",
+    "steps": [
+      {
+        "name": "user selects test data type from search dropdown",
+        "aggregatedDurations": {
+          "average": 0.9337351,
+          "median": 0.9337351
+        },
+        "durations": [
+          {
+            "duration": 0.7729657,
+            "location": "file:Features/Search.feature:75"
+          },
+          {
+            "duration": 1.0945045,
+            "location": "file:Features/Search.feature:115"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user is on search page",
+    "steps": [
+      {
+        "name": "user is on search page",
+        "aggregatedDurations": {
+          "average": 0.8583865,
+          "median": 0.8583865
+        },
+        "durations": [
+          {
+            "duration": 0.9229543,
+            "location": "file:Features/Search.feature:14"
+          },
+          {
+            "duration": 0.7938187,
+            "location": "file:Features/Search.feature:25"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Click on fifty",
+    "steps": [
+      {
+        "name": "Click on fifty",
+        "aggregatedDurations": {
+          "average": 0.651588233,
+          "median": 0.6787852
+        },
+        "durations": [
+          {
+            "duration": 0.5894438,
+            "location": "file:Features/Search.feature:58"
+          },
+          {
+            "duration": 0.6787852,
+            "location": "file:Features/Search.feature:84"
+          },
+          {
+            "duration": 0.6865357,
+            "location": "file:Features/Search.feature:94"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on export to excel from action menu",
+    "steps": [
+      {
+        "name": "click on export to excel from action menu",
+        "aggregatedDurations": {
+          "average": 3.0125585,
+          "median": 3.0125585
+        },
+        "durations": [
+          {
+            "duration": 3.0125585,
+            "location": "file:Features/Search.feature:103"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user gives some text to search in materials",
+    "steps": [
+      {
+        "name": "user gives some text to search in materials",
+        "aggregatedDurations": {
+          "average": 0.855929025,
+          "median": 0.86292505
+        },
+        "durations": [
+          {
+            "duration": 0.8847992,
+            "location": "file:Features/Search.feature:6"
+          },
+          {
+            "duration": 0.8130668,
+            "location": "file:Features/Search.feature:36"
+          },
+          {
+            "duration": 0.8818208,
+            "location": "file:Features/Search.feature:48"
+          },
+          {
+            "duration": 0.8440293,
+            "location": "file:Features/Search.feature:81"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on select page option",
+    "steps": [
+      {
+        "name": "click on select page option",
+        "aggregatedDurations": {
+          "average": 0.5840639,
+          "median": 0.5840639
+        },
+        "durations": [
+          {
+            "duration": 0.5840639,
+            "location": "file:Features/Search.feature:118"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user click on save button",
+    "steps": [
+      {
+        "name": "user click on save button",
+        "aggregatedDurations": {
+          "average": 0.497488233,
+          "median": 0.305945
+        },
+        "durations": [
+          {
+            "duration": 0.9655597,
+            "location": "file:Features/Search.feature:50"
+          },
+          {
+            "duration": 0.305945,
+            "location": "file:Features/Search.feature:67"
+          },
+          {
+            "duration": 0.22096,
+            "location": "file:Features/Search.feature:119"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on search template link from home page",
+    "steps": [
+      {
+        "name": "click on search template link from home page",
+        "aggregatedDurations": {
+          "average": 0.481906,
+          "median": 0.481906
+        },
+        "durations": [
+          {
+            "duration": 0.481906,
+            "location": "file:Features/Search.feature:56"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user is on search workspace",
+    "steps": [
+      {
+        "name": "user is on search workspace",
+        "aggregatedDurations": {
+          "average": 0.659807,
+          "median": 0.659807
+        },
+        "durations": [
+          {
+            "duration": 0.659807,
+            "location": "file:Features/Search.feature:107"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "select rows per page as two fifty",
+    "steps": [
+      {
+        "name": "select rows per page as two fifty",
+        "aggregatedDurations": {
+          "average": 1.66842595,
+          "median": 1.66842595
+        },
+        "durations": [
+          {
+            "duration": 1.7679656,
+            "location": "file:Features/Search.feature:60"
+          },
+          {
+            "duration": 1.5688863,
+            "location": "file:Features/Search.feature:86"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user gives search input in search field",
+    "steps": [
+      {
+        "name": "user gives search input in search field",
+        "aggregatedDurations": {
+          "average": 0.421412,
+          "median": 0.421412
+        },
+        "durations": [
+          {
+            "duration": 0.4279636,
+            "location": "file:Features/Search.feature:76"
+          },
+          {
+            "duration": 0.4148604,
+            "location": "file:Features/Search.feature:116"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user click on add condition",
+    "steps": [
+      {
+        "name": "user click on add condition",
+        "aggregatedDurations": {
+          "average": 0.90472045,
+          "median": 0.90988905
+        },
+        "durations": [
+          {
+            "duration": 1.1380985,
+            "location": "file:Features/Search.feature:16"
+          },
+          {
+            "duration": 0.6610052,
+            "location": "file:Features/Search.feature:20"
+          },
+          {
+            "duration": 1.0148059,
+            "location": "file:Features/Search.feature:27"
+          },
+          {
+            "duration": 0.8049722,
+            "location": "file:Features/Search.feature:31"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "verify that correct text search result is displayed",
+    "steps": [
+      {
+        "name": "verify that correct text search result is displayed",
+        "aggregatedDurations": {
+          "average": 0.9687483,
+          "median": 0.9687483
+        },
+        "durations": [
+          {
+            "duration": 0.9687483,
+            "location": "file:Features/Search.feature:38"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user provides range using slider",
+    "steps": [
+      {
+        "name": "user provides range using slider",
+        "aggregatedDurations": {
+          "average": 1.171531,
+          "median": 1.171531
+        },
+        "durations": [
+          {
+            "duration": 1.1595611,
+            "location": "file:Features/Search.feature:18"
+          },
+          {
+            "duration": 1.1835009,
+            "location": "file:Features/Search.feature:29"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,128 @@
+[
+  {
+    "source": "user expands ultra high strength",
+    "steps": [
+      {
+        "name": "user expands ultra high strength",
+        "aggregatedDurations": {
+          "average": 0.1653748,
+          "median": 0.1653748
+        },
+        "durations": [
+          {
+            "duration": 0.1653748,
+            "location": "file:Features/UIWorkshop.feature:79"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "double click on first material",
+    "steps": [
+      {
+        "name": "double click on first material",
+        "aggregatedDurations": {
+          "average": 0.5959489,
+          "median": 0.5959489
+        },
+        "durations": [
+          {
+            "duration": 0.5959489,
+            "location": "file:Features/UIWorkshop.feature:81"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user expands alloy steels under ferrous metals",
+    "steps": [
+      {
+        "name": "user expands alloy steels under ferrous metals",
+        "aggregatedDurations": {
+          "average": 0.2168042,
+          "median": 0.2168042
+        },
+        "durations": [
+          {
+            "duration": 0.2168042,
+            "location": "file:Features/UIWorkshop.feature:78"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "select D-sixA Alloy Steel metal under ultra high strength",
+    "steps": [
+      {
+        "name": "select D-sixA Alloy Steel metal under ultra high strength",
+        "aggregatedDurations": {
+          "average": 0.1659959,
+          "median": 0.1659959
+        },
+        "durations": [
+          {
+            "duration": 0.1659959,
+            "location": "file:Features/UIWorkshop.feature:80"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user comes on Navigate WS",
+    "steps": [
+      {
+        "name": "user comes on Navigate WS",
+        "aggregatedDurations": {
+          "average": 0.4897719,
+          "median": 0.4897719
+        },
+        "durations": [
+          {
+            "duration": 0.4897719,
+            "location": "file:Features/UIWorkshop.feature:76"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "scroll down till mechanical tag is displayed",
+    "steps": [
+      {
+        "name": "scroll down till mechanical tag is displayed",
+        "aggregatedDurations": {
+          "average": 1.1781873,
+          "median": 1.1781873
+        },
+        "durations": [
+          {
+            "duration": 1.1781873,
+            "location": "file:Features/UIWorkshop.feature:82"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user expands metals",
+    "steps": [
+      {
+        "name": "user expands metals",
+        "aggregatedDurations": {
+          "average": 0.658469,
+          "median": 0.658469
+        },
+        "durations": [
+          {
+            "duration": 0.658469,
+            "location": "file:Features/UIWorkshop.feature:77"
+          }
+        ]
+      }
+    ]
+  }
+]

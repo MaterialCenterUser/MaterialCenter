@@ -1,0 +1,200 @@
+[
+  {
+    "source": "select show differences only from Display dropdown",
+    "steps": [
+      {
+        "name": "select show differences only from Display dropdown",
+        "aggregatedDurations": {
+          "average": 5.2086401,
+          "median": 5.2086401
+        },
+        "durations": [
+          {
+            "duration": 5.4404265,
+            "location": "file:Features/MatRevision.feature:12"
+          },
+          {
+            "duration": 4.9768537,
+            "location": "file:Features/MatRevision.feature:24"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on arrow button",
+    "steps": [
+      {
+        "name": "click on arrow button",
+        "aggregatedDurations": {
+          "average": 0.3842448,
+          "median": 0.3842448
+        },
+        "durations": [
+          {
+            "duration": 0.4337308,
+            "location": "file:Features/MatRevision.feature:9"
+          },
+          {
+            "duration": 0.3347588,
+            "location": "file:Features/MatRevision.feature:21"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Click on rows per page",
+    "steps": [
+      {
+        "name": "Click on rows per page",
+        "aggregatedDurations": {
+          "average": 0.6378309,
+          "median": 0.6378309
+        },
+        "durations": [
+          {
+            "duration": 0.6530687,
+            "location": "file:Features/MatRevision.feature:7"
+          },
+          {
+            "duration": 0.6225931,
+            "location": "file:Features/MatRevision.feature:19"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "select compare option from Actions menu",
+    "steps": [
+      {
+        "name": "select compare option from Actions menu",
+        "aggregatedDurations": {
+          "average": 2.96074945,
+          "median": 2.96074945
+        },
+        "durations": [
+          {
+            "duration": 3.0428511,
+            "location": "file:Features/MatRevision.feature:11"
+          },
+          {
+            "duration": 2.8786478,
+            "location": "file:Features/MatRevision.feature:23"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Click on three",
+    "steps": [
+      {
+        "name": "Click on three",
+        "aggregatedDurations": {
+          "average": 0.5796995,
+          "median": 0.5796995
+        },
+        "durations": [
+          {
+            "duration": 0.5917634,
+            "location": "file:Features/MatRevision.feature:8"
+          },
+          {
+            "duration": 0.5676356,
+            "location": "file:Features/MatRevision.feature:20"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on select page option",
+    "steps": [
+      {
+        "name": "click on select page option",
+        "aggregatedDurations": {
+          "average": 0.7392396,
+          "median": 0.7392396
+        },
+        "durations": [
+          {
+            "duration": 0.7493116,
+            "location": "file:Features/MatRevision.feature:10"
+          },
+          {
+            "duration": 0.7291676,
+            "location": "file:Features/MatRevision.feature:22"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user comes on Navigate WS",
+    "steps": [
+      {
+        "name": "user comes on Navigate WS",
+        "aggregatedDurations": {
+          "average": 0.7818803,
+          "median": 0.7818803
+        },
+        "durations": [
+          {
+            "duration": 0.8701565,
+            "location": "file:Features/MatRevision.feature:5"
+          },
+          {
+            "duration": 0.6936041,
+            "location": "file:Features/MatRevision.feature:17"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user clicks on Metals to open MOD",
+    "steps": [
+      {
+        "name": "user clicks on Metals to open MOD",
+        "aggregatedDurations": {
+          "average": 1.98921085,
+          "median": 1.98921085
+        },
+        "durations": [
+          {
+            "duration": 2.2245044,
+            "location": "file:Features/MatRevision.feature:6"
+          },
+          {
+            "duration": 1.7539173,
+            "location": "file:Features/MatRevision.feature:18"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "verify that all differences are displayed in highlighted color",
+    "steps": [
+      {
+        "name": "verify that all differences are displayed in highlighted color",
+        "aggregatedDurations": {
+          "average": 0.3241516,
+          "median": 0.3241516
+        },
+        "durations": [
+          {
+            "duration": 0.3201772,
+            "location": "file:Features/MatRevision.feature:13"
+          },
+          {
+            "duration": 0.328126,
+            "location": "file:Features/MatRevision.feature:25"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,286 @@
+[
+  {
+    "source": "Click on rows per page",
+    "steps": [
+      {
+        "name": "Click on rows per page",
+        "aggregatedDurations": {
+          "average": 0.71767895,
+          "median": 0.71767895
+        },
+        "durations": [
+          {
+            "duration": 0.7537902,
+            "location": "file:Features/ProcessManagement/MAT-13044_ProcessManagement.feature:37"
+          },
+          {
+            "duration": 0.6815677,
+            "location": "file:Features/ProcessManagement/MAT-13044_ProcessManagement.feature:49"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "materials search results displayed",
+    "steps": [
+      {
+        "name": "materials search results displayed",
+        "aggregatedDurations": {
+          "average": 0.32688895,
+          "median": 0.32688895
+        },
+        "durations": [
+          {
+            "duration": 0.3518831,
+            "location": "file:Features/ProcessManagement/MAT-13044_ProcessManagement.feature:36"
+          },
+          {
+            "duration": 0.3018948,
+            "location": "file:Features/ProcessManagement/MAT-13044_ProcessManagement.feature:48"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user click on material from search page",
+    "steps": [
+      {
+        "name": "user click on material from search page",
+        "aggregatedDurations": {
+          "average": 2.5341953,
+          "median": 2.5341953
+        },
+        "durations": [
+          {
+            "duration": 2.4617056,
+            "location": "file:Features/ProcessManagement/MAT-13044_ProcessManagement.feature:35"
+          },
+          {
+            "duration": 2.606685,
+            "location": "file:Features/ProcessManagement/MAT-13044_ProcessManagement.feature:47"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "select first material",
+    "steps": [
+      {
+        "name": "select first material",
+        "aggregatedDurations": {
+          "average": 0.867782,
+          "median": 0.867782
+        },
+        "durations": [
+          {
+            "duration": 0.867782,
+            "location": "file:Features/ProcessManagement/MAT-13044_ProcessManagement.feature:39"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Click on three",
+    "steps": [
+      {
+        "name": "Click on three",
+        "aggregatedDurations": {
+          "average": 0.5291865,
+          "median": 0.5291865
+        },
+        "durations": [
+          {
+            "duration": 0.6019812,
+            "location": "file:Features/ProcessManagement/MAT-13044_ProcessManagement.feature:38"
+          },
+          {
+            "duration": 0.4563918,
+            "location": "file:Features/ProcessManagement/MAT-13044_ProcessManagement.feature:50"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "manage process page is displayed",
+    "steps": [
+      {
+        "name": "manage process page is displayed",
+        "aggregatedDurations": {
+          "average": 3.40246355,
+          "median": 3.40246355
+        },
+        "durations": [
+          {
+            "duration": 4.453025,
+            "location": "file:Features/ProcessManagement/MAT-13044_ProcessManagement.feature:42"
+          },
+          {
+            "duration": 2.3519021,
+            "location": "file:Features/ProcessManagement/MAT-13044_ProcessManagement.feature:54"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "homepage is displayed",
+    "steps": [
+      {
+        "name": "homepage is displayed",
+        "aggregatedDurations": {
+          "average": 0.45477445,
+          "median": 0.45477445
+        },
+        "durations": [
+          {
+            "duration": 0.5504858,
+            "location": "file:Features/ProcessManagement/MAT-13044_ProcessManagement.feature:7"
+          },
+          {
+            "duration": 0.3590631,
+            "location": "file:Features/ProcessManagement/MAT-13044_ProcessManagement.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on manage process from edit menu on search results MOD",
+    "steps": [
+      {
+        "name": "click on manage process from edit menu on search results MOD",
+        "aggregatedDurations": {
+          "average": 0.6638242,
+          "median": 0.6638242
+        },
+        "durations": [
+          {
+            "duration": 0.6638242,
+            "location": "file:Features/ProcessManagement/MAT-13044_ProcessManagement.feature:41"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user comes on search WS",
+    "steps": [
+      {
+        "name": "user comes on search WS",
+        "aggregatedDurations": {
+          "average": 0.722527,
+          "median": 0.722527
+        },
+        "durations": [
+          {
+            "duration": 0.6456723,
+            "location": "file:Features/ProcessManagement/MAT-13044_ProcessManagement.feature:34"
+          },
+          {
+            "duration": 0.7993817,
+            "location": "file:Features/ProcessManagement/MAT-13044_ProcessManagement.feature:46"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on manage process from edit menu on SOD",
+    "steps": [
+      {
+        "name": "click on manage process from edit menu on SOD",
+        "aggregatedDurations": {
+          "average": 0.605147,
+          "median": 0.605147
+        },
+        "durations": [
+          {
+            "duration": 0.605147,
+            "location": "file:Features/ProcessManagement/MAT-13044_ProcessManagement.feature:53"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user has already logged in to Material Center application",
+    "steps": [
+      {
+        "name": "user has already logged in to Material Center application",
+        "aggregatedDurations": {
+          "average": 9.7642156,
+          "median": 9.7642156
+        },
+        "durations": [
+          {
+            "duration": 10.6821132,
+            "location": "file:Features/ProcessManagement/MAT-13044_ProcessManagement.feature:4"
+          },
+          {
+            "duration": 8.846318,
+            "location": "file:Features/ProcessManagement/MAT-13044_ProcessManagement.feature:4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "double click on first result",
+    "steps": [
+      {
+        "name": "double click on first result",
+        "aggregatedDurations": {
+          "average": 1.2112727,
+          "median": 1.2112727
+        },
+        "durations": [
+          {
+            "duration": 1.2112727,
+            "location": "file:Features/ProcessManagement/MAT-13044_ProcessManagement.feature:51"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on edit on MatSOD",
+    "steps": [
+      {
+        "name": "click on edit on MatSOD",
+        "aggregatedDurations": {
+          "average": 5.1150507,
+          "median": 5.1150507
+        },
+        "durations": [
+          {
+            "duration": 5.1150507,
+            "location": "file:Features/ProcessManagement/MAT-13044_ProcessManagement.feature:52"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on edit",
+    "steps": [
+      {
+        "name": "click on edit",
+        "aggregatedDurations": {
+          "average": 2.8762194,
+          "median": 2.8762194
+        },
+        "durations": [
+          {
+            "duration": 2.8762194,
+            "location": "file:Features/ProcessManagement/MAT-13044_ProcessManagement.feature:40"
+          }
+        ]
+      }
+    ]
+  }
+]

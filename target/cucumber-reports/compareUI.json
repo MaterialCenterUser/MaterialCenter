@@ -1,0 +1,324 @@
+[
+  {
+    "source": "Click on rows per page",
+    "steps": [
+      {
+        "name": "Click on rows per page",
+        "aggregatedDurations": {
+          "average": 0.6886158,
+          "median": 0.6886158
+        },
+        "durations": [
+          {
+            "duration": 0.6886158,
+            "location": "file:Features/CompareUI.feature:15"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "select compare option from Actions menu",
+    "steps": [
+      {
+        "name": "select compare option from Actions menu",
+        "aggregatedDurations": {
+          "average": 3.0018774,
+          "median": 3.0018774
+        },
+        "durations": [
+          {
+            "duration": 3.0018774,
+            "location": "file:Features/CompareUI.feature:19"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on property set and uncheck select all checkbox",
+    "steps": [
+      {
+        "name": "click on property set and uncheck select all checkbox",
+        "aggregatedDurations": {
+          "average": 0.8343374,
+          "median": 0.8343374
+        },
+        "durations": [
+          {
+            "duration": 0.8343374,
+            "location": "file:Features/CompareUI.feature:28"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Click on three",
+    "steps": [
+      {
+        "name": "Click on three",
+        "aggregatedDurations": {
+          "average": 0.5651063,
+          "median": 0.5651063
+        },
+        "durations": [
+          {
+            "duration": 0.5651063,
+            "location": "file:Features/CompareUI.feature:16"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on select page option",
+    "steps": [
+      {
+        "name": "click on select page option",
+        "aggregatedDurations": {
+          "average": 0.7946353,
+          "median": 0.7946353
+        },
+        "durations": [
+          {
+            "duration": 0.7946353,
+            "location": "file:Features/CompareUI.feature:18"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "all property set of material is displayed",
+    "steps": [
+      {
+        "name": "all property set of material is displayed",
+        "aggregatedDurations": {
+          "average": 0.2886682,
+          "median": 0.2886682
+        },
+        "durations": [
+          {
+            "duration": 0.2886682,
+            "location": "file:Features/CompareUI.feature:31"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user comes on Navigate WS",
+    "steps": [
+      {
+        "name": "user comes on Navigate WS",
+        "aggregatedDurations": {
+          "average": 0.6458322,
+          "median": 0.680429
+        },
+        "durations": [
+          {
+            "duration": 0.680429,
+            "location": "file:Features/CompareUI.feature:5"
+          },
+          {
+            "duration": 0.7076285,
+            "location": "file:Features/CompareUI.feature:13"
+          },
+          {
+            "duration": 0.5494391,
+            "location": "file:Features/CompareUI.feature:25"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "select show differences only from Display dropdown",
+    "steps": [
+      {
+        "name": "select show differences only from Display dropdown",
+        "aggregatedDurations": {
+          "average": 5.2143013,
+          "median": 5.2143013
+        },
+        "durations": [
+          {
+            "duration": 5.2143013,
+            "location": "file:Features/CompareUI.feature:20"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on arrow button",
+    "steps": [
+      {
+        "name": "click on arrow button",
+        "aggregatedDurations": {
+          "average": 0.4413484,
+          "median": 0.4413484
+        },
+        "durations": [
+          {
+            "duration": 0.4413484,
+            "location": "file:Features/CompareUI.feature:17"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "right click to select compare option",
+    "steps": [
+      {
+        "name": "right click to select compare option",
+        "aggregatedDurations": {
+          "average": 1.3626767,
+          "median": 1.3626767
+        },
+        "durations": [
+          {
+            "duration": 1.3626767,
+            "location": "file:Features/CompareUI.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on property set and check select all checkbox",
+    "steps": [
+      {
+        "name": "click on property set and check select all checkbox",
+        "aggregatedDurations": {
+          "average": 0.695156,
+          "median": 0.695156
+        },
+        "durations": [
+          {
+            "duration": 0.695156,
+            "location": "file:Features/CompareUI.feature:30"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "select fifteen materials",
+    "steps": [
+      {
+        "name": "select fifteen materials",
+        "aggregatedDurations": {
+          "average": 0.6342226,
+          "median": 0.6342226
+        },
+        "durations": [
+          {
+            "duration": 0.6342226,
+            "location": "file:Features/CompareUI.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "double click on material",
+    "steps": [
+      {
+        "name": "double click on material",
+        "aggregatedDurations": {
+          "average": 1.9010191,
+          "median": 1.9010191
+        },
+        "durations": [
+          {
+            "duration": 1.9010191,
+            "location": "file:Features/CompareUI.feature:27"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "no property set selected msg is displayed",
+    "steps": [
+      {
+        "name": "no property set selected msg is displayed",
+        "aggregatedDurations": {
+          "average": 0.2869942,
+          "median": 0.2869942
+        },
+        "durations": [
+          {
+            "duration": 0.2869942,
+            "location": "file:Features/CompareUI.feature:29"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "compare results displayed",
+    "steps": [
+      {
+        "name": "compare results displayed",
+        "aggregatedDurations": {
+          "average": 2.214856,
+          "median": 2.214856
+        },
+        "durations": [
+          {
+            "duration": 2.214856,
+            "location": "file:Features/CompareUI.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user clicks on Metals to open MOD",
+    "steps": [
+      {
+        "name": "user clicks on Metals to open MOD",
+        "aggregatedDurations": {
+          "average": 1.963291966,
+          "median": 1.9055281
+        },
+        "durations": [
+          {
+            "duration": 1.8421703,
+            "location": "file:Features/CompareUI.feature:6"
+          },
+          {
+            "duration": 1.9055281,
+            "location": "file:Features/CompareUI.feature:14"
+          },
+          {
+            "duration": 2.1421775,
+            "location": "file:Features/CompareUI.feature:26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "verify that all differences are displayed in highlighted color",
+    "steps": [
+      {
+        "name": "verify that all differences are displayed in highlighted color",
+        "aggregatedDurations": {
+          "average": 0.4457528,
+          "median": 0.4457528
+        },
+        "durations": [
+          {
+            "duration": 0.4457528,
+            "location": "file:Features/CompareUI.feature:21"
+          }
+        ]
+      }
+    ]
+  }
+]

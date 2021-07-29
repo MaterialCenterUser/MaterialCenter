@@ -1,0 +1,442 @@
+[
+  {
+    "source": "select different parameter set and click on submit",
+    "steps": [
+      {
+        "name": "select different parameter set and click on submit",
+        "aggregatedDurations": {
+          "average": 0.491856,
+          "median": 0.491856
+        },
+        "durations": [
+          {
+            "duration": 0.491856,
+            "location": "file:Features/EditDelete.feature:64"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "go to properties tab",
+    "steps": [
+      {
+        "name": "go to properties tab",
+        "aggregatedDurations": {
+          "average": 0.4389157,
+          "median": 0.4284388
+        },
+        "durations": [
+          {
+            "duration": 0.4280943,
+            "location": "file:Features/EditDelete.feature:10"
+          },
+          {
+            "duration": 0.5011155,
+            "location": "file:Features/EditDelete.feature:34"
+          },
+          {
+            "duration": 0.3976697,
+            "location": "file:Features/EditDelete.feature:47"
+          },
+          {
+            "duration": 0.4287833,
+            "location": "file:Features/EditDelete.feature:63"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "verify that edited values are updated successfully",
+    "steps": [
+      {
+        "name": "verify that edited values are updated successfully",
+        "aggregatedDurations": {
+          "average": 3.4510278,
+          "median": 3.4510278
+        },
+        "durations": [
+          {
+            "duration": 3.4510278,
+            "location": "file:Features/EditDelete.feature:24"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user expands alloy steels under ferrous metals",
+    "steps": [
+      {
+        "name": "user expands alloy steels under ferrous metals",
+        "aggregatedDurations": {
+          "average": 0.2040695,
+          "median": 0.2040695
+        },
+        "durations": [
+          {
+            "duration": 0.2040695,
+            "location": "file:Features/EditDelete.feature:57"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "select D-sixA Alloy Steel metal under ultra high strength",
+    "steps": [
+      {
+        "name": "select D-sixA Alloy Steel metal under ultra high strength",
+        "aggregatedDurations": {
+          "average": 0.1632055,
+          "median": 0.1632055
+        },
+        "durations": [
+          {
+            "duration": 0.1632055,
+            "location": "file:Features/EditDelete.feature:59"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user comes on Navigate WS",
+    "steps": [
+      {
+        "name": "user comes on Navigate WS",
+        "aggregatedDurations": {
+          "average": 0.47186258,
+          "median": 0.4642302
+        },
+        "durations": [
+          {
+            "duration": 0.4626328,
+            "location": "file:Features/EditDelete.feature:5"
+          },
+          {
+            "duration": 0.4380704,
+            "location": "file:Features/EditDelete.feature:18"
+          },
+          {
+            "duration": 0.4923916,
+            "location": "file:Features/EditDelete.feature:29"
+          },
+          {
+            "duration": 0.5019879,
+            "location": "file:Features/EditDelete.feature:42"
+          },
+          {
+            "duration": 0.4642302,
+            "location": "file:Features/EditDelete.feature:55"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on Edit material option",
+    "steps": [
+      {
+        "name": "click on Edit material option",
+        "aggregatedDurations": {
+          "average": 0.2568639,
+          "median": 0.197513
+        },
+        "durations": [
+          {
+            "duration": 0.1842794,
+            "location": "file:Features/EditDelete.feature:8"
+          },
+          {
+            "duration": 0.2156379,
+            "location": "file:Features/EditDelete.feature:21"
+          },
+          {
+            "duration": 0.197513,
+            "location": "file:Features/EditDelete.feature:32"
+          },
+          {
+            "duration": 0.187455,
+            "location": "file:Features/EditDelete.feature:45"
+          },
+          {
+            "duration": 0.4994342,
+            "location": "file:Features/EditDelete.feature:61"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "add newly added footnotes to eleastic modulus property and submit",
+    "steps": [
+      {
+        "name": "add newly added footnotes to eleastic modulus property and submit",
+        "aggregatedDurations": {
+          "average": 11.1651688,
+          "median": 10.9277546
+        },
+        "durations": [
+          {
+            "duration": 10.9277546,
+            "location": "file:Features/EditDelete.feature:13"
+          },
+          {
+            "duration": 11.8028993,
+            "location": "file:Features/EditDelete.feature:37"
+          },
+          {
+            "duration": 10.7648525,
+            "location": "file:Features/EditDelete.feature:50"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "edit few values and save it",
+    "steps": [
+      {
+        "name": "edit few values and save it",
+        "aggregatedDurations": {
+          "average": 1.2079577,
+          "median": 1.2079577
+        },
+        "durations": [
+          {
+            "duration": 1.2079577,
+            "location": "file:Features/EditDelete.feature:23"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "verify that newly added footnotes is updated with property successfully",
+    "steps": [
+      {
+        "name": "verify that newly added footnotes is updated with property successfully",
+        "aggregatedDurations": {
+          "average": 0.166571775,
+          "median": 0.1609965
+        },
+        "durations": [
+          {
+            "duration": 0.1537196,
+            "location": "file:Features/EditDelete.feature:14"
+          },
+          {
+            "duration": 0.1621905,
+            "location": "file:Features/EditDelete.feature:38"
+          },
+          {
+            "duration": 0.1905745,
+            "location": "file:Features/EditDelete.feature:51"
+          },
+          {
+            "duration": 0.1598025,
+            "location": "file:Features/EditDelete.feature:65"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user expands ultra high strength",
+    "steps": [
+      {
+        "name": "user expands ultra high strength",
+        "aggregatedDurations": {
+          "average": 0.1734137,
+          "median": 0.1734137
+        },
+        "durations": [
+          {
+            "duration": 0.1734137,
+            "location": "file:Features/EditDelete.feature:58"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "double click on material",
+    "steps": [
+      {
+        "name": "double click on material",
+        "aggregatedDurations": {
+          "average": 1.3780087,
+          "median": 1.4785346
+        },
+        "durations": [
+          {
+            "duration": 1.0295895,
+            "location": "file:Features/EditDelete.feature:7"
+          },
+          {
+            "duration": 1.516471,
+            "location": "file:Features/EditDelete.feature:20"
+          },
+          {
+            "duration": 1.5253761,
+            "location": "file:Features/EditDelete.feature:31"
+          },
+          {
+            "duration": 1.4405982,
+            "location": "file:Features/EditDelete.feature:44"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "select mechanical property set",
+    "steps": [
+      {
+        "name": "select mechanical property set",
+        "aggregatedDurations": {
+          "average": 0.692647566,
+          "median": 0.6721321
+        },
+        "durations": [
+          {
+            "duration": 0.6533696,
+            "location": "file:Features/EditDelete.feature:11"
+          },
+          {
+            "duration": 0.6721321,
+            "location": "file:Features/EditDelete.feature:35"
+          },
+          {
+            "duration": 0.752441,
+            "location": "file:Features/EditDelete.feature:48"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on select button against tensile elastic modulus",
+    "steps": [
+      {
+        "name": "click on select button against tensile elastic modulus",
+        "aggregatedDurations": {
+          "average": 0.475774366,
+          "median": 0.4776617
+        },
+        "durations": [
+          {
+            "duration": 0.4223077,
+            "location": "file:Features/EditDelete.feature:12"
+          },
+          {
+            "duration": 0.5273537,
+            "location": "file:Features/EditDelete.feature:36"
+          },
+          {
+            "duration": 0.4776617,
+            "location": "file:Features/EditDelete.feature:49"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "navigate to Classification tab",
+    "steps": [
+      {
+        "name": "navigate to Classification tab",
+        "aggregatedDurations": {
+          "average": 0.2382055,
+          "median": 0.2382055
+        },
+        "durations": [
+          {
+            "duration": 0.2382055,
+            "location": "file:Features/EditDelete.feature:22"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "navigate to footnotes tab and add footnotes",
+    "steps": [
+      {
+        "name": "navigate to footnotes tab and add footnotes",
+        "aggregatedDurations": {
+          "average": 2.21381085,
+          "median": 2.1103495
+        },
+        "durations": [
+          {
+            "duration": 2.1157031,
+            "location": "file:Features/EditDelete.feature:9"
+          },
+          {
+            "duration": 2.102838,
+            "location": "file:Features/EditDelete.feature:33"
+          },
+          {
+            "duration": 2.1049959,
+            "location": "file:Features/EditDelete.feature:46"
+          },
+          {
+            "duration": 2.5317064,
+            "location": "file:Features/EditDelete.feature:62"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user clicks on Metals to open MOD",
+    "steps": [
+      {
+        "name": "user clicks on Metals to open MOD",
+        "aggregatedDurations": {
+          "average": 1.23637065,
+          "median": 1.19447895
+        },
+        "durations": [
+          {
+            "duration": 1.4296892,
+            "location": "file:Features/EditDelete.feature:6"
+          },
+          {
+            "duration": 1.2165238,
+            "location": "file:Features/EditDelete.feature:19"
+          },
+          {
+            "duration": 1.1268355,
+            "location": "file:Features/EditDelete.feature:30"
+          },
+          {
+            "duration": 1.1724341,
+            "location": "file:Features/EditDelete.feature:43"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user expands metals",
+    "steps": [
+      {
+        "name": "user expands metals",
+        "aggregatedDurations": {
+          "average": 0.6304397,
+          "median": 0.6304397
+        },
+        "durations": [
+          {
+            "duration": 0.6304397,
+            "location": "file:Features/EditDelete.feature:56"
+          }
+        ]
+      }
+    ]
+  }
+]

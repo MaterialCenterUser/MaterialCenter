@@ -1,0 +1,582 @@
+[
+  {
+    "source": "click on Create Specimen Definition",
+    "steps": [
+      {
+        "name": "click on Create Specimen Definition",
+        "aggregatedDurations": {
+          "average": 0.441372,
+          "median": 0.441372
+        },
+        "durations": [
+          {
+            "duration": 0.4316759,
+            "location": "file:Features/TestDataManagement.feature:7"
+          },
+          {
+            "duration": 0.4510681,
+            "location": "file:Features/TestDataManagement.feature:19"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on next button",
+    "steps": [
+      {
+        "name": "click on next button",
+        "aggregatedDurations": {
+          "average": 2.1561326,
+          "median": 2.1561326
+        },
+        "durations": [
+          {
+            "duration": 2.1561326,
+            "location": "file:Features/TestDataManagement.feature:27"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on validate button to ensure that there are no errors",
+    "steps": [
+      {
+        "name": "click on validate button to ensure that there are no errors",
+        "aggregatedDurations": {
+          "average": 1.29512055,
+          "median": 1.29512055
+        },
+        "durations": [
+          {
+            "duration": 1.3157599,
+            "location": "file:Features/TestDataManagement.feature:11"
+          },
+          {
+            "duration": 1.2744812,
+            "location": "file:Features/TestDataManagement.feature:23"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "provide the name of the Test Template",
+    "steps": [
+      {
+        "name": "provide the name of the Test Template",
+        "aggregatedDurations": {
+          "average": 3.3402301,
+          "median": 3.3402301
+        },
+        "durations": [
+          {
+            "duration": 3.3402301,
+            "location": "file:Features/TestDataManagement.feature:47"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on submit button",
+    "steps": [
+      {
+        "name": "click on submit button",
+        "aggregatedDurations": {
+          "average": 0.4923528,
+          "median": 0.4923528
+        },
+        "durations": [
+          {
+            "duration": 0.4923528,
+            "location": "file:Features/TestDataManagement.feature:52"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "select the Specimen Definitions option under Materials Administration",
+    "steps": [
+      {
+        "name": "select the Specimen Definitions option under Materials Administration",
+        "aggregatedDurations": {
+          "average": 1.4026793,
+          "median": 1.4026793
+        },
+        "durations": [
+          {
+            "duration": 1.454237,
+            "location": "file:Features/TestDataManagement.feature:6"
+          },
+          {
+            "duration": 1.3511216,
+            "location": "file:Features/TestDataManagement.feature:18"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "check that process status is completed",
+    "steps": [
+      {
+        "name": "check that process status is completed",
+        "aggregatedDurations": {
+          "average": 7.4157268,
+          "median": 7.4157268
+        },
+        "durations": [
+          {
+            "duration": 7.4157268,
+            "location": "file:Features/TestDataManagement.feature:29"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "upload mapping file",
+    "steps": [
+      {
+        "name": "upload mapping file",
+        "aggregatedDurations": {
+          "average": 0.2590387,
+          "median": 0.2590387
+        },
+        "durations": [
+          {
+            "duration": 0.2590387,
+            "location": "file:Features/TestDataManagement.feature:51"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on submit button to create the Test Template",
+    "steps": [
+      {
+        "name": "click on submit button to create the Test Template",
+        "aggregatedDurations": {
+          "average": 0.015532,
+          "median": 0.015532
+        },
+        "durations": [
+          {
+            "duration": 0.015532,
+            "location": "file:Features/TestDataManagement.feature:58"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user clicks on Config WS",
+    "steps": [
+      {
+        "name": "user clicks on Config WS",
+        "aggregatedDurations": {
+          "average": 0.473944425,
+          "median": 0.474315
+        },
+        "durations": [
+          {
+            "duration": 0.4926772,
+            "location": "file:Features/TestDataManagement.feature:5"
+          },
+          {
+            "duration": 0.4923892,
+            "location": "file:Features/TestDataManagement.feature:17"
+          },
+          {
+            "duration": 0.4562408,
+            "location": "file:Features/TestDataManagement.feature:33"
+          },
+          {
+            "duration": 0.4544705,
+            "location": "file:Features/TestDataManagement.feature:44"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "select the Test Template option under Materials Administration",
+    "steps": [
+      {
+        "name": "select the Test Template option under Materials Administration",
+        "aggregatedDurations": {
+          "average": 1.1517704,
+          "median": 1.1517704
+        },
+        "durations": [
+          {
+            "duration": 1.1517704,
+            "location": "file:Features/TestDataManagement.feature:45"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on Create Test Template",
+    "steps": [
+      {
+        "name": "click on Create Test Template",
+        "aggregatedDurations": {
+          "average": 0.3915304,
+          "median": 0.3915304
+        },
+        "durations": [
+          {
+            "duration": 0.3915304,
+            "location": "file:Features/TestDataManagement.feature:46"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on promote action under security tab",
+    "steps": [
+      {
+        "name": "click on promote action under security tab",
+        "aggregatedDurations": {
+          "average": 0.9781513,
+          "median": 0.9781513
+        },
+        "durations": [
+          {
+            "duration": 0.9781513,
+            "location": "file:Features/TestDataManagement.feature:25"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "select design data project from dropdown",
+    "steps": [
+      {
+        "name": "select design data project from dropdown",
+        "aggregatedDurations": {
+          "average": 0.9221556,
+          "median": 0.9221556
+        },
+        "durations": [
+          {
+            "duration": 0.9221556,
+            "location": "file:Features/TestDataManagement.feature:49"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "enter mapping name and select schema from dropdown",
+    "steps": [
+      {
+        "name": "enter mapping name and select schema from dropdown",
+        "aggregatedDurations": {
+          "average": 0.7606757,
+          "median": 0.7606757
+        },
+        "durations": [
+          {
+            "duration": 0.7606757,
+            "location": "file:Features/TestDataManagement.feature:50"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on Edit Imported Mapping",
+    "steps": [
+      {
+        "name": "click on Edit Imported Mapping",
+        "aggregatedDurations": {
+          "average": 0.4891267,
+          "median": 0.4891267
+        },
+        "durations": [
+          {
+            "duration": 0.4891267,
+            "location": "file:Features/TestDataManagement.feature:37"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Verify the uploaded template is displayed on details page",
+    "steps": [
+      {
+        "name": "Verify the uploaded template is displayed on details page",
+        "aggregatedDurations": {
+          "average": 0.1654589,
+          "median": 0.1654589
+        },
+        "durations": [
+          {
+            "duration": 0.1654589,
+            "location": "file:Features/TestDataManagement.feature:40"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "select the Excel Mappings option under Materials Administration",
+    "steps": [
+      {
+        "name": "select the Excel Mappings option under Materials Administration",
+        "aggregatedDurations": {
+          "average": 1.2417778,
+          "median": 1.2417778
+        },
+        "durations": [
+          {
+            "duration": 1.2417778,
+            "location": "file:Features/TestDataManagement.feature:34"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on Submit button to import supporting template",
+    "steps": [
+      {
+        "name": "click on Submit button to import supporting template",
+        "aggregatedDurations": {
+          "average": 5.0989758,
+          "median": 5.0989758
+        },
+        "durations": [
+          {
+            "duration": 5.0989758,
+            "location": "file:Features/TestDataManagement.feature:39"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "select Import Mapping button next to Design Data Mapping",
+    "steps": [
+      {
+        "name": "select Import Mapping button next to Design Data Mapping",
+        "aggregatedDurations": {
+          "average": 0.2810929,
+          "median": 0.2810929
+        },
+        "durations": [
+          {
+            "duration": 0.2810929,
+            "location": "file:Features/TestDataManagement.feature:48"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "select the project on init tab",
+    "steps": [
+      {
+        "name": "select the project on init tab",
+        "aggregatedDurations": {
+          "average": 1.00595985,
+          "median": 1.00595985
+        },
+        "durations": [
+          {
+            "duration": 1.1273802,
+            "location": "file:Features/TestDataManagement.feature:8"
+          },
+          {
+            "duration": 0.8845395,
+            "location": "file:Features/TestDataManagement.feature:20"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on Submit button from specimen definition tab",
+    "steps": [
+      {
+        "name": "click on Submit button from specimen definition tab",
+        "aggregatedDurations": {
+          "average": 4.6512679,
+          "median": 4.6512679
+        },
+        "durations": [
+          {
+            "duration": 4.9917933,
+            "location": "file:Features/TestDataManagement.feature:12"
+          },
+          {
+            "duration": 4.3107425,
+            "location": "file:Features/TestDataManagement.feature:24"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on submit button on dependent objects list",
+    "steps": [
+      {
+        "name": "click on submit button on dependent objects list",
+        "aggregatedDurations": {
+          "average": 0.4346743,
+          "median": 0.4346743
+        },
+        "durations": [
+          {
+            "duration": 0.4346743,
+            "location": "file:Features/TestDataManagement.feature:28"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "select Generic Material Selector from the list",
+    "steps": [
+      {
+        "name": "select Generic Material Selector from the list",
+        "aggregatedDurations": {
+          "average": 0.1728182,
+          "median": 0.1728182
+        },
+        "durations": [
+          {
+            "duration": 0.1728182,
+            "location": "file:Features/TestDataManagement.feature:36"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Verify the created test template",
+    "steps": [
+      {
+        "name": "Verify the created test template",
+        "aggregatedDurations": {
+          "average": 6.610912,
+          "median": 6.610912
+        },
+        "durations": [
+          {
+            "duration": 6.610912,
+            "location": "file:Features/TestDataManagement.feature:59"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "select Specimen Definition tab to provide all required details",
+    "steps": [
+      {
+        "name": "select Specimen Definition tab to provide all required details",
+        "aggregatedDurations": {
+          "average": 1.0755882,
+          "median": 1.0755882
+        },
+        "durations": [
+          {
+            "duration": 1.1520968,
+            "location": "file:Features/TestDataManagement.feature:10"
+          },
+          {
+            "duration": 0.9990796,
+            "location": "file:Features/TestDataManagement.feature:22"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "enter the name on init tab",
+    "steps": [
+      {
+        "name": "enter the name on init tab",
+        "aggregatedDurations": {
+          "average": 0.2618074,
+          "median": 0.2618074
+        },
+        "durations": [
+          {
+            "duration": 0.2498332,
+            "location": "file:Features/TestDataManagement.feature:9"
+          },
+          {
+            "duration": 0.2737816,
+            "location": "file:Features/TestDataManagement.feature:21"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "select target level as production",
+    "steps": [
+      {
+        "name": "select target level as production",
+        "aggregatedDurations": {
+          "average": 1.1107044,
+          "median": 1.1107044
+        },
+        "durations": [
+          {
+            "duration": 1.1107044,
+            "location": "file:Features/TestDataManagement.feature:26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "attach TestDataReductionTemplate in excel file template",
+    "steps": [
+      {
+        "name": "attach TestDataReductionTemplate in excel file template",
+        "aggregatedDurations": {
+          "average": 1.9750869,
+          "median": 1.9750869
+        },
+        "durations": [
+          {
+            "duration": 1.9750869,
+            "location": "file:Features/TestDataManagement.feature:38"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Verify the created Specimen Definition record",
+    "steps": [
+      {
+        "name": "Verify the created Specimen Definition record",
+        "aggregatedDurations": {
+          "average": 0.1498146,
+          "median": 0.1498146
+        },
+        "durations": [
+          {
+            "duration": 0.1498146,
+            "location": "file:Features/TestDataManagement.feature:13"
+          }
+        ]
+      }
+    ]
+  }
+]
