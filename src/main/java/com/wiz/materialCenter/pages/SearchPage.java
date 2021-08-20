@@ -270,6 +270,8 @@ public class SearchPage extends TestBase {
 	@FindBy(xpath = "(//a[text()='Manage Process'])[1]")
 	WebElement manageProcessFromEditMenu;
 	
+	@FindBy(xpath = "(//a[text()='Manage Layup'])[1]")
+	WebElement manageLayupFromEditMenu;
 	
 	public ManageProcessPage clickOnManageProcessFromMOD (){
 		action.moveToElement(manageProcessFromEditMenu).build().perform();
@@ -280,6 +282,10 @@ public class SearchPage extends TestBase {
 	
 	public boolean verifyManageProcessOptionFromEditMenuDisplayed(){
 		return manageProcessFromEditMenu.isDisplayed();
+	}
+	
+	public boolean verifyManageLayupOptionFromEditMenuDisplayed(){
+		return manageLayupFromEditMenu.isDisplayed();
 	}
 	
 	public boolean verifyCurvePropertySearchDisplayed(){
@@ -347,7 +353,7 @@ public void selectCurveAttributeFromDropdown() {
 	}
 	public boolean verifyMaterialsSearchDisplayed(){
 		return textMaterial.isDisplayed();
-	}
+			}
 	
 	public void rightClickOnElement(){
 		//action.moveToElement(firstEle).build().perform();
@@ -523,7 +529,7 @@ public void selectCurveAttributeFromDropdown() {
 	public void clickonMySearches() {
 		action.moveToElement(mySearches).build().perform();
 		action.click(mySearches).build().perform();
-		
+		wait.until(ExpectedConditions.visibilityOf(textMySearches));
 	}
 	
 	public void verifysavedSearch() {
@@ -670,7 +676,7 @@ public void selectCurveAttributeFromDropdown() {
 	
 	public void applyMatTypeFilter() {
 		Select select = new Select(selectMaterialType);
-		select.selectByVisibleText("Metals");;
+		select.selectByIndex(2);
 		//action.click(metalsMatTypeOption).build().perform();
 	//	js.executeScript("arguments[0].click();", applyMatTypeChanges);
 		action.moveToElement(applyMatTypeChanges).build().perform();
@@ -715,7 +721,7 @@ public void selectCurveAttributeFromDropdown() {
 	}
 	
 	public void checkTextResultDisplayCount() {
-		Assert.assertEquals(resultDisplayCount.getText(), "Displayed Rows: 1 - 25 of 546");
+		Assert.assertEquals(resultDisplayCount.getText(), "Displayed Rows: 1 - 25 of 564");
 		System.out.println("Text search result display count is correct as : " + resultDisplayCount.getText());
 	}
 	

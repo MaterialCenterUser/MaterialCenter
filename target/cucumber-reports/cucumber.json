@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10682113200,
+              "duration": 44056627600,
               "status": "passed"
             },
             "line": 4,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 550485800,
+              "duration": 250268700,
               "status": "passed"
             },
             "line": 7,
@@ -50,15 +50,15 @@
         ]
       },
       {
-        "start_timestamp": "2021-07-28T04:38:41.066Z",
-        "line": 33,
-        "name": "Check if Manage Process UI can be launched on Material MOD",
+        "start_timestamp": "2021-08-18T14:58:55.472Z",
+        "line": 86,
+        "name": "Verify component dropdown when process type is selected as composites",
         "description": "",
-        "id": "process-management;check-if-manage-process-ui-can-be-launched-on-material-mod",
+        "id": "process-management;verify-component-dropdown-when-process-type-is-selected-as-composites",
         "after": [
           {
             "result": {
-              "duration": 764760100,
+              "duration": 680306200,
               "status": "passed"
             },
             "match": {
@@ -71,34 +71,52 @@
         "steps": [
           {
             "result": {
-              "duration": 645672300,
+              "duration": 979476100,
               "status": "passed"
             },
-            "line": 34,
-            "name": "user comes on search WS",
+            "line": 87,
+            "name": "user selects Materials from dropdown",
             "match": {
-              "location": "SearchStepDef.user_is_on_search_page()"
+              "location": "ProcessManagementStepDef.user_selects_Materials_from_dropdown()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2461705600,
+              "duration": 79060300,
               "status": "passed"
             },
-            "line": 35,
-            "name": "user click on material from search page",
+            "line": 88,
+            "name": "user enters searchtext for test data search \"ceramics\"",
             "match": {
-              "location": "SearchStepDef.user_click_on_material_from_search_page()"
+              "arguments": [
+                {
+                  "val": "\"ceramics\"",
+                  "offset": 44
+                }
+              ],
+              "location": "WatchFeatureStepDef.user_enters_searchtext_for_test_data_search(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 351883100,
+              "duration": 264697100,
               "status": "passed"
             },
-            "line": 36,
+            "line": 89,
+            "name": "click on search button from homepage",
+            "match": {
+              "location": "WatchFeatureStepDef.click_on_search_button_from_homepage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 195688500,
+              "status": "passed"
+            },
+            "line": 90,
             "name": "materials search results displayed",
             "match": {
               "location": "EnhancementsInMatSODandMODStepDef.materials_search_results_displayed()"
@@ -107,23 +125,23 @@
           },
           {
             "result": {
-              "duration": 753790200,
+              "duration": 1535291300,
               "status": "passed"
             },
-            "line": 37,
-            "name": "Click on rows per page",
+            "line": 91,
+            "name": "click on rows per page",
             "match": {
-              "location": "UIPerformanceStepDef.Click_on_rows_per_page()"
+              "location": "UIPerformanceStepDef.click_on_rows_per_page()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 601981200,
+              "duration": 391585400,
               "status": "passed"
             },
-            "line": 38,
-            "name": "Click on three",
+            "line": 92,
+            "name": "click on three",
             "match": {
               "location": "UIPerformanceStepDef.click_on_three()"
             },
@@ -131,59 +149,83 @@
           },
           {
             "result": {
-              "duration": 867782000,
+              "duration": 450835800,
               "status": "passed"
             },
-            "line": 39,
-            "name": "select first material",
+            "line": 93,
+            "name": "double click on first result",
             "match": {
-              "location": "EnhancementsInMatSODandMODStepDef.click_on_material()"
+              "location": "EnhancementsInMatSODandMODStepDef.double_click_on_first_result()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2876219400,
+              "duration": 762337400,
               "status": "passed"
             },
-            "line": 40,
-            "name": "click on edit",
+            "line": 94,
+            "name": "click on edit on MatSOD",
             "match": {
-              "location": "ProcessManagementStepDef.click_on_Edit()"
+              "location": "EditDeleteStepDef.click_on_edit_on_MatSOD()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 663824200,
+              "duration": 810989000,
               "status": "passed"
             },
-            "line": 41,
-            "name": "click on manage process from edit menu on search results MOD",
+            "line": 95,
+            "name": "click on manage process from edit menu on SOD",
             "match": {
-              "location": "ProcessManagementStepDef.click_on_manage_process_from_edit_menu_on_search_results_MOD()"
+              "location": "ProcessManagementStepDef.click_on_manage_process_from_edit_menu_on_SOD()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 4453025000,
+              "duration": 547725300,
               "status": "passed"
             },
-            "line": 42,
-            "name": "manage process page is displayed",
+            "line": 96,
+            "name": "select composites from process type dropdown",
             "match": {
-              "location": "ProcessManagementStepDef.manage_process_page_is_displayed()"
+              "location": "ProcessManagementStepDef.select_composites_from_process_type_dropdown()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 925942200,
+              "status": "passed"
+            },
+            "line": 97,
+            "name": "click on process dropdown",
+            "match": {
+              "location": "ProcessManagementStepDef.click_on_process_dropdown()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 167045900,
+              "status": "passed"
+            },
+            "line": 98,
+            "name": "all the components listed are displayed as of selected process type composites",
+            "match": {
+              "location": "ProcessManagementStepDef.all_the_components_listed_are_displayed_as_of_selected_process_type_composites()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@MAT-21744"
+            "name": "@MAT-21747"
           },
           {
-            "name": "@Regression1"
+            "name": "@Regresion"
           }
         ]
       },
@@ -196,7 +238,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8846318000,
+              "duration": 38535071200,
               "status": "passed"
             },
             "line": 4,
@@ -222,7 +264,7 @@
           },
           {
             "result": {
-              "duration": 359063100,
+              "duration": 195080800,
               "status": "passed"
             },
             "line": 7,
@@ -235,15 +277,15 @@
         ]
       },
       {
-        "start_timestamp": "2021-07-28T04:39:06.747Z",
-        "line": 45,
-        "name": "Check if Manage Process UI can be launched from Material SOD",
+        "start_timestamp": "2021-08-18T14:59:47.575Z",
+        "line": 470,
+        "name": "Check if Process tab is displayed on Material SOD if Material has Process Assembly",
         "description": "",
-        "id": "process-management;check-if-manage-process-ui-can-be-launched-from-material-sod",
+        "id": "process-management;check-if-process-tab-is-displayed-on-material-sod-if-material-has-process-assembly",
         "after": [
           {
             "result": {
-              "duration": 784835300,
+              "duration": 702860100,
               "status": "passed"
             },
             "match": {
@@ -256,34 +298,52 @@
         "steps": [
           {
             "result": {
-              "duration": 799381700,
+              "duration": 859344400,
               "status": "passed"
             },
-            "line": 46,
-            "name": "user comes on search WS",
+            "line": 471,
+            "name": "user selects Materials from dropdown",
             "match": {
-              "location": "SearchStepDef.user_is_on_search_page()"
+              "location": "ProcessManagementStepDef.user_selects_Materials_from_dropdown()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2606685000,
+              "duration": 73271300,
               "status": "passed"
             },
-            "line": 47,
-            "name": "user click on material from search page",
+            "line": 472,
+            "name": "user enters searchtext for test data search \"metals\"",
             "match": {
-              "location": "SearchStepDef.user_click_on_material_from_search_page()"
+              "arguments": [
+                {
+                  "val": "\"metals\"",
+                  "offset": 44
+                }
+              ],
+              "location": "WatchFeatureStepDef.user_enters_searchtext_for_test_data_search(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 301894800,
+              "duration": 272200900,
               "status": "passed"
             },
-            "line": 48,
+            "line": 473,
+            "name": "click on search button from homepage",
+            "match": {
+              "location": "WatchFeatureStepDef.click_on_search_button_from_homepage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 200934900,
+              "status": "passed"
+            },
+            "line": 474,
             "name": "materials search results displayed",
             "match": {
               "location": "EnhancementsInMatSODandMODStepDef.materials_search_results_displayed()"
@@ -292,23 +352,23 @@
           },
           {
             "result": {
-              "duration": 681567700,
+              "duration": 1421306400,
               "status": "passed"
             },
-            "line": 49,
-            "name": "Click on rows per page",
+            "line": 475,
+            "name": "click on rows per page",
             "match": {
-              "location": "UIPerformanceStepDef.Click_on_rows_per_page()"
+              "location": "UIPerformanceStepDef.click_on_rows_per_page()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 456391800,
+              "duration": 258788900,
               "status": "passed"
             },
-            "line": 50,
-            "name": "Click on three",
+            "line": 476,
+            "name": "click on three",
             "match": {
               "location": "UIPerformanceStepDef.click_on_three()"
             },
@@ -316,10 +376,10 @@
           },
           {
             "result": {
-              "duration": 1211272700,
+              "duration": 543044700,
               "status": "passed"
             },
-            "line": 51,
+            "line": 477,
             "name": "double click on first result",
             "match": {
               "location": "EnhancementsInMatSODandMODStepDef.double_click_on_first_result()"
@@ -328,10 +388,10 @@
           },
           {
             "result": {
-              "duration": 5115050700,
+              "duration": 1339187800,
               "status": "passed"
             },
-            "line": 52,
+            "line": 478,
             "name": "click on edit on MatSOD",
             "match": {
               "location": "EditDeleteStepDef.click_on_edit_on_MatSOD()"
@@ -340,10 +400,10 @@
           },
           {
             "result": {
-              "duration": 605147000,
+              "duration": 699605800,
               "status": "passed"
             },
-            "line": 53,
+            "line": 479,
             "name": "click on manage process from edit menu on SOD",
             "match": {
               "location": "ProcessManagementStepDef.click_on_manage_process_from_edit_menu_on_SOD()"
@@ -352,23 +412,490 @@
           },
           {
             "result": {
-              "duration": 2351902100,
+              "duration": 871211300,
               "status": "passed"
             },
-            "line": 54,
-            "name": "manage process page is displayed",
+            "line": 480,
+            "name": "select composites from process type dropdown",
             "match": {
-              "location": "ProcessManagementStepDef.manage_process_page_is_displayed()"
+              "location": "ProcessManagementStepDef.select_composites_from_process_type_dropdown()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 775263900,
+              "status": "passed"
+            },
+            "line": 481,
+            "name": "click on select button displayed against process dropdown",
+            "match": {
+              "location": "ProcessManagementStepDef.click_on_select_button_displayed_against_process_dropdown()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 439568600,
+              "status": "passed"
+            },
+            "line": 482,
+            "name": "click on rows per page",
+            "match": {
+              "location": "UIPerformanceStepDef.click_on_rows_per_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 261459700,
+              "status": "passed"
+            },
+            "line": 483,
+            "name": "click on three",
+            "match": {
+              "location": "UIPerformanceStepDef.click_on_three()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 464006900,
+              "status": "passed"
+            },
+            "line": 484,
+            "name": "double click on first result",
+            "match": {
+              "location": "EnhancementsInMatSODandMODStepDef.double_click_on_first_result()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 221027400,
+              "status": "passed"
+            },
+            "line": 485,
+            "name": "enter some value in time textbox",
+            "match": {
+              "location": "ProcessManagementStepDef.enter_some_value_in_time_textbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 190859800,
+              "status": "passed"
+            },
+            "line": 486,
+            "name": "click on Add button on process page",
+            "match": {
+              "location": "ProcessManagementStepDef.click_on_Add_button_on_process_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 204953600,
+              "status": "passed"
+            },
+            "line": 487,
+            "name": "click on submit button on process page",
+            "match": {
+              "location": "ProcessManagementStepDef.click_on_Submit_button_on_process_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 408395900,
+              "status": "passed"
+            },
+            "line": 488,
+            "name": "process tab is displayed on material SOD page",
+            "match": {
+              "location": "ProcessManagementStepDef.process_tab_is_displayed_on_material_SOD_page()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MAT-21770"
+          },
+          {
+            "name": "@Regresion"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 40170751200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user has already logged in to Material Center application",
+            "match": {
+              "location": "HomePageStepDef.user_has_already_logged_in_to_Material_Center_application(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "smroot",
+                  "sdm"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 176729600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "homepage is displayed",
+            "match": {
+              "location": "EnhancementsInMatSODandMODStepDef.homepage_is_displayed()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-18T15:00:36.515Z",
+        "line": 491,
+        "name": "Check if Discard Manager Process action deletes the created object",
+        "description": "",
+        "id": "process-management;check-if-discard-manager-process-action-deletes-the-created-object",
+        "after": [
+          {
+            "result": {
+              "duration": 688873800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.after(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 902464700,
+              "status": "passed"
+            },
+            "line": 492,
+            "name": "user selects Materials from dropdown",
+            "match": {
+              "location": "ProcessManagementStepDef.user_selects_Materials_from_dropdown()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 65298100,
+              "status": "passed"
+            },
+            "line": 493,
+            "name": "user enters searchtext for test data search \"coatings\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"coatings\"",
+                  "offset": 44
+                }
+              ],
+              "location": "WatchFeatureStepDef.user_enters_searchtext_for_test_data_search(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 306970100,
+              "status": "passed"
+            },
+            "line": 494,
+            "name": "click on search button from homepage",
+            "match": {
+              "location": "WatchFeatureStepDef.click_on_search_button_from_homepage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 195066300,
+              "status": "passed"
+            },
+            "line": 495,
+            "name": "materials search results displayed",
+            "match": {
+              "location": "EnhancementsInMatSODandMODStepDef.materials_search_results_displayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1508234800,
+              "status": "passed"
+            },
+            "line": 496,
+            "name": "click on rows per page",
+            "match": {
+              "location": "UIPerformanceStepDef.click_on_rows_per_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 371624200,
+              "status": "passed"
+            },
+            "line": 497,
+            "name": "click on three",
+            "match": {
+              "location": "UIPerformanceStepDef.click_on_three()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1418317000,
+              "status": "passed"
+            },
+            "line": 498,
+            "name": "double click on first result",
+            "match": {
+              "location": "EnhancementsInMatSODandMODStepDef.double_click_on_first_result()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 677668100,
+              "status": "passed"
+            },
+            "line": 499,
+            "name": "click on edit on MatSOD",
+            "match": {
+              "location": "EditDeleteStepDef.click_on_edit_on_MatSOD()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 885726000,
+              "status": "passed"
+            },
+            "line": 500,
+            "name": "click on manage process from edit menu on SOD",
+            "match": {
+              "location": "ProcessManagementStepDef.click_on_manage_process_from_edit_menu_on_SOD()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 750109700,
+              "status": "passed"
+            },
+            "line": 501,
+            "name": "select composites from process type dropdown",
+            "match": {
+              "location": "ProcessManagementStepDef.select_composites_from_process_type_dropdown()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 851316700,
+              "status": "passed"
+            },
+            "line": 502,
+            "name": "click on process dropdown",
+            "match": {
+              "location": "ProcessManagementStepDef.click_on_process_dropdown()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 190916900,
+              "status": "passed"
+            },
+            "line": 503,
+            "name": "select first row from process dropdown",
+            "match": {
+              "location": "ProcessManagementStepDef.select_first_row_from_process_dropdown()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 230970900,
+              "status": "passed"
+            },
+            "line": 504,
+            "name": "enter some value in time textbox",
+            "match": {
+              "location": "ProcessManagementStepDef.enter_some_value_in_time_textbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 185279200,
+              "status": "passed"
+            },
+            "line": 505,
+            "name": "click on Add button on process page",
+            "match": {
+              "location": "ProcessManagementStepDef.click_on_Add_button_on_process_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 176111000,
+              "status": "passed"
+            },
+            "line": 506,
+            "name": "click on submit button on process page",
+            "match": {
+              "location": "ProcessManagementStepDef.click_on_Submit_button_on_process_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2162328000,
+              "status": "passed"
+            },
+            "line": 507,
+            "name": "navigate to homepage from material SOD page",
+            "match": {
+              "location": "ProcessManagementStepDef.navigate_to_homepage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2317478300,
+              "status": "passed"
+            },
+            "line": 508,
+            "name": "user clicks on view all processes",
+            "match": {
+              "location": "CAEModelStepDef.user_clicks_on_view_all_processes()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 597421800,
+              "status": "passed"
+            },
+            "line": 509,
+            "name": "click on rows per page",
+            "match": {
+              "location": "UIPerformanceStepDef.click_on_rows_per_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 282056700,
+              "status": "passed"
+            },
+            "line": 510,
+            "name": "click on three",
+            "match": {
+              "location": "UIPerformanceStepDef.click_on_three()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 414251000,
+              "status": "passed"
+            },
+            "line": 511,
+            "name": "click on manage process link",
+            "match": {
+              "location": "ProcessManagementStepDef.click_on_manage_process_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 317681600,
+              "status": "passed"
+            },
+            "line": 512,
+            "name": "user clicks on discard option",
+            "match": {
+              "location": "CAEModelStepDef.user_clicks_on_discard_option()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 169136500,
+              "status": "passed"
+            },
+            "line": 513,
+            "name": "user clicks on submit button on manage process",
+            "match": {
+              "location": "ProcessManagementStepDef.user_clicks_on_submit_button_on_CAE_model_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2508744600,
+              "status": "passed"
+            },
+            "line": 514,
+            "name": "user clicks on view all processes",
+            "match": {
+              "location": "CAEModelStepDef.user_clicks_on_view_all_processes()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 299283500,
+              "status": "passed"
+            },
+            "line": 515,
+            "name": "discard of manage process is done successfully",
+            "match": {
+              "location": "ProcessManagementStepDef.discard_of_manage_process_is_done_successfully()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@MAT-21744"
+            "name": "@MAT-21755"
           },
           {
-            "name": "@Regression1"
+            "name": "@Regresion"
           }
         ]
       }

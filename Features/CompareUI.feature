@@ -1,4 +1,9 @@
 Feature: Comparing multiple materials 
+Background:
+Given user has already logged in to Material Center application
+|username|password|
+|smroot|sdm|
+And homepage is displayed
 
 @MultipleMatCompare @All
 Scenario: User selects 15 materials and compare them
@@ -12,8 +17,8 @@ Then compare results displayed
 Scenario: User selects 2 materials and compare them
 Given user comes on Navigate WS
 When user clicks on Metals to open MOD
-And Click on rows per page
-And Click on three
+And click on rows per page
+And click on three
 And click on arrow button
 And click on select page option
 And select compare option from Actions menu
@@ -40,6 +45,7 @@ Then user clicks on configuration tab
 Scenario: User selects some materials from same material hierarchy and compare them
 Given user comes on Navigate WS
 When user expands metals
+And user expands ferrous metals
 And user expands stainless steel
 And user expands age hardenable
 And select Stainless Steel PH14-8 Mo

@@ -1,5 +1,10 @@
 Feature: To search different types of templates
 
+Background:
+Given user has already logged in to Material Center application
+|username|password|
+|smroot|sdm|
+And homepage is displayed
 
 @EasySearch @All
 Scenario: Easy search action templates
@@ -33,8 +38,9 @@ Then add yield strength attribute condition
 
 @EasyTextSearchValidation @All
 Scenario: Easy search action validation templates
-Given user gives some text to search in materials
-When search result is displayed
+When user enters searchtext for materials search "steel"
+And click on search button from homepage
+And materials search results displayed
 Then verify that correct text search result is displayed
 
 @EasyNumericalSearchValidation @All
@@ -54,14 +60,18 @@ Then relaunch the saved search template
 @New @All
 Scenario: User launch the recent saved template from home page
 Given click on search template link from home page
-And Click on rows per page
+And click on rows per page
 And Click on fifty
 And select rows per page as hundred
-Then select rows per page as two fifty
+And select rows per page as two fifty
+And double click on first result
+Then SOD page is displayed
 
 @SaveEasySearchValidation @All
 Scenario: Save the search templates using filter type
-Given user comes on search WS
+When user comes on search WS
+And user click on material from search page
+And materials search results displayed
 When expand material type filter
 And select metals option
 And user click on save button
@@ -80,18 +90,23 @@ Then search result is displayed
 Scenario: Navigate to all test using search WS
 Given user gives some text to search in materials
 When search result is displayed
-And Click on rows per page
+And click on rows per page
 And Click on fifty
 And select rows per page as hundred
-Then select rows per page as two fifty
+And select rows per page as two fifty
+And double click on first result
+Then SOD page is displayed
 
 @OpenMeasurePropSearchMOD @All
 Scenario: Navigate to all test by searching numerical value using search WS and verify results
-Given user gives some numerical values to search in materials
-When search result is displayed
-And Click on rows per page
-And Click on three
-Then Click on fifty
+When user enters searchtext for materials search "7075"
+And click on search button from homepage
+And materials search results displayed
+And click on rows per page
+And click on three
+And Click on fifty
+And double click on first result
+Then SOD page is displayed
 
 @New @All
 Scenario: User search the material and export to excel
@@ -107,7 +122,6 @@ Scenario: User launches the saved template from my searches
 Given user is on search workspace
 When click on my searches
 Then relaunch the recently saved search template
-
 
 
 @New @All

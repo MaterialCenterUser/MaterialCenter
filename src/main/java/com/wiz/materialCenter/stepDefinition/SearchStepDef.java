@@ -1,6 +1,7 @@
 package com.wiz.materialCenter.stepDefinition;
 
 import com.wiz.materialCenter.pages.HomePage;
+import com.wiz.materialCenter.pages.MaterialSOD;
 import com.wiz.materialCenter.pages.SearchPage;
 import com.wiz.materialCenter.util.TestBase;
 
@@ -12,10 +13,11 @@ import cucumber.api.java.en.When;
 public class SearchStepDef extends TestBase {
 	SearchPage search = new SearchPage();
 	HomePage homePage = new HomePage();
+	MaterialSOD matSod = new MaterialSOD();
 	
 	@Given("user gives some text to search in materials")
 	public void user_gives_some_text_to_search_in_materials() {
-		search = new SearchPage();
+		//search = new SearchPage();
 	    search.enterTextSearch();
 	    screenshot(driver, System.currentTimeMillis());
 	}
@@ -25,6 +27,14 @@ public class SearchStepDef extends TestBase {
 		search.searchResult();
 		screenshot(driver, System.currentTimeMillis());
 	}
+	
+	@When("SOD page is displayed")
+	public void sod_is_displayed() {
+		matSod.verifyDetailsTab();
+		screenshot(driver, System.currentTimeMillis());
+	}
+	
+	
 
 	@When("user gives some numerical values to search in materials")
 	public void user_gives_some_numerical_values_to_search_in_materials() {
@@ -57,14 +67,15 @@ public class SearchStepDef extends TestBase {
 	
 	@Then("relaunch the recently saved search template")
 	public void relaunch_the_recently_saved_search_template() {
-		search = new SearchPage();
+		//search = new SearchPage();
 	    search.relaunchLatestSearch1();
 	   // search.verifysavedSearch();
 	}
 	@And ("click on my searches")
 	public void click_on_my_searches() {
-		search = new SearchPage();
+		//search = new SearchPage();
 	    search.clickonMySearches();
+	    
 	}
 	
 	@And ("click on search template link from home page")
@@ -184,7 +195,7 @@ public class SearchStepDef extends TestBase {
 	
 	@When("verify that correct text search result is displayed")
 	public void verify_that_correct_text_search_result_is_displayed() {
-		search = new SearchPage();
+		//search = new SearchPage();
 	    search.verifyTextSearchResult();
 	}
 	

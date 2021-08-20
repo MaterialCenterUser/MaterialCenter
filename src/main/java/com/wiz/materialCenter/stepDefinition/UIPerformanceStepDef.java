@@ -111,7 +111,7 @@ public class UIPerformanceStepDef extends TestBase {
 	
 	
 	@And("select rows per page as hundred")
-	public void click_on_hundred(){
+	public void click_on_hundred() throws InterruptedException{
 		matMod.selectRowsPerPageas100();
 	    screenshot(driver, System.currentTimeMillis());
 	}

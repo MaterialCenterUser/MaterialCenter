@@ -1,53 +1,187 @@
 [
   {
-    "source": "click on arrow button",
+    "source": "select excel file to upload",
     "steps": [
       {
-        "name": "click on arrow button",
+        "name": "select excel file to upload",
         "aggregatedDurations": {
-          "average": 0.623004,
-          "median": 0.623004
+          "average": 1.18133355,
+          "median": 1.18133355
         },
         "durations": [
           {
-            "duration": 0.623004,
-            "location": "file:Features/ExportImportExcel.feature:33"
+            "duration": 1.1236952,
+            "location": "file:Features/ExportImportExcel.feature:49"
+          },
+          {
+            "duration": 1.2389719,
+            "location": "file:Features/ExportImportExcel.feature:122"
           }
         ]
       }
     ]
   },
   {
-    "source": "select rows per page as hundred",
+    "source": "click on select page option for rows100 or more",
     "steps": [
       {
-        "name": "select rows per page as hundred",
+        "name": "click on select page option for rows100 or more",
         "aggregatedDurations": {
-          "average": 2.0209163,
-          "median": 2.0209163
+          "average": 5.1048211,
+          "median": 5.132102
         },
         "durations": [
           {
-            "duration": 2.0209163,
-            "location": "file:Features/ExportImportExcel.feature:32"
+            "duration": 5.1428675,
+            "location": "file:Features/ExportImportExcel.feature:15"
+          },
+          {
+            "duration": 5.132102,
+            "location": "file:Features/ExportImportExcel.feature:26"
+          },
+          {
+            "duration": 5.0394938,
+            "location": "file:Features/ExportImportExcel.feature:38"
           }
         ]
       }
     ]
   },
   {
-    "source": "click on select page option",
+    "source": "select generic mat schema",
     "steps": [
       {
-        "name": "click on select page option",
+        "name": "select generic mat schema",
         "aggregatedDurations": {
-          "average": 0.8800973,
-          "median": 0.8800973
+          "average": 1.9647454,
+          "median": 1.9647454
         },
         "durations": [
           {
-            "duration": 0.8800973,
-            "location": "file:Features/ExportImportExcel.feature:34"
+            "duration": 1.9647454,
+            "location": "file:Features/ExportImportExcel.feature:76"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on export menu and select XML option",
+    "steps": [
+      {
+        "name": "click on export menu and select XML option",
+        "aggregatedDurations": {
+          "average": 22.0061503,
+          "median": 22.0061503
+        },
+        "durations": [
+          {
+            "duration": 22.0061503,
+            "location": "file:Features/ExportImportExcel.feature:27"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "select include project and all mat datas checkbox",
+    "steps": [
+      {
+        "name": "select include project and all mat datas checkbox",
+        "aggregatedDurations": {
+          "average": 3.4018713,
+          "median": 3.4018713
+        },
+        "durations": [
+          {
+            "duration": 3.4018713,
+            "location": "file:Features/ExportImportExcel.feature:28"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "select data project",
+    "steps": [
+      {
+        "name": "select data project",
+        "aggregatedDurations": {
+          "average": 1.887964066,
+          "median": 1.9712404
+        },
+        "durations": [
+          {
+            "duration": 1.9712404,
+            "location": "file:Features/ExportImportExcel.feature:48"
+          },
+          {
+            "duration": 1.6077372,
+            "location": "file:Features/ExportImportExcel.feature:74"
+          },
+          {
+            "duration": 2.0849146,
+            "location": "file:Features/ExportImportExcel.feature:121"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user clicks on Import excel file link",
+    "steps": [
+      {
+        "name": "user clicks on Import excel file link",
+        "aggregatedDurations": {
+          "average": 3.012665825,
+          "median": 2.9966881
+        },
+        "durations": [
+          {
+            "duration": 3.1397577,
+            "location": "file:Features/ExportImportExcel.feature:46"
+          },
+          {
+            "duration": 2.9175294,
+            "location": "file:Features/ExportImportExcel.feature:58"
+          },
+          {
+            "duration": 3.0245215,
+            "location": "file:Features/ExportImportExcel.feature:73"
+          },
+          {
+            "duration": 2.9688547,
+            "location": "file:Features/ExportImportExcel.feature:119"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "check that process status is completed",
+    "steps": [
+      {
+        "name": "check that process status is completed",
+        "aggregatedDurations": {
+          "average": 105.880112425,
+          "median": 52.9665795
+        },
+        "durations": [
+          {
+            "duration": 266.366616,
+            "location": "file:Features/ExportImportExcel.feature:18"
+          },
+          {
+            "duration": 53.856234,
+            "location": "file:Features/ExportImportExcel.feature:52"
+          },
+          {
+            "duration": 52.076925,
+            "location": "file:Features/ExportImportExcel.feature:78"
+          },
+          {
+            "duration": 51.2206747,
+            "location": "file:Features/ExportImportExcel.feature:125"
           }
         ]
       }
@@ -59,13 +193,475 @@
       {
         "name": "user comes on Navigate WS",
         "aggregatedDurations": {
-          "average": 0.9752687,
-          "median": 0.9752687
+          "average": 1.06663616,
+          "median": 1.0832415
         },
         "durations": [
           {
-            "duration": 0.9752687,
+            "duration": 1.189866,
+            "location": "file:Features/ExportImportExcel.feature:11"
+          },
+          {
+            "duration": 1.0832415,
+            "location": "file:Features/ExportImportExcel.feature:22"
+          },
+          {
+            "duration": 1.0922053,
+            "location": "file:Features/ExportImportExcel.feature:34"
+          },
+          {
+            "duration": 0.9886941,
+            "location": "file:Features/ExportImportExcel.feature:79"
+          },
+          {
+            "duration": 0.9791739,
+            "location": "file:Features/ExportImportExcel.feature:126"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user clicks on required mapped material tree to open MOD",
+    "steps": [
+      {
+        "name": "user clicks on required mapped material tree to open MOD",
+        "aggregatedDurations": {
+          "average": 1.9812117,
+          "median": 1.9812117
+        },
+        "durations": [
+          {
+            "duration": 1.9812117,
+            "location": "file:Features/ExportImportExcel.feature:80"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "select fixed excel format",
+    "steps": [
+      {
+        "name": "select fixed excel format",
+        "aggregatedDurations": {
+          "average": 1.135858966,
+          "median": 1.1361896
+        },
+        "durations": [
+          {
+            "duration": 1.1361896,
+            "location": "file:Features/ExportImportExcel.feature:47"
+          },
+          {
+            "duration": 1.1207745,
+            "location": "file:Features/ExportImportExcel.feature:59"
+          },
+          {
+            "duration": 1.1506128,
+            "location": "file:Features/ExportImportExcel.feature:120"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on arrow button",
+    "steps": [
+      {
+        "name": "click on arrow button",
+        "aggregatedDurations": {
+          "average": 0.958595633,
+          "median": 0.9310426
+        },
+        "durations": [
+          {
+            "duration": 1.0153803,
+            "location": "file:Features/ExportImportExcel.feature:14"
+          },
+          {
+            "duration": 0.9310426,
+            "location": "file:Features/ExportImportExcel.feature:25"
+          },
+          {
+            "duration": 0.929364,
+            "location": "file:Features/ExportImportExcel.feature:37"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user clicks on Config WS",
+    "steps": [
+      {
+        "name": "user clicks on Config WS",
+        "aggregatedDurations": {
+          "average": 1.052275275,
+          "median": 1.0337873
+        },
+        "durations": [
+          {
+            "duration": 1.0310728,
+            "location": "file:Features/ExportImportExcel.feature:45"
+          },
+          {
+            "duration": 1.0356301,
+            "location": "file:Features/ExportImportExcel.feature:57"
+          },
+          {
+            "duration": 1.1104537,
+            "location": "file:Features/ExportImportExcel.feature:72"
+          },
+          {
+            "duration": 1.0319445,
+            "location": "file:Features/ExportImportExcel.feature:118"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "select rows per page as hundred",
+    "steps": [
+      {
+        "name": "select rows per page as hundred",
+        "aggregatedDurations": {
+          "average": 6.241533466,
+          "median": 6.2050403
+        },
+        "durations": [
+          {
+            "duration": 6.4010358,
+            "location": "file:Features/ExportImportExcel.feature:13"
+          },
+          {
+            "duration": 6.2050403,
+            "location": "file:Features/ExportImportExcel.feature:24"
+          },
+          {
+            "duration": 6.1185243,
+            "location": "file:Features/ExportImportExcel.feature:36"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user clicks on required compliant mat tree to open MOD",
+    "steps": [
+      {
+        "name": "user clicks on required compliant mat tree to open MOD",
+        "aggregatedDurations": {
+          "average": 1.7939832,
+          "median": 1.7939832
+        },
+        "durations": [
+          {
+            "duration": 1.7939832,
+            "location": "file:Features/ExportImportExcel.feature:127"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user has already logged in to Material Center application",
+    "steps": [
+      {
+        "name": "user has already logged in to Material Center application",
+        "aggregatedDurations": {
+          "average": 17.299216557,
+          "median": 16.8092363
+        },
+        "durations": [
+          {
+            "duration": 20.9370177,
+            "location": "file:Features/ExportImportExcel.feature:4"
+          },
+          {
+            "duration": 16.3324403,
+            "location": "file:Features/ExportImportExcel.feature:4"
+          },
+          {
+            "duration": 16.869195,
+            "location": "file:Features/ExportImportExcel.feature:4"
+          },
+          {
+            "duration": 16.3640591,
+            "location": "file:Features/ExportImportExcel.feature:4"
+          },
+          {
+            "duration": 17.460765,
+            "location": "file:Features/ExportImportExcel.feature:4"
+          },
+          {
+            "duration": 16.8092363,
+            "location": "file:Features/ExportImportExcel.feature:4"
+          },
+          {
+            "duration": 16.3218025,
+            "location": "file:Features/ExportImportExcel.feature:4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on submit button to upload the excel",
+    "steps": [
+      {
+        "name": "click on submit button to upload the excel",
+        "aggregatedDurations": {
+          "average": 0.892270366,
+          "median": 0.7520548
+        },
+        "durations": [
+          {
+            "duration": 1.2011735,
+            "location": "file:Features/ExportImportExcel.feature:51"
+          },
+          {
+            "duration": 0.7520548,
+            "location": "file:Features/ExportImportExcel.feature:77"
+          },
+          {
+            "duration": 0.7235828,
+            "location": "file:Features/ExportImportExcel.feature:124"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "open the material to open SOD",
+    "steps": [
+      {
+        "name": "open the material to open SOD",
+        "aggregatedDurations": {
+          "average": 1.956338,
+          "median": 1.956338
+        },
+        "durations": [
+          {
+            "duration": 1.956338,
+            "location": "file:Features/ExportImportExcel.feature:128"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "select master metal schema",
+    "steps": [
+      {
+        "name": "select master metal schema",
+        "aggregatedDurations": {
+          "average": 1.65073595,
+          "median": 1.65073595
+        },
+        "durations": [
+          {
+            "duration": 1.6505657,
+            "location": "file:Features/ExportImportExcel.feature:50"
+          },
+          {
+            "duration": 1.6509062,
+            "location": "file:Features/ExportImportExcel.feature:123"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "select excel file from system for mapped",
+    "steps": [
+      {
+        "name": "select excel file from system for mapped",
+        "aggregatedDurations": {
+          "average": 1.1298436,
+          "median": 1.1298436
+        },
+        "durations": [
+          {
+            "duration": 1.1298436,
+            "location": "file:Features/ExportImportExcel.feature:75"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "open the required material to open SOD",
+    "steps": [
+      {
+        "name": "open the required material to open SOD",
+        "aggregatedDurations": {
+          "average": 1.5614683,
+          "median": 1.5614683
+        },
+        "durations": [
+          {
+            "duration": 1.5614683,
+            "location": "file:Features/ExportImportExcel.feature:81"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "material through excel file should be uploaded successfully",
+    "steps": [
+      {
+        "name": "material through excel file should be uploaded successfully",
+        "aggregatedDurations": {
+          "average": 5.3240829,
+          "median": 5.3240829
+        },
+        "durations": [
+          {
+            "duration": 5.3240829,
+            "location": "file:Features/ExportImportExcel.feature:129"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on export to excel",
+    "steps": [
+      {
+        "name": "click on export to excel",
+        "aggregatedDurations": {
+          "average": 12.79331605,
+          "median": 12.79331605
+        },
+        "durations": [
+          {
+            "duration": 14.9005452,
+            "location": "file:Features/ExportImportExcel.feature:16"
+          },
+          {
+            "duration": 10.6860869,
+            "location": "file:Features/ExportImportExcel.feature:39"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "homepage is displayed",
+    "steps": [
+      {
+        "name": "homepage is displayed",
+        "aggregatedDurations": {
+          "average": 0.835845857,
+          "median": 0.7890934
+        },
+        "durations": [
+          {
+            "duration": 1.0538244,
+            "location": "file:Features/ExportImportExcel.feature:7"
+          },
+          {
+            "duration": 0.8154522,
+            "location": "file:Features/ExportImportExcel.feature:7"
+          },
+          {
+            "duration": 0.7876269,
+            "location": "file:Features/ExportImportExcel.feature:7"
+          },
+          {
+            "duration": 0.7890934,
+            "location": "file:Features/ExportImportExcel.feature:7"
+          },
+          {
+            "duration": 0.7776166,
+            "location": "file:Features/ExportImportExcel.feature:7"
+          },
+          {
+            "duration": 0.8518172,
+            "location": "file:Features/ExportImportExcel.feature:7"
+          },
+          {
+            "duration": 0.7754903,
+            "location": "file:Features/ExportImportExcel.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on submit button on export to XML popup",
+    "steps": [
+      {
+        "name": "click on submit button on export to XML popup",
+        "aggregatedDurations": {
+          "average": 0.3600905,
+          "median": 0.3600905
+        },
+        "durations": [
+          {
+            "duration": 0.3600905,
+            "location": "file:Features/ExportImportExcel.feature:29"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "check that process status is completed for xml",
+    "steps": [
+      {
+        "name": "check that process status is completed for xml",
+        "aggregatedDurations": {
+          "average": 117.3071482,
+          "median": 117.3071482
+        },
+        "durations": [
+          {
+            "duration": 117.3071482,
             "location": "file:Features/ExportImportExcel.feature:30"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on submit button on export to excel popup",
+    "steps": [
+      {
+        "name": "click on submit button on export to excel popup",
+        "aggregatedDurations": {
+          "average": 14.50568325,
+          "median": 14.50568325
+        },
+        "durations": [
+          {
+            "duration": 14.8103145,
+            "location": "file:Features/ExportImportExcel.feature:17"
+          },
+          {
+            "duration": 14.201052,
+            "location": "file:Features/ExportImportExcel.feature:40"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "check that process status is completed with download excel link",
+    "steps": [
+      {
+        "name": "check that process status is completed with download excel link",
+        "aggregatedDurations": {
+          "average": 263.1618529,
+          "median": 263.1618529
+        },
+        "durations": [
+          {
+            "duration": 263.1618529,
+            "location": "file:Features/ExportImportExcel.feature:41"
           }
         ]
       }
@@ -77,13 +673,21 @@
       {
         "name": "user clicks on Metals to open MOD",
         "aggregatedDurations": {
-          "average": 2.4912822,
-          "median": 2.4912822
+          "average": 4.7420395,
+          "median": 4.7083299
         },
         "durations": [
           {
-            "duration": 2.4912822,
-            "location": "file:Features/ExportImportExcel.feature:31"
+            "duration": 4.6465539,
+            "location": "file:Features/ExportImportExcel.feature:12"
+          },
+          {
+            "duration": 4.8712347,
+            "location": "file:Features/ExportImportExcel.feature:23"
+          },
+          {
+            "duration": 4.7083299,
+            "location": "file:Features/ExportImportExcel.feature:35"
           }
         ]
       }

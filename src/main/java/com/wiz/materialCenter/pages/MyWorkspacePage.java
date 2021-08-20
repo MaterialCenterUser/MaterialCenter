@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.wiz.materialCenter.util.TestBase;
@@ -44,6 +45,20 @@ WebElement doneStatus;
 WebElement textCurveProperty;
 
 
+@FindBy(xpath = "//table[@class='ModBody']/tbody/tr[@smrow='0']/td[@smcol='0']")
+WebElement caeProcess;
+
+@FindBy(xpath = "//table[@class='ModBody']/tbody/tr[@smrow='0']/td[@smcol='0']")
+WebElement manageProcess;
+
+@FindBy(xpath = "//table[@class='ModBody']/tbody/tr[@smrow='0']/td[@smcol='0']/a[text()='Discard']")
+WebElement discardStatus;
+
+
+public boolean discardStatusDisplayed(){
+	
+	return(discardStatus.isDisplayed());
+}
 public void clickFirstMaterialLink() {
 	action.moveToElement(MaterialLInk).build().perform();
 	action.doubleClick(MaterialLInk).build().perform();
@@ -68,5 +83,30 @@ public boolean verifyDoneStatus() {
 public String verifyEmailID(){
 	
 	return (emailIdDisplayed.getText());
+}
+public ProcessesPage clickOnCaeProcess() {
+
+	// js.executeScript("arguments[0].click();", caeProcess);
+	//wait.until(ExpectedConditions.elementToBeClickable(caeProcess));
+	 action.moveToElement(caeProcess).build().perform();
+	action.doubleClick(caeProcess).build().perform();
+	// action.moveToElement(caeProcess).build().perform();
+	 //action.click(caeProcess).build().perform();
+	// action.doubleClick(caeProcess).build().perform();
+	
+	return new ProcessesPage();
+}
+
+public ProcessesPage clickOnManageProcess() {
+
+	// js.executeScript("arguments[0].click();", caeProcess);
+	//wait.until(ExpectedConditions.elementToBeClickable(caeProcess));
+	 action.moveToElement(manageProcess).build().perform();
+	action.doubleClick(manageProcess).build().perform();
+	// action.moveToElement(caeProcess).build().perform();
+	 //action.click(caeProcess).build().perform();
+	// action.doubleClick(caeProcess).build().perform();
+	
+	return new ProcessesPage();
 }
 }

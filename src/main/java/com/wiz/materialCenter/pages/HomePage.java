@@ -178,6 +178,9 @@ public class HomePage extends TestBase {
 	@FindBy(xpath = "//a[text()='Test']")
 	WebElement testOptionsearchMenu;
 
+	@FindBy(xpath = "(//a[text()='Materials' and @img='MatMaterial' ])[1]")
+	WebElement materialsOptionsearchMenu;
+	
 	@FindBy(xpath = "//a[text()='CAE Model']")
 	WebElement caeModelSearch;
 
@@ -203,6 +206,16 @@ public class HomePage extends TestBase {
 		action.moveToElement(testOptionsearchMenu).build().perform();
 		action.click(testOptionsearchMenu).build().perform();
 	}
+	
+	public void selectMaterialsFromSearchMenu() {
+
+		action.moveToElement(searchMenu).build().perform();
+		action.click(searchMenu).build().perform();
+		// js.executeScript("arguments[0].click();", testOptionsearchMenu);
+		action.moveToElement(materialsOptionsearchMenu).build().perform();
+		action.click(materialsOptionsearchMenu).build().perform();
+	}
+
 
 	public void selectCAEModelSearch() {
 
@@ -358,12 +371,12 @@ public class HomePage extends TestBase {
 		// action.doubleClick(caeProcess).build().perform();
 	}
 
-	public void clickOnProcessViewAll() throws InterruptedException {
+	public MyWorkspacePage clickOnProcessViewAll() throws InterruptedException {
 		action.moveToElement(processViewAll).build().perform();
 		action.click(processViewAll).build().perform();
 		// Thread.sleep(100);
 		// wait.until(ExpectedConditions.elementToBeClickable(caeProcess));
-
+		return new MyWorkspacePage();
 	}
 
 	public void clickOnPromoteProcess() {

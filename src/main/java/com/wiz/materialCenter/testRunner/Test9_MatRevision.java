@@ -16,7 +16,7 @@ import cucumber.api.CucumberOptions;
 
 @CucumberOptions(
 		features = "Features/MatRevision.feature",
-		tags={"@All"},
+		tags={"@All1"},
 		glue= {"com/wiz/materialCenter/stepDefinition"},
 		plugin = { "pretty", "json:target/cucumber-reports/cucumber.json", 
 				"html:target/cucumber-reports/feature-overview",

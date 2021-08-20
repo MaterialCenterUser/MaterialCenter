@@ -1,7 +1,10 @@
 package com.wiz.materialCenter.pages;
 
 import java.util.List;
+import java.util.NoSuchElementException;
+
 import org.apache.commons.lang.RandomStringUtils;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -33,6 +36,7 @@ public class MaterialSOD extends TestBase {
 	public String tempValueCAEModel;
 	public String modulusValueCAEModel;
 	public String poissonRatioCAEModel;
+	public static WebElement element = null;
 
 	@FindBy(xpath = "//table[contains(@id,'MenuBar')]/tbody/tr/td/div/span[text()='Actions']")
 	WebElement actions;
@@ -180,14 +184,8 @@ public class MaterialSOD extends TestBase {
 	@FindBy(xpath = "//a[text()='2.3700E7']")
 	WebElement rangeValueVerify;
 
-	@FindBy(xpath = "//select[contains(@id,'Display_DropDown')]")
-	WebElement displayDropdown;
-
 	@FindBy(xpath = "//select[contains(@id,'Display_DropDown')]/option[text()='Expand Parameters']")
 	WebElement expandParameters;
-
-	@FindBy(xpath = "//span[text()='Parameters']")
-	WebElement parametersButton;
 
 	@FindBy(xpath = "//select[@class='selected']/option[text()='800 °F']")
 	WebElement testTemp800;
@@ -530,17 +528,17 @@ public class MaterialSOD extends TestBase {
 	@FindBy(xpath = "(//td[text()='0-In-Work'])[1]")
 	WebElement InWorkRevision2;
 
-	@FindBy(xpath = "//span[text()='Details']")
-	WebElement textDetailsTab;
-
 	@FindBy(xpath = "//span[text()='Edit']")
 	WebElement editMenu;
 
 	@FindBy(xpath = "//td[text()='Delete']")
 	WebElement deleteAction;
-	
+
 	@FindBy(xpath = "//td[text()='Manage Process']")
 	WebElement manageProcessAction;
+	
+	@FindBy(xpath = "//td[text()='Manage Layup']")
+	WebElement manageLayupAction;
 	
 	@FindBy(xpath = "//span[text()='Delete']")
 	WebElement textDeleteWindow;
@@ -556,9 +554,6 @@ public class MaterialSOD extends TestBase {
 
 	@FindBy(xpath = "//span[text()='Thermal']")
 	WebElement thermalTag;
-
-	@FindBy(xpath = "//span[text()='Mechanical']")
-	WebElement mechanicalTag;
 
 	@FindBy(xpath = "(//input[@name='selectCB'])[1]")
 	WebElement curvePropertyChkBox1;
@@ -579,10 +574,404 @@ public class MaterialSOD extends TestBase {
 
 	@FindBy(xpath = "//span[contains(text(),'[ Curve Property ]')]")
 	WebElement txtCurveProperty;
-	
+
 	@FindBy(xpath = "//td[text()='Manage Process']")
 	WebElement manageProcessFromEditMenu;
+
+	@FindBy(xpath = "//input[@value='Electrical']")
+	WebElement electricalPropCheckbox;
+
+	@FindBy(xpath = "//input[@value='Mechanical']")
+	WebElement mechanicalPropCheckbox;
+
+	@FindBy(xpath = "//input[@value='Physical']")
+	WebElement physicalPropCheckbox;
+
+	@FindBy(xpath = "//span[text()='OK']/parent::button")
+	WebElement propertyFilterOKButton;
+
+	@FindBy(xpath = "//span[text()='Cancel']/parent::button")
+	WebElement propertyFilterCancelButton;
+
+	@FindBy(xpath = "//img[@class='PropertySetFilterimage']")
+	WebElement propertyFilterImage;
+
+	@FindBy(xpath = "//span[text()='Electrical']")
+	WebElement electricalTag;
+
+	@FindBy(xpath = "//span[text()='Mechanical']")
+	WebElement mechanicalTag;
+
+	@FindBy(xpath = "(//a[text()='Add To Clipboard'])[1]")
+	WebElement addToClipBoard;
+
+	@FindBy(xpath = "//input[@class='selectAll']")
+	WebElement selectAllchkBoxPropertyFilter;
+
+	@FindBy(xpath = "//span[contains(text(),'The material does not contain any selected property sets.')]")
+	WebElement msgPropSetsNotAvailable;
 	
+	@FindBy(xpath = "//span[contains(text(),'The material does not contain any selected property sets.')]")
+	WebElement msgSingleParam;
+
+	@FindBy(xpath = "//span[@class='noPropSet']")
+	WebElement msgnoPropSet;
+
+	@FindBy(xpath = "//input[@value='Hardness']")
+	WebElement hardnessPropCheckBox;
+
+	@FindBy(xpath = "//input[@value='Processing']")
+	WebElement ProcessPropCheckBox;
+	
+	@FindBy(xpath = "//input[@value='Assembly' and @type='checkbox']")
+	WebElement assemblyPropCheckBox;
+	
+	/*s@FindBy(xpath = "//input[@value='Assembly' and @type='checkbox']")
+	WebElement assemblyPropCheckBox;
+	
+	@FindBy(xpath = "//input[@value='Assembly' and @type='checkbox']")
+	WebElement assemblyPropCheckBox;
+	
+	@FindBy(xpath = "//input[@value='Assembly' and @type='checkbox']")
+	WebElement assemblyPropCheckBox;
+	
+	@FindBy(xpath = "//input[@value='Assembly' and @type='checkbox']")
+	WebElement assemblyPropCheckBox;*/
+
+	@FindBy(xpath = "//select[contains(@id,'Display_DropDown')]")
+	WebElement displayDropdown;
+	
+	@FindBy(xpath = "//option[text()='Display Source']")
+	WebElement optDisplaySource;
+	
+	@FindBy(xpath = "//option[text()='Clear Source and Parameter Filter']")
+	WebElement optClearSource;
+	
+	@FindBy(xpath = "//option[text()='Expand Parameters']")
+	WebElement optExpandParameters;
+	
+	@FindBy(xpath = "//span[text()='Parameters']")
+	WebElement parametersButton;
+	
+	@FindBy(xpath = "//span[@class='noparamtofilter']")
+	WebElement noParameterMessage;
+	
+	@FindBy(xpath = "//input[@id='ParameterFilterDlg-f:ParameterFilterOKButton']")
+	WebElement okButtonFilterParam;
+	
+	@FindBy(xpath = "//input[@id='ParameterFilterDlg-f:ParameterFilterCancelButton']")
+	WebElement cancelButtonFilterParam;
+	
+	@FindBy(xpath = "//input[@id='ParameterFilterDlg-f:ParameterFilterResetButton']")
+	WebElement resetButtonFilterParam;
+	
+	@FindBy(xpath = "//span[text()='Details']")
+	WebElement textDetailsTab;
+	
+	@FindBy(xpath = "(//select[@class='selected'])[1]")
+	WebElement testTempSelectFilter;
+	
+	@FindBy(xpath = "(//select[@class='selected'])[1]/option[1]")
+	WebElement testTempSelectedOption1;
+	
+	@FindBy(xpath = "(//select[@class='selected'])[2]/option[1]")
+	WebElement testTypeSelectedOption1;
+	
+	@FindBy(xpath = "(//select[@class='selected'])[3]/option[2]")
+	WebElement timeSelectedOption2;
+	
+	@FindBy(xpath = "(//select[@class='available'])[1]/option[1]")
+	WebElement testTempAvailableOption1;
+	
+	@FindBy(xpath = "(//select[@class='available'])[2]/option[1]")
+	WebElement testTypeAvailableOption1;
+	
+	@FindBy(xpath = "(//select[@class='available'])[3]/option[1]")
+	WebElement timeAvailableOption1;
+	
+	@FindBy(xpath = "(//select[@class='selected'])[2]")
+	WebElement testTypeSelectFilter;
+	
+	@FindBy(xpath = "(//select[@class='selected'])[3]")
+	WebElement timeSelectFilter;
+
+	@FindBy(xpath = "//img[@class='filterParam']")
+	WebElement filterParamImage;
+	
+	@FindBy(xpath = "//span[text()='Process']")
+	WebElement processTab;
+	
+	@FindBy(xpath = "//img[@title='Home Workspace']")
+	WebElement dashboardPage;
+
+	public void clickOnDashboard() throws InterruptedException {
+		// Thread.sleep(1000);
+		// wait.until(ExpectedConditions.elementToBeClickable(dashboardPage));
+		// action.moveToElement(dashboardPage).build().perform();
+		// action.click(dashboardPage).build().perform();
+		// dashboardPage.click();
+		js.executeScript("arguments[0].click();", dashboardPage);
+		Thread.sleep(2000);
+	}
+	
+	public boolean processTabDisplayed(){
+		
+		return(processTab.isDisplayed());
+	}
+	public boolean assemblyTagDisplayed(){
+		try {if(assemblyTag.isDisplayed());
+		
+		}
+		catch
+			(Throwable e)
+		{
+			return false;
+		}
+		return false;
+		
+		}
+		
+	public boolean filterParamImageDisplayed(){
+		return (filterParamImage.isDisplayed());
+	}
+	public void clickOkOnFilterParameter(){
+		js.executeScript("arguments[0].click();", okButtonFilterParam);
+	}
+	public void movetestTempOptionToAvailable(){
+		action.moveToElement(testTempSelectedOption1).build().perform();
+		 action.doubleClick(testTempSelectedOption1).build().perform(); 
+		
+	}
+	
+	public boolean testTempAvailableDisplayed(){
+		return (testTempAvailableOption1.isDisplayed());
+	}
+	public void movetestTypeOptionToAvailable(){
+		action.moveToElement(testTypeSelectedOption1).build().perform();
+		 action.doubleClick(testTypeSelectedOption1).build().perform();		 
+		
+	}
+	public boolean testTypeAvailableDisplayed(){
+		return (testTypeAvailableOption1.isDisplayed());
+	}
+	
+	public void movetimeOptionToAvailable(){
+		action.moveToElement(timeSelectedOption2).build().perform();
+		 action.doubleClick(timeSelectedOption2).build().perform();		
+	}
+	public boolean timeAvailableDisplayed(){
+		return (timeAvailableOption1.isDisplayed());
+	}
+	
+	public boolean verifyOkButtonFilterParDisplayed(){
+		return (okButtonFilterParam.isDisplayed());
+	}
+	
+	public boolean verifyCancelButtonFilterParDisplayed(){
+		return (cancelButtonFilterParam.isDisplayed());
+	}
+	
+	public boolean verifyResetButtonFilterParDisplayed(){
+		return (resetButtonFilterParam.isDisplayed());
+	}
+	public boolean verifyDetailsTab(){
+		
+		return (textDetailsTab.isDisplayed());
+	}
+	public String verifySingleParamMessage(){
+		
+		return (noParameterMessage.getText());
+	}
+	public boolean verifyOpDisplaySourceDisplayDropdown() {
+	/*	Select select = new Select(displayDropdown);
+		List<WebElement> options = select.getOptions();
+		int totalOptions = options.size();
+		String[] exp = { "Select", "Display Source", "Clear Source and Parameter Filter", "Collapse Parameters" };
+
+		for (WebElement webElement : options) {
+			for (int i = 0; i < exp.length; i++) {
+				if (webElement.getText().equals(exp[i])) {
+					System.out.println("Matched ");
+				}
+			}
+		}*/
+		js.executeScript("arguments[0].click();", displayDropdown);
+		return (optDisplaySource.isDisplayed());
+		
+	}
+	
+	public boolean verifyOpClearSourceDisplayDropdown() {
+			js.executeScript("arguments[0].click();", displayDropdown);
+			return (optClearSource.isDisplayed());
+			
+		}
+	
+	public boolean verifyOpExpandParamaetersDisplayDropdown() {
+		js.executeScript("arguments[0].click();", displayDropdown);
+		return (optExpandParameters.isDisplayed());
+		
+	}
+ 
+	public void unselectHardness() throws InterruptedException {
+
+		if (hardnessPropCheckBox.isSelected()) {
+			js.executeScript("arguments[0].click();", hardnessPropCheckBox);
+			js.executeScript("arguments[0].click();", propertyFilterOKButton);
+		} else
+			js.executeScript("arguments[0].click();", propertyFilterCancelButton);
+		//Thread.sleep(3000);
+	}
+
+	public void unselectProcessing() throws InterruptedException {
+
+		if (ProcessPropCheckBox.isSelected()) {
+			js.executeScript("arguments[0].click();", ProcessPropCheckBox);
+			js.executeScript("arguments[0].click();", propertyFilterOKButton);
+		} else
+			js.executeScript("arguments[0].click();", propertyFilterCancelButton);
+		//Thread.sleep(3000);
+	}
+
+	public String msgPropSetsNotAvailableDisplayed() {
+
+		return (msgnoPropSet.getText());
+	}
+
+	public boolean hardnessPropNoDisplayed() {
+
+		return (hardnessPropCheckBox.isDisplayed());
+	}
+
+	public String verifyMessageNotHavingPropSet() {
+
+		return (msgnoPropSet.getText());
+	}
+
+	public void clickShowAllOnPropFilter() throws InterruptedException {
+
+		if (selectAllchkBoxPropertyFilter.isSelected()) {
+			js.executeScript("arguments[0].click();", propertyFilterCancelButton);
+		} else
+			js.executeScript("arguments[0].click();", selectAllchkBoxPropertyFilter);
+		js.executeScript("arguments[0].click();", propertyFilterOKButton);
+
+		Thread.sleep(3000);
+	}
+
+	public void clickParameters(){
+		js.executeScript("arguments[0].click();", parametersButton);
+	}
+	
+	public void unselectAllOnPropFilter() throws InterruptedException {
+
+		if (selectAllchkBoxPropertyFilter.isSelected()) {
+			js.executeScript("arguments[0].click();", selectAllchkBoxPropertyFilter);
+			Thread.sleep(4000);
+			js.executeScript("arguments[0].click();", propertyFilterOKButton);
+		} else
+			js.executeScript("arguments[0].click();", selectAllchkBoxPropertyFilter);
+		js.executeScript("arguments[0].click();", selectAllchkBoxPropertyFilter);
+		js.executeScript("arguments[0].click();", propertyFilterOKButton);
+
+		//Thread.sleep(4000);
+	}
+
+	/*
+	 * 
+	 * public static WebElement findYourElement() { try { element =
+	 * electricalTag; } catch(NoSuchElementException e) {
+	 * System.out.println(e.getMessage()); element = null; return element; }
+	 * return element; }
+	 */
+	public boolean elementNotOnPage() {
+		try {
+			WebElement electricalTag = driver.findElement(By.xpath("//span[text()='Electrical']"));
+			Boolean displayed = electricalTag.isDisplayed();
+			// use the bool value of displayed variable
+		} catch (NoSuchElementException e) {
+			// perform other tasks
+		}
+		return false;
+	}
+	
+	public void uncheckAssemblyFromFilter() throws InterruptedException {
+	if (assemblyPropCheckBox.isSelected()) {
+			js.executeScript("arguments[0].click();", assemblyPropCheckBox);
+			Thread.sleep(4000);
+			js.executeScript("arguments[0].click();", propertyFilterOKButton);
+		} else
+			js.executeScript("arguments[0].click();", propertyFilterCancelButton);
+
+		
+	}
+	
+	private static WebElement assemElement = null; 
+
+	public static WebElement findYourElement() {
+	    try {
+	    	assemElement = driver.findElement(By.xpath("//span[text()='Assembly']"));
+	    }
+	    catch(NoSuchElementException e) {
+	        System.out.println(e.getMessage());
+	        element = null;
+	        return element;
+	    }
+	    return element;
+	}
+	
+	/*
+	 * public boolean electricalTagDisplayed(){ return
+	 * (electricalTag.isDisplayed()); }
+	 */
+
+	public boolean electricalPropertiesDisplayed() {
+		return electricalTag.isDisplayed();
+	}
+
+	public boolean mechanicalPropertiesDisplayed() {
+		return mechanicalTag.isDisplayed();
+	}
+	
+	public boolean classificationPropertiesDisplayed() {
+		return classificationTag.isDisplayed();
+	}
+	
+	public void clickOnAddToClipboard() {
+		js.executeScript("arguments[0].click();", addToClipBoard);
+	}
+
+	public boolean propertySetImageDisplayed() {
+		return (propertyFilterImage.isDisplayed());
+	}
+
+	public void uncheckPropertiesFromFilter() throws InterruptedException {
+		js.executeScript("arguments[0].click();", mechanicalPropCheckbox);
+		// Thread.sleep(5000);
+		// action.moveToElement(electricalPropCheckbox).build().perform();
+		// action.click(electricalPropCheckbox).build().perform();
+		// wait.until(ExpectedConditions.elementSelectionStateToBe(electricalPropCheckbox,
+		// false));
+		/*
+		 * action.moveToElement(mechanicalPropCheckbox).build().perform();
+		 * action.click(mechanicalPropCheckbox).build().perform();
+		 * //wait.until(ExpectedConditions.elementSelectionStateToBe(
+		 * mechanicalPropCheckbox, false));
+		 * action.moveToElement(physicalPropCheckbox).build().perform();
+		 * action.click(physicalPropCheckbox).build().perform();
+		 */
+		// wait.until(ExpectedConditions.elementSelectionStateToBe(physicalPropCheckbox,
+		// false));
+	}
+
+	public void clickPropertySetOK() throws InterruptedException {
+		js.executeScript("arguments[0].click();", propertyFilterOKButton);
+		//Thread.sleep(3000);
+	}
+
+	public void clickPropertySetCancel() {
+		js.executeScript("arguments[0].click();", propertyFilterCancelButton);
+	}
+
 	public void clickOnAnyMatRefObject() {
 
 		// Select select = new Select(manyRefObjectsDropdown);
@@ -755,19 +1144,21 @@ public class MaterialSOD extends TestBase {
 		action.click(toExcelFromExport).build().perform();
 	}
 
-	public void exportExcelSubmit() {
+	public ProcessesPage exportExcelSubmit() {
 		// js.executeScript("arguments[0].click();", exportExcelSubmit);
 		action.moveToElement(exportExcelSubmit).build().perform();
 		action.click(exportExcelSubmit).build().perform();
 		wait.until(ExpectedConditions.visibilityOf(exportProcessExcel));
+		
+		return new ProcessesPage();
 	}
 
-	public void exportXmlSubmit() {
+	/*public void exportXmlSubmit() {
 		// js.executeScript("arguments[0].click();", exportExcelSubmit);
 		action.moveToElement(exportXmlSubmit).build().perform();
 		action.click(exportXmlSubmit).build().perform();
-		wait.until(ExpectedConditions.visibilityOf(exportProcessXml));
-	}
+		wait.until(ExpectedConditions.visibilityOf(exportProcessXml));==
+	}*/
 
 	public void importTestDataSubmit() {
 		action.click(importExcelSubmit).build().perform();
@@ -790,10 +1181,10 @@ public class MaterialSOD extends TestBase {
 		action.click(selectAllCheckbox).build().perform();
 		action.click(filterOkButton).build().perform();
 	}
-	
+
 	public void clickOnPropertySet() {
 		js.executeScript("arguments[0].click();", propertySetFilter);
-			}
+	}
 
 	public void selectTestData() {
 		action.click(testDataTab).build().perform();
@@ -1395,7 +1786,7 @@ public class MaterialSOD extends TestBase {
 	}
 
 	public void compareMechanicalValuesMapped() {
-		Assert.assertEquals(elasticModulusValue.getText(), "[2.1900E7 : 3.00000E7]");
+		Assert.assertEquals(elasticModulusValue.getText(), "[2.1900E7 : 3.0000E7]");
 		System.out.println("Tensile Elastic Modulus value is correct uploaded : " + elasticModulusValue.getText());
 		Assert.assertEquals(poissonRatioValue.getText(), "0.270");
 		System.out.println("Poisson's Ratio value is correct uploaded : " + poissonRatioValue.getText());
@@ -1539,17 +1930,20 @@ public class MaterialSOD extends TestBase {
 		wait.until(ExpectedConditions.visibilityOf(textDeleteWindow));
 
 	}
-	
-	public boolean verifyManageProcessOptionFromSODDisplayed(){
+
+	public boolean verifyManageProcessOptionFromSODDisplayed() {
 		return manageProcessAction.isDisplayed();
 	}
+	public boolean verifyManageLayupOptionFromSODDisplayed() {
+		return manageLayupAction.isDisplayed();
+	}
 	
-	public ManageProcessPage clickOnManageProcessFromSOD(){
-		
+	public ManageProcessPage clickOnManageProcessFromSOD() {
+
 		action.moveToElement(manageProcessFromEditMenu).build().perform();
 		action.click(manageProcessFromEditMenu).build().perform();
 		return new ManageProcessPage();
-		
+
 	}
-	
+
 }

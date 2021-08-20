@@ -16,7 +16,7 @@ import cucumber.api.CucumberOptions;
 
 @CucumberOptions(
 		features = "Features/SecurityPromote.feature",
-		tags={"@All"},
+		tags={"@Promote"},
 		glue= {"com/wiz/materialCenter/stepDefinition"},
 		plugin = { "pretty", "json:target/cucumber-reports/cucumber.json", 
 				"html:target/cucumber-reports/feature-overview",

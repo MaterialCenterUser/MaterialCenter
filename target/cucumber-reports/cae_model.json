@@ -1,571 +1,125 @@
 [
   {
-    "source": "click on subscribe action",
+    "source": "user clicks on view all processes",
     "steps": [
       {
-        "name": "click on subscribe action",
+        "name": "user clicks on view all processes",
         "aggregatedDurations": {
-          "average": 3.5734523,
-          "median": 3.5734523
+          "average": 0.5731503,
+          "median": 0.5731503
         },
         "durations": [
           {
-            "duration": 3.5814398,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:17"
-          },
-          {
-            "duration": 3.5654648,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:28"
+            "duration": 0.5731503,
+            "location": "file:Features/CAEModel.feature:24"
           }
         ]
       }
     ]
   },
   {
-    "source": "click on first row from search results",
+    "source": "user select CAE model process",
     "steps": [
       {
-        "name": "click on first row from search results",
+        "name": "user select CAE model process",
         "aggregatedDurations": {
-          "average": 1.9048167,
-          "median": 1.9048167
+          "average": 0.5970116,
+          "median": 0.5970116
         },
         "durations": [
           {
-            "duration": 1.9462598,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:144"
-          },
-          {
-            "duration": 1.8633736,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:154"
+            "duration": 0.5970116,
+            "location": "file:Features/CAEModel.feature:27"
           }
         ]
       }
     ]
   },
   {
-    "source": "Click on rows per page",
+    "source": "user clicks on discard option",
     "steps": [
       {
-        "name": "Click on rows per page",
+        "name": "user clicks on discard option",
         "aggregatedDurations": {
-          "average": 0.6243078,
-          "median": 0.6243078
+          "average": 0.9487264,
+          "median": 0.9487264
         },
         "durations": [
           {
-            "duration": 0.6243078,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:133"
+            "duration": 0.9487264,
+            "location": "file:Features/CAEModel.feature:28"
           }
         ]
       }
     ]
   },
   {
-    "source": "click on next button",
+    "source": "user clicks on submit button on CAE model page",
     "steps": [
       {
-        "name": "click on next button",
+        "name": "user clicks on submit button on CAE model page",
         "aggregatedDurations": {
-          "average": 1.3667266,
-          "median": 1.3667266
+          "average": 0.28104,
+          "median": 0.28104
         },
         "durations": [
           {
-            "duration": 1.3667266,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:132"
+            "duration": 0.28104,
+            "location": "file:Features/CAEModel.feature:29"
           }
         ]
       }
     ]
   },
   {
-    "source": "double click on first material",
+    "source": "discard of CAE model should be completed successfully",
     "steps": [
       {
-        "name": "double click on first material",
+        "name": "discard of CAE model should be completed successfully",
         "aggregatedDurations": {
-          "average": 0.980113,
-          "median": 0.980113
+          "average": 8.2341943,
+          "median": 8.2341943
         },
         "durations": [
           {
-            "duration": 0.980113,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:166"
+            "duration": 8.2341943,
+            "location": "file:Features/CAEModel.feature:30"
           }
         ]
       }
     ]
   },
   {
-    "source": "verify revision is created",
+    "source": "click on rows per page",
     "steps": [
       {
-        "name": "verify revision is created",
+        "name": "click on rows per page",
         "aggregatedDurations": {
-          "average": 0.2510022,
-          "median": 0.2510022
+          "average": 1.163466,
+          "median": 1.163466
         },
         "durations": [
           {
-            "duration": 0.2510022,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:70"
+            "duration": 1.163466,
+            "location": "file:Features/CAEModel.feature:25"
           }
         ]
       }
     ]
   },
   {
-    "source": "click on submit button on edit materials page",
+    "source": "click on three",
     "steps": [
       {
-        "name": "click on submit button on edit materials page",
+        "name": "click on three",
         "aggregatedDurations": {
-          "average": 0.037015287,
-          "median": 0.03850155
+          "average": 0.5208346,
+          "median": 0.5208346
         },
         "durations": [
           {
-            "duration": 0.0257586,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:64"
-          },
-          {
-            "duration": 0.0393104,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:68"
-          },
-          {
-            "duration": 0.0381162,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:80"
-          },
-          {
-            "duration": 0.0340305,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:84"
-          },
-          {
-            "duration": 0.0388869,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:101"
-          },
-          {
-            "duration": 0.0281038,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:105"
-          },
-          {
-            "duration": 0.0465059,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:125"
-          },
-          {
-            "duration": 0.04541,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:129"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "click on Submit button",
-    "steps": [
-      {
-        "name": "click on Submit button",
-        "aggregatedDurations": {
-          "average": 11.0742341,
-          "median": 11.0742341
-        },
-        "durations": [
-          {
-            "duration": 11.0742341,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:169"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "click on first revision",
-    "steps": [
-      {
-        "name": "click on first revision",
-        "aggregatedDurations": {
-          "average": 0.55039575,
-          "median": 0.55039575
-        },
-        "durations": [
-          {
-            "duration": 0.5595999,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:86"
-          },
-          {
-            "duration": 0.5411916,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:111"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "Click on three",
-    "steps": [
-      {
-        "name": "Click on three",
-        "aggregatedDurations": {
-          "average": 0.4875426,
-          "median": 0.4875426
-        },
-        "durations": [
-          {
-            "duration": 0.4875426,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:134"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "user expands alloy steels under ferrous metals",
-    "steps": [
-      {
-        "name": "user expands alloy steels under ferrous metals",
-        "aggregatedDurations": {
-          "average": 0.2643057,
-          "median": 0.2643057
-        },
-        "durations": [
-          {
-            "duration": 0.2643057,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:163"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "user comes on Navigate WS",
-    "steps": [
-      {
-        "name": "user comes on Navigate WS",
-        "aggregatedDurations": {
-          "average": 0.663779377,
-          "median": 0.6096804
-        },
-        "durations": [
-          {
-            "duration": 0.6906081,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:12"
-          },
-          {
-            "duration": 0.8520638,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:23"
-          },
-          {
-            "duration": 0.5949707,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:35"
-          },
-          {
-            "duration": 0.8309137,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:46"
-          },
-          {
-            "duration": 0.5889514,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:58"
-          },
-          {
-            "duration": 0.6096804,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:74"
-          },
-          {
-            "duration": 0.5916434,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:95"
-          },
-          {
-            "duration": 0.6145227,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:118"
-          },
-          {
-            "duration": 0.6006602,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:160"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "click on Edit material option",
-    "steps": [
-      {
-        "name": "click on Edit material option",
-        "aggregatedDurations": {
-          "average": 4.39398855,
-          "median": 3.72512295
-        },
-        "durations": [
-          {
-            "duration": 0.2870979,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:61"
-          },
-          {
-            "duration": 7.1302148,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:65"
-          },
-          {
-            "duration": 0.3200311,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:77"
-          },
-          {
-            "duration": 9.5037594,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:81"
-          },
-          {
-            "duration": 0.2967469,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:98"
-          },
-          {
-            "duration": 9.6225299,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:102"
-          },
-          {
-            "duration": 0.300165,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:122"
-          },
-          {
-            "duration": 7.6913634,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:126"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "click on unsubscribe button",
-    "steps": [
-      {
-        "name": "click on unsubscribe button",
-        "aggregatedDurations": {
-          "average": 2.501606633,
-          "median": 3.4719669
-        },
-        "durations": [
-          {
-            "duration": 3.5078024,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:112"
-          },
-          {
-            "duration": 3.4719669,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:155"
-          },
-          {
-            "duration": 0.5250506,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:172"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "log in to Material Center application",
-    "steps": [
-      {
-        "name": "log in to Material Center application",
-        "aggregatedDurations": {
-          "average": 8.07815745,
-          "median": 8.07815745
-        },
-        "durations": [
-          {
-            "duration": 6.8837331,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:20"
-          },
-          {
-            "duration": 9.2725818,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:43"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "click on arrow button",
-    "steps": [
-      {
-        "name": "click on arrow button",
-        "aggregatedDurations": {
-          "average": 0.36642605,
-          "median": 0.3480441
-        },
-        "durations": [
-          {
-            "duration": 0.4265602,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:14"
-          },
-          {
-            "duration": 0.3442685,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:25"
-          },
-          {
-            "duration": 0.3518197,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:37"
-          },
-          {
-            "duration": 0.3430558,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:48"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "navigate to homepage",
-    "steps": [
-      {
-        "name": "navigate to homepage",
-        "aggregatedDurations": {
-          "average": 0.3110343,
-          "median": 0.3110343
-        },
-        "durations": [
-          {
-            "duration": 0.2907423,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:29"
-          },
-          {
-            "duration": 0.3313263,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:52"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "user expands ultra high strength",
-    "steps": [
-      {
-        "name": "user expands ultra high strength",
-        "aggregatedDurations": {
-          "average": 0.2450443,
-          "median": 0.2450443
-        },
-        "durations": [
-          {
-            "duration": 0.2450443,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:164"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "click on subscribe button",
-    "steps": [
-      {
-        "name": "click on subscribe button",
-        "aggregatedDurations": {
-          "average": 5.5368546,
-          "median": 5.5656775
-        },
-        "durations": [
-          {
-            "duration": 6.773066,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:87"
-          },
-          {
-            "duration": 5.5656775,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:108"
-          },
-          {
-            "duration": 3.6239504,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:121"
-          },
-          {
-            "duration": 8.1378753,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:145"
-          },
-          {
-            "duration": 3.5837038,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:170"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "navigate to Classification tab",
-    "steps": [
-      {
-        "name": "navigate to Classification tab",
-        "aggregatedDurations": {
-          "average": 3.822702925,
-          "median": 3.4342486
-        },
-        "durations": [
-          {
-            "duration": 2.5044758,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:62"
-          },
-          {
-            "duration": 3.1526262,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:66"
-          },
-          {
-            "duration": 3.4523946,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:78"
-          },
-          {
-            "duration": 3.8385264,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:82"
-          },
-          {
-            "duration": 3.6908102,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:99"
-          },
-          {
-            "duration": 3.0534387,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:103"
-          },
-          {
-            "duration": 7.4732489,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:123"
-          },
-          {
-            "duration": 3.4161026,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:127"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "click on unsubscribe action",
-    "steps": [
-      {
-        "name": "click on unsubscribe action",
-        "aggregatedDurations": {
-          "average": 2.53351725,
-          "median": 2.53351725
-        },
-        "durations": [
-          {
-            "duration": 2.5425267,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:40"
-          },
-          {
-            "duration": 2.5245078,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:51"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "user expands ferrous metals",
-    "steps": [
-      {
-        "name": "user expands ferrous metals",
-        "aggregatedDurations": {
-          "average": 0.3051733,
-          "median": 0.3051733
-        },
-        "durations": [
-          {
-            "duration": 0.3051733,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:162"
+            "duration": 0.5208346,
+            "location": "file:Features/CAEModel.feature:26"
           }
         ]
       }
@@ -577,655 +131,31 @@
       {
         "name": "user has already logged in to Material Center application",
         "aggregatedDurations": {
-          "average": 35.857027233,
-          "median": 35.5909399
+          "average": 10.1969527,
+          "median": 10.1969527
         },
         "durations": [
           {
-            "duration": 37.540962,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:4"
-          },
-          {
-            "duration": 35.5909399,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:4"
-          },
-          {
-            "duration": 34.9327817,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:4"
-          },
-          {
-            "duration": 36.2321445,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:4"
-          },
-          {
-            "duration": 35.4749569,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:4"
-          },
-          {
-            "duration": 36.4669854,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:4"
-          },
-          {
-            "duration": 35.6649264,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:4"
-          },
-          {
-            "duration": 35.5350663,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:4"
-          },
-          {
-            "duration": 35.274482,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:4"
+            "duration": 10.1969527,
+            "location": "file:Features/CAEModel.feature:4"
           }
         ]
       }
     ]
   },
   {
-    "source": "click on edit on MatSOD",
+    "source": "homepage is displayed",
     "steps": [
       {
-        "name": "click on edit on MatSOD",
+        "name": "homepage is displayed",
         "aggregatedDurations": {
-          "average": 9.0749121,
-          "median": 9.0749121
+          "average": 0.4328099,
+          "median": 0.4328099
         },
         "durations": [
           {
-            "duration": 9.0749121,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:130"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "edit few values",
-    "steps": [
-      {
-        "name": "edit few values",
-        "aggregatedDurations": {
-          "average": 0.2307504,
-          "median": 0.21862075
-        },
-        "durations": [
-          {
-            "duration": 0.2313445,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:63"
-          },
-          {
-            "duration": 0.1856872,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:79"
-          },
-          {
-            "duration": 0.205897,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:100"
-          },
-          {
-            "duration": 0.3000729,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:124"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "click on CAE model AUTO action",
-    "steps": [
-      {
-        "name": "click on CAE model AUTO action",
-        "aggregatedDurations": {
-          "average": 0.2679266,
-          "median": 0.2679266
-        },
-        "durations": [
-          {
-            "duration": 0.2679266,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:168"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "click on Actions",
-    "steps": [
-      {
-        "name": "click on Actions",
-        "aggregatedDurations": {
-          "average": 2.81087965,
-          "median": 3.03638275
-        },
-        "durations": [
-          {
-            "duration": 3.0809278,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:16"
-          },
-          {
-            "duration": 3.0250592,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:27"
-          },
-          {
-            "duration": 3.0477063,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:39"
-          },
-          {
-            "duration": 2.0898253,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:50"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "the materials display on my workspace page",
-    "steps": [
-      {
-        "name": "the materials display on my workspace page",
-        "aggregatedDurations": {
-          "average": 0.3170129,
-          "median": 0.3170129
-        },
-        "durations": [
-          {
-            "duration": 0.3643144,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:31"
-          },
-          {
-            "duration": 0.2697114,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:54"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "verify the process is completed with done status",
-    "steps": [
-      {
-        "name": "verify the process is completed with done status",
-        "aggregatedDurations": {
-          "average": 14.5333704,
-          "median": 14.5333704
-        },
-        "durations": [
-          {
-            "duration": 14.5333704,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:136"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "click on select page option",
-    "steps": [
-      {
-        "name": "click on select page option",
-        "aggregatedDurations": {
-          "average": 0.78294265,
-          "median": 0.75510775
-        },
-        "durations": [
-          {
-            "duration": 0.678122,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:15"
-          },
-          {
-            "duration": 0.8320935,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:26"
-          },
-          {
-            "duration": 0.9490828,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:38"
-          },
-          {
-            "duration": 0.6724723,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:49"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "user enters searchtext for test data search {string}",
-    "steps": [
-      {
-        "name": "user enters searchtext for test data search \"Empty\"",
-        "aggregatedDurations": {
-          "average": 0.1187876,
-          "median": 0.1187876
-        },
-        "durations": [
-          {
-            "duration": 0.1131925,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:142"
-          },
-          {
-            "duration": 0.1243827,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:152"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "click on submit button on dependent objects list",
-    "steps": [
-      {
-        "name": "click on submit button on dependent objects list",
-        "aggregatedDurations": {
-          "average": 0.5550285,
-          "median": 0.5550285
-        },
-        "durations": [
-          {
-            "duration": 0.5550285,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:135"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "select D-sixA Alloy Steel metal under ultra high strength",
-    "steps": [
-      {
-        "name": "select D-sixA Alloy Steel metal under ultra high strength",
-        "aggregatedDurations": {
-          "average": 0.2234187,
-          "median": 0.2234187
-        },
-        "durations": [
-          {
-            "duration": 0.2234187,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:165"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "user selects Test from dropdown",
-    "steps": [
-      {
-        "name": "user selects Test from dropdown",
-        "aggregatedDurations": {
-          "average": 1.4709555,
-          "median": 1.4709555
-        },
-        "durations": [
-          {
-            "duration": 1.2082839,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:141"
-          },
-          {
-            "duration": 1.7336271,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:151"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "click on view all under subscribed materials",
-    "steps": [
-      {
-        "name": "click on view all under subscribed materials",
-        "aggregatedDurations": {
-          "average": 8.284175,
-          "median": 8.284175
-        },
-        "durations": [
-          {
-            "duration": 11.4619705,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:30"
-          },
-          {
-            "duration": 5.1063795,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:53"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "click on create SA",
-    "steps": [
-      {
-        "name": "click on create SA",
-        "aggregatedDurations": {
-          "average": 4.866375,
-          "median": 4.866375
-        },
-        "durations": [
-          {
-            "duration": 4.866375,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:167"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "click on logff link",
-    "steps": [
-      {
-        "name": "click on logff link",
-        "aggregatedDurations": {
-          "average": 0.4060237,
-          "median": 0.4060237
-        },
-        "durations": [
-          {
-            "duration": 0.3950596,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:18"
-          },
-          {
-            "duration": 0.4169878,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:41"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "click on second revision",
-    "steps": [
-      {
-        "name": "click on second revision",
-        "aggregatedDurations": {
-          "average": 0.5829744,
-          "median": 0.5829744
-        },
-        "durations": [
-          {
-            "duration": 0.5782751,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:90"
-          },
-          {
-            "duration": 0.5876737,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:107"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "select delete action",
-    "steps": [
-      {
-        "name": "select delete action",
-        "aggregatedDurations": {
-          "average": 2.9980009,
-          "median": 2.9980009
-        },
-        "durations": [
-          {
-            "duration": 2.9980009,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:131"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "double click on material",
-    "steps": [
-      {
-        "name": "double click on material",
-        "aggregatedDurations": {
-          "average": 3.809102875,
-          "median": 3.80285295
-        },
-        "durations": [
-          {
-            "duration": 3.3264672,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:60"
-          },
-          {
-            "duration": 3.9695129,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:76"
-          },
-          {
-            "duration": 3.636193,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:97"
-          },
-          {
-            "duration": 4.3042384,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:120"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "click ok button from logoff dialog",
-    "steps": [
-      {
-        "name": "click ok button from logoff dialog",
-        "aggregatedDurations": {
-          "average": 0.3034299,
-          "median": 0.3034299
-        },
-        "durations": [
-          {
-            "duration": 0.3244706,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:19"
-          },
-          {
-            "duration": 0.2823892,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:42"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "the button label changes to subscribe",
-    "steps": [
-      {
-        "name": "the button label changes to subscribe",
-        "aggregatedDurations": {
-          "average": 6.003547033,
-          "median": 6.4556348
-        },
-        "durations": [
-          {
-            "duration": 4.7876842,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:113"
-          },
-          {
-            "duration": 6.4556348,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:156"
-          },
-          {
-            "duration": 6.7673221,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:173"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "click on search button from homepage",
-    "steps": [
-      {
-        "name": "click on search button from homepage",
-        "aggregatedDurations": {
-          "average": 0.3008813,
-          "median": 0.3008813
-        },
-        "durations": [
-          {
-            "duration": 0.2864354,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:143"
-          },
-          {
-            "duration": 0.3153272,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:153"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "the button label changes to unsubscribe",
-    "steps": [
-      {
-        "name": "the button label changes to unsubscribe",
-        "aggregatedDurations": {
-          "average": 2.93133488,
-          "median": 2.9356793
-        },
-        "durations": [
-          {
-            "duration": 2.8267063,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:88"
-          },
-          {
-            "duration": 2.9356793,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:91"
-          },
-          {
-            "duration": 1.9064053,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:109"
-          },
-          {
-            "duration": 3.3923496,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:146"
-          },
-          {
-            "duration": 3.5955339,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:171"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "click on revisions tab",
-    "steps": [
-      {
-        "name": "click on revisions tab",
-        "aggregatedDurations": {
-          "average": 5.42949986,
-          "median": 8.0064272
-        },
-        "durations": [
-          {
-            "duration": 8.0064272,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:69"
-          },
-          {
-            "duration": 8.8983317,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:85"
-          },
-          {
-            "duration": 0.6446853,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:89"
-          },
-          {
-            "duration": 8.9754762,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:106"
-          },
-          {
-            "duration": 0.6225789,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:110"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "user clicks on Metals to open MOD",
-    "steps": [
-      {
-        "name": "user clicks on Metals to open MOD",
-        "aggregatedDurations": {
-          "average": 1.717122325,
-          "median": 1.71540745
-        },
-        "durations": [
-          {
-            "duration": 1.6678461,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:13"
-          },
-          {
-            "duration": 2.1757183,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:24"
-          },
-          {
-            "duration": 1.7750113,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:36"
-          },
-          {
-            "duration": 1.111627,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:47"
-          },
-          {
-            "duration": 1.7392631,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:59"
-          },
-          {
-            "duration": 1.9087716,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:75"
-          },
-          {
-            "duration": 1.6671894,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:96"
-          },
-          {
-            "duration": 1.6915518,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:119"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "edit subclass value",
-    "steps": [
-      {
-        "name": "edit subclass value",
-        "aggregatedDurations": {
-          "average": 0.23183245,
-          "median": 0.22219115
-        },
-        "durations": [
-          {
-            "duration": 0.1890014,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:67"
-          },
-          {
-            "duration": 0.2141482,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:83"
-          },
-          {
-            "duration": 0.2302341,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:104"
-          },
-          {
-            "duration": 0.2939461,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:128"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "user expands metals",
-    "steps": [
-      {
-        "name": "user expands metals",
-        "aggregatedDurations": {
-          "average": 0.8083567,
-          "median": 0.8083567
-        },
-        "durations": [
-          {
-            "duration": 0.8083567,
-            "location": "file:Features/WatchFeatureEnhancements/MAT-13733_WatchFeatureEnhancements_3.feature:161"
+            "duration": 0.4328099,
+            "location": "file:Features/CAEModel.feature:7"
           }
         ]
       }

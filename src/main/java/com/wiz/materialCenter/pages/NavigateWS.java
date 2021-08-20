@@ -79,11 +79,18 @@ public class NavigateWS extends TestBase {
 	@FindBy(xpath = "(//span[text()='Specialty']//preceding-sibling::img)[1]")
 	WebElement specialityExpand;
 	
+	@FindBy(xpath = "(//span[text()='Plastics, Thermoplastic']//preceding-sibling::img)[1]")
+	WebElement thermoplasticExpand;
 	
 	@FindBy(xpath = "(//span[contains(text(),'Metals')]//preceding-sibling::img)[1]")
 	WebElement metalsExpand;
 	
-
+	@FindBy(xpath = "(//span[contains(text(),'Polymers')]//preceding-sibling::img)[1]")
+	WebElement polymersExpand;
+	
+	@FindBy(xpath = "(//span[contains(text(),'Ceramics and Glasses')]//preceding-sibling::img)[1]")
+	WebElement ceramicsExpand;
+	
 	@FindBy(xpath = "(//div[@class='NavTree']/ul/li/ul/li/ul/li[contains(@id,'CrQ')]/img)[1]")
 	
 	WebElement nonferrousExpand;
@@ -132,6 +139,29 @@ public class NavigateWS extends TestBase {
 		}
 		//js.executeScript("arguments[0].click();", metalsExpand);
 	}
+	
+public void clickOnPolymersExpand() {
+
+		try{
+
+			js.executeScript("arguments[0].click();", polymersExpand);
+		}catch (Exception e) {
+			System.out.println("Polymers already expanded");
+		}
+		//js.executeScript("arguments[0].click();", metalsExpand);
+	}
+	
+public void clickOnCeramicsExpand() {
+
+	try{
+
+		js.executeScript("arguments[0].click();", ceramicsExpand);
+	}catch (Exception e) {
+		System.out.println("ceramics already expanded");
+	}
+	//js.executeScript("arguments[0].click();", metalsExpand);
+}
+
 	
 	public void clickOnMatExpand_ford() {
 		js.executeScript("arguments[0].click();", matFordExpand);
@@ -216,6 +246,7 @@ public void clickOnStainlessSteelsExpand() {
 		//action.click(alloySteelsExpand).build().perform();
 		js.executeScript("arguments[0].click();", stainlessSteelsExpand);
 	}
+
 public void clickOnAgeHardExpand() {
 	
 	js.executeScript("arguments[0].click();", ageHardenableExpand);
@@ -226,6 +257,10 @@ public void clickOnSpecialityExpand() {
 	js.executeScript("arguments[0].click();", specialityExpand);
 }
 
+public void clickOnThermoplasticExpand() {
+	
+	js.executeScript("arguments[0].click();", thermoplasticExpand);
+}
 
 	
 	public void clickOnUltraHighStrength() {

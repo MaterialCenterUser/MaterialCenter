@@ -1,43 +1,21 @@
 [
   {
-    "source": "user gives text to search in materials for plot",
-    "steps": [
-      {
-        "name": "user gives text to search in materials for plot",
-        "aggregatedDurations": {
-          "average": 0.9348495,
-          "median": 0.9348495
-        },
-        "durations": [
-          {
-            "duration": 0.9348495,
-            "location": "file:Features/Search.feature:98"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "source": "user gives some numerical values to search in materials",
     "steps": [
       {
         "name": "user gives some numerical values to search in materials",
         "aggregatedDurations": {
-          "average": 0.9860758,
-          "median": 0.9263394
+          "average": 0.92381995,
+          "median": 0.92381995
         },
         "durations": [
           {
-            "duration": 1.1955354,
-            "location": "file:Features/Search.feature:8"
+            "duration": 1.3084136,
+            "location": "file:Features/Search.feature:13"
           },
           {
-            "duration": 0.8363526,
-            "location": "file:Features/Search.feature:42"
-          },
-          {
-            "duration": 0.9263394,
-            "location": "file:Features/Search.feature:90"
+            "duration": 0.5392263,
+            "location": "file:Features/Search.feature:48"
           }
         ]
       }
@@ -49,71 +27,25 @@
       {
         "name": "search result is displayed",
         "aggregatedDurations": {
-          "average": 0.210182766,
-          "median": 0.1784877
+          "average": 0.19383345,
+          "median": 0.1917764
         },
         "durations": [
           {
-            "duration": 0.1772241,
-            "location": "file:Features/Search.feature:7"
+            "duration": 0.1878869,
+            "location": "file:Features/Search.feature:12"
           },
           {
-            "duration": 0.1814839,
-            "location": "file:Features/Search.feature:9"
+            "duration": 0.2062251,
+            "location": "file:Features/Search.feature:14"
           },
           {
-            "duration": 0.179553,
-            "location": "file:Features/Search.feature:37"
-          },
-          {
-            "duration": 0.1834389,
-            "location": "file:Features/Search.feature:43"
-          },
-          {
-            "duration": 0.169503,
+            "duration": 0.1855559,
             "location": "file:Features/Search.feature:49"
           },
           {
-            "duration": 0.4682528,
-            "location": "file:Features/Search.feature:77"
-          },
-          {
-            "duration": 0.1784877,
-            "location": "file:Features/Search.feature:82"
-          },
-          {
-            "duration": 0.1758769,
-            "location": "file:Features/Search.feature:91"
-          },
-          {
-            "duration": 0.1778246,
-            "location": "file:Features/Search.feature:99"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "Click on rows per page",
-    "steps": [
-      {
-        "name": "Click on rows per page",
-        "aggregatedDurations": {
-          "average": 1.747718533,
-          "median": 1.2780602
-        },
-        "durations": [
-          {
-            "duration": 2.7408159,
-            "location": "file:Features/Search.feature:57"
-          },
-          {
-            "duration": 1.2780602,
-            "location": "file:Features/Search.feature:83"
-          },
-          {
-            "duration": 1.2242795,
-            "location": "file:Features/Search.feature:92"
+            "duration": 0.1956659,
+            "location": "file:Features/Search.feature:55"
           }
         ]
       }
@@ -125,17 +57,17 @@
       {
         "name": "relaunch the recently saved search template",
         "aggregatedDurations": {
-          "average": 0.4706672,
-          "median": 0.4706672
+          "average": 0.5281172,
+          "median": 0.5281172
         },
         "durations": [
           {
-            "duration": 0.3254796,
-            "location": "file:Features/Search.feature:70"
+            "duration": 0.3661498,
+            "location": "file:Features/Search.feature:80"
           },
           {
-            "duration": 0.6158548,
-            "location": "file:Features/Search.feature:109"
+            "duration": 0.6900846,
+            "location": "file:Features/Search.feature:124"
           }
         ]
       }
@@ -147,17 +79,21 @@
       {
         "name": "user click on material from search page",
         "aggregatedDurations": {
-          "average": 2.21360265,
-          "median": 2.21360265
+          "average": 2.208404766,
+          "median": 2.2105717
         },
         "durations": [
           {
-            "duration": 2.2252952,
-            "location": "file:Features/Search.feature:15"
+            "duration": 2.1935854,
+            "location": "file:Features/Search.feature:20"
           },
           {
-            "duration": 2.2019101,
-            "location": "file:Features/Search.feature:26"
+            "duration": 2.2105717,
+            "location": "file:Features/Search.feature:31"
+          },
+          {
+            "duration": 2.2210572,
+            "location": "file:Features/Search.feature:73"
           }
         ]
       }
@@ -169,35 +105,17 @@
       {
         "name": "user adds density attribute condition",
         "aggregatedDurations": {
-          "average": 1.66080955,
-          "median": 1.66080955
+          "average": 1.2511206,
+          "median": 1.2511206
         },
         "durations": [
           {
-            "duration": 1.5480323,
-            "location": "file:Features/Search.feature:17"
+            "duration": 1.2973903,
+            "location": "file:Features/Search.feature:22"
           },
           {
-            "duration": 1.7735868,
-            "location": "file:Features/Search.feature:28"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "Click on three",
-    "steps": [
-      {
-        "name": "Click on three",
-        "aggregatedDurations": {
-          "average": 0.3603911,
-          "median": 0.3603911
-        },
-        "durations": [
-          {
-            "duration": 0.3603911,
-            "location": "file:Features/Search.feature:93"
+            "duration": 1.2048509,
+            "location": "file:Features/Search.feature:33"
           }
         ]
       }
@@ -209,17 +127,17 @@
       {
         "name": "click on my searches",
         "aggregatedDurations": {
-          "average": 0.27447685,
-          "median": 0.27447685
+          "average": 0.2854961,
+          "median": 0.2854961
         },
         "durations": [
           {
-            "duration": 0.2524726,
-            "location": "file:Features/Search.feature:69"
+            "duration": 0.3008811,
+            "location": "file:Features/Search.feature:79"
           },
           {
-            "duration": 0.2964811,
-            "location": "file:Features/Search.feature:108"
+            "duration": 0.2701111,
+            "location": "file:Features/Search.feature:123"
           }
         ]
       }
@@ -231,53 +149,13 @@
       {
         "name": "verify that correct numerical search result is displayed",
         "aggregatedDurations": {
-          "average": 0.7758589,
-          "median": 0.7758589
+          "average": 0.9983273,
+          "median": 0.9983273
         },
         "durations": [
           {
-            "duration": 0.7758589,
-            "location": "file:Features/Search.feature:44"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "user comes on search page",
-    "steps": [
-      {
-        "name": "user comes on search page",
-        "aggregatedDurations": {
-          "average": 2.33340535,
-          "median": 2.33340535
-        },
-        "durations": [
-          {
-            "duration": 2.3752923,
-            "location": "file:Features/Search.feature:64"
-          },
-          {
-            "duration": 2.2915184,
-            "location": "file:Features/Search.feature:74"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "click on arrow button",
-    "steps": [
-      {
-        "name": "click on arrow button",
-        "aggregatedDurations": {
-          "average": 1.6471405,
-          "median": 1.6471405
-        },
-        "durations": [
-          {
-            "duration": 1.6471405,
-            "location": "file:Features/Search.feature:117"
+            "duration": 0.9983273,
+            "location": "file:Features/Search.feature:50"
           }
         ]
       }
@@ -289,13 +167,13 @@
       {
         "name": "select metals option",
         "aggregatedDurations": {
-          "average": 0.6912629,
-          "median": 0.6912629
+          "average": 0.6468426,
+          "median": 0.6468426
         },
         "durations": [
           {
-            "duration": 0.6912629,
-            "location": "file:Features/Search.feature:66"
+            "duration": 0.6468426,
+            "location": "file:Features/Search.feature:76"
           }
         ]
       }
@@ -307,21 +185,17 @@
       {
         "name": "user saves the search template by entering the name",
         "aggregatedDurations": {
-          "average": 0.689555166,
-          "median": 0.7442964
+          "average": 0.5968334,
+          "median": 0.5968334
         },
         "durations": [
           {
-            "duration": 0.5422616,
-            "location": "file:Features/Search.feature:51"
+            "duration": 0.5226741,
+            "location": "file:Features/Search.feature:57"
           },
           {
-            "duration": 0.7821075,
-            "location": "file:Features/Search.feature:68"
-          },
-          {
-            "duration": 0.7442964,
-            "location": "file:Features/Search.feature:120"
+            "duration": 0.6709927,
+            "location": "file:Features/Search.feature:78"
           }
         ]
       }
@@ -333,17 +207,13 @@
       {
         "name": "relaunch the saved search template",
         "aggregatedDurations": {
-          "average": 0.93925895,
-          "median": 0.93925895
+          "average": 0.8339262,
+          "median": 0.8339262
         },
         "durations": [
           {
-            "duration": 0.8913225,
-            "location": "file:Features/Search.feature:52"
-          },
-          {
-            "duration": 0.9871954,
-            "location": "file:Features/Search.feature:121"
+            "duration": 0.8339262,
+            "location": "file:Features/Search.feature:58"
           }
         ]
       }
@@ -355,17 +225,17 @@
       {
         "name": "search result for given condition",
         "aggregatedDurations": {
-          "average": 0.57908045,
-          "median": 0.57908045
+          "average": 0.5736375,
+          "median": 0.5736375
         },
         "durations": [
           {
-            "duration": 0.5654312,
-            "location": "file:Features/Search.feature:19"
+            "duration": 0.6022301,
+            "location": "file:Features/Search.feature:24"
           },
           {
-            "duration": 0.5927297,
-            "location": "file:Features/Search.feature:30"
+            "duration": 0.5450449,
+            "location": "file:Features/Search.feature:35"
           }
         ]
       }
@@ -377,13 +247,13 @@
       {
         "name": "expand material type filter",
         "aggregatedDurations": {
-          "average": 1.0479546,
-          "median": 1.0479546
+          "average": 1.4638332,
+          "median": 1.4638332
         },
         "durations": [
           {
-            "duration": 1.0479546,
-            "location": "file:Features/Search.feature:65"
+            "duration": 1.4638332,
+            "location": "file:Features/Search.feature:75"
           }
         ]
       }
@@ -395,17 +265,13 @@
       {
         "name": "select rows per page as hundred",
         "aggregatedDurations": {
-          "average": 0.7482663,
-          "median": 0.7482663
+          "average": 0.6443456,
+          "median": 0.6443456
         },
         "durations": [
           {
-            "duration": 0.6769731,
-            "location": "file:Features/Search.feature:59"
-          },
-          {
-            "duration": 0.8195595,
-            "location": "file:Features/Search.feature:85"
+            "duration": 0.6443456,
+            "location": "file:Features/Search.feature:65"
           }
         ]
       }
@@ -417,61 +283,67 @@
       {
         "name": "add yield strength attribute condition",
         "aggregatedDurations": {
-          "average": 1.00642715,
-          "median": 1.00642715
+          "average": 1.0844891,
+          "median": 1.0844891
         },
         "durations": [
           {
-            "duration": 0.9963745,
-            "location": "file:Features/Search.feature:21"
+            "duration": 1.1351576,
+            "location": "file:Features/Search.feature:26"
           },
           {
-            "duration": 1.0164798,
-            "location": "file:Features/Search.feature:32"
+            "duration": 1.0338206,
+            "location": "file:Features/Search.feature:37"
           }
         ]
       }
     ]
   },
   {
-    "source": "user selects test data type from search dropdown",
+    "source": "user has already logged in to Material Center application",
     "steps": [
       {
-        "name": "user selects test data type from search dropdown",
+        "name": "user has already logged in to Material Center application",
         "aggregatedDurations": {
-          "average": 0.9337351,
-          "median": 0.9337351
+          "average": 12.274419466,
+          "median": 7.843977
         },
         "durations": [
           {
-            "duration": 0.7729657,
-            "location": "file:Features/Search.feature:75"
+            "duration": 15.5912889,
+            "location": "file:Features/Search.feature:4"
           },
           {
-            "duration": 1.0945045,
-            "location": "file:Features/Search.feature:115"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "user is on search page",
-    "steps": [
-      {
-        "name": "user is on search page",
-        "aggregatedDurations": {
-          "average": 0.8583865,
-          "median": 0.8583865
-        },
-        "durations": [
-          {
-            "duration": 0.9229543,
-            "location": "file:Features/Search.feature:14"
+            "duration": 7.7641004,
+            "location": "file:Features/Search.feature:4"
           },
           {
-            "duration": 0.7938187,
-            "location": "file:Features/Search.feature:25"
+            "duration": 7.1835258,
+            "location": "file:Features/Search.feature:4"
+          },
+          {
+            "duration": 19.4329986,
+            "location": "file:Features/Search.feature:4"
+          },
+          {
+            "duration": 7.843977,
+            "location": "file:Features/Search.feature:4"
+          },
+          {
+            "duration": 7.3040671,
+            "location": "file:Features/Search.feature:4"
+          },
+          {
+            "duration": 7.4260581,
+            "location": "file:Features/Search.feature:4"
+          },
+          {
+            "duration": 14.2852157,
+            "location": "file:Features/Search.feature:4"
+          },
+          {
+            "duration": 23.6385436,
+            "location": "file:Features/Search.feature:4"
           }
         ]
       }
@@ -483,39 +355,35 @@
       {
         "name": "Click on fifty",
         "aggregatedDurations": {
-          "average": 0.651588233,
-          "median": 0.6787852
+          "average": 0.5150237,
+          "median": 0.5150237
         },
         "durations": [
           {
-            "duration": 0.5894438,
-            "location": "file:Features/Search.feature:58"
-          },
-          {
-            "duration": 0.6787852,
-            "location": "file:Features/Search.feature:84"
-          },
-          {
-            "duration": 0.6865357,
-            "location": "file:Features/Search.feature:94"
+            "duration": 0.5150237,
+            "location": "file:Features/Search.feature:64"
           }
         ]
       }
     ]
   },
   {
-    "source": "click on export to excel from action menu",
+    "source": "materials search results displayed",
     "steps": [
       {
-        "name": "click on export to excel from action menu",
+        "name": "materials search results displayed",
         "aggregatedDurations": {
-          "average": 3.0125585,
-          "median": 3.0125585
+          "average": 0.18696825,
+          "median": 0.18696825
         },
         "durations": [
           {
-            "duration": 3.0125585,
-            "location": "file:Features/Search.feature:103"
+            "duration": 0.1751656,
+            "location": "file:Features/Search.feature:43"
+          },
+          {
+            "duration": 0.1987709,
+            "location": "file:Features/Search.feature:74"
           }
         ]
       }
@@ -527,43 +395,17 @@
       {
         "name": "user gives some text to search in materials",
         "aggregatedDurations": {
-          "average": 0.855929025,
-          "median": 0.86292505
+          "average": 0.4154583,
+          "median": 0.4154583
         },
         "durations": [
           {
-            "duration": 0.8847992,
-            "location": "file:Features/Search.feature:6"
+            "duration": 0.4167166,
+            "location": "file:Features/Search.feature:11"
           },
           {
-            "duration": 0.8130668,
-            "location": "file:Features/Search.feature:36"
-          },
-          {
-            "duration": 0.8818208,
-            "location": "file:Features/Search.feature:48"
-          },
-          {
-            "duration": 0.8440293,
-            "location": "file:Features/Search.feature:81"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "click on select page option",
-    "steps": [
-      {
-        "name": "click on select page option",
-        "aggregatedDurations": {
-          "average": 0.5840639,
-          "median": 0.5840639
-        },
-        "durations": [
-          {
-            "duration": 0.5840639,
-            "location": "file:Features/Search.feature:118"
+            "duration": 0.4142,
+            "location": "file:Features/Search.feature:54"
           }
         ]
       }
@@ -575,21 +417,17 @@
       {
         "name": "user click on save button",
         "aggregatedDurations": {
-          "average": 0.497488233,
-          "median": 0.305945
+          "average": 0.70501905,
+          "median": 0.70501905
         },
         "durations": [
           {
-            "duration": 0.9655597,
-            "location": "file:Features/Search.feature:50"
+            "duration": 1.1851475,
+            "location": "file:Features/Search.feature:56"
           },
           {
-            "duration": 0.305945,
-            "location": "file:Features/Search.feature:67"
-          },
-          {
-            "duration": 0.22096,
-            "location": "file:Features/Search.feature:119"
+            "duration": 0.2248906,
+            "location": "file:Features/Search.feature:77"
           }
         ]
       }
@@ -601,13 +439,13 @@
       {
         "name": "click on search template link from home page",
         "aggregatedDurations": {
-          "average": 0.481906,
-          "median": 0.481906
+          "average": 0.251229,
+          "median": 0.251229
         },
         "durations": [
           {
-            "duration": 0.481906,
-            "location": "file:Features/Search.feature:56"
+            "duration": 0.251229,
+            "location": "file:Features/Search.feature:62"
           }
         ]
       }
@@ -619,57 +457,107 @@
       {
         "name": "user is on search workspace",
         "aggregatedDurations": {
-          "average": 0.659807,
-          "median": 0.659807
+          "average": 0.4399015,
+          "median": 0.4399015
         },
         "durations": [
           {
-            "duration": 0.659807,
-            "location": "file:Features/Search.feature:107"
+            "duration": 0.4399015,
+            "location": "file:Features/Search.feature:122"
           }
         ]
       }
     ]
   },
   {
-    "source": "select rows per page as two fifty",
+    "source": "homepage is displayed",
     "steps": [
       {
-        "name": "select rows per page as two fifty",
+        "name": "homepage is displayed",
         "aggregatedDurations": {
-          "average": 1.66842595,
-          "median": 1.66842595
+          "average": 0.204076311,
+          "median": 0.204215
         },
         "durations": [
           {
-            "duration": 1.7679656,
-            "location": "file:Features/Search.feature:60"
+            "duration": 0.2338923,
+            "location": "file:Features/Search.feature:7"
           },
           {
-            "duration": 1.5688863,
-            "location": "file:Features/Search.feature:86"
+            "duration": 0.1904633,
+            "location": "file:Features/Search.feature:7"
+          },
+          {
+            "duration": 0.1905874,
+            "location": "file:Features/Search.feature:7"
+          },
+          {
+            "duration": 0.1828877,
+            "location": "file:Features/Search.feature:7"
+          },
+          {
+            "duration": 0.2075253,
+            "location": "file:Features/Search.feature:7"
+          },
+          {
+            "duration": 0.2055695,
+            "location": "file:Features/Search.feature:7"
+          },
+          {
+            "duration": 0.2311606,
+            "location": "file:Features/Search.feature:7"
+          },
+          {
+            "duration": 0.204215,
+            "location": "file:Features/Search.feature:7"
+          },
+          {
+            "duration": 0.1903857,
+            "location": "file:Features/Search.feature:7"
           }
         ]
       }
     ]
   },
   {
-    "source": "user gives search input in search field",
+    "source": "user enters searchtext for materials search {string}",
     "steps": [
       {
-        "name": "user gives search input in search field",
+        "name": "user enters searchtext for materials search \"steel\"",
         "aggregatedDurations": {
-          "average": 0.421412,
-          "median": 0.421412
+          "average": 0.0572777,
+          "median": 0.0572777
         },
         "durations": [
           {
-            "duration": 0.4279636,
-            "location": "file:Features/Search.feature:76"
+            "duration": 0.0572777,
+            "location": "file:Features/Search.feature:41"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user comes on search WS",
+    "steps": [
+      {
+        "name": "user comes on search WS",
+        "aggregatedDurations": {
+          "average": 0.463244066,
+          "median": 0.4636636
+        },
+        "durations": [
+          {
+            "duration": 0.4535297,
+            "location": "file:Features/Search.feature:19"
           },
           {
-            "duration": 0.4148604,
-            "location": "file:Features/Search.feature:116"
+            "duration": 0.4725389,
+            "location": "file:Features/Search.feature:30"
+          },
+          {
+            "duration": 0.4636636,
+            "location": "file:Features/Search.feature:72"
           }
         ]
       }
@@ -681,25 +569,43 @@
       {
         "name": "user click on add condition",
         "aggregatedDurations": {
-          "average": 0.90472045,
-          "median": 0.90988905
+          "average": 0.8313201,
+          "median": 0.78338415
         },
         "durations": [
           {
-            "duration": 1.1380985,
-            "location": "file:Features/Search.feature:16"
+            "duration": 0.8278204,
+            "location": "file:Features/Search.feature:21"
           },
           {
-            "duration": 0.6610052,
-            "location": "file:Features/Search.feature:20"
+            "duration": 0.7389479,
+            "location": "file:Features/Search.feature:25"
           },
           {
-            "duration": 1.0148059,
-            "location": "file:Features/Search.feature:27"
+            "duration": 1.0603924,
+            "location": "file:Features/Search.feature:32"
           },
           {
-            "duration": 0.8049722,
-            "location": "file:Features/Search.feature:31"
+            "duration": 0.6981197,
+            "location": "file:Features/Search.feature:36"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on search button from homepage",
+    "steps": [
+      {
+        "name": "click on search button from homepage",
+        "aggregatedDurations": {
+          "average": 0.2733021,
+          "median": 0.2733021
+        },
+        "durations": [
+          {
+            "duration": 0.2733021,
+            "location": "file:Features/Search.feature:42"
           }
         ]
       }
@@ -711,13 +617,31 @@
       {
         "name": "verify that correct text search result is displayed",
         "aggregatedDurations": {
-          "average": 0.9687483,
-          "median": 0.9687483
+          "average": 1.004256,
+          "median": 1.004256
         },
         "durations": [
           {
-            "duration": 0.9687483,
-            "location": "file:Features/Search.feature:38"
+            "duration": 1.004256,
+            "location": "file:Features/Search.feature:44"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on rows per page",
+    "steps": [
+      {
+        "name": "click on rows per page",
+        "aggregatedDurations": {
+          "average": 2.7090788,
+          "median": 2.7090788
+        },
+        "durations": [
+          {
+            "duration": 2.7090788,
+            "location": "file:Features/Search.feature:63"
           }
         ]
       }
@@ -729,17 +653,17 @@
       {
         "name": "user provides range using slider",
         "aggregatedDurations": {
-          "average": 1.171531,
-          "median": 1.171531
+          "average": 1.1601264,
+          "median": 1.1601264
         },
         "durations": [
           {
-            "duration": 1.1595611,
-            "location": "file:Features/Search.feature:18"
+            "duration": 1.1810454,
+            "location": "file:Features/Search.feature:23"
           },
           {
-            "duration": 1.1835009,
-            "location": "file:Features/Search.feature:29"
+            "duration": 1.1392074,
+            "location": "file:Features/Search.feature:34"
           }
         ]
       }

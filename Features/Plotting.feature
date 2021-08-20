@@ -1,10 +1,15 @@
 Feature: To plot the bar chart graph of multiple materials
+Background:
+Given user has already logged in to Material Center application
+|username|password|
+|smroot|sdm|
+And homepage is displayed
 
 @All
 Scenario: Plot the bar chart graph of selected material with multiple Y values
 Given user comes on Navigate WS
 When user clicks on Metals to open MOD
-And Click on rows per page
+And click on rows per page
 And Click on fifty
 And click on arrow button
 And click on select page option
@@ -18,7 +23,7 @@ Then plot should be done successfully
 Scenario: Plot the bar chart graph of selected material with two Y values
 Given user comes on Navigate WS
 When user clicks on Metals to open MOD
-And Click on rows per page
+And click on rows per page
 And Click on fifty
 And click on arrow button
 And click on select page option
@@ -32,7 +37,7 @@ Then verify the plotted bar chart values by navigating to material SOD from plot
 Scenario: Plot the scatter graph of density vs ultimate strength
 Given user comes on Navigate WS
 When user clicks on Metals to open MOD
-And Click on rows per page
+And click on rows per page
 And Click on fifty
 And click on arrow button
 And click on select page option
@@ -47,7 +52,7 @@ Then plot should be done successfully
 Scenario: Plot the scatter graph of density vs ultimate strength and verify plotted scatter plot
 Given user comes on Navigate WS
 When user clicks on Metals to open MOD
-And Click on rows per page
+And click on rows per page
 And Click on fifty
 And click on arrow button
 And click on select page option
@@ -62,7 +67,7 @@ Then verify the plotted scatter plot values by navigating to material SOD from p
 Scenario: Plot the pie chart graph of Ultimate strength
 Given user comes on Navigate WS
 When user clicks on Metals to open MOD
-And Click on rows per page
+And click on rows per page
 And Click on fifty
 And click on arrow button
 And click on select page option
@@ -76,7 +81,7 @@ Then plot should be done successfully
 Scenario: Plot the pie chart graph of density
 Given user comes on Navigate WS
 When user clicks on Metals to open MOD
-And Click on rows per page
+And click on rows per page
 And Click on fifty
 And click on arrow button
 And click on select page option
@@ -90,7 +95,7 @@ Then plot should be done successfully
 Scenario: Plot the pie chart graph of density with selecting rows as fifty
 Given user comes on Navigate WS
 When user clicks on Metals to open MOD
-And Click on rows per page
+And click on rows per page
 And Click on fifty
 And click on arrow button
 And click on select page option

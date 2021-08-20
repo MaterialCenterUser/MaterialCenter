@@ -1,5 +1,6 @@
 package com.wiz.materialCenter.pages;
 
+import org.apache.commons.lang.RandomStringUtils;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -344,6 +345,20 @@ public class ConfigurationWS extends TestBase {
 	@FindBy(xpath = "//select[@id='myWorkspaceActionDialog-f:CreateEditTestTemplate:generatedFromDropdown']")
 	WebElement selectTestDataDropdown;
 	
+	@FindBy(xpath = "//td[text()='Data Sources']")
+	WebElement txtDataSources;
+	
+	@FindBy(xpath = "//a[text()='Materials Selector']")
+	WebElement materialsSelectorLink;
+	@FindBy(xpath = "//span[text()='materials_selector [ Mvision Data Source ]']")
+	WebElement txtMatDataSources;
+	
+	
+	public void doubleClickOnMaterialsSelector() {
+		action.moveToElement(materialsSelectorLink).build().perform();
+		action.click(materialsSelectorLink).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(txtMatDataSources));
+	}
 	
 	public void clickOnImportExcel() {
 		//action.moveToElement(importExcel).build().perform();
@@ -352,6 +367,10 @@ public class ConfigurationWS extends TestBase {
 		wait.until(ExpectedConditions.visibilityOf(textMaterialtoImportExcel));
 	}
 	
+	public void clickOnDataSources() {
+		js.executeScript("arguments[0].click();", dataSources);
+		wait.until(ExpectedConditions.visibilityOf(txtDataSources));
+	}
 	public void clickOnFixedFormat() {
 		action.moveToElement(fixedFormat).build().perform();
 		action.click(fixedFormat).build().perform();
@@ -549,7 +568,8 @@ public class ConfigurationWS extends TestBase {
 	public void provideTestTemplateName() {
 		testTemplateName.click();
 		testTemplateName.clear();
-		testTemplateName.sendKeys("ExampleTestTemplate");
+		testTemplateName.sendKeys(RandomStringUtils.randomAlphabetic(13));
+		
 	}
 	
 	public void selectDesignDataMapping() {
@@ -591,7 +611,7 @@ public class ConfigurationWS extends TestBase {
 		//js.executeScript("arguments[0].click();", designDataProjectData);
 		designDataMappingName.click();
 		designDataMappingName.clear();
-		designDataMappingName.sendKeys("Example Design Data Mapping22");
+		designDataMappingName.sendKeys(RandomStringUtils.randomAlphabetic(16));	
 		action.moveToElement(designDataSchemaDropdown).build().perform();
 		action.click(designDataSchemaDropdown).build().perform();
 		js.executeScript("arguments[0].click();", schemaMaster);

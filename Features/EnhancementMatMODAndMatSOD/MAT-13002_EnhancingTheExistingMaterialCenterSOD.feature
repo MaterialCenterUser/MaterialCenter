@@ -61,7 +61,7 @@ And click on apply the changes for curve attribute
 And double click on first result
 And select checkboxes for properties
 And select add property to clipboard from actions dropdown
-And navigate to homepage
+And navigate to homepage from material SOD page
 And click on view all under clipboard
 Then the curve properties display on my workspace page
 

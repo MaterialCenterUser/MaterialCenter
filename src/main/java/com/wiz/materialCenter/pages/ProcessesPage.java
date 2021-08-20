@@ -52,6 +52,9 @@ public class ProcessesPage extends TestBase {
 	WebElement textUnsubscribeForRevisionProcess;
 	@FindBy(xpath = "(//span[text()='Failed'])[1]")
 	WebElement failedStatus;
+	
+	@FindBy(xpath = "//span[contains(text(),'Export To Xml [ Export Process ]')]")
+	WebElement exportProcessXml;
 
 	@FindBy(xpath = "//tr[@smrow='0']/td[@smcol='1']/span")
 	WebElement ErrorMsgValue;
@@ -60,8 +63,10 @@ public class ProcessesPage extends TestBase {
 		js.executeScript("arguments[0].click();", discardButton);
 	}
 
-	public void clickOnDiscardSubmit() {
+	public HomePage clickOnDiscardSubmit() {
 		js.executeScript("arguments[0].click();", discardSubmit);
+		
+		return new HomePage();
 	}
 
 	public void clickOnIOTab() {
@@ -116,6 +121,28 @@ public class ProcessesPage extends TestBase {
 		 * System.out.println("Process is not completed"); } }
 		 */
 		// js.executeScript("arguments[0].click();", autoRefreshCheckbox);
+		//wait.until(ExpectedConditions.visibilityOf(exportProcessXml));
+		action.moveToElement(autoRefreshCheckbox).build().perform();
+		action.click(autoRefreshCheckbox).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(doneStatus));
+		if (doneStatus.isDisplayed()) {
+			System.out.println("Process is completed");
+		} else {
+			System.out.println("Process is not completed");
+		}
+	}
+	
+	public void verifyProcessStatusxml() {
+		/*
+		 * if(autoRefreshCheckbox.isEnabled()) {
+		 * action.click(autoRefreshCheckbox).build().perform();
+		 * wait.until(ExpectedConditions.visibilityOf(doneStatus));
+		 * if(doneStatus.isDisplayed()) {
+		 * System.out.println("Process is completed"); } } else {
+		 * System.out.println("Process is not completed"); } }
+		 */
+		// js.executeScript("arguments[0].click();", autoRefreshCheckbox);
+		wait.until(ExpectedConditions.visibilityOf(exportProcessXml));
 		action.moveToElement(autoRefreshCheckbox).build().perform();
 		action.click(autoRefreshCheckbox).build().perform();
 		wait.until(ExpectedConditions.visibilityOf(doneStatus));

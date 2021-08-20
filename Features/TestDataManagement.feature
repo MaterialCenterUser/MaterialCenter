@@ -1,12 +1,17 @@
 Feature: This feature file consist of all Test data management flows
+Background:
+Given user has already logged in to Material Center application
+|username|password|
+|smroot|sdm|
+And homepage is displayed
 
 @Step1 @All
 Scenario: Create a Specimen Definition using material center administrator
 Given user clicks on Config WS
 When select the Specimen Definitions option under Materials Administration
 And click on Create Specimen Definition
-And select the project on init tab
 And enter the name on init tab
+And select the project on init tab
 And select Specimen Definition tab to provide all required details
 And click on validate button to ensure that there are no errors
 And click on Submit button from specimen definition tab
@@ -17,8 +22,8 @@ Scenario: Create a Test Definition and promote to Production level
 Given user clicks on Config WS
 When select the Specimen Definitions option under Materials Administration
 And click on Create Specimen Definition
-And select the project on init tab
 And enter the name on init tab
+And select the project on init tab
 And select Specimen Definition tab to provide all required details
 And click on validate button to ensure that there are no errors
 And click on Submit button from specimen definition tab
@@ -32,7 +37,6 @@ Then check that process status is completed
 Scenario: Add a Reduction Template to the Mapping
 Given user clicks on Config WS
 When select the Excel Mappings option under Materials Administration
-#And select Example Test Data Mapping from the list
 And select Generic Material Selector from the list
 And click on Edit Imported Mapping
 And attach TestDataReductionTemplate in excel file template
@@ -50,10 +54,5 @@ And select design data project from dropdown
 And enter mapping name and select schema from dropdown
 And upload mapping file
 And click on submit button
-#And select the Example Test Data Mapping from dropdown of Test Data Mapping
-#And select ASTM Eeight from tensile drop down for Reference Data
-#And select Tensile Ultimate Strength from Design Allowable dropdown and click on Add button
-#And now select Tensile Yield Strength from Design Allowable dropdown and click on Add button
-#And select test data to generate from dropdown
 And click on submit button to create the Test Template
 Then Verify the created test template

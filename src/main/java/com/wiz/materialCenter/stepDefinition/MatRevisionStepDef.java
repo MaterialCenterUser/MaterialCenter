@@ -68,4 +68,9 @@ public class MatRevisionStepDef extends TestBase {
 	    screenshot(driver, System.currentTimeMillis());
 	}
 
+	@When("verify user gets all the revisions")
+	public void verify_user_gets_all_the_revisions() {
+	    matSod.verifyDetailsTab();
+	    screenshot(driver, System.currentTimeMillis());
+	}
 }

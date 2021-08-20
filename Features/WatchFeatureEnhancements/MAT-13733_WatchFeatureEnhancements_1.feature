@@ -26,7 +26,7 @@ And click on arrow button
 And click on select page option
 And click on Actions
 And click on subscribe action
-And navigate to homepage
+And navigate to homepage from material SOD page
 And click on subscribe for revision change notification link under processes
 Then user gets subscribe for revision change notification process status as done
 
@@ -36,7 +36,7 @@ And click on arrow button
 And click on select page option
 And click on Actions
 And click on unsubscribe action
-And navigate to homepage
+And navigate to homepage from material SOD page
 And click on unsubscribe for revision change notification link under processes
 Then user gets unsubscribe for revision change notification process status as done
 
@@ -46,7 +46,7 @@ And click on arrow button
 And click on select page option
 And click on Actions
 And click on subscribe action
-And navigate to homepage
+And navigate to homepage from material SOD page
 And click on view all under subscribed materials
 Then the materials display on my workspace page
 
@@ -56,5 +56,5 @@ And click on arrow button
 And click on select page option
 And click on Actions
 And click on unsubscribe action
-And navigate to homepage
+And navigate to homepage from material SOD page
 Then no results found shows under subscribed materials

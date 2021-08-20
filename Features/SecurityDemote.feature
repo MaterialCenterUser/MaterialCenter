@@ -1,4 +1,9 @@
 Feature: Demoting material from Production level to In-Review or In Work level
+Background:
+Given user has already logged in to Material Center application
+|username|password|
+|smroot|sdm|
+And homepage is displayed
 
 @Demote @All
 Scenario: User is able to demote the material to In-Review or In Work level
@@ -7,15 +12,13 @@ When user clicks on Metals to open MOD
 And select material with In work release level
 And click on demote action under security tab
 And click on next button
-And Click on rows per page
-And Click on three
+And click on rows per page
+And click on three
 And click on submit button on dependent objects list
 Then check that process status is completed
-#And navigate to homepage and select Demote process
-#And open the demoted material under inputs and outputs tab
-#Then material should be demoted successfully
 
-@DemoteFord @All1
+
+@DemoteFord @All
 Scenario: User is able to demote the material to In-Review or In Work level
 Given user clicks on Config WS
 When user comes on Navigate WS

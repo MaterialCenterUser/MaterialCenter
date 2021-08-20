@@ -50,7 +50,7 @@ When user comes on Navigate WS
 And user clicks on Metals to open MOD
 And double click on material
 And click on subscribe button
-And navigate to homepage
+And navigate to homepage from material SOD page
 And click on view all under subscribed materials
 Then the materials display on my workspace page
 And double click on material link
@@ -62,7 +62,7 @@ When user comes on Navigate WS
 And user clicks on Metals to open MOD
 And double click on material
 And click on unsubscribe button
-And navigate to homepage
+And navigate to homepage from material SOD page
 Then no results found shows under subscribed materials
 
 @MAT-21879 @Regression

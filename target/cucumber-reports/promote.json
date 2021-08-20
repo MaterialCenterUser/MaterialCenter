@@ -1,107 +1,17 @@
 [
   {
-    "source": "select material with In work release level",
-    "steps": [
-      {
-        "name": "select material with In work release level",
-        "aggregatedDurations": {
-          "average": 0.3180354,
-          "median": 0.3180354
-        },
-        "durations": [
-          {
-            "duration": 0.3180354,
-            "location": "file:Features/SecurityPromote.feature:7"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "Click on rows per page",
-    "steps": [
-      {
-        "name": "Click on rows per page",
-        "aggregatedDurations": {
-          "average": 0.4455816,
-          "median": 0.4455816
-        },
-        "durations": [
-          {
-            "duration": 0.4455816,
-            "location": "file:Features/SecurityPromote.feature:11"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "source": "click on next button",
     "steps": [
       {
         "name": "click on next button",
         "aggregatedDurations": {
-          "average": 2.3126375,
-          "median": 2.3126375
+          "average": 6.8348404,
+          "median": 6.8348404
         },
         "durations": [
           {
-            "duration": 2.3126375,
-            "location": "file:Features/SecurityPromote.feature:10"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "click on promote action under security tab",
-    "steps": [
-      {
-        "name": "click on promote action under security tab",
-        "aggregatedDurations": {
-          "average": 1.849301101,
-          "median": 1.849301101
-        },
-        "durations": [
-          {
-            "duration": 1.849301101,
-            "location": "file:Features/SecurityPromote.feature:8"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "select target level as production",
-    "steps": [
-      {
-        "name": "select target level as production",
-        "aggregatedDurations": {
-          "average": 1.1630057,
-          "median": 1.1630057
-        },
-        "durations": [
-          {
-            "duration": 1.1630057,
-            "location": "file:Features/SecurityPromote.feature:9"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "Click on three",
-    "steps": [
-      {
-        "name": "Click on three",
-        "aggregatedDurations": {
-          "average": 0.284467499,
-          "median": 0.284467499
-        },
-        "durations": [
-          {
-            "duration": 0.284467499,
-            "location": "file:Features/SecurityPromote.feature:12"
+            "duration": 6.8348404,
+            "location": "file:Features/SecurityPromote.feature:15"
           }
         ]
       }
@@ -113,13 +23,13 @@
       {
         "name": "click on submit button on dependent objects list",
         "aggregatedDurations": {
-          "average": 0.445429,
-          "median": 0.445429
+          "average": 0.6285105,
+          "median": 0.6285105
         },
         "durations": [
           {
-            "duration": 0.445429,
-            "location": "file:Features/SecurityPromote.feature:13"
+            "duration": 0.6285105,
+            "location": "file:Features/SecurityPromote.feature:18"
           }
         ]
       }
@@ -131,13 +41,13 @@
       {
         "name": "check that process status is completed",
         "aggregatedDurations": {
-          "average": 7.156133101,
-          "median": 7.156133101
+          "average": 30.9355014,
+          "median": 30.9355014
         },
         "durations": [
           {
-            "duration": 7.156133101,
-            "location": "file:Features/SecurityPromote.feature:14"
+            "duration": 30.9355014,
+            "location": "file:Features/SecurityPromote.feature:19"
           }
         ]
       }
@@ -149,13 +59,147 @@
       {
         "name": "user comes on Navigate WS",
         "aggregatedDurations": {
-          "average": 0.5132047,
-          "median": 0.5132047
+          "average": 0.57678035,
+          "median": 0.57678035
         },
         "durations": [
           {
-            "duration": 0.5132047,
-            "location": "file:Features/SecurityPromote.feature:5"
+            "duration": 0.6421964,
+            "location": "file:Features/SecurityPromote.feature:10"
+          },
+          {
+            "duration": 0.5113643,
+            "location": "file:Features/SecurityPromote.feature:25"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on three",
+    "steps": [
+      {
+        "name": "click on three",
+        "aggregatedDurations": {
+          "average": 0.4295811,
+          "median": 0.4295811
+        },
+        "durations": [
+          {
+            "duration": 0.4295811,
+            "location": "file:Features/SecurityPromote.feature:17"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "homepage is displayed",
+    "steps": [
+      {
+        "name": "homepage is displayed",
+        "aggregatedDurations": {
+          "average": 0.4322659,
+          "median": 0.4322659
+        },
+        "durations": [
+          {
+            "duration": 0.5301733,
+            "location": "file:Features/SecurityPromote.feature:6"
+          },
+          {
+            "duration": 0.3343585,
+            "location": "file:Features/SecurityPromote.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "select material with In work release level",
+    "steps": [
+      {
+        "name": "select material with In work release level",
+        "aggregatedDurations": {
+          "average": 0.5174807,
+          "median": 0.5174807
+        },
+        "durations": [
+          {
+            "duration": 0.5174807,
+            "location": "file:Features/SecurityPromote.feature:12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user clicks on Config WS",
+    "steps": [
+      {
+        "name": "user clicks on Config WS",
+        "aggregatedDurations": {
+          "average": 0.6009229,
+          "median": 0.6009229
+        },
+        "durations": [
+          {
+            "duration": 0.6009229,
+            "location": "file:Features/SecurityPromote.feature:24"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on promote action under security tab",
+    "steps": [
+      {
+        "name": "click on promote action under security tab",
+        "aggregatedDurations": {
+          "average": 5.143888,
+          "median": 5.143888
+        },
+        "durations": [
+          {
+            "duration": 5.143888,
+            "location": "file:Features/SecurityPromote.feature:13"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "select target level as production",
+    "steps": [
+      {
+        "name": "select target level as production",
+        "aggregatedDurations": {
+          "average": 2.7290853,
+          "median": 2.7290853
+        },
+        "durations": [
+          {
+            "duration": 2.7290853,
+            "location": "file:Features/SecurityPromote.feature:14"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on rows per page",
+    "steps": [
+      {
+        "name": "click on rows per page",
+        "aggregatedDurations": {
+          "average": 0.7060534,
+          "median": 0.7060534
+        },
+        "durations": [
+          {
+            "duration": 0.7060534,
+            "location": "file:Features/SecurityPromote.feature:16"
           }
         ]
       }
@@ -167,13 +211,35 @@
       {
         "name": "user clicks on Metals to open MOD",
         "aggregatedDurations": {
-          "average": 1.2149945,
-          "median": 1.2149945
+          "average": 2.1532254,
+          "median": 2.1532254
         },
         "durations": [
           {
-            "duration": 1.2149945,
-            "location": "file:Features/SecurityPromote.feature:6"
+            "duration": 2.1532254,
+            "location": "file:Features/SecurityPromote.feature:11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user has already logged in to Material Center application",
+    "steps": [
+      {
+        "name": "user has already logged in to Material Center application",
+        "aggregatedDurations": {
+          "average": 11.13040615,
+          "median": 11.13040615
+        },
+        "durations": [
+          {
+            "duration": 13.0433778,
+            "location": "file:Features/SecurityPromote.feature:3"
+          },
+          {
+            "duration": 9.2174345,
+            "location": "file:Features/SecurityPromote.feature:3"
           }
         ]
       }

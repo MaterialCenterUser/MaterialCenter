@@ -149,7 +149,7 @@ public class TestDataManagementStepDef extends TestBase {
 
 	@And("click on Submit button to import supporting template")
 	public void click_on_Submit_button_to_import_supporting_template() {
-		 configWS = new ConfigurationWS();
+		// configWS = new ConfigurationWS();
 	    configWS.submitExcelTemplate();
 	    screenshot(driver, System.currentTimeMillis());
 	}

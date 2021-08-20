@@ -229,7 +229,16 @@ public class MaterialMOD extends TestBase {
 
 	@FindBy(xpath = "//span[text()='D-6A Alloy Steel']")
 	WebElement alloySteelEle;
+	
+	@FindBy(xpath = "//span[text()='Finishes']")
+	WebElement finishesEle;
+	
+	@FindBy(xpath = "(//span[text()='Ionomer'])[1]")
+	WebElement IonomerEle;
 
+	@FindBy(xpath = "(//span[text()='Industrial Glass'])[1]")
+	WebElement industrialGlassEle;
+	
 	@FindBy(xpath = "//span[text()='Stainless Steel PH14-8 Mo']")
 	WebElement stainlessSteelPH14Mo;
 
@@ -298,16 +307,19 @@ public class MaterialMOD extends TestBase {
 
 	@FindBy(xpath = "//input[contains(@onclick,'includeProject')]")
 	WebElement includeProjectCheckbox;
+	
+	//@FindBy(xpath = "//input[contains(@id,'ExportToXml') and @title='Submit']")
+	@FindBy(xpath = "(//input[@value='Submit'])[1]")
+	WebElement exportXmlSubmit;
+	
+	@FindBy(xpath = "//span[contains(text(),'Export To Xml [ Export Process ]')]")
+	WebElement exportProcessXml;
 
 	@FindBy(xpath = "//span[text()='All Mat Datas']//parent::li/input")
 	WebElement allMatDatasCheckbox;
 
 	@FindBy(xpath = "//span[text()='CAE Model']//parent::li/input")
 	WebElement caeModelCheckbox;
-
-	@FindBy(xpath = "//img[@title='Export Material to excel based on properties or using mapping template']")
-
-	WebElement exportExcelOption;
 
 	/* Right click actions xpaths */
 
@@ -421,6 +433,44 @@ public class MaterialMOD extends TestBase {
 	
 	@FindBy(xpath = "//img[@title='Home Workspace']")
 	WebElement dashboardPage;
+	
+	//@FindBy(xpath = "//img[@title='Export Material to excel based on properties or using mapping template']")
+	// @FindBy(xpath = "//a[contains(text(),'Export To Excel')]")
+	 @FindBy(xpath = "//a[@procname='ExportToCustomExcel_MatMaterial']")
+	WebElement exportExcelOption;
+
+	@FindBy(xpath = "//span[contains(text(),'To Excel')]")
+	WebElement toExcel;
+	
+	@FindBy(xpath = "//input[contains(@id,'ExportToCustomExcel') and @title='Submit']")
+	WebElement exportExcelSubmit;
+	
+	@FindBy(xpath = "//span[contains(text(),'Export To Excel [ Export Process ]')]")
+	WebElement exportProcessExcel;
+	
+	
+	public ProcessesPage exportXmlSubmit() {
+		// js.executeScript("arguments[0].click();", exportExcelSubmit);
+		action.moveToElement(exportXmlSubmit).build().perform();
+		action.click(exportXmlSubmit).build().perform();
+	//	wait.until(ExpectedConditions.visibilityOf(exportProcessXml));
+		return new ProcessesPage();
+	}
+	public ProcessesPage exportExcelSubmit() {
+		// js.executeScript("arguments[0].click();", exportExcelSubmit);
+		action.moveToElement(exportExcelSubmit).build().perform();
+		action.click(exportExcelSubmit).build().perform();
+		//wait.until(ExpectedConditions.visibilityOf(exportProcessExcel));
+		return new ProcessesPage();
+	}
+	
+	public void clickOnExportExcel() {
+		 //js.executeScript("arguments[0].click();", exportExcelOption);
+		action.moveToElement(exportExcelOption).doubleClick(exportExcelOption).build().perform();
+		//action.doubleClick(exportExcelOption).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(toExcel));
+
+	}
 
 	public void clickOnArrow() {
 		// action.moveToElement(arrowButton).build().perform();
@@ -436,6 +486,17 @@ public class MaterialMOD extends TestBase {
 		// action.moveToElement(selectAll).build().perform();
 		// action.click(selectAll).build().perform();
 		wait.until(ExpectedConditions.elementToBeClickable(plotAction));
+		// wait.until(ExpectedConditions.elementToBeClickable(exportExcelOption));
+		// js.executeScript("arguments[0].click();", selectPage);
+	}
+	
+	public void clickOnSelectPageForMoreRows() throws InterruptedException {
+
+		action.moveToElement(selectPage).build().perform();
+		action.click(selectPage).build().perform();
+		// action.moveToElement(selectAll).build().perform();
+		// action.click(selectAll).build().perform();
+		Thread.sleep(4000);
 		// wait.until(ExpectedConditions.elementToBeClickable(exportExcelOption));
 		// js.executeScript("arguments[0].click();", selectPage);
 	}
@@ -575,12 +636,13 @@ public class MaterialMOD extends TestBase {
 
 	}
 
-	public void selectRowsPerPageas100() {
+	public void selectRowsPerPageas100() throws InterruptedException {
 		Select selectRowsperpage = new Select(rowsPerPage);
 
 		selectRowsperpage.selectByVisibleText("100");
 
 		wait.until(ExpectedConditions.visibilityOf(displayedRows100));
+		Thread.sleep(3000);
 
 	}
 
@@ -844,6 +906,23 @@ public class MaterialMOD extends TestBase {
 
 		js.executeScript("arguments[0].click();", alloySteelEle);
 	}
+	public void selectFinishesEle() {
+		// action.doubleClick(alloySteelEle).build().perform();
+
+		js.executeScript("arguments[0].click();", finishesEle);
+	}
+	
+	public void selectIonomer() {
+		// action.doubleClick(alloySteelEle).build().perform();
+
+		js.executeScript("arguments[0].click();", IonomerEle);
+	}
+	
+	public void selectIndustrialGlass() {
+		// action.doubleClick(alloySteelEle).build().perform();
+
+		js.executeScript("arguments[0].click();", industrialGlassEle);
+	}
 
 	public void selectStainlessSteelPH14Ele() {
 		// action.doubleClick(alloySteelEle).build().perform();
@@ -1101,10 +1180,11 @@ public class MaterialMOD extends TestBase {
 		wait.until(ExpectedConditions.visibilityOf(toXml));
 	}
 
-	public void selectCheckbox() {
+	public void selectCheckbox() throws InterruptedException {
 		action.click(includeProjectCheckbox).build().perform();
 		action.click(allMatDatasCheckbox).build().perform();
-		wait.until(ExpectedConditions.elementToBeSelected(caeModelCheckbox));
+		Thread.sleep(3000);
+	//	wait.until(ExpectedConditions.elementToBeSelected(caeModelCheckbox));
 
 	}
 }

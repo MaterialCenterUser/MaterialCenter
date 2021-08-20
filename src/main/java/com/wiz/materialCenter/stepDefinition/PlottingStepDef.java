@@ -29,6 +29,12 @@ public class PlottingStepDef extends TestBase {
 	    screenshot(driver, System.currentTimeMillis());
 	}
 	
+	@When("click on select page option for rows100 or more")
+	public void click_on_select_page_option_more() throws InterruptedException {
+	    materialMod.clickOnSelectPageForMoreRows();
+	    screenshot(driver, System.currentTimeMillis());
+	}
+	
 
 	@When("click on plot action")
 	public void click_on_plot_action() {

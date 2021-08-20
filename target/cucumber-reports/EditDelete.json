@@ -1,17 +1,89 @@
 [
   {
-    "source": "select different parameter set and click on submit",
+    "source": "right click to select edit and then delete option",
     "steps": [
       {
-        "name": "select different parameter set and click on submit",
+        "name": "right click to select edit and then delete option",
         "aggregatedDurations": {
-          "average": 0.491856,
-          "median": 0.491856
+          "average": 2.7477744,
+          "median": 2.7477744
         },
         "durations": [
           {
-            "duration": 0.491856,
-            "location": "file:Features/EditDelete.feature:64"
+            "duration": 2.7477744,
+            "location": "file:Features/EditDelete.feature:42"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "edit few values",
+    "steps": [
+      {
+        "name": "edit few values",
+        "aggregatedDurations": {
+          "average": 0.0999373,
+          "median": 0.0999373
+        },
+        "durations": [
+          {
+            "duration": 0.0999373,
+            "location": "file:Features/EditDelete.feature:28"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "search result is displayed",
+    "steps": [
+      {
+        "name": "search result is displayed",
+        "aggregatedDurations": {
+          "average": 0.1996037,
+          "median": 0.1996037
+        },
+        "durations": [
+          {
+            "duration": 0.1996037,
+            "location": "file:Features/EditDelete.feature:36"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on next button",
+    "steps": [
+      {
+        "name": "click on next button",
+        "aggregatedDurations": {
+          "average": 3.4546537,
+          "median": 3.4546537
+        },
+        "durations": [
+          {
+            "duration": 3.4546537,
+            "location": "file:Features/EditDelete.feature:43"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on submit button on edit materials page",
+    "steps": [
+      {
+        "name": "click on submit button on edit materials page",
+        "aggregatedDurations": {
+          "average": 0.0205708,
+          "median": 0.0205708
+        },
+        "durations": [
+          {
+            "duration": 0.0205708,
+            "location": "file:Features/EditDelete.feature:29"
           }
         ]
       }
@@ -23,25 +95,13 @@
       {
         "name": "go to properties tab",
         "aggregatedDurations": {
-          "average": 0.4389157,
-          "median": 0.4284388
+          "average": 0.4169385,
+          "median": 0.4169385
         },
         "durations": [
           {
-            "duration": 0.4280943,
-            "location": "file:Features/EditDelete.feature:10"
-          },
-          {
-            "duration": 0.5011155,
-            "location": "file:Features/EditDelete.feature:34"
-          },
-          {
-            "duration": 0.3976697,
-            "location": "file:Features/EditDelete.feature:47"
-          },
-          {
-            "duration": 0.4287833,
-            "location": "file:Features/EditDelete.feature:63"
+            "duration": 0.4169385,
+            "location": "file:Features/EditDelete.feature:15"
           }
         ]
       }
@@ -53,49 +113,49 @@
       {
         "name": "verify that edited values are updated successfully",
         "aggregatedDurations": {
-          "average": 3.4510278,
-          "median": 3.4510278
+          "average": 0.049166,
+          "median": 0.049166
         },
         "durations": [
           {
-            "duration": 3.4510278,
-            "location": "file:Features/EditDelete.feature:24"
+            "duration": 0.049166,
+            "location": "file:Features/EditDelete.feature:30"
           }
         ]
       }
     ]
   },
   {
-    "source": "user expands alloy steels under ferrous metals",
+    "source": "user gives some text to search in materials",
     "steps": [
       {
-        "name": "user expands alloy steels under ferrous metals",
+        "name": "user gives some text to search in materials",
         "aggregatedDurations": {
-          "average": 0.2040695,
-          "median": 0.2040695
+          "average": 0.4187079,
+          "median": 0.4187079
         },
         "durations": [
           {
-            "duration": 0.2040695,
-            "location": "file:Features/EditDelete.feature:57"
+            "duration": 0.4187079,
+            "location": "file:Features/EditDelete.feature:35"
           }
         ]
       }
     ]
   },
   {
-    "source": "select D-sixA Alloy Steel metal under ultra high strength",
+    "source": "click on select page option",
     "steps": [
       {
-        "name": "select D-sixA Alloy Steel metal under ultra high strength",
+        "name": "click on select page option",
         "aggregatedDurations": {
-          "average": 0.1632055,
-          "median": 0.1632055
+          "average": 0.4639507,
+          "median": 0.4639507
         },
         "durations": [
           {
-            "duration": 0.1632055,
-            "location": "file:Features/EditDelete.feature:59"
+            "duration": 0.4639507,
+            "location": "file:Features/EditDelete.feature:40"
           }
         ]
       }
@@ -107,29 +167,43 @@
       {
         "name": "user comes on Navigate WS",
         "aggregatedDurations": {
-          "average": 0.47186258,
-          "median": 0.4642302
+          "average": 0.43982645,
+          "median": 0.4363357
         },
         "durations": [
           {
-            "duration": 0.4626328,
-            "location": "file:Features/EditDelete.feature:5"
+            "duration": 0.4366872,
+            "location": "file:Features/EditDelete.feature:10"
           },
           {
-            "duration": 0.4380704,
-            "location": "file:Features/EditDelete.feature:18"
+            "duration": 0.4353225,
+            "location": "file:Features/EditDelete.feature:23"
           },
           {
-            "duration": 0.4923916,
-            "location": "file:Features/EditDelete.feature:29"
+            "duration": 0.4513119,
+            "location": "file:Features/EditDelete.feature:51"
           },
           {
-            "duration": 0.5019879,
-            "location": "file:Features/EditDelete.feature:42"
-          },
+            "duration": 0.4359842,
+            "location": "file:Features/EditDelete.feature:70"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on three",
+    "steps": [
+      {
+        "name": "click on three",
+        "aggregatedDurations": {
+          "average": 0.2654377,
+          "median": 0.2654377
+        },
+        "durations": [
           {
-            "duration": 0.4642302,
-            "location": "file:Features/EditDelete.feature:55"
+            "duration": 0.2654377,
+            "location": "file:Features/EditDelete.feature:38"
           }
         ]
       }
@@ -141,121 +215,69 @@
       {
         "name": "click on Edit material option",
         "aggregatedDurations": {
-          "average": 0.2568639,
-          "median": 0.197513
+          "average": 0.20025195,
+          "median": 0.20025195
         },
         "durations": [
           {
-            "duration": 0.1842794,
-            "location": "file:Features/EditDelete.feature:8"
-          },
-          {
-            "duration": 0.2156379,
-            "location": "file:Features/EditDelete.feature:21"
-          },
-          {
-            "duration": 0.197513,
-            "location": "file:Features/EditDelete.feature:32"
-          },
-          {
-            "duration": 0.187455,
-            "location": "file:Features/EditDelete.feature:45"
-          },
-          {
-            "duration": 0.4994342,
-            "location": "file:Features/EditDelete.feature:61"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "add newly added footnotes to eleastic modulus property and submit",
-    "steps": [
-      {
-        "name": "add newly added footnotes to eleastic modulus property and submit",
-        "aggregatedDurations": {
-          "average": 11.1651688,
-          "median": 10.9277546
-        },
-        "durations": [
-          {
-            "duration": 10.9277546,
+            "duration": 0.2051099,
             "location": "file:Features/EditDelete.feature:13"
           },
           {
-            "duration": 11.8028993,
-            "location": "file:Features/EditDelete.feature:37"
-          },
-          {
-            "duration": 10.7648525,
-            "location": "file:Features/EditDelete.feature:50"
+            "duration": 0.195394,
+            "location": "file:Features/EditDelete.feature:26"
           }
         ]
       }
     ]
   },
   {
-    "source": "edit few values and save it",
+    "source": "homepage is displayed",
     "steps": [
       {
-        "name": "edit few values and save it",
+        "name": "homepage is displayed",
         "aggregatedDurations": {
-          "average": 1.2079577,
-          "median": 1.2079577
+          "average": 0.19899254,
+          "median": 0.1923765
         },
         "durations": [
           {
-            "duration": 1.2079577,
-            "location": "file:Features/EditDelete.feature:23"
+            "duration": 0.2264492,
+            "location": "file:Features/EditDelete.feature:6"
+          },
+          {
+            "duration": 0.2058608,
+            "location": "file:Features/EditDelete.feature:6"
+          },
+          {
+            "duration": 0.1912661,
+            "location": "file:Features/EditDelete.feature:6"
+          },
+          {
+            "duration": 0.1923765,
+            "location": "file:Features/EditDelete.feature:6"
+          },
+          {
+            "duration": 0.1790101,
+            "location": "file:Features/EditDelete.feature:6"
           }
         ]
       }
     ]
   },
   {
-    "source": "verify that newly added footnotes is updated with property successfully",
+    "source": "click on arrow button",
     "steps": [
       {
-        "name": "verify that newly added footnotes is updated with property successfully",
+        "name": "click on arrow button",
         "aggregatedDurations": {
-          "average": 0.166571775,
-          "median": 0.1609965
+          "average": 0.3590209,
+          "median": 0.3590209
         },
         "durations": [
           {
-            "duration": 0.1537196,
-            "location": "file:Features/EditDelete.feature:14"
-          },
-          {
-            "duration": 0.1621905,
-            "location": "file:Features/EditDelete.feature:38"
-          },
-          {
-            "duration": 0.1905745,
-            "location": "file:Features/EditDelete.feature:51"
-          },
-          {
-            "duration": 0.1598025,
-            "location": "file:Features/EditDelete.feature:65"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "user expands ultra high strength",
-    "steps": [
-      {
-        "name": "user expands ultra high strength",
-        "aggregatedDurations": {
-          "average": 0.1734137,
-          "median": 0.1734137
-        },
-        "durations": [
-          {
-            "duration": 0.1734137,
-            "location": "file:Features/EditDelete.feature:58"
+            "duration": 0.3590209,
+            "location": "file:Features/EditDelete.feature:39"
           }
         ]
       }
@@ -267,77 +289,17 @@
       {
         "name": "double click on material",
         "aggregatedDurations": {
-          "average": 1.3780087,
-          "median": 1.4785346
+          "average": 1.5326195,
+          "median": 1.5326195
         },
         "durations": [
           {
-            "duration": 1.0295895,
-            "location": "file:Features/EditDelete.feature:7"
-          },
-          {
-            "duration": 1.516471,
-            "location": "file:Features/EditDelete.feature:20"
-          },
-          {
-            "duration": 1.5253761,
-            "location": "file:Features/EditDelete.feature:31"
-          },
-          {
-            "duration": 1.4405982,
-            "location": "file:Features/EditDelete.feature:44"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "select mechanical property set",
-    "steps": [
-      {
-        "name": "select mechanical property set",
-        "aggregatedDurations": {
-          "average": 0.692647566,
-          "median": 0.6721321
-        },
-        "durations": [
-          {
-            "duration": 0.6533696,
-            "location": "file:Features/EditDelete.feature:11"
-          },
-          {
-            "duration": 0.6721321,
-            "location": "file:Features/EditDelete.feature:35"
-          },
-          {
-            "duration": 0.752441,
-            "location": "file:Features/EditDelete.feature:48"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "click on select button against tensile elastic modulus",
-    "steps": [
-      {
-        "name": "click on select button against tensile elastic modulus",
-        "aggregatedDurations": {
-          "average": 0.475774366,
-          "median": 0.4776617
-        },
-        "durations": [
-          {
-            "duration": 0.4223077,
+            "duration": 1.4652329,
             "location": "file:Features/EditDelete.feature:12"
           },
           {
-            "duration": 0.5273537,
-            "location": "file:Features/EditDelete.feature:36"
-          },
-          {
-            "duration": 0.4776617,
-            "location": "file:Features/EditDelete.feature:49"
+            "duration": 1.6000061,
+            "location": "file:Features/EditDelete.feature:25"
           }
         ]
       }
@@ -349,13 +311,13 @@
       {
         "name": "navigate to Classification tab",
         "aggregatedDurations": {
-          "average": 0.2382055,
-          "median": 0.2382055
+          "average": 1.3584269,
+          "median": 1.3584269
         },
         "durations": [
           {
-            "duration": 0.2382055,
-            "location": "file:Features/EditDelete.feature:22"
+            "duration": 1.3584269,
+            "location": "file:Features/EditDelete.feature:27"
           }
         ]
       }
@@ -367,25 +329,31 @@
       {
         "name": "navigate to footnotes tab and add footnotes",
         "aggregatedDurations": {
-          "average": 2.21381085,
-          "median": 2.1103495
+          "average": 2.3812484,
+          "median": 2.3812484
         },
         "durations": [
           {
-            "duration": 2.1157031,
-            "location": "file:Features/EditDelete.feature:9"
-          },
+            "duration": 2.3812484,
+            "location": "file:Features/EditDelete.feature:14"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on rows per page",
+    "steps": [
+      {
+        "name": "click on rows per page",
+        "aggregatedDurations": {
+          "average": 1.7902498,
+          "median": 1.7902498
+        },
+        "durations": [
           {
-            "duration": 2.102838,
-            "location": "file:Features/EditDelete.feature:33"
-          },
-          {
-            "duration": 2.1049959,
-            "location": "file:Features/EditDelete.feature:46"
-          },
-          {
-            "duration": 2.5317064,
-            "location": "file:Features/EditDelete.feature:62"
+            "duration": 1.7902498,
+            "location": "file:Features/EditDelete.feature:37"
           }
         ]
       }
@@ -397,25 +365,51 @@
       {
         "name": "user clicks on Metals to open MOD",
         "aggregatedDurations": {
-          "average": 1.23637065,
-          "median": 1.19447895
+          "average": 0.9761804,
+          "median": 0.9761804
         },
         "durations": [
           {
-            "duration": 1.4296892,
-            "location": "file:Features/EditDelete.feature:6"
+            "duration": 0.9530411,
+            "location": "file:Features/EditDelete.feature:11"
           },
           {
-            "duration": 1.2165238,
-            "location": "file:Features/EditDelete.feature:19"
+            "duration": 0.9993197,
+            "location": "file:Features/EditDelete.feature:24"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user has already logged in to Material Center application",
+    "steps": [
+      {
+        "name": "user has already logged in to Material Center application",
+        "aggregatedDurations": {
+          "average": 37.52906958,
+          "median": 37.4321782
+        },
+        "durations": [
+          {
+            "duration": 38.2709183,
+            "location": "file:Features/EditDelete.feature:3"
           },
           {
-            "duration": 1.1268355,
-            "location": "file:Features/EditDelete.feature:30"
+            "duration": 38.1660495,
+            "location": "file:Features/EditDelete.feature:3"
           },
           {
-            "duration": 1.1724341,
-            "location": "file:Features/EditDelete.feature:43"
+            "duration": 37.4321782,
+            "location": "file:Features/EditDelete.feature:3"
+          },
+          {
+            "duration": 37.3158412,
+            "location": "file:Features/EditDelete.feature:3"
+          },
+          {
+            "duration": 36.4603607,
+            "location": "file:Features/EditDelete.feature:3"
           }
         ]
       }
@@ -427,13 +421,17 @@
       {
         "name": "user expands metals",
         "aggregatedDurations": {
-          "average": 0.6304397,
-          "median": 0.6304397
+          "average": 0.40920815,
+          "median": 0.40920815
         },
         "durations": [
           {
-            "duration": 0.6304397,
-            "location": "file:Features/EditDelete.feature:56"
+            "duration": 0.4261705,
+            "location": "file:Features/EditDelete.feature:52"
+          },
+          {
+            "duration": 0.3922458,
+            "location": "file:Features/EditDelete.feature:71"
           }
         ]
       }

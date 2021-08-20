@@ -1,0 +1,2390 @@
+[
+  {
+    "source": "all properties are displayed on SOD page",
+    "steps": [
+      {
+        "name": "all properties are displayed on SOD page",
+        "aggregatedDurations": {
+          "average": 0.035536862,
+          "median": 0.03170015
+        },
+        "durations": [
+          {
+            "duration": 0.055232799,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:75"
+          },
+          {
+            "duration": 0.0384794,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:88"
+          },
+          {
+            "duration": 0.0561062,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:98"
+          },
+          {
+            "duration": 0.0444983,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:115"
+          },
+          {
+            "duration": 0.0206211,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:128"
+          },
+          {
+            "duration": 0.0249209,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:142"
+          },
+          {
+            "duration": 0.0214069,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:153"
+          },
+          {
+            "duration": 0.023029299,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:171"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "unselect all properties on property filter",
+    "steps": [
+      {
+        "name": "unselect all properties on property filter",
+        "aggregatedDurations": {
+          "average": 0.445268218,
+          "median": 0.061171499
+        },
+        "durations": [
+          {
+            "duration": 0.056625701,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:182"
+          },
+          {
+            "duration": 0.061171499,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:196"
+          },
+          {
+            "duration": 0.075601299,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:206"
+          },
+          {
+            "duration": 0.056023001,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:224"
+          },
+          {
+            "duration": 0.0555229,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:241"
+          },
+          {
+            "duration": 0.273663799,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:254"
+          },
+          {
+            "duration": 0.062907,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:266"
+          },
+          {
+            "duration": 0.0571598,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:277"
+          },
+          {
+            "duration": 4.0773462,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:320"
+          },
+          {
+            "duration": 0.053197,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:342"
+          },
+          {
+            "duration": 0.0687322,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:435"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on property set",
+    "steps": [
+      {
+        "name": "click on property set",
+        "aggregatedDurations": {
+          "average": 0.808083415,
+          "median": 0.90856735
+        },
+        "durations": [
+          {
+            "duration": 1.2193813,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:17"
+          },
+          {
+            "duration": 1.034867,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:31"
+          },
+          {
+            "duration": 0.5658379,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:42"
+          },
+          {
+            "duration": 0.957382501,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:60"
+          },
+          {
+            "duration": 1.078636,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:73"
+          },
+          {
+            "duration": 0.9984621,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:86"
+          },
+          {
+            "duration": 0.9162194,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:96"
+          },
+          {
+            "duration": 0.8787031,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:113"
+          },
+          {
+            "duration": 0.9009153,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:125"
+          },
+          {
+            "duration": 1.0803996,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:139"
+          },
+          {
+            "duration": 0.9912886,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:150"
+          },
+          {
+            "duration": 0.719565399,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:168"
+          },
+          {
+            "duration": 0.531930401,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:181"
+          },
+          {
+            "duration": 0.544743,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:195"
+          },
+          {
+            "duration": 0.9608192,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:205"
+          },
+          {
+            "duration": 0.9358082,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:223"
+          },
+          {
+            "duration": 0.706734201,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:240"
+          },
+          {
+            "duration": 0.874224401,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:253"
+          },
+          {
+            "duration": 0.991313399,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:265"
+          },
+          {
+            "duration": 0.8536764,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:276"
+          },
+          {
+            "duration": 0.9661376,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:297"
+          },
+          {
+            "duration": 0.0459095,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:299"
+          },
+          {
+            "duration": 0.9825695,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:310"
+          },
+          {
+            "duration": 0.0524565,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:312"
+          },
+          {
+            "duration": 0.9337933,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:319"
+          },
+          {
+            "duration": 0.860422899,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:332"
+          },
+          {
+            "duration": 0.280524501,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:334"
+          },
+          {
+            "duration": 0.641960899,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:341"
+          },
+          {
+            "duration": 1.085737001,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:354"
+          },
+          {
+            "duration": 0.3044596,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:356"
+          },
+          {
+            "duration": 1.085426,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:434"
+          },
+          {
+            "duration": 0.8783646,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:448"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "verify filter applied to parameters is displayed on material SOD",
+    "steps": [
+      {
+        "name": "verify filter applied to parameters is displayed on material SOD",
+        "aggregatedDurations": {
+          "average": 0.023425699,
+          "median": 0.023425699
+        },
+        "durations": [
+          {
+            "duration": 0.023425699,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:423"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user click on material from search page",
+    "steps": [
+      {
+        "name": "user click on material from search page",
+        "aggregatedDurations": {
+          "average": 2.304016974,
+          "median": 2.257229199
+        },
+        "durations": [
+          {
+            "duration": 2.2732435,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:12"
+          },
+          {
+            "duration": 2.4975357,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:68"
+          },
+          {
+            "duration": 2.2040738,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:120"
+          },
+          {
+            "duration": 2.241214899,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:176"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user expands alloy steels under ferrous metals",
+    "steps": [
+      {
+        "name": "user expands alloy steels under ferrous metals",
+        "aggregatedDurations": {
+          "average": 0.196768593,
+          "median": 0.18548655
+        },
+        "durations": [
+          {
+            "duration": 0.1895725,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:27"
+          },
+          {
+            "duration": 0.195839401,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:52"
+          },
+          {
+            "duration": 0.1866439,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:82"
+          },
+          {
+            "duration": 0.179023001,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:105"
+          },
+          {
+            "duration": 0.1838711,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:135"
+          },
+          {
+            "duration": 0.3568378,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:160"
+          },
+          {
+            "duration": 0.171976,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:191"
+          },
+          {
+            "duration": 0.1900288,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:215"
+          },
+          {
+            "duration": 0.190863801,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:366"
+          },
+          {
+            "duration": 0.1924936,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:385"
+          },
+          {
+            "duration": 0.1825635,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:397"
+          },
+          {
+            "duration": 0.169059099,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:414"
+          },
+          {
+            "duration": 0.1816586,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:430"
+          },
+          {
+            "duration": 0.1843292,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:444"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "the available parameter is displayed in test type dropdown",
+    "steps": [
+      {
+        "name": "the available parameter is displayed in test type dropdown",
+        "aggregatedDurations": {
+          "average": 0.0194362,
+          "median": 0.0194362
+        },
+        "durations": [
+          {
+            "duration": 0.0194362,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:406"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user expands ceramics and glasses",
+    "steps": [
+      {
+        "name": "user expands ceramics and glasses",
+        "aggregatedDurations": {
+          "average": 0.28265195,
+          "median": 0.28265195
+        },
+        "durations": [
+          {
+            "duration": 0.183237601,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:316"
+          },
+          {
+            "duration": 0.3820663,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:338"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "navigate to homepage",
+    "steps": [
+      {
+        "name": "navigate to homepage",
+        "aggregatedDurations": {
+          "average": 3.1780467,
+          "median": 3.1730847
+        },
+        "durations": [
+          {
+            "duration": 3.1925528,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:57"
+          },
+          {
+            "duration": 3.158271901,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:110"
+          },
+          {
+            "duration": 3.1930817,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:165"
+          },
+          {
+            "duration": 3.171418001,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:220"
+          },
+          {
+            "duration": 3.1730847,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:237"
+          },
+          {
+            "duration": 3.1693067,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:314"
+          },
+          {
+            "duration": 3.188611099,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:336"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on add to clipboard",
+    "steps": [
+      {
+        "name": "click on add to clipboard",
+        "aggregatedDurations": {
+          "average": 0.04584928,
+          "median": 0.0393641
+        },
+        "durations": [
+          {
+            "duration": 0.0827902,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:56"
+          },
+          {
+            "duration": 0.0356684,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:109"
+          },
+          {
+            "duration": 0.052540599,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:164"
+          },
+          {
+            "duration": 0.0393641,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:219"
+          },
+          {
+            "duration": 0.018883101,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:236"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "the available parameter is displayed in test temprature dropdown",
+    "steps": [
+      {
+        "name": "the available parameter is displayed in test temprature dropdown",
+        "aggregatedDurations": {
+          "average": 0.023175099,
+          "median": 0.023175099
+        },
+        "durations": [
+          {
+            "duration": 0.023175099,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:405"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user expands ferrous metals",
+    "steps": [
+      {
+        "name": "user expands ferrous metals",
+        "aggregatedDurations": {
+          "average": 0.187066528,
+          "median": 0.18386135
+        },
+        "durations": [
+          {
+            "duration": 0.2004389,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:26"
+          },
+          {
+            "duration": 0.185582599,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:51"
+          },
+          {
+            "duration": 0.205252901,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:81"
+          },
+          {
+            "duration": 0.182804701,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:104"
+          },
+          {
+            "duration": 0.1829419,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:134"
+          },
+          {
+            "duration": 0.1819971,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:159"
+          },
+          {
+            "duration": 0.181915001,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:190"
+          },
+          {
+            "duration": 0.185748801,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:214"
+          },
+          {
+            "duration": 0.186998699,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:365"
+          },
+          {
+            "duration": 0.1847808,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:384"
+          },
+          {
+            "duration": 0.1954303,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:396"
+          },
+          {
+            "duration": 0.1797255,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:413"
+          },
+          {
+            "duration": 0.1828677,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:429"
+          },
+          {
+            "duration": 0.1824465,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:443"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on view all under clipboard",
+    "steps": [
+      {
+        "name": "click on view all under clipboard",
+        "aggregatedDurations": {
+          "average": 0.25403972,
+          "median": 0.287123599
+        },
+        "durations": [
+          {
+            "duration": 0.324328501,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:58"
+          },
+          {
+            "duration": 0.3015845,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:111"
+          },
+          {
+            "duration": 0.179373601,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:166"
+          },
+          {
+            "duration": 0.287123599,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:221"
+          },
+          {
+            "duration": 0.1777884,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:238"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on select all on property filter",
+    "steps": [
+      {
+        "name": "click on select all on property filter",
+        "aggregatedDurations": {
+          "average": 3.0561013,
+          "median": 3.0517024
+        },
+        "durations": [
+          {
+            "duration": 3.0527187,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:74"
+          },
+          {
+            "duration": 3.0506861,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:87"
+          },
+          {
+            "duration": 3.0744022,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:97"
+          },
+          {
+            "duration": 3.0465982,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:114"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "move test type option from selected parameters to available parameters",
+    "steps": [
+      {
+        "name": "move test type option from selected parameters to available parameters",
+        "aggregatedDurations": {
+          "average": 0.45438625,
+          "median": 0.45438625
+        },
+        "durations": [
+          {
+            "duration": 0.4224163,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:403"
+          },
+          {
+            "duration": 0.4863562,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:420"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user has already logged in to Material Center application",
+    "steps": [
+      {
+        "name": "user has already logged in to Material Center application",
+        "aggregatedDurations": {
+          "average": 36.913186237,
+          "median": 36.8509807
+        },
+        "durations": [
+          {
+            "duration": 38.2604847,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:4"
+          },
+          {
+            "duration": 37.1161396,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:4"
+          },
+          {
+            "duration": 36.7330932,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:4"
+          },
+          {
+            "duration": 37.2496924,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:4"
+          },
+          {
+            "duration": 37.4829082,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:4"
+          },
+          {
+            "duration": 37.725595499,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:4"
+          },
+          {
+            "duration": 37.7860793,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:4"
+          },
+          {
+            "duration": 37.122958799,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:4"
+          },
+          {
+            "duration": 37.0857491,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:4"
+          },
+          {
+            "duration": 37.0453499,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:4"
+          },
+          {
+            "duration": 37.0709352,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:4"
+          },
+          {
+            "duration": 37.475077201,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:4"
+          },
+          {
+            "duration": 36.4796324,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:4"
+          },
+          {
+            "duration": 37.449696799,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:4"
+          },
+          {
+            "duration": 36.869852601,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:4"
+          },
+          {
+            "duration": 36.5865662,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:4"
+          },
+          {
+            "duration": 37.0107202,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:4"
+          },
+          {
+            "duration": 36.4897232,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:4"
+          },
+          {
+            "duration": 36.8321088,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:4"
+          },
+          {
+            "duration": 36.7963436,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:4"
+          },
+          {
+            "duration": 36.7691512,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:4"
+          },
+          {
+            "duration": 37.119840399,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:4"
+          },
+          {
+            "duration": 36.3530857,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:4"
+          },
+          {
+            "duration": 35.7516435,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:4"
+          },
+          {
+            "duration": 36.119138099,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:4"
+          },
+          {
+            "duration": 36.6045718,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:4"
+          },
+          {
+            "duration": 36.448159699,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:4"
+          },
+          {
+            "duration": 36.5058233,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:4"
+          },
+          {
+            "duration": 36.538359801,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:4"
+          },
+          {
+            "duration": 36.709988499,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:4"
+          },
+          {
+            "duration": 36.697582601,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:4"
+          },
+          {
+            "duration": 36.9359081,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "select finishes",
+    "steps": [
+      {
+        "name": "select finishes",
+        "aggregatedDurations": {
+          "average": 0.164656699,
+          "median": 0.164656699
+        },
+        "durations": [
+          {
+            "duration": 0.164656699,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:375"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "select D-sixA Alloy Steel metal under ultra high strength",
+    "steps": [
+      {
+        "name": "select D-sixA Alloy Steel metal under ultra high strength",
+        "aggregatedDurations": {
+          "average": 0.184037878,
+          "median": 0.1840481
+        },
+        "durations": [
+          {
+            "duration": 0.1830866,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:29"
+          },
+          {
+            "duration": 0.2046147,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:54"
+          },
+          {
+            "duration": 0.177355299,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:84"
+          },
+          {
+            "duration": 0.1735437,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:107"
+          },
+          {
+            "duration": 0.1705688,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:137"
+          },
+          {
+            "duration": 0.186487999,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:162"
+          },
+          {
+            "duration": 0.196651301,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:193"
+          },
+          {
+            "duration": 0.194104799,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:217"
+          },
+          {
+            "duration": 0.181695701,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:368"
+          },
+          {
+            "duration": 0.1864379,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:387"
+          },
+          {
+            "duration": 0.1755684,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:399"
+          },
+          {
+            "duration": 0.189609699,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:416"
+          },
+          {
+            "duration": 0.1850096,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:432"
+          },
+          {
+            "duration": 0.1717958,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:446"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "uncheck electrical, mechanical and physical properties from filter",
+    "steps": [
+      {
+        "name": "uncheck electrical, mechanical and physical properties from filter",
+        "aggregatedDurations": {
+          "average": 0.0180761,
+          "median": 0.01787245
+        },
+        "durations": [
+          {
+            "duration": 0.018614,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:18"
+          },
+          {
+            "duration": 0.0189444,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:32"
+          },
+          {
+            "duration": 0.0159503,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:43"
+          },
+          {
+            "duration": 0.0163208,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:61"
+          },
+          {
+            "duration": 0.0228018,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:126"
+          },
+          {
+            "duration": 0.0171309,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:140"
+          },
+          {
+            "duration": 0.0214194,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:151"
+          },
+          {
+            "duration": 0.013427201,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:169"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "the available parameter is displayed in time dropdown",
+    "steps": [
+      {
+        "name": "the available parameter is displayed in time dropdown",
+        "aggregatedDurations": {
+          "average": 0.0197057,
+          "median": 0.0197057
+        },
+        "durations": [
+          {
+            "duration": 0.0197057,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:407"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "double click on materials selector link",
+    "steps": [
+      {
+        "name": "double click on materials selector link",
+        "aggregatedDurations": {
+          "average": 2.638847819,
+          "median": 2.627345
+        },
+        "durations": [
+          {
+            "duration": 2.627345,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:40"
+          },
+          {
+            "duration": 2.5815525,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:94"
+          },
+          {
+            "duration": 2.6586142,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:148"
+          },
+          {
+            "duration": 2.5771204,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:203"
+          },
+          {
+            "duration": 2.749606999,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:274"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on parameters",
+    "steps": [
+      {
+        "name": "click on parameters",
+        "aggregatedDurations": {
+          "average": 0.750054275,
+          "median": 0.81645575
+        },
+        "durations": [
+          {
+            "duration": 0.7491764,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:377"
+          },
+          {
+            "duration": 0.4585362,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:389"
+          },
+          {
+            "duration": 0.9087694,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:401"
+          },
+          {
+            "duration": 0.8837351,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:418"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on search button from homepage",
+    "steps": [
+      {
+        "name": "click on search button from homepage",
+        "aggregatedDurations": {
+          "average": 0.29642705,
+          "median": 0.294820849
+        },
+        "durations": [
+          {
+            "duration": 0.325252401,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:248"
+          },
+          {
+            "duration": 0.304195999,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:283"
+          },
+          {
+            "duration": 0.2708141,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:327"
+          },
+          {
+            "duration": 0.2854457,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:349"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on rows per page",
+    "steps": [
+      {
+        "name": "click on rows per page",
+        "aggregatedDurations": {
+          "average": 1.036129388,
+          "median": 0.984682651
+        },
+        "durations": [
+          {
+            "duration": 0.5035962,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:14"
+          },
+          {
+            "duration": 0.658915501,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:70"
+          },
+          {
+            "duration": 0.4590847,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:122"
+          },
+          {
+            "duration": 0.4579614,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:178"
+          },
+          {
+            "duration": 1.641194101,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:250"
+          },
+          {
+            "duration": 1.310449801,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:285"
+          },
+          {
+            "duration": 1.5816517,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:329"
+          },
+          {
+            "duration": 1.676181701,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:351"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click ok on filter parameter",
+    "steps": [
+      {
+        "name": "click ok on filter parameter",
+        "aggregatedDurations": {
+          "average": 0.1941372,
+          "median": 0.1941372
+        },
+        "durations": [
+          {
+            "duration": 0.1941372,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:422"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user expands metals",
+    "steps": [
+      {
+        "name": "user expands metals",
+        "aggregatedDurations": {
+          "average": 0.353535414,
+          "median": 0.3530772
+        },
+        "durations": [
+          {
+            "duration": 0.3354394,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:25"
+          },
+          {
+            "duration": 0.3753498,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:50"
+          },
+          {
+            "duration": 0.3211208,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:80"
+          },
+          {
+            "duration": 0.3841093,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:103"
+          },
+          {
+            "duration": 0.3573507,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:133"
+          },
+          {
+            "duration": 0.3413415,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:158"
+          },
+          {
+            "duration": 0.3227339,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:189"
+          },
+          {
+            "duration": 0.3718295,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:213"
+          },
+          {
+            "duration": 0.383888101,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:364"
+          },
+          {
+            "duration": 0.3461809,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:383"
+          },
+          {
+            "duration": 0.358502799,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:395"
+          },
+          {
+            "duration": 0.343412399,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:412"
+          },
+          {
+            "duration": 0.359433,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:428"
+          },
+          {
+            "duration": 0.3488037,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:442"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "double click on first material",
+    "steps": [
+      {
+        "name": "double click on first material",
+        "aggregatedDurations": {
+          "average": 0.60015859,
+          "median": 0.6250698
+        },
+        "durations": [
+          {
+            "duration": 0.644704,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:30"
+          },
+          {
+            "duration": 0.8612383,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:41"
+          },
+          {
+            "duration": 0.628256,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:55"
+          },
+          {
+            "duration": 0.476158101,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:59"
+          },
+          {
+            "duration": 0.605280801,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:85"
+          },
+          {
+            "duration": 0.489934701,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:95"
+          },
+          {
+            "duration": 0.6555424,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:108"
+          },
+          {
+            "duration": 0.434787501,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:112"
+          },
+          {
+            "duration": 0.656393501,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:138"
+          },
+          {
+            "duration": 0.5017837,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:149"
+          },
+          {
+            "duration": 0.6468667,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:163"
+          },
+          {
+            "duration": 0.495956,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:167"
+          },
+          {
+            "duration": 0.6250698,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:194"
+          },
+          {
+            "duration": 0.4674678,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:204"
+          },
+          {
+            "duration": 0.5816754,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:218"
+          },
+          {
+            "duration": 0.456338601,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:222"
+          },
+          {
+            "duration": 0.6519964,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:235"
+          },
+          {
+            "duration": 0.5309197,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:239"
+          },
+          {
+            "duration": 0.6389659,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:264"
+          },
+          {
+            "duration": 0.461980701,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:275"
+          },
+          {
+            "duration": 0.6467272,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:296"
+          },
+          {
+            "duration": 0.6420337,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:309"
+          },
+          {
+            "duration": 0.5602378,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:318"
+          },
+          {
+            "duration": 0.5986472,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:340"
+          },
+          {
+            "duration": 0.654695101,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:369"
+          },
+          {
+            "duration": 0.8761859,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:376"
+          },
+          {
+            "duration": 0.6368669,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:388"
+          },
+          {
+            "duration": 0.6274452,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:400"
+          },
+          {
+            "duration": 0.6474868,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:417"
+          },
+          {
+            "duration": 0.6019227,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:433"
+          },
+          {
+            "duration": 0.6013518,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:447"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "unselect processing property",
+    "steps": [
+      {
+        "name": "unselect processing property",
+        "aggregatedDurations": {
+          "average": 0.24946955,
+          "median": 0.222235
+        },
+        "durations": [
+          {
+            "duration": 0.2024766,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:300"
+          },
+          {
+            "duration": 0.237043201,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:313"
+          },
+          {
+            "duration": 0.350931601,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:335"
+          },
+          {
+            "duration": 0.2074268,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:357"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "select ionomer",
+    "steps": [
+      {
+        "name": "select ionomer",
+        "aggregatedDurations": {
+          "average": 0.17691235,
+          "median": 0.1760716
+        },
+        "durations": [
+          {
+            "duration": 0.1856297,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:234"
+          },
+          {
+            "duration": 0.1698765,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:263"
+          },
+          {
+            "duration": 0.180732499,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:295"
+          },
+          {
+            "duration": 0.171410701,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:308"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "move test temprature option from selected parameters to available parameters",
+    "steps": [
+      {
+        "name": "move test temprature option from selected parameters to available parameters",
+        "aggregatedDurations": {
+          "average": 0.56196,
+          "median": 0.56196
+        },
+        "durations": [
+          {
+            "duration": 0.5564301,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:402"
+          },
+          {
+            "duration": 0.5674899,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:419"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "the no property selected message displayed {string}",
+    "steps": [
+      {
+        "name": "the no property selected message displayed \"The material does not contain any selected property sets.  Select property sets to show from the Property Set filter button\"",
+        "aggregatedDurations": {
+          "average": 0.284273381,
+          "median": 0.294072299
+        },
+        "durations": [
+          {
+            "duration": 0.294072299,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:183"
+          },
+          {
+            "duration": 0.2518159,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:197"
+          },
+          {
+            "duration": 0.3256531,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:207"
+          },
+          {
+            "duration": 0.2875614,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:225"
+          },
+          {
+            "duration": 0.304195201,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:242"
+          },
+          {
+            "duration": 0.337387299,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:255"
+          },
+          {
+            "duration": 0.3058423,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:267"
+          },
+          {
+            "duration": 0.160211001,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:278"
+          },
+          {
+            "duration": 0.2666072,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:321"
+          },
+          {
+            "duration": 0.2832801,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:343"
+          },
+          {
+            "duration": 0.3103814,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:436"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click ok button on property set filter",
+    "steps": [
+      {
+        "name": "click ok button on property set filter",
+        "aggregatedDurations": {
+          "average": 0.022634875,
+          "median": 0.0232157
+        },
+        "durations": [
+          {
+            "duration": 0.0261707,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:19"
+          },
+          {
+            "duration": 0.0179374,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:33"
+          },
+          {
+            "duration": 0.0229387,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:44"
+          },
+          {
+            "duration": 0.023492701,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:62"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user comes on Navigate WS",
+    "steps": [
+      {
+        "name": "user comes on Navigate WS",
+        "aggregatedDurations": {
+          "average": 0.466609766,
+          "median": 0.462496801
+        },
+        "durations": [
+          {
+            "duration": 0.4735044,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:24"
+          },
+          {
+            "duration": 0.4577188,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:49"
+          },
+          {
+            "duration": 0.4705125,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:79"
+          },
+          {
+            "duration": 0.4891615,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:102"
+          },
+          {
+            "duration": 0.432618501,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:132"
+          },
+          {
+            "duration": 0.4702054,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:157"
+          },
+          {
+            "duration": 0.4478452,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:188"
+          },
+          {
+            "duration": 0.452230499,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:212"
+          },
+          {
+            "duration": 0.45433,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:231"
+          },
+          {
+            "duration": 0.466962801,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:260"
+          },
+          {
+            "duration": 0.4967879,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:292"
+          },
+          {
+            "duration": 0.4572954,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:305"
+          },
+          {
+            "duration": 0.5385109,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:315"
+          },
+          {
+            "duration": 0.5050305,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:337"
+          },
+          {
+            "duration": 0.4385196,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:363"
+          },
+          {
+            "duration": 0.4615527,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:374"
+          },
+          {
+            "duration": 0.462496801,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:382"
+          },
+          {
+            "duration": 0.456301899,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:394"
+          },
+          {
+            "duration": 0.4663587,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:411"
+          },
+          {
+            "duration": 0.462977,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:427"
+          },
+          {
+            "duration": 0.4378841,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:441"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "message is displayed which does not property set {string}",
+    "steps": [
+      {
+        "name": "message is displayed which does not property set \"The material does not have any property sets\"",
+        "aggregatedDurations": {
+          "average": 1.016999601,
+          "median": 1.016999601
+        },
+        "durations": [
+          {
+            "duration": 1.016999601,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:288"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user expands polymers",
+    "steps": [
+      {
+        "name": "user expands polymers",
+        "aggregatedDurations": {
+          "average": 0.364070275,
+          "median": 0.3610145
+        },
+        "durations": [
+          {
+            "duration": 0.386099901,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:232"
+          },
+          {
+            "duration": 0.351825,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:261"
+          },
+          {
+            "duration": 0.3481522,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:293"
+          },
+          {
+            "duration": 0.370204001,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:306"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "all the three buttons ok, cancel and reset are displayed",
+    "steps": [
+      {
+        "name": "all the three buttons ok, cancel and reset are displayed",
+        "aggregatedDurations": {
+          "average": 0.1963788,
+          "median": 0.1963788
+        },
+        "durations": [
+          {
+            "duration": 0.1963788,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:390"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user expands ultra high strength",
+    "steps": [
+      {
+        "name": "user expands ultra high strength",
+        "aggregatedDurations": {
+          "average": 0.186364457,
+          "median": 0.18189255
+        },
+        "durations": [
+          {
+            "duration": 0.1792619,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:28"
+          },
+          {
+            "duration": 0.181791401,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:53"
+          },
+          {
+            "duration": 0.206867701,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:83"
+          },
+          {
+            "duration": 0.168232,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:106"
+          },
+          {
+            "duration": 0.1633465,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:136"
+          },
+          {
+            "duration": 0.2232635,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:161"
+          },
+          {
+            "duration": 0.2025205,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:192"
+          },
+          {
+            "duration": 0.1819937,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:216"
+          },
+          {
+            "duration": 0.180354099,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:367"
+          },
+          {
+            "duration": 0.1706736,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:386"
+          },
+          {
+            "duration": 0.192377299,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:398"
+          },
+          {
+            "duration": 0.1815801,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:415"
+          },
+          {
+            "duration": 0.183387,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:431"
+          },
+          {
+            "duration": 0.1934531,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:445"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "unselect hardness property",
+    "steps": [
+      {
+        "name": "unselect hardness property",
+        "aggregatedDurations": {
+          "average": 0.304779,
+          "median": 0.27227595
+        },
+        "durations": [
+          {
+            "duration": 0.2155601,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:298"
+          },
+          {
+            "duration": 0.2495075,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:311"
+          },
+          {
+            "duration": 0.459004,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:333"
+          },
+          {
+            "duration": 0.295044401,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:355"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user clicks on Config WS",
+    "steps": [
+      {
+        "name": "user clicks on Config WS",
+        "aggregatedDurations": {
+          "average": 0.46573762,
+          "median": 0.4508501
+        },
+        "durations": [
+          {
+            "duration": 0.5148406,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:38"
+          },
+          {
+            "duration": 0.4508501,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:92"
+          },
+          {
+            "duration": 0.485983501,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:146"
+          },
+          {
+            "duration": 0.441073,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:201"
+          },
+          {
+            "duration": 0.4359409,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:272"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "uncheck assembly property from filter",
+    "steps": [
+      {
+        "name": "uncheck assembly property from filter",
+        "aggregatedDurations": {
+          "average": 0.0386513,
+          "median": 0.0386513
+        },
+        "durations": [
+          {
+            "duration": 0.0386513,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:449"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "property set filter image is displayed",
+    "steps": [
+      {
+        "name": "property set filter image is displayed",
+        "aggregatedDurations": {
+          "average": 0.046147117,
+          "median": 0.024207951
+        },
+        "durations": [
+          {
+            "duration": 0.1590546,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:20"
+          },
+          {
+            "duration": 0.0267526,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:34"
+          },
+          {
+            "duration": 0.024385801,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:45"
+          },
+          {
+            "duration": 0.024030101,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:63"
+          },
+          {
+            "duration": 0.022545101,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:301"
+          },
+          {
+            "duration": 0.020114501,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:358"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "select industrial glass",
+    "steps": [
+      {
+        "name": "select industrial glass",
+        "aggregatedDurations": {
+          "average": 0.18856815,
+          "median": 0.18856815
+        },
+        "durations": [
+          {
+            "duration": 0.186106401,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:317"
+          },
+          {
+            "duration": 0.1910299,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:339"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on data sources",
+    "steps": [
+      {
+        "name": "click on data sources",
+        "aggregatedDurations": {
+          "average": 0.67071372,
+          "median": 0.6760987
+        },
+        "durations": [
+          {
+            "duration": 0.6419754,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:39"
+          },
+          {
+            "duration": 0.6760987,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:93"
+          },
+          {
+            "duration": 0.7045874,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:147"
+          },
+          {
+            "duration": 0.638743299,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:202"
+          },
+          {
+            "duration": 0.692163801,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:273"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "assembly properties are not displayed on material SOD page",
+    "steps": [
+      {
+        "name": "assembly properties are not displayed on material SOD page",
+        "aggregatedDurations": {
+          "average": 30.0427827,
+          "median": 30.0427827
+        },
+        "durations": [
+          {
+            "duration": 30.0427827,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:450"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "all the three options are displayed in display dropdown",
+    "steps": [
+      {
+        "name": "all the three options are displayed in display dropdown",
+        "aggregatedDurations": {
+          "average": 0.5390366,
+          "median": 0.5390366
+        },
+        "durations": [
+          {
+            "duration": 0.5390366,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:370"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "materials search results displayed",
+    "steps": [
+      {
+        "name": "materials search results displayed",
+        "aggregatedDurations": {
+          "average": 0.192842199,
+          "median": 0.19093855
+        },
+        "durations": [
+          {
+            "duration": 0.1997574,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:13"
+          },
+          {
+            "duration": 0.2015324,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:69"
+          },
+          {
+            "duration": 0.179686199,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:121"
+          },
+          {
+            "duration": 0.184971499,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:177"
+          },
+          {
+            "duration": 0.216181399,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:249"
+          },
+          {
+            "duration": 0.1846248,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:284"
+          },
+          {
+            "duration": 0.1790783,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:328"
+          },
+          {
+            "duration": 0.196905601,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:350"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "the material contains single parameters message displayed {string}",
+    "steps": [
+      {
+        "name": "the material contains single parameters message displayed \"The Material Display contains a single parameter and cannot be filtered further\"",
+        "aggregatedDurations": {
+          "average": 0.3457536,
+          "median": 0.3457536
+        },
+        "durations": [
+          {
+            "duration": 0.3457536,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:378"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "move time option from selected parameters to available parameters",
+    "steps": [
+      {
+        "name": "move time option from selected parameters to available parameters",
+        "aggregatedDurations": {
+          "average": 0.42171655,
+          "median": 0.42171655
+        },
+        "durations": [
+          {
+            "duration": 0.4135576,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:404"
+          },
+          {
+            "duration": 0.4298755,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:421"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on three",
+    "steps": [
+      {
+        "name": "click on three",
+        "aggregatedDurations": {
+          "average": 1.619061737,
+          "median": 0.363234899
+        },
+        "durations": [
+          {
+            "duration": 10.2608938,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:15"
+          },
+          {
+            "duration": 0.6702508,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:71"
+          },
+          {
+            "duration": 0.3720378,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:123"
+          },
+          {
+            "duration": 0.3439545,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:179"
+          },
+          {
+            "duration": 0.370327799,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:251"
+          },
+          {
+            "duration": 0.332188599,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:286"
+          },
+          {
+            "duration": 0.2466986,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:330"
+          },
+          {
+            "duration": 0.356142,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:352"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "homepage is displayed",
+    "steps": [
+      {
+        "name": "homepage is displayed",
+        "aggregatedDurations": {
+          "average": 0.199606465,
+          "median": 0.19516945
+        },
+        "durations": [
+          {
+            "duration": 0.2559674,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:7"
+          },
+          {
+            "duration": 0.1949243,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:7"
+          },
+          {
+            "duration": 0.2034444,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:7"
+          },
+          {
+            "duration": 0.279577599,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:7"
+          },
+          {
+            "duration": 0.209459801,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:7"
+          },
+          {
+            "duration": 0.2290885,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:7"
+          },
+          {
+            "duration": 0.206415801,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:7"
+          },
+          {
+            "duration": 0.2024331,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:7"
+          },
+          {
+            "duration": 0.202648999,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:7"
+          },
+          {
+            "duration": 0.189409,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:7"
+          },
+          {
+            "duration": 0.2212071,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:7"
+          },
+          {
+            "duration": 0.189517799,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:7"
+          },
+          {
+            "duration": 0.1839764,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:7"
+          },
+          {
+            "duration": 0.185888701,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:7"
+          },
+          {
+            "duration": 0.1758239,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:7"
+          },
+          {
+            "duration": 0.1869623,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:7"
+          },
+          {
+            "duration": 0.188854,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:7"
+          },
+          {
+            "duration": 0.1808873,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:7"
+          },
+          {
+            "duration": 0.1956522,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:7"
+          },
+          {
+            "duration": 0.1852232,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:7"
+          },
+          {
+            "duration": 0.1790547,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:7"
+          },
+          {
+            "duration": 0.1937392,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:7"
+          },
+          {
+            "duration": 0.1821897,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:7"
+          },
+          {
+            "duration": 0.1954146,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:7"
+          },
+          {
+            "duration": 0.1799875,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:7"
+          },
+          {
+            "duration": 0.2099874,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:7"
+          },
+          {
+            "duration": 0.2044683,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:7"
+          },
+          {
+            "duration": 0.199895899,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:7"
+          },
+          {
+            "duration": 0.197178601,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:7"
+          },
+          {
+            "duration": 0.186786801,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:7"
+          },
+          {
+            "duration": 0.1876624,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:7"
+          },
+          {
+            "duration": 0.20368,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user enters searchtext for materials search {string}",
+    "steps": [
+      {
+        "name": "user enters searchtext for materials search \"polymer\"",
+        "aggregatedDurations": {
+          "average": 0.0654953,
+          "median": 0.0654953
+        },
+        "durations": [
+          {
+            "duration": 0.0654953,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:247"
+          }
+        ]
+      },
+      {
+        "name": "user enters searchtext for materials search \"Mat2\"",
+        "aggregatedDurations": {
+          "average": 0.0481563,
+          "median": 0.0481563
+        },
+        "durations": [
+          {
+            "duration": 0.0481563,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:282"
+          }
+        ]
+      },
+      {
+        "name": "user enters searchtext for materials search \"Ionomer\"",
+        "aggregatedDurations": {
+          "average": 0.05914915,
+          "median": 0.05914915
+        },
+        "durations": [
+          {
+            "duration": 0.0638959,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:326"
+          },
+          {
+            "duration": 0.0544024,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:348"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user comes on search WS",
+    "steps": [
+      {
+        "name": "user comes on search WS",
+        "aggregatedDurations": {
+          "average": 0.480554249,
+          "median": 0.4801719
+        },
+        "durations": [
+          {
+            "duration": 0.4373583,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:11"
+          },
+          {
+            "duration": 0.528588899,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:67"
+          },
+          {
+            "duration": 0.5229855,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:119"
+          },
+          {
+            "duration": 0.433284299,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:175"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on cancel on property set filter",
+    "steps": [
+      {
+        "name": "click on cancel on property set filter",
+        "aggregatedDurations": {
+          "average": 0.016611499,
+          "median": 0.016036699
+        },
+        "durations": [
+          {
+            "duration": 0.0165599,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:127"
+          },
+          {
+            "duration": 0.015513499,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:141"
+          },
+          {
+            "duration": 0.0194086,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:152"
+          },
+          {
+            "duration": 0.014964,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:170"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "double click on first result",
+    "steps": [
+      {
+        "name": "double click on first result",
+        "aggregatedDurations": {
+          "average": 0.571220412,
+          "median": 0.49985385
+        },
+        "durations": [
+          {
+            "duration": 0.4423162,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:16"
+          },
+          {
+            "duration": 0.4691423,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:72"
+          },
+          {
+            "duration": 0.8040591,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:124"
+          },
+          {
+            "duration": 0.8686022,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:180"
+          },
+          {
+            "duration": 0.4604078,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:252"
+          },
+          {
+            "duration": 0.479299899,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:287"
+          },
+          {
+            "duration": 0.525528,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:331"
+          },
+          {
+            "duration": 0.520407801,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:353"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user expands plastics,thermoplastic",
+    "steps": [
+      {
+        "name": "user expands plastics,thermoplastic",
+        "aggregatedDurations": {
+          "average": 0.185891075,
+          "median": 0.18536375
+        },
+        "durations": [
+          {
+            "duration": 0.1655402,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:233"
+          },
+          {
+            "duration": 0.1891448,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:262"
+          },
+          {
+            "duration": 0.207296601,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:294"
+          },
+          {
+            "duration": 0.1815827,
+            "location": "file:Features/MC2017SOD/Material%20SOD.feature:307"
+          }
+        ]
+      }
+    ]
+  }
+]

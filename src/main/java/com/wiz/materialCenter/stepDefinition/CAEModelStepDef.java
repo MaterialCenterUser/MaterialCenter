@@ -4,6 +4,7 @@ import com.wiz.materialCenter.pages.CAEProcessInput;
 import com.wiz.materialCenter.pages.HomePage;
 import com.wiz.materialCenter.pages.MaterialMOD;
 import com.wiz.materialCenter.pages.MaterialSOD;
+import com.wiz.materialCenter.pages.MyWorkspacePage;
 import com.wiz.materialCenter.pages.NavigateWS;
 import com.wiz.materialCenter.pages.ProcessesPage;
 import com.wiz.materialCenter.util.TestBase;
@@ -19,17 +20,16 @@ public class CAEModelStepDef extends TestBase {
 	MaterialMOD matMod = new MaterialMOD();
 	CAEProcessInput caeProccessInput = new CAEProcessInput();
 	ProcessesPage processessPage = new ProcessesPage();
-	
+	MyWorkspacePage workSpacePage = new MyWorkspacePage();
 	@Given("user clicks on Config WS")
 	public void user_clicks_on_Config_WS() {
-		HomePage homePage = new HomePage();
+		//HomePage homePage = new HomePage();
 		homePage.clickOnConfiguration();
 		screenshot(driver, System.currentTimeMillis());
 	}
 
 	@When("user comes on Navigate WS")
 	public void user_comes_on_Navigate_WS() {
-	//	HomePage homePage = new HomePage();
 		homePage.clickOnNavigate();
 		screenshot(driver, System.currentTimeMillis());
 	}
@@ -77,6 +77,7 @@ public class CAEModelStepDef extends TestBase {
 	public void navigate_to_homepage() throws InterruptedException {
 		//homePage = new HomePage();
 		homePage.clickOnDashboard();
+		Thread.sleep(3000);
 		screenshot(driver, System.currentTimeMillis());
 	}
 	
@@ -101,7 +102,7 @@ public class CAEModelStepDef extends TestBase {
 	
 	@When("user select CAE model process")
 	public void user_select_CAE_model_process() {
-	   	    homePage.clickOnCaeProcess();
+	   	    workSpacePage.clickOnCaeProcess();
 	    screenshot(driver, System.currentTimeMillis());
 	}
 

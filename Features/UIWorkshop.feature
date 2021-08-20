@@ -1,9 +1,14 @@
 Feature: This feature file consist of all UI Workshop flows
+Background:
+Given user has already logged in to Material Center application
+|username|password|
+|smroot|sdm|
+And homepage is displayed
 
 @Step1 @All
 Scenario: Log in and Personalize your homepage
-Given user is on dashboard page
-When user verfies the homepage gadgets
+When user is on dashboard page
+And user verfies the homepage gadgets
 And create new dashboard using add new dashboard action
 And click on edit dashboard
 And configure the newly added dashboard
@@ -12,8 +17,8 @@ Then change the current units system to US-customary
 
 @Step2 @All
 Scenario: Use of Navigate workspace
-Given user comes on Navigate WS
-When user expands metals
+When user comes on Navigate WS
+And user expands metals
 And open the wrought metals list under non ferrous aluminum section
 And verify the count of the materials in this list is correct
 And click on heat treatment tab on MOD and select sort ascending
@@ -24,8 +29,8 @@ Then save the private view under arrow button and check show as default view
 
 @Step3 @All
 Scenario: Select materials from MOD and export
-Given user comes on Navigate WS
-When user clicks on Metals to open MOD
+When user comes on Navigate WS
+And user clicks on Metals to open MOD
 And click on arrow button
 And click on select page option
 And click on arrow button
@@ -34,8 +39,8 @@ Then click on ok button to export the materials into excel
 
 @Step4 @All
 Scenario: Open a material detailed view
-Given user comes on Navigate WS
-When user expands metals
+When user comes on Navigate WS
+And user expands metals
 And user expands alloy steels under ferrous metals
 And user expands ultra high strength
 And select D-sixA Alloy Steel metal under ultra high strength
@@ -47,8 +52,8 @@ Then verify that in prpoerty details window popup classification are on top foll
 
 @Step5 @All
 Scenario: Collapse parameters and filter parameters
-Given user comes on Navigate WS
-When user expands metals
+When user comes on Navigate WS
+And user expands metals
 And user expands alloy steels under ferrous metals
 And user expands ultra high strength
 And select D-sixA Alloy Steel metal under ultra high strength
@@ -60,8 +65,8 @@ Then check that only single test temp displayed in mechanical property and add t
 
 @Step6 @All
 Scenario: Add source attributes
-Given user comes on Navigate WS
-When user expands metals
+When user comes on Navigate WS
+And user expands metals
 And user expands alloy steels under ferrous metals
 And user expands ultra high strength
 And select D-sixA Alloy Steel metal under ultra high strength
@@ -71,10 +76,10 @@ And add source databank and source document publisher in display source col
 And verify that source databank and source document publisher is displayed on SOD for respective properties
 Then clear source and parameter filter from Display dropdown
 
-@Step7 @All1
+@Step7 @All
 Scenario: Change the footnote display in options panel
-Given user comes on Navigate WS
-When user expands metals
+When user comes on Navigate WS
+And user expands metals
 And user expands alloy steels under ferrous metals
 And user expands ultra high strength
 And select D-sixA Alloy Steel metal under ultra high strength
@@ -93,8 +98,8 @@ Then verify that footnotes are now displayed inline next to property values
 
 @Step8 @All
 Scenario: Explore the datasheet tabs and pedigree viewer
-Given user comes on Navigate WS
-When user expands metals
+When user comes on Navigate WS
+And user expands metals
 And user expands alloy steels under ferrous metals
 And user expands ultra high strength
 And select D-sixA Alloy Steel metal under ultra high strength
@@ -106,27 +111,24 @@ Then click on pedigree viewer icon on toolbar to open pedigree workspace tab
 
 @Step9 @All
 Scenario: Use easy search and then filter the results
-Given user gives some text to search in materials
-When search result is displayed
-And expand material type filter and select metals option
-And user adds density attribute condition
-And user provides range using histogram
-And search result for given condition
-And user saves the filtered search template
-Then navigate to homepage and verify that saved search result is displayed under search templates
+Scenario: Easy search action validation templates
+And user enters searchtext for materials search "steel"
+And click on search button from homepage
+And materials search results displayed
+Then verify that correct text search result is displayed
 
 @Step10 @All
 Scenario: Configure the Find Similar search
-Given user clicks on Config WS
-When click on configure find similar link
+When user clicks on Config WS
+And click on configure find similar link
 And add class family form subclass under classification tab
 #Then user is on dashboard page
 Then check that process status is completed
 
 @Step11 @All
 Scenario: Perform a Find Similar search
-Given user comes on Navigate WS
-When user expands metals
+When user comes on Navigate WS
+And user expands metals
 And user expands alloy steels under ferrous metals
 And user expands ultra high strength
 And select D-sixA Alloy Steel metal under ultra high strength
@@ -136,11 +138,11 @@ Then find similar search result is displayed
 
 @Step12 @All
 Scenario: Compare two material
-Given user comes on Navigate WS
-When user clicks on Metals to open MOD
+When user comes on Navigate WS
+And user clicks on Metals to open MOD
 #And select two materials
-And Click on rows per page
-And Click on three
+And click on rows per page
+And click on three
 And click on arrow button
 And click on select page option
 And select compare option from Actions menu
@@ -148,13 +150,13 @@ Then compare results displayed
 
 @Step13 @All
 Scenario: Search for curve properties in search workspace
-Given user comes on search homepage
-When select the curve property option
+When user comes on search homepage
+And select the curve property option
 And expand property def filter
 And select Compressive Stress in L-dir Vs Strain and click the check symbol to apply
 #And select first and third curve property result to compare
-And Click on rows per page
-And Click on three
+And click on rows per page
+And click on three
 And click on arrow button
 And click on select page option from curve property
 And select compare option from Actions menu
@@ -167,8 +169,8 @@ Then apply it by clicking on ok button and close the curve viewer
 
 @Step14 @All
 Scenario: Bar chart plotting
-Given user comes on Navigate WS
-When user expands metals
+When user comes on Navigate WS
+And user expands metals
 And user expands alloy steels under ferrous metals
 And user expands ultra high strength
 And select D-sixA Alloy Steel metal under ultra high strength
@@ -180,8 +182,8 @@ Then verify the plotted bar chart values by navigating to material SOD from plot
 
 @Step15 @All
 Scenario: Scatter plotting
-Given user comes on Navigate WS
-When user expands metals
+When user comes on Navigate WS
+And user expands metals
 And user expands alloy steels under ferrous metals
 And user expands ultra high strength
 And select D-sixA Alloy Steel metal under ultra high strength
@@ -194,8 +196,8 @@ Then verify the plotted scatter plot values by navigating to material SOD from p
 
 @Step16 @All
 Scenario: Pie chart plotting
-Given user comes on Navigate WS
-When user expands metals
+When user comes on Navigate WS
+And user expands metals
 And user expands alloy steels under ferrous metals
 And user expands ultra high strength
 And select D-sixA Alloy Steel metal under ultra high strength
@@ -207,8 +209,8 @@ Then verify the plotted pie chart values by navigating to material SOD from plot
 
 @Step17 @All
 Scenario: Spider plotting
-Given user comes on Navigate WS
-When user expands metals
+When user comes on Navigate WS
+And user expands metals
 And user expands alloy steels under ferrous metals
 And user expands ultra high strength
 And select D-sixA Alloy Steel metal under ultra high strength

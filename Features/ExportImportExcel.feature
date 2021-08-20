@@ -1,60 +1,62 @@
 Feature: User does export and import to excel action for selected material
 
+Background:
+Given user has already logged in to Material Center application
+|username|password|
+|smroot|sdm|
+And homepage is displayed
+
 @ExportMat @All
 Scenario: User export the material into excel
-Given user comes on Navigate WS
-When user clicks on Metals to open MOD
-#And select rows per page as five hundred
+When user comes on Navigate WS
+And user clicks on Metals to open MOD
 And select rows per page as hundred
 And click on arrow button
-And click on select page option
+And click on select page option for rows100 or more
 And click on export to excel
 And click on submit button on export to excel popup
 Then check that process status is completed
 
 @ExportMatIntoXML @All
 Scenario: User export the material into XML
-Given user comes on Navigate WS
-When user clicks on Metals to open MOD
-#And select rows per page as five hundred
+When user comes on Navigate WS
+And user clicks on Metals to open MOD
 And select rows per page as hundred
 And click on arrow button
-And click on select page option
+And click on select page option for rows100 or more
 And click on export menu and select XML option
 And select include project and all mat datas checkbox
 And click on submit button on export to XML popup
-Then check that process status is completed
+Then check that process status is completed for xml
 
-@ExportMatValidation @All1
+@ExportMatValidation @All
 Scenario: User export the material into excel
 Given user comes on Navigate WS
 When user clicks on Metals to open MOD
 And select rows per page as hundred
 And click on arrow button
-And click on select page option
+And click on select page option for rows100 or more
 And click on export to excel
 And click on submit button on export to excel popup
 Then check that process status is completed with download excel link
 
 @ImportExcel @All
 Scenario: User uploads material using import excel file link
-Given user clicks on Config WS
-When user clicks on Import excel file link
+When user clicks on Config WS
+And user clicks on Import excel file link
 And select fixed excel format
-#And enter all details and select excel file from system
 And select data project
 And select excel file to upload
 And select master metal schema
 And click on submit button to upload the excel
 Then check that process status is completed
-#Then material through excel file should be uploaded successfully
+
 
 @ImportExcelValidationFixed @All
 Scenario: User uploads material using import excel file link
 Given user clicks on Config WS
 When user clicks on Import excel file link
 And select fixed excel format
-#And enter all details and select excel file from system
 And select data project
 And select excel file to upload
 And select master metal schema
@@ -67,9 +69,8 @@ Then verify the details of material on SOD
 
 @ImportExcelValidationMapped @All
 Scenario: User uploads material using import excel file link
-Given user clicks on Config WS
-When user clicks on Import excel file link
-#And enter all details and select excel file from system for mapped
+When user clicks on Config WS
+And user clicks on Import excel file link
 And select data project
 And select excel file from system for mapped
 And select generic mat schema
@@ -82,7 +83,7 @@ Then verify the details of material on SOD for mapped excel
 
 @ExportMatFord @AllFordSpecific
 Scenario: User export the material into excel
-Given user comes on Navigate WS
+When user comes on Navigate WS
 And user expands material design data
 And select metal option
 And double click on material from MOD of ford data
@@ -92,8 +93,8 @@ Then export to excel is done successfully
 
 @ExportTestDataMatFord @AllFordSpecific
 Scenario: User export the material test data into excel
-Given user gives test data material to search
-When sort the material in descending order of revisions
+When user gives test data material to search
+And sort the material in descending order of revisions
 And select the material with max revisions
 And click on test data tab and select all test data
 And click on export to excel test data
@@ -104,8 +105,8 @@ Then check that process status is completed
 
 @ImportTestDataMatFord @AllFordSpecific
 Scenario: User import the material test data
-Given user gives test data material to search
-When sort the material in descending order of revisions
+When user gives test data material to search
+And sort the material in descending order of revisions
 And select the material with max revisions
 And click on tools tab and import test data
 And choose the file from system to import
@@ -114,10 +115,9 @@ Then check that process status is completed
 
 @ImportExcelFord @All
 Scenario: User uploads material using import excel file link
-Given user clicks on Config WS
-When user clicks on Import excel file link
+When user clicks on Config WS
+And user clicks on Import excel file link
 And select fixed excel format
-#And enter all details and select excel file from system
 And select data project
 And select excel file to upload
 And select master metal schema

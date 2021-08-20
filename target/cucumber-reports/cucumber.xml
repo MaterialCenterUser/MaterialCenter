@@ -1,31 +1,72 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="49.797424">
-<testcase classname="Process Management" name="Check if Manage Process UI can be launched on Material MOD" time="25.676805">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="159.859152">
+<testcase classname="Process Management" name="Verify component dropdown when process type is selected as composites" time="52.099625">
 <system-out><![CDATA[Given user has already logged in to Material Center application.............passed
 And homepage is displayed...................................................passed
-When user comes on search WS................................................passed
-And user click on material from search page.................................passed
+When user selects Materials from dropdown...................................passed
+And user enters searchtext for test data search "ceramics"..................passed
+And click on search button from homepage....................................passed
 And materials search results displayed......................................passed
-And Click on rows per page..................................................passed
-And Click on three..........................................................passed
-And select first material...................................................passed
-And click on edit...........................................................passed
-And click on manage process from edit menu on search results MOD............passed
-Then manage process page is displayed.......................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Process Management" name="Check if Manage Process UI can be launched from Material SOD" time="24.120619">
-<system-out><![CDATA[Given user has already logged in to Material Center application.............passed
-And homepage is displayed...................................................passed
-When user comes on search WS................................................passed
-And user click on material from search page.................................passed
-And materials search results displayed......................................passed
-And Click on rows per page..................................................passed
-And Click on three..........................................................passed
+And click on rows per page..................................................passed
+And click on three..........................................................passed
 And double click on first result............................................passed
 And click on edit on MatSOD.................................................passed
 And click on manage process from edit menu on SOD...........................passed
-Then manage process page is displayed.......................................passed
+And select composites from process type dropdown............................passed
+And click on process dropdown...............................................passed
+Then all the components listed are displayed as of selected process type composites.passed
+]]></system-out>
+</testcase>
+<testcase classname="Process Management" name="Check if Process tab is displayed on Material SOD if Material has Process Assembly" time="48.938024">
+<system-out><![CDATA[Given user has already logged in to Material Center application.............passed
+And homepage is displayed...................................................passed
+When user selects Materials from dropdown...................................passed
+And user enters searchtext for test data search "metals"....................passed
+And click on search button from homepage....................................passed
+And materials search results displayed......................................passed
+And click on rows per page..................................................passed
+And click on three..........................................................passed
+And double click on first result............................................passed
+And click on edit on MatSOD.................................................passed
+And click on manage process from edit menu on SOD...........................passed
+And select composites from process type dropdown............................passed
+And click on select button displayed against process dropdown...............passed
+And click on rows per page..................................................passed
+And click on three..........................................................passed
+And double click on first result............................................passed
+And enter some value in time textbox........................................passed
+And click on Add button on process page.....................................passed
+And click on submit button on process page..................................passed
+And process tab is displayed on material SOD page...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Process Management" name="Check if Discard Manager Process action deletes the created object" time="58.821503">
+<system-out><![CDATA[Given user has already logged in to Material Center application.............passed
+And homepage is displayed...................................................passed
+When user selects Materials from dropdown...................................passed
+And user enters searchtext for test data search "coatings"..................passed
+And click on search button from homepage....................................passed
+And materials search results displayed......................................passed
+And click on rows per page..................................................passed
+And click on three..........................................................passed
+And double click on first result............................................passed
+And click on edit on MatSOD.................................................passed
+And click on manage process from edit menu on SOD...........................passed
+And select composites from process type dropdown............................passed
+And click on process dropdown...............................................passed
+And select first row from process dropdown..................................passed
+And enter some value in time textbox........................................passed
+And click on Add button on process page.....................................passed
+And click on submit button on process page..................................passed
+And navigate to homepage from material SOD page.............................passed
+And user clicks on view all processes.......................................passed
+And click on rows per page..................................................passed
+And click on three..........................................................passed
+And click on manage process link............................................passed
+And user clicks on discard option...........................................passed
+And user clicks on submit button on manage process..........................passed
+And user clicks on view all processes.......................................passed
+Then discard of manage process is done successfully.........................passed
 ]]></system-out>
 </testcase>
 </testsuite>

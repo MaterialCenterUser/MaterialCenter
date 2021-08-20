@@ -1,131 +1,57 @@
 [
   {
-    "source": "select show differences only from Display dropdown",
+    "source": "edit few values",
     "steps": [
       {
-        "name": "select show differences only from Display dropdown",
+        "name": "edit few values",
         "aggregatedDurations": {
-          "average": 5.2086401,
-          "median": 5.2086401
+          "average": 0.1105648,
+          "median": 0.1105648
         },
         "durations": [
           {
-            "duration": 5.4404265,
-            "location": "file:Features/MatRevision.feature:12"
-          },
-          {
-            "duration": 4.9768537,
-            "location": "file:Features/MatRevision.feature:24"
+            "duration": 0.1105648,
+            "location": "file:Features/MatRevision.feature:32"
           }
         ]
       }
     ]
   },
   {
-    "source": "click on arrow button",
+    "source": "click on submit button on edit materials page",
     "steps": [
       {
-        "name": "click on arrow button",
+        "name": "click on submit button on edit materials page",
         "aggregatedDurations": {
-          "average": 0.3842448,
-          "median": 0.3842448
+          "average": 0.0238471,
+          "median": 0.0238471
         },
         "durations": [
           {
-            "duration": 0.4337308,
-            "location": "file:Features/MatRevision.feature:9"
+            "duration": 0.0293962,
+            "location": "file:Features/MatRevision.feature:33"
           },
           {
-            "duration": 0.3347588,
-            "location": "file:Features/MatRevision.feature:21"
+            "duration": 0.018298,
+            "location": "file:Features/MatRevision.feature:37"
           }
         ]
       }
     ]
   },
   {
-    "source": "Click on rows per page",
+    "source": "click on first revision",
     "steps": [
       {
-        "name": "Click on rows per page",
+        "name": "click on first revision",
         "aggregatedDurations": {
-          "average": 0.6378309,
-          "median": 0.6378309
+          "average": 0.4581388,
+          "median": 0.4581388
         },
         "durations": [
           {
-            "duration": 0.6530687,
-            "location": "file:Features/MatRevision.feature:7"
-          },
-          {
-            "duration": 0.6225931,
-            "location": "file:Features/MatRevision.feature:19"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "select compare option from Actions menu",
-    "steps": [
-      {
-        "name": "select compare option from Actions menu",
-        "aggregatedDurations": {
-          "average": 2.96074945,
-          "median": 2.96074945
-        },
-        "durations": [
-          {
-            "duration": 3.0428511,
-            "location": "file:Features/MatRevision.feature:11"
-          },
-          {
-            "duration": 2.8786478,
-            "location": "file:Features/MatRevision.feature:23"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "Click on three",
-    "steps": [
-      {
-        "name": "Click on three",
-        "aggregatedDurations": {
-          "average": 0.5796995,
-          "median": 0.5796995
-        },
-        "durations": [
-          {
-            "duration": 0.5917634,
-            "location": "file:Features/MatRevision.feature:8"
-          },
-          {
-            "duration": 0.5676356,
-            "location": "file:Features/MatRevision.feature:20"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "click on select page option",
-    "steps": [
-      {
-        "name": "click on select page option",
-        "aggregatedDurations": {
-          "average": 0.7392396,
-          "median": 0.7392396
-        },
-        "durations": [
-          {
-            "duration": 0.7493116,
-            "location": "file:Features/MatRevision.feature:10"
-          },
-          {
-            "duration": 0.7291676,
-            "location": "file:Features/MatRevision.feature:22"
+            "duration": 0.4581388,
+            "location": "file:Features/MatRevision.feature:39"
           }
         ]
       }
@@ -137,17 +63,111 @@
       {
         "name": "user comes on Navigate WS",
         "aggregatedDurations": {
-          "average": 0.7818803,
-          "median": 0.7818803
+          "average": 0.450133,
+          "median": 0.450133
         },
         "durations": [
           {
-            "duration": 0.8701565,
-            "location": "file:Features/MatRevision.feature:5"
+            "duration": 0.450133,
+            "location": "file:Features/MatRevision.feature:27"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on Edit material option",
+    "steps": [
+      {
+        "name": "click on Edit material option",
+        "aggregatedDurations": {
+          "average": 2.54846245,
+          "median": 2.54846245
+        },
+        "durations": [
+          {
+            "duration": 0.1963237,
+            "location": "file:Features/MatRevision.feature:30"
           },
           {
-            "duration": 0.6936041,
-            "location": "file:Features/MatRevision.feature:17"
+            "duration": 4.9006012,
+            "location": "file:Features/MatRevision.feature:34"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "homepage is displayed",
+    "steps": [
+      {
+        "name": "homepage is displayed",
+        "aggregatedDurations": {
+          "average": 0.2353383,
+          "median": 0.2353383
+        },
+        "durations": [
+          {
+            "duration": 0.2353383,
+            "location": "file:Features/MatRevision.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "double click on material",
+    "steps": [
+      {
+        "name": "double click on material",
+        "aggregatedDurations": {
+          "average": 1.3765916,
+          "median": 1.3765916
+        },
+        "durations": [
+          {
+            "duration": 1.3765916,
+            "location": "file:Features/MatRevision.feature:29"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "navigate to Classification tab",
+    "steps": [
+      {
+        "name": "navigate to Classification tab",
+        "aggregatedDurations": {
+          "average": 2.01203295,
+          "median": 2.01203295
+        },
+        "durations": [
+          {
+            "duration": 2.6722034,
+            "location": "file:Features/MatRevision.feature:31"
+          },
+          {
+            "duration": 1.3518625,
+            "location": "file:Features/MatRevision.feature:35"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click on revisions tab",
+    "steps": [
+      {
+        "name": "click on revisions tab",
+        "aggregatedDurations": {
+          "average": 3.7807442,
+          "median": 3.7807442
+        },
+        "durations": [
+          {
+            "duration": 3.7807442,
+            "location": "file:Features/MatRevision.feature:38"
           }
         ]
       }
@@ -159,17 +179,49 @@
       {
         "name": "user clicks on Metals to open MOD",
         "aggregatedDurations": {
-          "average": 1.98921085,
-          "median": 1.98921085
+          "average": 0.7905005,
+          "median": 0.7905005
         },
         "durations": [
           {
-            "duration": 2.2245044,
-            "location": "file:Features/MatRevision.feature:6"
-          },
+            "duration": 0.7905005,
+            "location": "file:Features/MatRevision.feature:28"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user has already logged in to Material Center application",
+    "steps": [
+      {
+        "name": "user has already logged in to Material Center application",
+        "aggregatedDurations": {
+          "average": 8.736718,
+          "median": 8.736718
+        },
+        "durations": [
           {
-            "duration": 1.7539173,
-            "location": "file:Features/MatRevision.feature:18"
+            "duration": 8.736718,
+            "location": "file:Features/MatRevision.feature:4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "edit subclass value",
+    "steps": [
+      {
+        "name": "edit subclass value",
+        "aggregatedDurations": {
+          "average": 0.1010543,
+          "median": 0.1010543
+        },
+        "durations": [
+          {
+            "duration": 0.1010543,
+            "location": "file:Features/MatRevision.feature:36"
           }
         ]
       }
@@ -181,17 +233,13 @@
       {
         "name": "verify that all differences are displayed in highlighted color",
         "aggregatedDurations": {
-          "average": 0.3241516,
-          "median": 0.3241516
+          "average": 19.4186478,
+          "median": 19.4186478
         },
         "durations": [
           {
-            "duration": 0.3201772,
-            "location": "file:Features/MatRevision.feature:13"
-          },
-          {
-            "duration": 0.328126,
-            "location": "file:Features/MatRevision.feature:25"
+            "duration": 19.4186478,
+            "location": "file:Features/MatRevision.feature:40"
           }
         ]
       }

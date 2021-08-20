@@ -25,14 +25,12 @@ public class ExportImportExcelStepDef extends TestBase {
 	
 	@When("click on export to excel")
 	public void click_on_export_to_excel() {
-		 matSod = new MaterialSOD();
-	    matSod.clickOnExportExcel();
+	    matMod.clickOnExportExcel();
 	    screenshot(driver, System.currentTimeMillis());
 	}
 	
 	@When("click on export to excel from action menu")
 	public void click_on_export_to_excel_from_action_menu() {
-		 matSod = new MaterialSOD();
 	    matSod.performExportExcel();
 	    screenshot(driver, System.currentTimeMillis());
 	}
@@ -174,6 +172,12 @@ public class ExportImportExcelStepDef extends TestBase {
 	    screenshot(driver, System.currentTimeMillis());
 	}
 	
+	@When("check that process status is completed for xml")
+	public void check_that_process_status_is_completed_XML() {
+	    process.verifyProcessStatusxml();
+	    screenshot(driver, System.currentTimeMillis());
+	}
+	
 	@When("click on tools tab and import test data")
 	public void click_on_tools_tab_and_import_test_data() {
 	    matSod.selectImportTestData();
@@ -205,14 +209,14 @@ public class ExportImportExcelStepDef extends TestBase {
 	}
 
 	@When("select include project and all mat datas checkbox")
-	public void select_include_project_and_all_mat_datas_checkbox() {
+	public void select_include_project_and_all_mat_datas_checkbox() throws InterruptedException {
 	    matMod.selectCheckbox();
 	}
 
 	@When("click on submit button on export to XML popup")
 	public void click_on_submit_button_on_export_to_XML_popup() {
 	  //  matMod.deleteSubmit();
-	    matSod.exportXmlSubmit();
+	    matMod.exportXmlSubmit();
 	}
 	
 	@When("verify the details of material on SOD")

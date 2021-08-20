@@ -27,7 +27,7 @@ public class Hooks extends TestBase {
 		WebElement closeButton;
 	
 	
-	@Before("@All")
+	@Before("@old")
 	public void before() throws InterruptedException {
 		TestBase.initialization();
 		loginPage = new LoginPage();

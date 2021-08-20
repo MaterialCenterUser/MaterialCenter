@@ -72,8 +72,8 @@ Then User gets compareresults page with property set displayed
 Scenario: Verify compareresults page is displayed when user selects add to compare action for Test Data
 When user selects Test from dropdown
 And click on search button from homepage
-And Click on rows per page
-And Click on three
+And click on rows per page
+And click on three
 And click on arrow button
 And click on select page option
 And click on Actions
@@ -84,8 +84,8 @@ Then User gets compareresults page with property set displayed
 Scenario: Verify compareresults page is displayed when user selects add to compare action for CAE Model
 When user selects CAE Model from dropdown
 And click on search button from homepage
-And Click on rows per page
-And Click on three
+And click on rows per page
+And click on three
 And click on arrow button
 And click on select page option
 And click on Actions
@@ -97,8 +97,8 @@ Scenario: Verify compareresults page is displayed when user right clicks and sel
 When user selects Test from dropdown
 And click on search button from homepage
 And test search results displayed
-And Click on rows per page
-And Click on three
+And click on rows per page
+And click on three
 And click on arrow button
 And click on select page option
 And right click on first element
@@ -110,8 +110,8 @@ Scenario: Verify compareresults page is displayed when user right clicks and sel
 When user selects CAE Model from dropdown
 And click on search button from homepage
 And CAE search results displayed
-And Click on rows per page
-And Click on three
+And click on rows per page
+And click on three
 And click on arrow button
 And click on select page option
 And right click on first element
