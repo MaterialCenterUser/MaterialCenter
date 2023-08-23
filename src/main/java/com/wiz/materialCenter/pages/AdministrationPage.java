@@ -1,5 +1,7 @@
 package com.wiz.materialCenter.pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -15,7 +17,7 @@ public class AdministrationPage extends TestBase {
 
 	JavascriptExecutor js = (JavascriptExecutor) driver;
 	Actions action = new Actions(driver);
-	WebDriverWait wait = new WebDriverWait(driver, 20);
+	WebDriverWait wait = new WebDriverWait(driver,(30));
 	EditMatProcess editMat = new EditMatProcess();
 
 	public AdministrationPage() {
@@ -76,7 +78,51 @@ public class AdministrationPage extends TestBase {
 	@FindBy(xpath = "//span[@class='rf-msg-det']")
 	WebElement errorMessageToCreateUser;
 	
+	@FindBy(xpath = "//th[text()='User Name']")
+	WebElement userNameCol;
 	
+	@FindBy(xpath = "//td[@class='voice']/a[text()='Filter']")
+	WebElement filterOption;
+	
+	@FindBy(xpath = "//a[contains(text(),'abcd')]")
+	WebElement createdUserInList;
+	
+	@FindBy(xpath = "//input[@id='abcd patil']")
+	WebElement newUserFilterCheckBox;
+	
+	@FindBy(xpath = "//span[text()='OK']")
+	WebElement okButton2;
+	
+	@FindBy(xpath = "//tr[@class='ModBodyRowEven ModClick']")
+	WebElement filterResultsOneRow;
+	
+	public boolean verifyFilterResultsDisplayedOneRow(){
+		return ((filterResultsOneRow).isDisplayed());
+	}
+	
+	
+	public boolean verifyNewUserFilterResult(){
+		return ((createdUserInList).isDisplayed());
+	}
+	
+	
+	public void clickNewUserFilterCheckbox() throws InterruptedException {
+		js.executeScript("arguments[0].click();", newUserFilterCheckBox);
+		action.moveToElement(okButton2).click(okButton2).build().perform();
+		Thread.sleep(2000);
+	}
+
+	
+	
+	public boolean verifyNewUserDisplayedInList(){
+		return ((createdUserInList).isDisplayed());
+	}
+	
+	public void selectUserNameFilter() {
+		js.executeScript("arguments[0].click();", userNameCol);
+		action.click(filterOption).build().perform();
+	}
+
 
 	public void clickOnUsersLink() {
 		js.executeScript("arguments[0].click();", usersLink);

@@ -1,5 +1,7 @@
 package com.wiz.materialCenter.pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -7,15 +9,15 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
-
+//import org.testng.Assert;
+import org.junit.Assert;
 import com.wiz.materialCenter.util.TestBase;
 
 public class ProcessesPage extends TestBase {
 
 	JavascriptExecutor js = (JavascriptExecutor) driver;
 	Actions action = new Actions(driver);
-	WebDriverWait wait = new WebDriverWait(driver, 1200);
+	WebDriverWait wait = new WebDriverWait(driver,(30));
 
 	public ProcessesPage() {
 		PageFactory.initElements(driver, this);
@@ -58,6 +60,183 @@ public class ProcessesPage extends TestBase {
 
 	@FindBy(xpath = "//tr[@smrow='0']/td[@smcol='1']/span")
 	WebElement ErrorMsgValue;
+	
+	@FindBy(xpath = "//h2[text()='Import Measure Equation   ']")
+	WebElement textImportMeasureEquation;
+	
+	@FindBy(xpath = "//h2[text()='Import Mapping   ']")
+	WebElement textImportMappings;
+
+	@FindBy(xpath = "//img[@class='BfsButton']")
+	WebElement removeXmlButton;
+	
+	@FindBy(xpath = "//input[@id='httpFile']")
+	WebElement uploadXml;
+	
+	@FindBy(xpath = "//input[@title='Submit']")
+	WebElement submitMeasureEquation;
+	
+	@FindBy(xpath = "//span[@class='rf-msg-det']")
+	WebElement msgErrorCreateMeasureEquation;
+	
+	@FindBy(xpath = "//input[contains(@id,'CreateEditMeasureEquation:measureEquationName')]")
+	WebElement measureEqautionNameTextbox;
+	
+	@FindBy(xpath = "//img[contains(@id,'measureEquationMappingMeasureEquation_recentObjectListDropDownArrowImage')]")
+	WebElement measureEqautionDropdown;
+	
+	@FindBy(xpath = "(//table[@class='RecentObjSelTbl']/tbody/tr/td/span)[1]")
+	WebElement measureEqautionSelection;
+	
+	@FindBy(xpath = "//img[contains(@id,'measureEquationMappingSchema_recentObjectListDropDownArrowImage')]")
+	WebElement schemaDropDown;
+
+	@FindBy(xpath = "//img[contains(@id,'measureEquationMappingPropertyDef_recentObjectListDropDownArrowImage')]")
+	WebElement measurePropertyDown;
+	
+	@FindBy(xpath = "//table[@class='RecentObjSelTbl']/tbody/tr/td/span[text()='MasterMetals']")
+	WebElement masterMetalsSchema;
+	
+	
+	@FindBy(xpath = "//table[@class='RecentObjSelTbl']/tbody/tr/td/span[text()='Shear Modulus, 12-Plane']")
+	WebElement shearMeasureProperty;
+	
+	@FindBy(xpath = "//input[@id='httpFile']")
+	WebElement chooseFileButtonWorkReqTemplate;
+	
+	@FindBy(xpath = "//input[@id='ConfirmTemplateChange-f:ConfirmTemplateChange_yes']")
+	WebElement confirmOkButtonToUploadCustomTemplate;
+	
+	@FindBy(xpath = "//input[contains(@id, 'CreateWorkRequestTemplate:okBtn')]")
+	WebElement createWorkReqTemplateSubmitButton;
+	
+	public MyWorkspacePage clickSubmitButtonToCreateWorkReqTemplate() throws InterruptedException {
+		js.executeScript("arguments[0].scrollIntoView(true);", createWorkReqTemplateSubmitButton);
+		action.moveToElement(createWorkReqTemplateSubmitButton).build().perform();
+		action.click(createWorkReqTemplateSubmitButton).build().perform();
+		Thread.sleep(2000);
+		return new MyWorkspacePage();
+	
+	}
+	
+	
+	public void uploadTemplate(String customTemplate) {
+		//action.click(uploadExcel).build().perform();
+		chooseFileButtonWorkReqTemplate.sendKeys(customTemplate);
+		//wait.until(ExpectedConditions.visibilityOf(confirmOkButtonToUploadCustomTemplate));
+		
+		
+	}
+	
+	public void selectTemplateFileToUplaod() throws InterruptedException {
+		uploadTemplate(prop.getProperty("customWrkReqTemplate"));
+		wait.until(ExpectedConditions.visibilityOf(confirmOkButtonToUploadCustomTemplate));
+		action.moveToElement(confirmOkButtonToUploadCustomTemplate).build().perform();
+		action.click(confirmOkButtonToUploadCustomTemplate).build().perform();
+		Thread.sleep(2000);
+	}
+	
+	public void selectTemplateFileToUplaodForOneRefAttr() throws InterruptedException {
+		uploadTemplate(prop.getProperty("oneRefAttrWrkReqTemplate"));
+		wait.until(ExpectedConditions.visibilityOf(confirmOkButtonToUploadCustomTemplate));
+		action.moveToElement(confirmOkButtonToUploadCustomTemplate).build().perform();
+		action.click(confirmOkButtonToUploadCustomTemplate).build().perform();
+		Thread.sleep(2000);
+	}
+	
+	public void clickOnChooseFileOptionOnWrkReqTemplate() throws InterruptedException{
+		action.moveToElement(chooseFileButtonWorkReqTemplate).build().perform();
+		action.click(chooseFileButtonWorkReqTemplate).build().perform();
+		
+	}
+	
+	public void selectMeaureEquationFromDropdown() throws InterruptedException{
+		action.moveToElement(measureEqautionDropdown).build().perform();
+		action.click(measureEqautionDropdown).build().perform();
+		js.executeScript("arguments[0].click();", measureEqautionSelection);
+		Thread.sleep(2000);
+		
+	}
+public void selectMasterMetalsSchemaFromDropdown() throws InterruptedException{
+		
+	action.moveToElement(schemaDropDown).build().perform();
+	action.click(schemaDropDown).build().perform();
+	js.executeScript("arguments[0].click();", masterMetalsSchema);
+	Thread.sleep(2000);
+	}
+public void selectMeasurePRopertyFromDropdown() throws InterruptedException{
+	
+	action.moveToElement(measurePropertyDown).build().perform();
+	action.click(measurePropertyDown).build().perform();
+	js.executeScript("arguments[0].click();", shearMeasureProperty);
+	Thread.sleep(2000);
+}
+
+	public void enterInvalidMeasureEquationName(String measureEquationName) {
+		action.click(measureEqautionNameTextbox).build().perform();
+		measureEqautionNameTextbox.clear();
+		measureEqautionNameTextbox.sendKeys(measureEquationName);
+	}
+	
+	public String msgInvalidMeasureEquationName() {
+
+		return (msgErrorCreateMeasureEquation.getText());
+	}
+		
+	public String msgCreateMeasureEquationError() {
+
+		return (msgErrorCreateMeasureEquation.getText());
+	}
+	
+	
+	public ProcessesPage uploadXml(String xml) {
+		//action.click(uploadExcel).build().perform();
+		uploadXml.sendKeys(xml);
+		return new ProcessesPage();
+	}
+	
+	public void selectMeasureEquationFileToUpload() {
+		uploadXml(prop.getProperty("measureEquationPath"));
+		wait.until(ExpectedConditions.visibilityOf(removeXmlButton));
+	}
+	public void clickRemoveButton() {
+		js.executeScript("arguments[0].click();", removeXmlButton);
+		wait.until(ExpectedConditions.visibilityOf(uploadXml));
+	}
+	
+	
+	public void selectMappingFileToUpload() {
+		uploadXml(prop.getProperty("mappingFilePath"));
+		wait.until(ExpectedConditions.visibilityOf(removeXmlButton));
+	}
+	public void selectWrongMeasureEquationFileToUpload() {
+		uploadXml(prop.getProperty("wrongMeasureEquationPath"));
+			}
+	
+	public void selectWrongMeasureEquationMappingsFileToUpload() {
+		uploadXml(prop.getProperty("wrongMeasureEquationMappingsPath"));
+			}
+	
+	public boolean importMeasureEquationDisplayed() {
+		return ((textImportMeasureEquation).isDisplayed());
+	}
+
+	public boolean importMappingsDisplayed() {
+		return ((textImportMappings).isDisplayed());
+	}
+
+	public MyWorkspacePage clickOnSubmitMeasureEquation() throws InterruptedException {
+		js.executeScript("arguments[0].click();", submitMeasureEquation);
+		Thread.sleep(3000);	
+	return new MyWorkspacePage();
+	}
+	
+	public MyWorkspacePage clickOnSubmitMeasureEquationMappings() throws InterruptedException {
+		js.executeScript("arguments[0].click();", submitMeasureEquation);
+		Thread.sleep(3000);	
+	return new MyWorkspacePage();
+	}
+	
 
 	public void clickOnDiscard() {
 		js.executeScript("arguments[0].click();", discardButton);

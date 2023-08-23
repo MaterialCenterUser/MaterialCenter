@@ -15,9 +15,11 @@ import com.wiz.materialCenter.pages.ProcessesPage;
 import com.wiz.materialCenter.pages.SearchPage;
 import com.wiz.materialCenter.util.TestBase;
 
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.And;
+
 
 public class SODStepDef extends TestBase {
 	MaterialMOD matMod = new MaterialMOD();
@@ -88,7 +90,7 @@ public class SODStepDef extends TestBase {
 		config.doubleClickOnMaterialsSelector();
 	}
 	@And("click on add to clipboard")
-	public void click_on_add_to_clipboard() {
+	public void click_on_add_to_clipboard() throws InterruptedException {
 		matSod.clickOnAddToClipboard();
 	}
 	
@@ -163,7 +165,11 @@ public class SODStepDef extends TestBase {
 		matMod.selectIndustrialGlass();
 	    screenshot(driver, System.currentTimeMillis());
 	}
-
+	@And("select joining and sealing")
+	public void select_joining_sealing() {
+		matMod.selectJoiningSealing();
+	    screenshot(driver, System.currentTimeMillis());
+	}
 	@And("unselect hardness property")
 	public void unselect_hardness() throws InterruptedException {
 		matSod.unselectHardness();

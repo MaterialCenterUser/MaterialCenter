@@ -20,7 +20,7 @@ And click ok button from logoff dialog
 And log in to Material Center application
 |username|password|
 |Tester4|sdm|
-When user comes on Navigate WS
+And user comes on Navigate WS
 And user clicks on Metals to open MOD
 And click on arrow button
 And click on select page option
@@ -133,13 +133,30 @@ And click on next button
 And click on rows per page
 And click on three
 And click on submit button on dependent objects list
+And click on auto refresh checkbox
 And verify the process is completed with done status
+
+
+
+@Regression
+Scenario: Create the test data for material having in work level
+When user clicks on Config WS
+And click on create material link
+And select data project
+And select master metal schema
+And click on classification tab
+And enter value for common name on classification tab "MatForTestDataWatchFeature"
+And click on submit button to create material
+And click on create SA
+And click on test data action
+And enter value for clamped lenghth "0.1"
+And click on Submit button on edit test data page
 
 @MAT-21885 @Regression
 Scenario: Verify user is able to Subscribe TestData
 #Pre- requisite - test data should be created
 When user selects Test from dropdown
-And user enters searchtext for test data search "Empty"
+And user enters searchtext for test data search "Nominal : 0.1"
 And click on search button from homepage
 And click on first row from search results
 And click on subscribe button
@@ -149,11 +166,12 @@ Then the button label changes to unsubscribe
 Scenario: Verify user is able to unsubscribe TestData
 #Pre- requisite - test data should be created
 When user selects Test from dropdown
-And user enters searchtext for test data search "Empty"
+And user enters searchtext for test data search "Nominal : 0.1"
 And click on search button from homepage
 And click on first row from search results
 And click on unsubscribe button
 Then the button label changes to subscribe
+
 
 @MAT-21886 @Regression
 Scenario: Create CAE Model and verify user is able to Subscribe or unsubscribe CAE Model

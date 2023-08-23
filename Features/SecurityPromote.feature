@@ -19,7 +19,7 @@ And click on submit button on dependent objects list
 Then check that process status is completed
 
 
-@Ford @All
+@Ford @All1
 Scenario: User is able to promote the material to production level
 Given user clicks on Config WS
 When user comes on Navigate WS

@@ -4,6 +4,7 @@ Background:
 Given user has already logged in to Material Center application
 |username|password|
 |smroot|sdm|
+#And close the disclaimer
 And homepage is displayed
 
 @MAT-21684 @Regression
@@ -13,6 +14,8 @@ And user click on material from search page
 And user expands curves attribute
 And select the curve atribute from drodown
 And click on apply the changes for curve attribute
+And click on rows per page
+And click on three
 And double click on first result
 Then material SOD page is displayed
 
@@ -23,6 +26,8 @@ And user click on material from search page
 And user expands curves attribute
 And select the curve atribute from drodown
 And click on apply the changes for curve attribute
+And click on rows per page
+And click on three
 And double click on first result
 And select checkboxes for properties
 And select compare from actions dropdown
@@ -35,6 +40,8 @@ And user click on material from search page
 And user expands curves attribute
 And select the curve atribute from drodown
 And click on apply the changes for curve attribute
+And click on rows per page
+And click on three
 And double click on first result
 And select checkboxes for properties
 And select add to compare from actions dropdown
@@ -47,6 +54,8 @@ And user click on material from search page
 And user expands curves attribute
 And select the curve atribute from drodown
 And click on apply the changes for curve attribute
+And click on rows per page
+And click on three
 And double click on first result
 And select checkboxes for properties
 Then add property to clipboard action is displayed in actions dropdown
@@ -58,6 +67,8 @@ And user click on material from search page
 And user expands curves attribute
 And select the curve atribute from drodown
 And click on apply the changes for curve attribute
+And click on rows per page
+And click on three
 And double click on first result
 And select checkboxes for properties
 And select add property to clipboard from actions dropdown
@@ -65,9 +76,10 @@ And navigate to homepage from material SOD page
 And click on view all under clipboard
 Then the curve properties display on my workspace page
 
+
 @MAT-21687 @Regression
 Scenario: Search for manyref object and verify those are displayed on SOD
-When user enters searchtext for materials search "TestManyRefMat1"
+When user enters searchtext for materials search "NewMaterial"
 And click on search button from homepage
 And materials search results displayed
 And click on rows per page
@@ -77,7 +89,7 @@ Then Manyref objects are displayed on material SOD page
 
 @MAT-21687 @Regression
 Scenario: Verify the compare results using compare option for manyref objects materials
-When user enters searchtext for materials search "TestManyRefMat1"
+When user enters searchtext for materials search "NewMaterial"
 And click on search button from homepage
 And materials search results displayed
 And click on rows per page
@@ -91,7 +103,7 @@ Then compare curve property results page is displayed with available comparators
 
 @MAT-21687 @Regression
 Scenario: Verify the compare results using add to compare option for manyref objects materials
-When user enters searchtext for materials search "TestManyRefMat1"
+When user enters searchtext for materials search "NewMaterial"
 And click on search button from homepage
 And materials search results displayed
 And click on rows per page

@@ -5,6 +5,7 @@ import org.junit.runner.RunWith;
 
 import cucumber.api.junit.Cucumber;
 import cucumber.api.CucumberOptions;
+//import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 /*@ExtendedCucumberOptions(
@@ -15,8 +16,8 @@ import cucumber.api.CucumberOptions;
         outputFolder = "target/LoginReport/ExtendedReport")*/
 
 @CucumberOptions(
-		features = "Features/LayupManagement/MAT-13048_LayupManagement.feature",
-		tags={"@Regression"},
+		features = {"Features/LayupManagement/MAT-13048_LayupManagement.feature"},
+				tags="@Regression",
 		glue= {"com/wiz/materialCenter/stepDefinition"},
 		plugin = { "pretty", "json:target/cucumber-reports/cucumber.json", 
 				"html:target/cucumber-reports/feature-overview",

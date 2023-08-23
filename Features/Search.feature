@@ -62,8 +62,8 @@ Scenario: User launch the recent saved template from home page
 Given click on search template link from home page
 And click on rows per page
 And Click on fifty
-And select rows per page as hundred
-And select rows per page as two fifty
+And click on rows per page
+And click on three
 And double click on first result
 Then SOD page is displayed
 

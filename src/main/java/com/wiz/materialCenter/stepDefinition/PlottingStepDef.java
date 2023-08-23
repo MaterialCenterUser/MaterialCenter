@@ -1,14 +1,17 @@
 package com.wiz.materialCenter.stepDefinition;
 
+import org.junit.Assert;
+
 import com.wiz.materialCenter.pages.MaterialMOD;
 import com.wiz.materialCenter.pages.MaterialSOD;
 import com.wiz.materialCenter.pages.PlotProcessInput;
 import com.wiz.materialCenter.pages.SearchPage;
 import com.wiz.materialCenter.util.TestBase;
-
+import cucumber.api.java.en.When;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import cucumber.api.java.en.And;
+
 
 public class PlottingStepDef extends TestBase {
 	
@@ -48,12 +51,47 @@ public class PlottingStepDef extends TestBase {
 	    plotProcessInput.clickOnBarChartType();
 	    screenshot(driver, System.currentTimeMillis());
 	}
+	@When("click on bar chart")
+	public void click_on_bar_chart() throws InterruptedException {
+		//plotProcessInput.clickOnPlotType();
+		materialMod.clickOnBarChart();
+	    screenshot(driver, System.currentTimeMillis());
+	}
+	@Then("bar chart option is disabled")
+	public void bar_chart_option_is_disabled() {
+		//plotProcessInput.clickOnPlotType();
+		Assert.assertTrue(materialMod.verifyBarChartDisabled());
+	    screenshot(driver, System.currentTimeMillis());
+	}
+	
+	@Then("bar chart option is enabled")
+	public void bar_chart_option_is_enabled() {
+		//plotProcessInput.clickOnPlotType();
+		Assert.assertTrue(materialMod.verifyBarChartEnabled());
+	    screenshot(driver, System.currentTimeMillis());
+	}
+	
+	
+	@Then("bar chart page is displayed")
+	public void bar_chart_page_is_displayed() {
+		//plotProcessInput.clickOnPlotType();
+		Assert.assertTrue(plotProcessInput.barChartDisplayed());
+	    screenshot(driver, System.currentTimeMillis());
+	}
+	
 
 	@When("select multiple Y values")
 	public void select_multiple_Y_values() {
 	   plotProcessInput.selectMultipleValues();
 	   screenshot(driver, System.currentTimeMillis());
 	}
+	
+	@Then("bar chart page with plot button is displayed")
+	public void bar_chart_page_with_plot_button_is_displayed() {
+	   plotProcessInput.barChartWithDisabledPlotButtonDisplayed();
+	   screenshot(driver, System.currentTimeMillis());
+	}
+	
 	
 	@When("select two Y values")
 	public void select_two_Y_values() {

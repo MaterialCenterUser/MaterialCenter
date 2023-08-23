@@ -67,6 +67,7 @@ Then check that only single test temp displayed in mechanical property and add t
 Scenario: Add source attributes
 When user comes on Navigate WS
 And user expands metals
+And user expands ferrous metals
 And user expands alloy steels under ferrous metals
 And user expands ultra high strength
 And select D-sixA Alloy Steel metal under ultra high strength
@@ -80,6 +81,7 @@ Then clear source and parameter filter from Display dropdown
 Scenario: Change the footnote display in options panel
 When user comes on Navigate WS
 And user expands metals
+And user expands ferrous metals
 And user expands alloy steels under ferrous metals
 And user expands ultra high strength
 And select D-sixA Alloy Steel metal under ultra high strength
@@ -100,6 +102,7 @@ Then verify that footnotes are now displayed inline next to property values
 Scenario: Explore the datasheet tabs and pedigree viewer
 When user comes on Navigate WS
 And user expands metals
+And user expands ferrous metals
 And user expands alloy steels under ferrous metals
 And user expands ultra high strength
 And select D-sixA Alloy Steel metal under ultra high strength
@@ -129,6 +132,7 @@ Then check that process status is completed
 Scenario: Perform a Find Similar search
 When user comes on Navigate WS
 And user expands metals
+And user expands ferrous metals
 And user expands alloy steels under ferrous metals
 And user expands ultra high strength
 And select D-sixA Alloy Steel metal under ultra high strength
@@ -171,6 +175,7 @@ Then apply it by clicking on ok button and close the curve viewer
 Scenario: Bar chart plotting
 When user comes on Navigate WS
 And user expands metals
+And user expands ferrous metals
 And user expands alloy steels under ferrous metals
 And user expands ultra high strength
 And select D-sixA Alloy Steel metal under ultra high strength
@@ -184,6 +189,7 @@ Then verify the plotted bar chart values by navigating to material SOD from plot
 Scenario: Scatter plotting
 When user comes on Navigate WS
 And user expands metals
+And user expands ferrous metals
 And user expands alloy steels under ferrous metals
 And user expands ultra high strength
 And select D-sixA Alloy Steel metal under ultra high strength
@@ -198,6 +204,7 @@ Then verify the plotted scatter plot values by navigating to material SOD from p
 Scenario: Pie chart plotting
 When user comes on Navigate WS
 And user expands metals
+And user expands ferrous metals
 And user expands alloy steels under ferrous metals
 And user expands ultra high strength
 And select D-sixA Alloy Steel metal under ultra high strength
@@ -211,6 +218,7 @@ Then verify the plotted pie chart values by navigating to material SOD from plot
 Scenario: Spider plotting
 When user comes on Navigate WS
 And user expands metals
+And user expands ferrous metals
 And user expands alloy steels under ferrous metals
 And user expands ultra high strength
 And select D-sixA Alloy Steel metal under ultra high strength

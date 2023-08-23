@@ -1,6 +1,7 @@
 package com.wiz.materialCenter.pages;
 
 import java.io.File;
+import java.time.Duration;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -15,7 +16,7 @@ public class CurvePropertySOD extends TestBase {
 
 	JavascriptExecutor js = (JavascriptExecutor) driver;
 	Actions action = new Actions(driver);
-	WebDriverWait wait = new WebDriverWait(driver, 20);
+	WebDriverWait wait = new WebDriverWait(driver,(30));
 	MaterialMOD matmod = new MaterialMOD();
 	ProcessesPage processPage = new ProcessesPage();
 

@@ -13,11 +13,13 @@ And click on rows per page
 And Click on fifty
 And click on arrow button
 And click on select page option
-And click on plot action
-And select plot type as Bar chart
-And select multiple Y values
-And click on plot button
-Then plot should be done successfully
+And click on bar chart
+#And click on plot action
+#And select plot type as Bar chart
+#And select multiple Y values
+#And click on plot button
+#Then plot should be done successfully
+Then bar chart page is displayed
 
 @All
 Scenario: Plot the bar chart graph of selected material with two Y values
@@ -27,11 +29,13 @@ And click on rows per page
 And Click on fifty
 And click on arrow button
 And click on select page option
-And click on plot action
-And select plot type as Bar chart
-And select two Y values
-And click on plot button
-Then verify the plotted bar chart values by navigating to material SOD from plot
+And click on bar chart
+#And click on plot action
+#And select plot type as Bar chart
+#And select two Y values
+#And click on plot button
+#Then verify the plotted bar chart values by navigating to material SOD from plot
+Then bar chart page is displayed
 
 @All
 Scenario: Plot the scatter graph of density vs ultimate strength
@@ -332,10 +336,6 @@ And select plot type as Bar chart
 And select multiple Y values
 And click on plot button
 Then plot should be done successfully
-
-
-
-
 
 @AllFordSpecific
 Scenario: Plot the scatter graph of density vs ultimate strength

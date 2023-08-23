@@ -37,6 +37,9 @@ public class NavigateWS extends TestBase {
 	@FindBy(xpath = "//div[@class='NavTree']/ul/li/ul/li/span[text()='Metals']")
 	WebElement metals;
 	
+	@FindBy(xpath = "//div[@class='NavTree']/ul/li/span[text()='All Materials']")
+	WebElement AllMats;
+	
 	@FindBy(xpath = "(//span[text()='Metals'])[1]")
 	WebElement metalsFromMaterialSelectorLib;
 	
@@ -130,9 +133,10 @@ public class NavigateWS extends TestBase {
 		//seriesactions.perform();
 		
 		try{
-		
+			js.executeScript("arguments[0].scrollIntoView(true);", metalsExpand);
 		//action.moveToElement(metalsExpand).build().perform();
 		//action.click(metalsExpand).build().perform();
+			
 			js.executeScript("arguments[0].click();", metalsExpand);
 		}catch (Exception e) {
 			System.out.println("Metals already expanded");
@@ -176,6 +180,17 @@ public void clickOnCeramicsExpand() {
 		}
 		return new MaterialMOD();
 	}
+	
+	public MaterialMOD clickOnAllMats() {
+		js.executeScript("arguments[0].click();", AllMats);
+		if(modArea.isDisplayed()) {
+			System.out.println(" Metals MOD displayed");
+		} else {
+			System.out.println("Metals MOD didn't display");
+		}
+		return new MaterialMOD();
+	}
+	
 	
 	public void clickOnMetalsFromMatSelectorLib() {
 		js.executeScript("arguments[0].click();", metalsFromMaterialSelectorLib);

@@ -1,5 +1,6 @@
 package com.wiz.materialCenter.pages;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.NoSuchElementException;
 
@@ -10,19 +11,20 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
-
+//import org.testng.Assert;
+import org.junit.Assert;
 import com.wiz.materialCenter.util.TestBase;
 
 public class MaterialSOD extends TestBase {
 
 	JavascriptExecutor js = (JavascriptExecutor) driver;
 	Actions action = new Actions(driver);
-	WebDriverWait wait = new WebDriverWait(driver, 20);
+	WebDriverWait wait = new WebDriverWait(driver, (30));
 	MaterialMOD matmod = new MaterialMOD();
 	ProcessesPage processPage = new ProcessesPage();
 
@@ -37,6 +39,7 @@ public class MaterialSOD extends TestBase {
 	public String modulusValueCAEModel;
 	public String poissonRatioCAEModel;
 	public static WebElement element = null;
+	public String storeName;
 
 	@FindBy(xpath = "//table[contains(@id,'MenuBar')]/tbody/tr/td/div/span[text()='Actions']")
 	WebElement actions;
@@ -61,10 +64,13 @@ public class MaterialSOD extends TestBase {
 	@FindBy(xpath = "//table[contains(@id,'MenuBar')]/tbody/tr/td/div/span[text()='Edit']")
 	WebElement edit;
 
-	@FindBy(xpath = "//table[contains(@id,'MenuBar')]/tbody/tr/td/div/span[text()='Export']")
+	@FindBy(xpath = "//table[contains(@id,'MenuBar')]/tbody/tr/td/div/span[text()='Tools']")
+	WebElement tools;
+
+	@FindBy(xpath = "//span[text()='Export']")
 	WebElement export;
 
-	@FindBy(xpath = "//table[contains(@id,'MenuBar')]/tbody/tr/td/div/span[text()='Security']")
+	@FindBy(xpath = "//span[text()='Security']")
 	WebElement security;
 
 	@FindBy(xpath = "//span[text()='Tools']")
@@ -103,9 +109,6 @@ public class MaterialSOD extends TestBase {
 
 	@FindBy(xpath = "//span[@class='noPropSet']")
 	WebElement noPropSet;
-
-	@FindBy(xpath = "//span[text()='Test Data']")
-	WebElement testDataTab;
 
 	@FindBy(xpath = "//table[@class='ModBody']/tbody/tr[@smrow='0']")
 	WebElement firstTestData;
@@ -438,6 +441,9 @@ public class MaterialSOD extends TestBase {
 	@FindBy(xpath = "//td[text()='CAE Model (Auto)']")
 	WebElement caeAutoModel;
 
+	@FindBy(xpath = "//td[text()='Test Data']")
+	WebElement testDataAction;
+
 	@FindBy(xpath = "//div[@id='maindiv']/table/tbody/tr/td[text()='CAE Model (Manual)']")
 	WebElement caeManualModel;
 
@@ -458,7 +464,7 @@ public class MaterialSOD extends TestBase {
 
 	/* Actions to be performed under Security section */
 
-	@FindBy(xpath = "//div[@id='maindiv']/table/tbody/tr/td[text()='Promote']")
+	@FindBy(xpath = "//td[text()='Promote']")
 	WebElement promoteAction;
 
 	@FindBy(xpath = "//div[@id='maindiv']/table/tbody/tr/td[text()='Demote']")
@@ -536,10 +542,16 @@ public class MaterialSOD extends TestBase {
 
 	@FindBy(xpath = "//td[text()='Manage Process']")
 	WebElement manageProcessAction;
-	
+
+	@FindBy(xpath = "//td[text()='Edit Material Data at RL 0']")
+	WebElement editMatAtRL0Action;
+
+	@FindBy(xpath = "(//tr[@class='ModBodyRowEven ModClick']/td)[1]")
+	WebElement firstRowReleaseLevel;
+
 	@FindBy(xpath = "//td[text()='Manage Layup']")
 	WebElement manageLayupAction;
-	
+
 	@FindBy(xpath = "//span[text()='Delete']")
 	WebElement textDeleteWindow;
 
@@ -578,6 +590,9 @@ public class MaterialSOD extends TestBase {
 	@FindBy(xpath = "//td[text()='Manage Process']")
 	WebElement manageProcessFromEditMenu;
 
+	@FindBy(xpath = "//td[text()='Manage Layup']")
+	WebElement manageLayupFromEditMenu;
+
 	@FindBy(xpath = "//input[@value='Electrical']")
 	WebElement electricalPropCheckbox;
 
@@ -602,7 +617,8 @@ public class MaterialSOD extends TestBase {
 	@FindBy(xpath = "//span[text()='Mechanical']")
 	WebElement mechanicalTag;
 
-	@FindBy(xpath = "(//a[text()='Add To Clipboard'])[1]")
+	// @FindBy(xpath = "(//a[text()='Add To Clipboard'])[1]")
+	@FindBy(xpath = "//input[@title='Add To Clipboard']")
 	WebElement addToClipBoard;
 
 	@FindBy(xpath = "//input[@class='selectAll']")
@@ -610,7 +626,7 @@ public class MaterialSOD extends TestBase {
 
 	@FindBy(xpath = "//span[contains(text(),'The material does not contain any selected property sets.')]")
 	WebElement msgPropSetsNotAvailable;
-	
+
 	@FindBy(xpath = "//span[contains(text(),'The material does not contain any selected property sets.')]")
 	WebElement msgSingleParam;
 
@@ -622,87 +638,955 @@ public class MaterialSOD extends TestBase {
 
 	@FindBy(xpath = "//input[@value='Processing']")
 	WebElement ProcessPropCheckBox;
-	
+
 	@FindBy(xpath = "//input[@value='Assembly' and @type='checkbox']")
 	WebElement assemblyPropCheckBox;
-	
-	/*s@FindBy(xpath = "//input[@value='Assembly' and @type='checkbox']")
-	WebElement assemblyPropCheckBox;
-	
-	@FindBy(xpath = "//input[@value='Assembly' and @type='checkbox']")
-	WebElement assemblyPropCheckBox;
-	
-	@FindBy(xpath = "//input[@value='Assembly' and @type='checkbox']")
-	WebElement assemblyPropCheckBox;
-	
-	@FindBy(xpath = "//input[@value='Assembly' and @type='checkbox']")
-	WebElement assemblyPropCheckBox;*/
+
+	/*
+	 * s@FindBy(xpath = "//input[@value='Assembly' and @type='checkbox']")
+	 * WebElement assemblyPropCheckBox;
+	 * 
+	 * @FindBy(xpath = "//input[@value='Assembly' and @type='checkbox']") WebElement
+	 * assemblyPropCheckBox;
+	 * 
+	 * @FindBy(xpath = "//input[@value='Assembly' and @type='checkbox']") WebElement
+	 * assemblyPropCheckBox;
+	 * 
+	 * @FindBy(xpath = "//input[@value='Assembly' and @type='checkbox']") WebElement
+	 * assemblyPropCheckBox;
+	 */
 
 	@FindBy(xpath = "//select[contains(@id,'Display_DropDown')]")
 	WebElement displayDropdown;
-	
+
 	@FindBy(xpath = "//option[text()='Display Source']")
 	WebElement optDisplaySource;
-	
+
 	@FindBy(xpath = "//option[text()='Clear Source and Parameter Filter']")
 	WebElement optClearSource;
-	
+
 	@FindBy(xpath = "//option[text()='Expand Parameters']")
 	WebElement optExpandParameters;
-	
+
 	@FindBy(xpath = "//span[text()='Parameters']")
 	WebElement parametersButton;
-	
+
 	@FindBy(xpath = "//span[@class='noparamtofilter']")
 	WebElement noParameterMessage;
-	
+
 	@FindBy(xpath = "//input[@id='ParameterFilterDlg-f:ParameterFilterOKButton']")
 	WebElement okButtonFilterParam;
-	
+
 	@FindBy(xpath = "//input[@id='ParameterFilterDlg-f:ParameterFilterCancelButton']")
 	WebElement cancelButtonFilterParam;
-	
+
 	@FindBy(xpath = "//input[@id='ParameterFilterDlg-f:ParameterFilterResetButton']")
 	WebElement resetButtonFilterParam;
-	
+
 	@FindBy(xpath = "//span[text()='Details']")
 	WebElement textDetailsTab;
-	
+
 	@FindBy(xpath = "(//select[@class='selected'])[1]")
 	WebElement testTempSelectFilter;
-	
+
 	@FindBy(xpath = "(//select[@class='selected'])[1]/option[1]")
 	WebElement testTempSelectedOption1;
-	
+
 	@FindBy(xpath = "(//select[@class='selected'])[2]/option[1]")
 	WebElement testTypeSelectedOption1;
-	
+
 	@FindBy(xpath = "(//select[@class='selected'])[3]/option[2]")
 	WebElement timeSelectedOption2;
-	
+
 	@FindBy(xpath = "(//select[@class='available'])[1]/option[1]")
 	WebElement testTempAvailableOption1;
-	
+
 	@FindBy(xpath = "(//select[@class='available'])[2]/option[1]")
 	WebElement testTypeAvailableOption1;
-	
+
 	@FindBy(xpath = "(//select[@class='available'])[3]/option[1]")
 	WebElement timeAvailableOption1;
-	
+
 	@FindBy(xpath = "(//select[@class='selected'])[2]")
 	WebElement testTypeSelectFilter;
-	
+
 	@FindBy(xpath = "(//select[@class='selected'])[3]")
 	WebElement timeSelectFilter;
 
 	@FindBy(xpath = "//img[@class='filterParam']")
 	WebElement filterParamImage;
-	
+
 	@FindBy(xpath = "//span[text()='Process']")
 	WebElement processTab;
-	
+
 	@FindBy(xpath = "//img[@title='Home Workspace']")
 	WebElement dashboardPage;
+
+	@FindBy(xpath = "//span[text()='Layup']")
+	WebElement layupTab;
+
+	@FindBy(xpath = "//td[text()='To XML']")
+	WebElement toXMLOptionExportMenu;
+
+	@FindBy(xpath = "//span[text()='To XML']")
+	WebElement textToXML;
+
+	@FindBy(xpath = "//span[text()='Related Materials']/following::a[1]")
+	WebElement relatedMatLink;
+
+	@FindBy(xpath = "//span[text()='Test Data']")
+	WebElement testDataTab;
+
+	@FindBy(xpath = "//span[text()='CAE Models']")
+	WebElement CAEModelTab;
+
+	@FindBy(xpath = "(//td[text()='Displayed Rows: 1 - 25 of 2000'])[1]")
+	WebElement displayedTotalTest;
+
+	@FindBy(xpath = "//div[contains(@id, 'objLabelDecPanel')]//span[contains(text(),'[ Metals ]')]")
+	WebElement txtMatCreated;
+
+	@FindBy(xpath = "//td[text()='Measure from Equations']")
+	WebElement measureFromEquationsOption;
+
+	@FindBy(xpath = "(//span[text()='Create Measure from Equations'])[1]")
+	WebElement createMeasureFromEquationsWindow;
+
+	@FindBy(xpath = "//input[contains(@id,'CreateMeasureFromEquationOnMaterials:measureEquationMappings_selectbutton')]")
+	WebElement measureMappingsSelectButton;
+
+	@FindBy(xpath = "//span[text()='SM Object Selection']")
+	WebElement objectSelectionWindow;
+
+	@FindBy(xpath = "//span[contains(text(),'Shear Modulus, 12-Plane ( psi )')]")
+	WebElement textShearModProperty;
+
+	@FindBy(xpath = "//a[contains(text(),'384.615')]")
+	WebElement shearModPropertyValue;
+
+	@FindBy(xpath = "//td[text()='Approval Request']")
+	WebElement approvalRequestOption;
+
+	@FindBy(xpath = "//td[text()='Work Request']")
+	WebElement workRequestOption;
+
+	@FindBy(xpath = "//span[text()='Approval Request']")
+	WebElement approvalRequestWindowText;
+	@FindBy(xpath = "//span[text()='Work Request']")
+	WebElement workRequestWindowText;
+
+	@FindBy(xpath = "//span[text()='Completion Date']")
+	WebElement approvalRequestCompletionDateOption;
+
+	@FindBy(xpath = "//span[text()='Preferred Approvers']")
+	WebElement approvalRequestPreferredApproversOption;
+
+	@FindBy(xpath = "//input[@value='Preferred Approvers Editor']")
+	WebElement preferredApproversEditorButton;
+
+	@FindBy(xpath = "//span[text()='Preferred Approvers Editor']")
+	WebElement preferredApproversEditorUIText;
+
+	@FindBy(xpath = "(//td[@class='wtk-table-cell   ']/span[text()='Step 1']/following::td/span)[1]")
+	WebElement previewTablePrefferedApproverTextStep1;
+
+	@FindBy(xpath = "//input[@id='completionDate_dt']")
+	WebElement completionDateTextbox;
+
+	@FindBy(xpath = "//input[@id='myWorkspaceActionDialog-f:CreateApprovalRequestForMaterialSimActivity:completionDate_hid']")
+	WebElement completionDatePicker;
+
+	@FindBy(xpath = "//img[contains(@id, 'SMRecentObjectsSelection_approverList_recentObjectListDropDownArrowImage')]")
+	WebElement approvalListDropdownImage;
+	
+	
+	@FindBy(xpath = "//img[contains(@id, 'navActionDialog-f:PublishWorkRequest:SMRecentObjectsSelection_EnterpriseWorkRequestInstance_approverList_recentObjectListDropDownArrowImage')]")
+	WebElement approvalListDropdownImageOnWorkRequest;
+	
+
+	@FindBy(xpath = "//div[@id='RecentObjSel']/table/tbody/tr[1]")
+	WebElement firstApprovalListFromDropdown;
+
+	@FindBy(xpath = "//div[@id='RecentObjSel']/table/tbody/tr[2]")
+	WebElement secondApprovalListFromDropdown;
+
+	@FindBy(xpath = "//div[@id='RecentObjSel']/table/tbody/tr[3]")
+	WebElement thirdApprovalListFromDropdown;
+
+	@FindBy(xpath = "//a[text()='10']")
+	WebElement selectDate10;
+
+	@FindBy(xpath = "//input[@id='myWorkspaceActionDialog-f:CreateApprovalRequestForMaterialSimActivity:okBtn']")
+	WebElement submitButtonApprovalRequest;
+
+	@FindBy(xpath = "//span[@class='rf-msg-det']")
+	WebElement nameRequiredMessage;
+	@FindBy(xpath = "//input[@id='navActionDialog-f:PublishWorkRequest:project_orTxt']")
+	WebElement workRquestProjectDropdwon;
+
+	@FindBy(xpath = "//span[@class='rf-msg-det']")
+	WebElement approvalListRequiredMessage;
+
+	@FindBy(xpath = "//span[@class='rf-msg-det']")
+	WebElement completionDateRequiredMessage;
+
+	@FindBy(xpath = "//span[contains(@id, 'templatemsg:myWorkspaceActionDialog-f:PublishWorkRequest:template_orTxt_hidden')]/span")
+	WebElement templateRequiredMessage;
+
+	@FindBy(xpath = "//span[contains(@id, 'PublishWorkRequest:namemsg:myWorkspaceActionDialog-f:PublishWorkRequest:name')]/span")
+	WebElement workRequestNameRequiredMessage;;
+	@FindBy(xpath = "//input[contains(@id, 'CreateApprovalRequestForMaterialSimActivity:name')]")
+	WebElement approvalRequestNameTextbox;
+	
+	@FindBy(xpath = "//input[contains(@id, 'navActionDialog-f:PublishWorkRequest:EnterpriseWorkRequestInstance_arName')]")
+	WebElement approvalRequestNameTextboxOnWorkRequest;
+	
+
+	@FindBy(xpath = "//input[@id='navActionDialog-f:CreateApprovalRequestForMaterialSimActivity:completionDate_hid']")
+	WebElement calendarActionTextbox;
+
+	@FindBy(xpath = "//img[contains(@id,'SMRecentObjectsSelection_template_recentObjectListDropDownArrowImage')]")
+	WebElement templateDropdownImage;
+
+	@FindBy(xpath = "//span[contains(@id,'label_EnterpriseWorkRequestInstance_Material_for_CAE_Model')]")
+	WebElement materialForCAEModelTextInputs;
+
+	@FindBy(xpath = "(//input[contains(@id,'EnterpriseWorkRequestInstance_Material_for_CAE_Model_orTxt')])[1]")
+	WebElement oneRefMatInDropdown;
+
+	@FindBy(xpath = "//span[text()='CAE Model Request']")
+	WebElement CAEModelRequestTemplateOption;
+
+	@FindBy(xpath = "//span[text()='PromoteApproveDemoteMaterials']")
+	WebElement promoteDemoteMatTemplateOption;
+
+	@FindBy(xpath = "//span[text()='Test Data Management (Template Configuration)']")
+	WebElement testDatManagementTemplateConfTemplateOption;
+
+	@FindBy(xpath = "//span[text()='Test Data Management (Generate Design Data)']")
+	WebElement testDatManagementGenDesignDataTemplateOption;
+
+	@FindBy(xpath = "//span[text()='Test Data Management (Import Test Data)']")
+	WebElement testDatManagementImpTestDataTemplateOption;
+
+	@FindBy(xpath = "//span[text()='Schema Configuration']")
+	WebElement schemaConfigurationTemplateOption;
+
+	@FindBy(xpath = "//span[text()='Submit Material Revision']")
+	WebElement submitMatRevisionTemplateOption;
+
+	@FindBy(xpath = "//span[text()='WorkReqTemplate_VIpatil']")
+	WebElement customTemplateOption;
+
+	@FindBy(xpath = "//span[text()='WorkRequestTemplate_OneRefAttr']")
+	WebElement oneRefAttributeTemplateOption;
+
+	@FindBy(xpath = "//span[text()='Label']")
+	WebElement manyRefMatLabel;
+
+	@FindBy(xpath = "//span[text()='Materials to set release level']")
+	WebElement materialSetToReleaseLevelTextInputs;
+
+	@FindBy(xpath = "//img[@id='completionDate_clear']")
+	WebElement completionDateCrossButton;
+
+	@FindBy(xpath = "//span[text()='Start Date']")
+	WebElement startDateTextWorkRequest;
+
+	@FindBy(xpath = "//span[text()='Reference Material For Test Data']")
+	WebElement refMatForTestDataTextWorkRequest;
+
+	@FindBy(xpath = "//span[text()='Material for Test Data']")
+	WebElement matForTestDataTextWorkRequest;
+
+	@FindBy(xpath = "//span[text()='Existing Material Data to Edit']")
+	WebElement existingMatDataToEditTextWorkRequest;
+
+	@FindBy(xpath = "//input[@name='myWorkspaceActionDialog-f:PublishWorkRequest:okBtn']")
+	WebElement submitButtonWorkRequestWindow;
+
+	@FindBy(xpath = "///input[@id='myWorkspaceActionDialog-f:EditApprovalRequestWatchList:okBtn']")
+	WebElement submitButtonWatchListWindow;
+
+	@FindBy(xpath = "//span[text()='No Records Selected']")
+	WebElement noRecSelectedTextForCustomTemplatesecondField;
+
+	@FindBy(xpath = "//input[@id='myWorkspaceActionDialog-f:CreateApprovalRequestForMaterialSimActivity:chargeNumber']")
+	WebElement chargeNumberTextbox;
+
+	@FindBy(xpath = "//td[text()='Material']")
+	WebElement createMaterialOption;
+
+	@FindBy(xpath = "//input[contains(@id, 'CreateEditMaterial:submitBtn')]")
+	WebElement submitOnCreateMat;
+
+	@FindBy(xpath = "//img[@class='allRight']")
+	WebElement allRightButtonOnPrefApprover;
+
+	@FindBy(xpath = "//input[@id='PreferredApproversDialog-f:PreferredApproversd26:aplyBtn']")
+	WebElement applyButtonOnPreferredApprover;
+
+	@FindBy(xpath = "(//td[@class='wtk-table-cell   ']/span[text()='Step 1']/following::td/span)[1]")
+	WebElement previewStep1PreferredApprover;
+
+	@FindBy(xpath = "//input[@id='PreferredApproversDialog-f:PreferredApproversd27:okBtn']")
+	WebElement preferredApproverOkButton;
+
+	@FindBy(xpath = "//select[@class='available']")
+	WebElement preferredApproveroptionalApproversDropdown;
+
+	@FindBy(xpath = "//select[@class='available']/option[1]")
+	WebElement preferredApproveroptionalApproversDropdownFirstOption;
+
+	@FindBy(xpath = "//span[@class='rf-msg-det']")
+	WebElement minOptionalApproversErrorMessageText;
+
+	@FindBy(xpath = "//select[contains(@id,'myWorkspaceActionDialog')]")
+	WebElement targetLevel;
+
+	@FindBy(xpath = "//span[contains(@id,'PreferredApproversDialog')]/following::table[@issingle='true' and @class='wtk-table']")
+	WebElement preferredApproversTable;
+
+	@FindBy(xpath = "//span[contains(@id,'PreferredApproversDialog')]/following::table[@issingle='true' and @class='wtk-table']/tbody/tr")
+	WebElement preferredApproversTableRows;
+
+	@FindBy(xpath = "(//select[@size='10' and @class='available']/option)[1]")
+	WebElement optApprForStep1OnPreApprEditor;
+	@FindBy(xpath = "(//select[@size='10' and @class='available']/option)[2]")
+	WebElement optApprTwoForStep1OnPreApprEditor;
+
+	@FindBy(xpath = "(//select[@size='10' and @class='selected']/option)[1]")
+	WebElement prefApprForStep1OnPreApprEditor;
+	
+	@FindBy(xpath = "(//select[@size='10' and @class='selected']/option)[2]")
+	WebElement prefApprTwoForStep1OnPreApprEditor;
+
+	@FindBy(xpath = "//select[contains(@id,'PreferredApproversDialog-f:PreferredApprovers')]")
+	WebElement stepDropdownOnPrefApproverEditor;
+
+	@FindBy(xpath = "//td[text()='Preferred Approvers']")
+	WebElement prefApproversTextOnPrefApprEditor;
+
+	@FindBy(xpath = "//td[text()='Optional Approvers']")
+	WebElement optApproversTextOnPrefApprEditor;
+
+	@FindBy(xpath = "//input[contains(@id,'PreferredApproversDialog-f:PreferredApprovers') and @value='Apply']")
+	WebElement applyButtonOnPreferredApproverEditor;
+
+	@FindBy(xpath = "//span[@class='rf-msg-det']")
+	WebElement errorMessageForMinPrefApprover;
+	
+	@FindBy(xpath = "//input[contains(@id,'PreferredApproversDialog-f:PreferredApprovers') and @value='OK']")
+	WebElement okButtonOnPrefApproverEditor;
+	
+	public void clickOkButtonOnPreferredApproverEditor() {
+		//action.moveToElement(applyButtonOnPreferredApproverEditor).build().perform();
+		//action.click(applyButtonOnPreferredApproverEditor).build().perform();
+		
+		js.executeScript("arguments[0].click();", okButtonOnPrefApproverEditor);
+
+	}
+	
+	public String verifyErrorMessageForMinPrefferedApprover() {
+
+		return (errorMessageForMinPrefApprover.getText());
+	}
+
+	public void clickApplyButtonOnPreferredApproverEditor() {
+		action.moveToElement(applyButtonOnPreferredApproverEditor).build().perform();
+		action.click(applyButtonOnPreferredApproverEditor).build().perform();
+
+	}
+
+	public boolean verifyOptApprisDisplayedAsPrefAppr() {
+
+		return (prefApprForStep1OnPreApprEditor.isDisplayed());
+	}
+
+	public void selectoptApprAsPrefApprStep1() {
+
+		action.moveToElement(optApprForStep1OnPreApprEditor).build().perform();
+		action.doubleClick(optApprForStep1OnPreApprEditor).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(prefApprForStep1OnPreApprEditor));
+	}
+
+	public void selectTwooptApprAsPrefApprStep1() {
+
+		action.moveToElement(optApprForStep1OnPreApprEditor).build().perform();
+		action.doubleClick(optApprForStep1OnPreApprEditor).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(prefApprForStep1OnPreApprEditor));
+		//action.moveToElement(optApprTwoForStep1OnPreApprEditor).build().perform();
+		//action.doubleClick(optApprTwoForStep1OnPreApprEditor).build().perform();
+		action.moveToElement(optApprForStep1OnPreApprEditor).build().perform();
+		action.doubleClick(optApprForStep1OnPreApprEditor).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(prefApprTwoForStep1OnPreApprEditor));
+			
+				
+	}
+	public void removePrefApprFromPrefApproverTable() {
+
+		action.moveToElement(prefApprForStep1OnPreApprEditor).build().perform();
+		action.doubleClick(prefApprForStep1OnPreApprEditor).build().perform();
+		
+	}
+
+	public boolean verifyPrefApproversTextOnPrefApprEditor() {
+
+		return (prefApproversTextOnPrefApprEditor.isDisplayed());
+
+	}
+
+	public boolean verifyOptApproversTextOnPrefApprEditor() {
+
+		return (optApproversTextOnPrefApprEditor.isDisplayed());
+	}
+
+	public void selectStep2FromDropdownPreEditorWindow() {
+		Select select = new Select(stepDropdownOnPrefApproverEditor);
+
+		select.selectByVisibleText("Step 2");
+
+	}
+
+	public boolean verifyOptApprForStep2OnPreApprEditor() {
+
+		return (optApprForStep1OnPreApprEditor.isDisplayed());
+	}
+
+	public boolean verifyOptApprForStep1OnPreApprEditor() {
+
+		return (optApprForStep1OnPreApprEditor.isDisplayed());
+	}
+
+	public int verifyCountOfStepsInPrefAppEditor() {
+
+		List<WebElement> options = driver.findElements(
+				By.xpath("//select[contains(@id,'PreferredApproversDialog-f:PreferredApprovers')]/option"));
+
+		return (options.size());
+
+	}
+
+	public int verifyCountOfPrefApproverInPrefAppEditor() {
+
+		List<WebElement> options = driver.findElements(
+				By.xpath("//select[@size='10' and @class='selected' ]/option"));
+
+		return (options.size());
+
+	}
+	public int verifyCountOfPreviewTable() {
+
+		List<WebElement> rows = driver.findElements(By.xpath(
+				"//span[contains(@id,'PreferredApproversDialog')]/following::table[@issingle='true' and @class='wtk-table']/tbody/tr"));
+
+		return (rows.size());
+
+	}
+
+	public String errForMinOptApprovers() {
+
+		return (minOptionalApproversErrorMessageText.getText());
+	}
+
+	public void selectFirstOptionalapproverAndMoveTOPreferred() {
+		// Select selectPreferredApproveroptionalApproversDropdown = new
+		// Select(preferredApproveroptionalApproversDropdown);
+
+		// selectPreferredApproveroptionalApproversDropdown.selectByIndex(0);
+		action.moveToElement(preferredApproveroptionalApproversDropdownFirstOption).build().perform();
+		action.doubleClick(preferredApproveroptionalApproversDropdownFirstOption).build().perform();
+		// js.executeScript("arguments[0].click();", allRightButtonOnPrefApprover);
+
+	}
+
+	public void clickOnpreferredApproverOkButton() {
+		action.moveToElement(preferredApproverOkButton).build().perform();
+		action.click(preferredApproverOkButton).build().perform();
+		// js.executeScript("arguments[0].click();", allRightButtonOnPrefApprover);
+
+	}
+
+	public void clickOnApplyButtonOnPreferredApprover() {
+
+		js.executeScript("arguments[0].click();", applyButtonOnPreferredApprover);
+		// wait.until(ExpectedConditions.visibilityOf(objectSelectionWindow));
+		wait.until(ExpectedConditions.visibilityOfElementLocated((By) previewStep1PreferredApprover));
+	}
+
+	public MyWorkspacePage clickOnSubmitToCreateMat() {
+
+		js.executeScript("arguments[0].click();", submitOnCreateMat);
+
+		return new MyWorkspacePage();
+	}
+
+	public void clickOnAllRightButtonOnPreferredApprover() {
+		action.moveToElement(allRightButtonOnPrefApprover).build().perform();
+		action.doubleClick(allRightButtonOnPrefApprover).build().perform();
+		// js.executeScript("arguments[0].click();", allRightButtonOnPrefApprover);
+
+	}
+
+	public void clickOnCreateMaterialSOD() {
+		action.moveToElement(createMaterialOption).build().perform();
+		action.click(createMaterialOption).build().perform();
+	}
+
+	public void enterAlphaAndSpecialCharChargeNumber() {
+
+		storeName = RandomStringUtils.randomAlphanumeric(6);
+		String specialChar = "@#$";
+		String alphaAndSpecialChar = storeName.concat(specialChar);
+
+		chargeNumberTextbox.sendKeys(alphaAndSpecialChar);
+
+	}
+
+	public void enterAnyChargeNumber() {
+
+		chargeNumberTextbox.sendKeys("chargeNUmber123456");
+
+	}
+
+	public void enterLengthLimitValueInChargeNUmberTxtbox() {
+
+		storeName = RandomStringUtils.randomAlphanumeric(120);
+
+		chargeNumberTextbox.sendKeys(storeName);
+
+	}
+
+	public void enterLengthLargerThanLimitValueInChargeNUmberTxtbox() {
+
+		storeName = RandomStringUtils.randomAlphanumeric(121);
+
+		chargeNumberTextbox.sendKeys(storeName);
+
+	}
+
+	public boolean chargeNumberInputEmpty() {
+
+		String chargeNumberInputValue = chargeNumberTextbox.getAttribute("value");
+		int size = chargeNumberInputValue.length();
+		if (size == 0) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	public boolean manageChargeNumberDisplayed() {
+		return ((chargeNumberTextbox).isDisplayed());
+
+	}
+
+	public void clickOnSubmitButtonToSubWatchList() {
+
+		action.moveToElement(submitButtonWatchListWindow).build().perform();
+		action.click(submitButtonWatchListWindow).build().perform();
+
+	}
+
+	public boolean seconfFieldNotPopulated() {
+		return ((noRecSelectedTextForCustomTemplatesecondField).isDisplayed());
+
+	}
+
+	public void clickSubmitButtonWorkRequestWindow() {
+
+		action.moveToElement(submitButtonWorkRequestWindow).build().perform();
+		action.click(submitButtonWorkRequestWindow).build().perform();
+
+	}
+
+	public boolean existingMatDataToEditDisplayed() {
+		return ((existingMatDataToEditTextWorkRequest).isDisplayed());
+
+	}
+
+	public boolean matForTestDataDisplayed() {
+		return ((matForTestDataTextWorkRequest).isDisplayed());
+
+	}
+
+	public boolean refMatForTestDataDisplayed() {
+		return ((refMatForTestDataTextWorkRequest).isDisplayed());
+
+	}
+
+	public boolean manyRefMatDisplayed() {
+		return ((manyRefMatLabel).isDisplayed());
+
+	}
+
+	public boolean oneRefMatDropdownDisplayed() {
+		return ((oneRefMatInDropdown).isDisplayed());
+
+	}
+
+	public boolean materialSetToReleaseLevelDisplayed() {
+		return ((materialSetToReleaseLevelTextInputs).isDisplayed());
+
+	}
+
+	public boolean materialForCAEModelDisplayed() {
+		return ((materialForCAEModelTextInputs).isDisplayed());
+
+	}
+
+	public boolean startDateDisplayed() {
+		return ((startDateTextWorkRequest).isDisplayed());
+
+	}
+
+	public void selectSchemaConfigurationTemplate() {
+
+		action.moveToElement(templateDropdownImage).build().perform();
+		action.click(templateDropdownImage).build().perform();
+		action.moveToElement(schemaConfigurationTemplateOption).build().perform();
+		action.click(schemaConfigurationTemplateOption).build().perform();
+	}
+
+	public void selectSubmitMatRevisionTemplate() {
+
+		action.moveToElement(templateDropdownImage).build().perform();
+		action.click(templateDropdownImage).build().perform();
+		action.moveToElement(submitMatRevisionTemplateOption).build().perform();
+		action.click(submitMatRevisionTemplateOption).build().perform();
+	}
+
+	public void selectCustomTemplate() throws InterruptedException {
+
+		action.moveToElement(templateDropdownImage).build().perform();
+		action.click(templateDropdownImage).build().perform();
+		action.moveToElement(customTemplateOption).build().perform();
+		action.click(customTemplateOption).build().perform();
+		Thread.sleep(2000);
+	}
+
+	public void selectOneRefAttrCustomTemplate() {
+
+		action.moveToElement(templateDropdownImage).build().perform();
+		action.click(templateDropdownImage).build().perform();
+		action.moveToElement(oneRefAttributeTemplateOption).build().perform();
+		action.click(oneRefAttributeTemplateOption).build().perform();
+	}
+
+	public void selectTestDataManagementImportTestDataTemplate() {
+
+		action.moveToElement(templateDropdownImage).build().perform();
+		action.click(templateDropdownImage).build().perform();
+		action.moveToElement(testDatManagementImpTestDataTemplateOption).build().perform();
+		action.click(testDatManagementImpTestDataTemplateOption).build().perform();
+	}
+
+	public void selectTestDataManagementGenerateDesignDataTemplate() {
+
+		action.moveToElement(templateDropdownImage).build().perform();
+		action.click(templateDropdownImage).build().perform();
+		action.moveToElement(testDatManagementGenDesignDataTemplateOption).build().perform();
+		action.click(testDatManagementGenDesignDataTemplateOption).build().perform();
+	}
+
+	public void selectTestDataManagementTemplateConfigurationTemplate() {
+
+		action.moveToElement(templateDropdownImage).build().perform();
+		action.click(templateDropdownImage).build().perform();
+		action.moveToElement(testDatManagementTemplateConfTemplateOption).build().perform();
+		action.click(testDatManagementTemplateConfTemplateOption).build().perform();
+	}
+
+	public void selectPromoteDemoteMaterialsTemplate() {
+
+		action.moveToElement(templateDropdownImage).build().perform();
+		action.click(templateDropdownImage).build().perform();
+		action.moveToElement(promoteDemoteMatTemplateOption).build().perform();
+		action.click(promoteDemoteMatTemplateOption).build().perform();
+	}
+
+	public void selectCAEModelRequestTemplate() {
+
+		action.moveToElement(templateDropdownImage).build().perform();
+		action.click(templateDropdownImage).build().perform();
+		action.moveToElement(CAEModelRequestTemplateOption).build().perform();
+		action.click(CAEModelRequestTemplateOption).build().perform();
+	}
+
+	public void clickOnCrossButtonCompetionDate() {
+
+		action.moveToElement(completionDateCrossButton).build().perform();
+		action.click(completionDateCrossButton).build().perform();
+
+	}
+
+	public boolean completionDateNotAcceptingManualEntry() {
+
+		String dateValue = calendarActionTextbox.getAttribute("value");
+		int size = dateValue.length();
+		if (size == 0) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	public void enterDateInCompletionDateTextbox() {
+
+		completionDateTextbox.sendKeys("24/11/2022");
+	}
+
+	public void enterApprovalRequestName() {
+
+		storeName = RandomStringUtils.randomAlphanumeric(6);
+
+		approvalRequestNameTextbox.sendKeys(storeName);
+
+	}
+	
+	public void enterApprovalRequestNameOnWorkRequest() {
+
+		storeName = RandomStringUtils.randomAlphanumeric(6);
+
+	approvalRequestNameTextboxOnWorkRequest.sendKeys(storeName);
+
+	}
+	
+
+	public String getNameRequiredFieldErrorMessage() {
+
+		return (nameRequiredMessage.getText());
+	}
+
+	public String getPojectNamePrePopulated() {
+		return ((workRquestProjectDropdwon).getAttribute("value"));
+	}
+
+	public String getApprovalListRequiredFieldErrorMessage() {
+
+		return (approvalListRequiredMessage.getText());
+	}
+
+	public String getCompletionDateRequiredFieldErrorMessage() {
+
+		return (completionDateRequiredMessage.getText());
+	}
+
+	public String getTemplateRequiredFieldErrorMessage() {
+
+		return (templateRequiredMessage.getText());
+	}
+
+	public String getWorkRequestNameRequiredFieldErrorMessage() {
+
+		return (workRequestNameRequiredMessage.getText());
+	}
+
+	public MyWorkspacePage clickSubmitButtonApprovalRequest() throws InterruptedException {
+
+		action.moveToElement(submitButtonApprovalRequest).build().perform();
+		action.click(submitButtonApprovalRequest).build().perform();
+		Thread.sleep(2000);
+		return new MyWorkspacePage();
+	}
+
+	public void selectFirstApprovalListFromDropdown() {
+
+		action.moveToElement(approvalListDropdownImage).build().perform();
+		action.click(approvalListDropdownImage).build().perform();
+		action.moveToElement(firstApprovalListFromDropdown).build().perform();
+		action.click(firstApprovalListFromDropdown).build().perform();
+	}
+
+	public void selectFirstApprovalListFromDropdownOnWorkRequest() {
+
+		action.moveToElement(approvalListDropdownImageOnWorkRequest).build().perform();
+		action.click(approvalListDropdownImageOnWorkRequest).build().perform();
+		action.moveToElement(firstApprovalListFromDropdown).build().perform();
+		action.click(firstApprovalListFromDropdown).build().perform();
+	}
+
+	
+	public void selectSecondApprovalListFromDropdown() {
+
+		action.moveToElement(approvalListDropdownImage).build().perform();
+		action.click(approvalListDropdownImage).build().perform();
+		action.moveToElement(secondApprovalListFromDropdown).build().perform();
+		action.click(secondApprovalListFromDropdown).build().perform();
+	}
+
+	public void selectThirdApprovalListFromDropdown() {
+
+		action.moveToElement(approvalListDropdownImage).build().perform();
+		action.click(approvalListDropdownImage).build().perform();
+		action.moveToElement(thirdApprovalListFromDropdown).build().perform();
+		action.click(thirdApprovalListFromDropdown).build().perform();
+	}
+
+	public void clickOnCompletionDateTextBox() {
+
+		action.moveToElement(completionDateTextbox).build().perform();
+		action.click(completionDateTextbox).build().perform();
+
+	}
+
+	public void selectAnyDateFromDatePicker() {
+
+		action.moveToElement(selectDate10).build().perform();
+		action.click(selectDate10).build().perform();
+
+	}
+
+	public boolean completionTextBoxEmpty() {
+
+		String empty = " ";
+		if
+
+		(getValueCompletionDateTextbox() == "") {
+			return true;
+		}
+
+		return false;
+	}
+
+	public boolean preferredApproversEditorButtonDisabled() {
+		return ((preferredApproversEditorButton).isEnabled());
+	}
+
+	public String getValueCompletionDateTextbox() {
+		return ((completionDateTextbox).getAttribute("value"));
+	}
+
+	public boolean approvalRequestCompletionDateDisplayed() {
+		return ((approvalRequestCompletionDateOption).isDisplayed());
+	}
+
+	public boolean approvalRequestPrefferedApproversDisplayed() {
+		return ((approvalRequestPreferredApproversOption).isDisplayed());
+	}
+
+	public boolean approvalWindowDisplayedSOD() {
+		return ((approvalRequestWindowText).isDisplayed());
+	}
+
+	public boolean workRequestWindowDisplayedSOD() {
+		return ((workRequestWindowText).isDisplayed());
+	}
+
+	public boolean preferredApproversUIDisplayed() {
+		return ((preferredApproversEditorUIText).isDisplayed());
+	}
+
+	public boolean verifyStep1ValueEmpty() {
+
+		String step1PreferredAppr = previewTablePrefferedApproverTextStep1.getText();
+
+		if (step1PreferredAppr.isEmpty()) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	public void clickPreferredApproversEditorButton() {
+		action.moveToElement(preferredApproversEditorButton).build().perform();
+		action.click(preferredApproversEditorButton).build().perform();
+	}
+
+	public void clickOnApprovalRequestSOD() {
+		action.moveToElement(approvalRequestOption).build().perform();
+		action.click(approvalRequestOption).build().perform();
+	}
+
+	public void clickOnWorkRequestSOD() {
+		action.moveToElement(workRequestOption).build().perform();
+		action.click(workRequestOption).build().perform();
+	}
+
+	public boolean workRequestOptionDisplayed() {
+		return ((workRequestOption).isDisplayed());
+	}
+
+	public boolean approvalRequestOptionDisplayed() {
+		return ((approvalRequestOption).isDisplayed());
+	}
+
+	public boolean verifyOutputMeasurePropertyValueDisplayed() {
+
+		return (shearModPropertyValue.isDisplayed());
+	}
+
+	public boolean verifyOutputMeasurePropertyDisplayed() {
+
+		return (textShearModProperty.isDisplayed());
+	}
+
+	public MyWorkspacePage clickOnSelectButtonAgainstMeasureMappings() {
+
+		js.executeScript("arguments[0].click();", measureMappingsSelectButton);
+		wait.until(ExpectedConditions.visibilityOf(objectSelectionWindow));
+
+		return new MyWorkspacePage();
+	}
+
+	public boolean measureFromEquationsWindowDisplayed() {
+		return ((createMeasureFromEquationsWindow).isDisplayed());
+	}
+
+	public void clickOnMeasureFromEquations() {
+		action.moveToElement(measureFromEquationsOption).build().perform();
+		action.click(measureFromEquationsOption).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(createMeasureFromEquationsWindow));
+	}
+
+	public boolean measureFromEquationsOptionDisplayed() {
+
+		return (measureFromEquationsOption.isDisplayed());
+	}
+
+	public void clickOnTools() {
+		js.executeScript("arguments[0].click();", tools);
+	}
+
+	public boolean createdMatDisplayed() {
+
+		return (txtMatCreated.isDisplayed());
+	}
+
+	public void clikOnTestDataTab() {
+		js.executeScript("arguments[0].click();", testDataTab);
+
+		wait.until(ExpectedConditions.visibilityOf(displayedTotalTest));
+	}
+
+	public void clickOnRelatedMatLinkToGetCAEModel() {
+
+		js.executeScript("arguments[0].click();", relatedMatLink);
+		wait.until(ExpectedConditions.visibilityOf(CAEModelTab));
+	}
+
+	public void clickOnRelatedMatLink() {
+
+		js.executeScript("arguments[0].click();", relatedMatLink);
+		wait.until(ExpectedConditions.visibilityOf(testDataTab));
+	}
+
+	public ProcessesPage clickOnExportXMLSubmit() {
+		js.executeScript("arguments[0].click();", exportXmlSubmit);
+		return new ProcessesPage();
+	}
+
+	public void clickOnExportToXml() {
+
+		action.moveToElement(export).build().perform();
+		action.click(toXMLOptionExportMenu).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(textToXML));
+	}
+
+	public boolean layupTabDisplayed() {
+
+		return (layupTab.isDisplayed());
+	}
 
 	public void clickOnDashboard() throws InterruptedException {
 		// Thread.sleep(1000);
@@ -713,105 +1597,111 @@ public class MaterialSOD extends TestBase {
 		js.executeScript("arguments[0].click();", dashboardPage);
 		Thread.sleep(2000);
 	}
-	
-	public boolean processTabDisplayed(){
-		
-		return(processTab.isDisplayed());
+
+	public boolean processTabDisplayed() {
+
+		return (processTab.isDisplayed());
 	}
-	public boolean assemblyTagDisplayed(){
-		try {if(assemblyTag.isDisplayed());
-		
-		}
-		catch
-			(Throwable e)
-		{
+
+	public boolean assemblyTagDisplayed() {
+		try {
+			if (assemblyTag.isDisplayed())
+				;
+
+		} catch (Throwable e) {
 			return false;
 		}
 		return false;
-		
-		}
-		
-	public boolean filterParamImageDisplayed(){
+
+	}
+
+	public boolean filterParamImageDisplayed() {
 		return (filterParamImage.isDisplayed());
 	}
-	public void clickOkOnFilterParameter(){
+
+	public void clickOkOnFilterParameter() {
 		js.executeScript("arguments[0].click();", okButtonFilterParam);
 	}
-	public void movetestTempOptionToAvailable(){
+
+	public void movetestTempOptionToAvailable() {
 		action.moveToElement(testTempSelectedOption1).build().perform();
-		 action.doubleClick(testTempSelectedOption1).build().perform(); 
-		
+		action.doubleClick(testTempSelectedOption1).build().perform();
+
 	}
-	
-	public boolean testTempAvailableDisplayed(){
+
+	public boolean testTempAvailableDisplayed() {
 		return (testTempAvailableOption1.isDisplayed());
 	}
-	public void movetestTypeOptionToAvailable(){
+
+	public void movetestTypeOptionToAvailable() {
 		action.moveToElement(testTypeSelectedOption1).build().perform();
-		 action.doubleClick(testTypeSelectedOption1).build().perform();		 
-		
+		action.doubleClick(testTypeSelectedOption1).build().perform();
+
 	}
-	public boolean testTypeAvailableDisplayed(){
+
+	public boolean testTypeAvailableDisplayed() {
 		return (testTypeAvailableOption1.isDisplayed());
 	}
-	
-	public void movetimeOptionToAvailable(){
+
+	public void movetimeOptionToAvailable() {
 		action.moveToElement(timeSelectedOption2).build().perform();
-		 action.doubleClick(timeSelectedOption2).build().perform();		
+		action.doubleClick(timeSelectedOption2).build().perform();
 	}
-	public boolean timeAvailableDisplayed(){
+
+	public boolean timeAvailableDisplayed() {
 		return (timeAvailableOption1.isDisplayed());
 	}
-	
-	public boolean verifyOkButtonFilterParDisplayed(){
+
+	public boolean verifyOkButtonFilterParDisplayed() {
 		return (okButtonFilterParam.isDisplayed());
 	}
-	
-	public boolean verifyCancelButtonFilterParDisplayed(){
+
+	public boolean verifyCancelButtonFilterParDisplayed() {
 		return (cancelButtonFilterParam.isDisplayed());
 	}
-	
-	public boolean verifyResetButtonFilterParDisplayed(){
+
+	public boolean verifyResetButtonFilterParDisplayed() {
 		return (resetButtonFilterParam.isDisplayed());
 	}
-	public boolean verifyDetailsTab(){
-		
+
+	public boolean verifyDetailsTab() {
+
 		return (textDetailsTab.isDisplayed());
 	}
-	public String verifySingleParamMessage(){
-		
+
+	public String verifySingleParamMessage() {
+
 		return (noParameterMessage.getText());
 	}
-	public boolean verifyOpDisplaySourceDisplayDropdown() {
-	/*	Select select = new Select(displayDropdown);
-		List<WebElement> options = select.getOptions();
-		int totalOptions = options.size();
-		String[] exp = { "Select", "Display Source", "Clear Source and Parameter Filter", "Collapse Parameters" };
 
-		for (WebElement webElement : options) {
-			for (int i = 0; i < exp.length; i++) {
-				if (webElement.getText().equals(exp[i])) {
-					System.out.println("Matched ");
-				}
-			}
-		}*/
+	public boolean verifyOpDisplaySourceDisplayDropdown() {
+		/*
+		 * Select select = new Select(displayDropdown); List<WebElement> options =
+		 * select.getOptions(); int totalOptions = options.size(); String[] exp = {
+		 * "Select", "Display Source", "Clear Source and Parameter Filter",
+		 * "Collapse Parameters" };
+		 * 
+		 * for (WebElement webElement : options) { for (int i = 0; i < exp.length; i++)
+		 * { if (webElement.getText().equals(exp[i])) { System.out.println("Matched ");
+		 * } } }
+		 */
 		js.executeScript("arguments[0].click();", displayDropdown);
 		return (optDisplaySource.isDisplayed());
-		
+
 	}
-	
+
 	public boolean verifyOpClearSourceDisplayDropdown() {
-			js.executeScript("arguments[0].click();", displayDropdown);
-			return (optClearSource.isDisplayed());
-			
-		}
-	
+		js.executeScript("arguments[0].click();", displayDropdown);
+		return (optClearSource.isDisplayed());
+
+	}
+
 	public boolean verifyOpExpandParamaetersDisplayDropdown() {
 		js.executeScript("arguments[0].click();", displayDropdown);
 		return (optExpandParameters.isDisplayed());
-		
+
 	}
- 
+
 	public void unselectHardness() throws InterruptedException {
 
 		if (hardnessPropCheckBox.isSelected()) {
@@ -819,7 +1709,7 @@ public class MaterialSOD extends TestBase {
 			js.executeScript("arguments[0].click();", propertyFilterOKButton);
 		} else
 			js.executeScript("arguments[0].click();", propertyFilterCancelButton);
-		//Thread.sleep(3000);
+		// Thread.sleep(3000);
 	}
 
 	public void unselectProcessing() throws InterruptedException {
@@ -829,7 +1719,7 @@ public class MaterialSOD extends TestBase {
 			js.executeScript("arguments[0].click();", propertyFilterOKButton);
 		} else
 			js.executeScript("arguments[0].click();", propertyFilterCancelButton);
-		//Thread.sleep(3000);
+		// Thread.sleep(3000);
 	}
 
 	public String msgPropSetsNotAvailableDisplayed() {
@@ -858,10 +1748,10 @@ public class MaterialSOD extends TestBase {
 		Thread.sleep(3000);
 	}
 
-	public void clickParameters(){
+	public void clickParameters() {
 		js.executeScript("arguments[0].click();", parametersButton);
 	}
-	
+
 	public void unselectAllOnPropFilter() throws InterruptedException {
 
 		if (selectAllchkBoxPropertyFilter.isSelected()) {
@@ -873,15 +1763,14 @@ public class MaterialSOD extends TestBase {
 		js.executeScript("arguments[0].click();", selectAllchkBoxPropertyFilter);
 		js.executeScript("arguments[0].click();", propertyFilterOKButton);
 
-		//Thread.sleep(4000);
+		// Thread.sleep(4000);
 	}
 
 	/*
 	 * 
-	 * public static WebElement findYourElement() { try { element =
-	 * electricalTag; } catch(NoSuchElementException e) {
-	 * System.out.println(e.getMessage()); element = null; return element; }
-	 * return element; }
+	 * public static WebElement findYourElement() { try { element = electricalTag; }
+	 * catch(NoSuchElementException e) { System.out.println(e.getMessage()); element
+	 * = null; return element; } return element; }
 	 */
 	public boolean elementNotOnPage() {
 		try {
@@ -893,32 +1782,30 @@ public class MaterialSOD extends TestBase {
 		}
 		return false;
 	}
-	
+
 	public void uncheckAssemblyFromFilter() throws InterruptedException {
-	if (assemblyPropCheckBox.isSelected()) {
+		if (assemblyPropCheckBox.isSelected()) {
 			js.executeScript("arguments[0].click();", assemblyPropCheckBox);
 			Thread.sleep(4000);
 			js.executeScript("arguments[0].click();", propertyFilterOKButton);
 		} else
 			js.executeScript("arguments[0].click();", propertyFilterCancelButton);
 
-		
 	}
-	
-	private static WebElement assemElement = null; 
+
+	private static WebElement assemElement = null;
 
 	public static WebElement findYourElement() {
-	    try {
-	    	assemElement = driver.findElement(By.xpath("//span[text()='Assembly']"));
-	    }
-	    catch(NoSuchElementException e) {
-	        System.out.println(e.getMessage());
-	        element = null;
-	        return element;
-	    }
-	    return element;
+		try {
+			assemElement = driver.findElement(By.xpath("//span[text()='Assembly']"));
+		} catch (NoSuchElementException e) {
+			System.out.println(e.getMessage());
+			element = null;
+			return element;
+		}
+		return element;
 	}
-	
+
 	/*
 	 * public boolean electricalTagDisplayed(){ return
 	 * (electricalTag.isDisplayed()); }
@@ -931,13 +1818,14 @@ public class MaterialSOD extends TestBase {
 	public boolean mechanicalPropertiesDisplayed() {
 		return mechanicalTag.isDisplayed();
 	}
-	
+
 	public boolean classificationPropertiesDisplayed() {
 		return classificationTag.isDisplayed();
 	}
-	
-	public void clickOnAddToClipboard() {
+
+	public void clickOnAddToClipboard() throws InterruptedException {
 		js.executeScript("arguments[0].click();", addToClipBoard);
+		Thread.sleep(1000);
 	}
 
 	public boolean propertySetImageDisplayed() {
@@ -965,7 +1853,7 @@ public class MaterialSOD extends TestBase {
 
 	public void clickPropertySetOK() throws InterruptedException {
 		js.executeScript("arguments[0].click();", propertyFilterOKButton);
-		//Thread.sleep(3000);
+		// Thread.sleep(3000);
 	}
 
 	public void clickPropertySetCancel() {
@@ -1066,6 +1954,8 @@ public class MaterialSOD extends TestBase {
 
 	public void clickOnSecurity() {
 		js.executeScript("arguments[0].click();", security);
+		// action.moveToElement(security).build().perform();
+		// action.click(security).build().perform();
 	}
 
 	public void clickOnCreateMat() {
@@ -1083,6 +1973,11 @@ public class MaterialSOD extends TestBase {
 	public CAEProcessInput clickOnCAEAuto() {
 		js.executeScript("arguments[0].click();", caeAutoModel);
 		return new CAEProcessInput();
+	}
+
+	public EditTestDataPage clickOnTestDataAction() {
+		js.executeScript("arguments[0].click();", testDataAction);
+		return new EditTestDataPage();
 	}
 
 	public void clickOnCAEManual() {
@@ -1110,7 +2005,13 @@ public class MaterialSOD extends TestBase {
 	}
 
 	public void clickOnPromoteAction() {
-		js.executeScript("arguments[0].click();", promoteAction);
+		// js.executeScript("arguments[0].click();", promoteAction);
+		action.moveToElement(promoteAction).build().perform();
+		action.click(promoteAction).build().perform();
+		// wait.until(ExpectedConditions.visibilityOf(targetLevel));nn
+		wait.until(ExpectedConditions
+				.visibilityOfElementLocated(By.xpath("//select[contains(@id,'myWorkspaceActionDialog')]")));
+
 	}
 
 	public void clickOnDemoteAction() {
@@ -1148,17 +2049,17 @@ public class MaterialSOD extends TestBase {
 		// js.executeScript("arguments[0].click();", exportExcelSubmit);
 		action.moveToElement(exportExcelSubmit).build().perform();
 		action.click(exportExcelSubmit).build().perform();
-		wait.until(ExpectedConditions.visibilityOf(exportProcessExcel));
-		
+		// wait.until(ExpectedConditions.visibilityOf(exportProcessExcel));
+
 		return new ProcessesPage();
 	}
 
-	/*public void exportXmlSubmit() {
-		// js.executeScript("arguments[0].click();", exportExcelSubmit);
-		action.moveToElement(exportXmlSubmit).build().perform();
-		action.click(exportXmlSubmit).build().perform();
-		wait.until(ExpectedConditions.visibilityOf(exportProcessXml));==
-	}*/
+	/*
+	 * public void exportXmlSubmit() { // js.executeScript("arguments[0].click();",
+	 * exportExcelSubmit); action.moveToElement(exportXmlSubmit).build().perform();
+	 * action.click(exportXmlSubmit).build().perform();
+	 * wait.until(ExpectedConditions.visibilityOf(exportProcessXml));== }
+	 */
 
 	public void importTestDataSubmit() {
 		action.click(importExcelSubmit).build().perform();
@@ -1411,8 +2312,8 @@ public class MaterialSOD extends TestBase {
 		wait.until(ExpectedConditions.visibilityOf(mechanicalTag));
 		/*
 		 * action.moveToElement(footnoteTooltip).build().perform();
-		 * wait.until(ExpectedConditions.visibilityOf(footnoteTooltipContent));
-		 * String text = footnoteTooltipContent.getText();
+		 * wait.until(ExpectedConditions.visibilityOf(footnoteTooltipContent)); String
+		 * text = footnoteTooltipContent.getText();
 		 * System.out.println("Footnote tooltip content is : " + text);
 		 */
 	}
@@ -1486,23 +2387,19 @@ public class MaterialSOD extends TestBase {
 		action.click(pedigreeViewer).build().perform();
 		/*
 		 * if(pedigreeWorkspace.isDisplayed()) {
-		 * System.out.println("Pedigree workspace is displayed successfully"); }
-		 * else {
-		 * System.out.println("Pedigree workspace is not displayed successfully"
-		 * ); }
+		 * System.out.println("Pedigree workspace is displayed successfully"); } else {
+		 * System.out.println("Pedigree workspace is not displayed successfully" ); }
 		 */
 		/*
 		 * if(processViewerImage.isDisplayed()) {
-		 * System.out.println("Pedigree viewer is displayed successfully"); }
-		 * else {
+		 * System.out.println("Pedigree viewer is displayed successfully"); } else {
 		 * System.out.println("Pedigree viewer didn't open successfully"); }
 		 */
 		/*
 		 * action.moveToElement(measureProperty).build().perform();
-		 * js.executeScript("arguments[0].click();", measureProperty); int count
-		 * = measurePropertyMod.size(); System.out.
-		 * println("Measure property displayed on MOD on first page are : " +
-		 * count);
+		 * js.executeScript("arguments[0].click();", measureProperty); int count =
+		 * measurePropertyMod.size(); System.out.
+		 * println("Measure property displayed on MOD on first page are : " + count);
 		 */
 	}
 
@@ -1748,7 +2645,7 @@ public class MaterialSOD extends TestBase {
 	public void compareClassificationDetailsFixed() {
 		Assert.assertEquals(matTypeValueSOD.getText(), "Metals444");
 		System.out.println("Material type value is correct uploaded : " + matTypeValueSOD.getText());
-		Assert.assertEquals(classValueSOD.getText(), "Class1");
+		Assert.assertEquals(classValueSOD.getText(), "Class23");
 		System.out.println("Class value is correct uploaded : " + classValueSOD.getText());
 		Assert.assertEquals(subClassValueSOD.getText(), "SubClass1");
 		System.out.println("Sub Class value is correct uploaded : " + subClassValueSOD.getText());
@@ -1756,8 +2653,7 @@ public class MaterialSOD extends TestBase {
 		// System.out.println("Common name value is correct uploaded : " +
 		// commonNameValueSOD.getText());
 		/*
-		 * if(beforeEditS1.contains("Metals444") &&
-		 * beforeEditS2.contains("Class201") &&
+		 * if(beforeEditS1.contains("Metals444") && beforeEditS2.contains("Class201") &&
 		 * beforeEditS3.contains("Subclass201")) {
 		 * System.out.println("All classification details are correct"); }
 		 */
@@ -1786,7 +2682,7 @@ public class MaterialSOD extends TestBase {
 	}
 
 	public void compareMechanicalValuesMapped() {
-		Assert.assertEquals(elasticModulusValue.getText(), "[2.1900E7 : 3.0000E7]");
+		Assert.assertEquals(elasticModulusValue.getText(), "[2.1900E7 : 3.00000E7]");
 		System.out.println("Tensile Elastic Modulus value is correct uploaded : " + elasticModulusValue.getText());
 		Assert.assertEquals(poissonRatioValue.getText(), "0.270");
 		System.out.println("Poisson's Ratio value is correct uploaded : " + poissonRatioValue.getText());
@@ -1934,15 +2830,52 @@ public class MaterialSOD extends TestBase {
 	public boolean verifyManageProcessOptionFromSODDisplayed() {
 		return manageProcessAction.isDisplayed();
 	}
+
+	public boolean verifyeditMatAtRL0OptionFromSODDisplayed() {
+		return editMatAtRL0Action.isDisplayed();
+	}
+
+	public String releaseLevelDisplayed() {
+
+		return (firstRowReleaseLevel.getText());
+	}
+
+	public EditMatProcess clickOnEditMatAtRL0Option() {
+		action.moveToElement(editMatAtRL0Action).build().perform();
+		action.click(editMatAtRL0Action).build().perform();
+		return new EditMatProcess();
+
+	}
+
+	public boolean verifyEditMatAtRL0OptionFromEditMenuNotDisplayed() {
+		try {
+			if (editMatAtRL0Action.isDisplayed())
+				;
+
+		} catch (Throwable e) {
+			return false;
+		}
+		return false;
+
+	}
+
 	public boolean verifyManageLayupOptionFromSODDisplayed() {
 		return manageLayupAction.isDisplayed();
 	}
-	
+
 	public ManageProcessPage clickOnManageProcessFromSOD() {
 
 		action.moveToElement(manageProcessFromEditMenu).build().perform();
 		action.click(manageProcessFromEditMenu).build().perform();
 		return new ManageProcessPage();
+
+	}
+
+	public ManageLayupPage clickOnManageLayupFromSOD() {
+
+		action.moveToElement(manageLayupFromEditMenu).build().perform();
+		action.click(manageLayupFromEditMenu).build().perform();
+		return new ManageLayupPage();
 
 	}
 

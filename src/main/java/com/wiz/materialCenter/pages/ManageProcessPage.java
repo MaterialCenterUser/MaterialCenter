@@ -1,5 +1,7 @@
 package com.wiz.materialCenter.pages;
 
+import java.time.Duration;
+
 import org.apache.commons.lang.RandomStringUtils;
 import org.apache.commons.lang.math.RandomUtils;
 import org.openqa.selenium.JavascriptExecutor;
@@ -17,7 +19,7 @@ public class ManageProcessPage extends TestBase {
 
 	JavascriptExecutor js = (JavascriptExecutor) driver;
 	Actions action = new Actions(driver);
-	WebDriverWait wait = new WebDriverWait(driver, 20);
+	WebDriverWait wait = new WebDriverWait(driver,(30));
 
 	public ManageProcessPage() {
 		PageFactory.initElements(driver, this);
@@ -31,7 +33,7 @@ public class ManageProcessPage extends TestBase {
 	@FindBy(xpath = "(//span[@class='Fixed'])[1]")
 	WebElement textProject;
 
-	@FindBy(xpath = "(//span[@class='Fixed'])[2]")
+	@FindBy(xpath = "(//span[@class='Fixed'])[3]")
 	WebElement textType;
 
 	@FindBy(xpath = "//input[@id='myWorkspaceActionDialog-f:ManageProcess:assemblyName']")

@@ -1,5 +1,6 @@
 package com.wiz.materialCenter.pages;
 
+import java.time.Duration;
 import java.util.List;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -20,7 +21,7 @@ public class MaterialMOD extends TestBase {
 	Actions action = new Actions(driver);
 	HomePage homePage = new HomePage();
 	ProcessesPage process = new ProcessesPage();
-	WebDriverWait wait = new WebDriverWait(driver, 20);
+	WebDriverWait wait = new WebDriverWait(driver,(30));
 
 	public MaterialMOD() {
 		PageFactory.initElements(driver, this);
@@ -28,7 +29,9 @@ public class MaterialMOD extends TestBase {
 
 	@FindBy(xpath = "//img[@class='ModButton']")
 	WebElement arrowButton;
-
+	@FindBy(xpath = "//a[text()='Assign Security Labels']")
+	WebElement assignSecLabelsLink;
+	
 	@FindBy(xpath = "//div[@class='menuContainer ']/table/tbody/tr/td/a[text()='Select Page']")
 	WebElement selectPage;
 
@@ -46,6 +49,9 @@ public class MaterialMOD extends TestBase {
 
 	@FindBy(xpath = "//td[text()='Density']//parent::tr//td[@class='SwsShrink']/input")
 	WebElement densityCheckbox;
+
+	@FindBy(xpath = "//td[text()='Created At']//parent::tr//td[@class='SwsShrink']/input")
+	WebElement createdAtCheckbox;
 
 	@FindBy(xpath = "//td[text()='Overall Compliance Status']//parent::tr//td[@class='SwsShrink']/input")
 	WebElement overallComplianceStatusCheckbox;
@@ -65,11 +71,32 @@ public class MaterialMOD extends TestBase {
 	@FindBy(xpath = "//th[@title='Density']")
 	WebElement densityColAdded;
 
+	@FindBy(xpath = "//th[@title='RL']")
+	WebElement releaseLevelCol;
+
+	@FindBy(xpath = "//th[text()='User Name']")
+	WebElement userNameCol;
+
+	@FindBy(xpath = "//input[@id='1-In-Review']")
+	WebElement inReviewCheckbox;
+
+	@FindBy(xpath = "//input[@id='0-In-Work']")
+	WebElement inWorkCheckbox;
+
+	@FindBy(xpath = "//input[@id='2-Production']")
+	WebElement prodCheckbox;
+
+	@FindBy(xpath = "//th[@title='Created At']")
+	WebElement createdAtColAdded;
+
 	@FindBy(xpath = "//th[@title='Overall Compliance Status']")
 	WebElement overallComplianceColAdded;
 
 	@FindBy(xpath = "//td[@class='voice']/a[text()='Filter']")
-	WebElement densityFilter;
+	WebElement filterOption;
+
+	@FindBy(xpath = "//td[@class='voice']/a[text()='Sort descending']")
+	WebElement sortDescendingFilter;
 
 	@FindBy(xpath = "//input[@id='range']")
 	WebElement densityRangeFilter;
@@ -77,7 +104,7 @@ public class MaterialMOD extends TestBase {
 	@FindBy(xpath = "//div[@id='slider']")
 	WebElement densitySlider;
 
-	@FindBy(xpath = "//img[@title='Plot'] | //input[@title='Plot']")
+	@FindBy(xpath = "//td[text()='Plot']")
 	WebElement plotAction;
 
 	@FindBy(xpath = "//img[@title='Pedigree Viewer']")
@@ -141,7 +168,7 @@ public class MaterialMOD extends TestBase {
 	@FindBy(xpath = "//span[text()='First']")
 	WebElement moveAtFirst;
 
-	@FindBy(xpath = "//th[@title='Created At']")
+	@FindBy(xpath = "//td[text()='Created At']")
 	WebElement createdAtCol;
 
 	@FindBy(xpath = "//th[@title='Created By']")
@@ -229,16 +256,20 @@ public class MaterialMOD extends TestBase {
 
 	@FindBy(xpath = "//span[text()='D-6A Alloy Steel']")
 	WebElement alloySteelEle;
-	
+
 	@FindBy(xpath = "//span[text()='Finishes']")
 	WebElement finishesEle;
-	
+
 	@FindBy(xpath = "(//span[text()='Ionomer'])[1]")
 	WebElement IonomerEle;
 
 	@FindBy(xpath = "(//span[text()='Industrial Glass'])[1]")
 	WebElement industrialGlassEle;
 	
+	@FindBy(xpath = "(//span[text()='Joining and Sealing'])[1]")
+	WebElement joiningSealingEle;
+	
+
 	@FindBy(xpath = "//span[text()='Stainless Steel PH14-8 Mo']")
 	WebElement stainlessSteelPH14Mo;
 
@@ -307,11 +338,12 @@ public class MaterialMOD extends TestBase {
 
 	@FindBy(xpath = "//input[contains(@onclick,'includeProject')]")
 	WebElement includeProjectCheckbox;
-	
-	//@FindBy(xpath = "//input[contains(@id,'ExportToXml') and @title='Submit']")
+
+	// @FindBy(xpath = "//input[contains(@id,'ExportToXml') and
+	// @title='Submit']")
 	@FindBy(xpath = "(//input[@value='Submit'])[1]")
 	WebElement exportXmlSubmit;
-	
+
 	@FindBy(xpath = "//span[contains(text(),'Export To Xml [ Export Process ]')]")
 	WebElement exportProcessXml;
 
@@ -328,7 +360,7 @@ public class MaterialMOD extends TestBase {
 
 	@FindBy(xpath = "//div[@class='menuContainer ']/table/tbody/tr/td/div/a[text()='Actions']")
 	WebElement actionsOption;
-	
+
 	@FindBy(xpath = "//table[@id='sub_Actions_3']//child::a")
 	WebElement addToCompareOption;
 
@@ -416,8 +448,12 @@ public class MaterialMOD extends TestBase {
 
 	WebElement displayedRows250;
 
-	@FindBy(xpath = "//div[@class='XPlotMenu']/select[@id='plotType']")
-	WebElement plotTypeDropDown;
+	//@FindBy(xpath = "//div[@class='XPlotMenu']/select[@id='plotType']")
+	//WebElement plotTypeDropDown;
+	
+	@FindBy(xpath = "(//a[text()='Scatter Chart'])[1]")
+	WebElement scatterChartOption;
+	
 
 	@FindBy(xpath = "//span[contains(text(),'To XML')]")
 	WebElement toXml;
@@ -427,47 +463,425 @@ public class MaterialMOD extends TestBase {
 
 	@FindBy(xpath = "(//a[text()='Unsubscribe'])[1]")
 	WebElement unsubscribeAction;
-	
+
 	@FindBy(xpath = "(//a[text()='Add to Compare'])[1]")
 	WebElement AddToCompareAction;
-	
+
 	@FindBy(xpath = "//img[@title='Home Workspace']")
 	WebElement dashboardPage;
-	
-	//@FindBy(xpath = "//img[@title='Export Material to excel based on properties or using mapping template']")
+
+	// @FindBy(xpath = "//img[@title='Export Material to excel based on
+	// properties or using mapping template']")
 	// @FindBy(xpath = "//a[contains(text(),'Export To Excel')]")
-	 @FindBy(xpath = "//a[@procname='ExportToCustomExcel_MatMaterial']")
+	@FindBy(xpath = "//a[@procname='ExportToCustomExcel_MatMaterial']")
 	WebElement exportExcelOption;
 
 	@FindBy(xpath = "//span[contains(text(),'To Excel')]")
 	WebElement toExcel;
-	
+
 	@FindBy(xpath = "//input[contains(@id,'ExportToCustomExcel') and @title='Submit']")
 	WebElement exportExcelSubmit;
-	
+
 	@FindBy(xpath = "//span[contains(text(),'Export To Excel [ Export Process ]')]")
 	WebElement exportProcessExcel;
+
+	@FindBy(xpath = "//a[@title='Bar Chart']")
+	WebElement barChartLink;
 	
+	@FindBy(xpath = "//a[@class='toollink toolbar-disable' and @title='Bar Chart']")
+	WebElement disabledBarChartLink;
+	
+	@FindBy(xpath = "//a[@class='toollink toolbar-enable' and @title='Bar Chart']")
+	WebElement enabledBarChartLink;
+
+
+	@FindBy(xpath = "//span[text()='Ultra-High Strength']")
+	WebElement ultraHighStrengthEle;
+
+	@FindBy(xpath = "(//a[text()='Edit Material Data at RL 0'])[1]")
+	WebElement editMatAtRL0FromEditMenu;
+
+	@FindBy(xpath = "//td[text()='Edit']")
+	WebElement editMenu;
+
+	@FindBy(xpath = "//input[@id='searchTextBox']")
+	WebElement filterSearchBox;
+
+	@FindBy(xpath = "//input[@value='blank']")
+	WebElement filterBlankCheckbox;
+
+	@FindBy(xpath = "//input[@value='selectAll']")
+	WebElement filterSelectAllCheckbox;
+
+	@FindBy(xpath = "//button[@title='Close']")
+	WebElement filterCloseButton;
+
+	@FindBy(xpath = "//button/span[text()='OK']")
+	WebElement filterOkButton;
+
+	@FindBy(xpath = "//button/span[text()='Cancel']")
+	WebElement filterCancelButton;
+
+	@FindBy(xpath = "//span[text()='Filter']")
+	WebElement filterUI;
+
+	@FindBy(xpath = "(//a[text()='Clear column filter'])[2]")
+	WebElement filterClearColumnFilterOption;
+
+	@FindBy(xpath = "(//a[contains(text(),'Clear Filter')])[2]")
+	WebElement clearFilterOption;
+
+	@FindBy(xpath = "//img[@src='/MaterialCenter/themes/Default/images/table/quickFilter.gif']")
+	WebElement filterImage;
+
+	@FindBy(xpath = "//td[contains(text(),'No records found')]")
+	WebElement noRecordsFoundResults;
+
+	@FindBy(xpath = "//input[@type='checkbox']")
+
+	List<WebElement> filterCheckBoxes;
+
+	@FindBy(xpath = "(//a[text()='Set Default View'])[2]")
+	WebElement setDefaultViewOption;
+	
+	@FindBy(xpath = "(//a[text()='Save Private View'])[2]")
+	WebElement savePrivateViewOption;
+
+	@FindBy(xpath = "//span[text()='Set Default View']")
+	WebElement setDefaultViewBox;
+	
+	@FindBy(xpath = "//span[text()='Save Private View']")
+	WebElement savePrivateViewBox;
+	
+	@FindBy(xpath = "//input[@type='radio' and @id='Default']")
+	WebElement defaultViewRadioButton;
+	
+	@FindBy(xpath = "//input[@type='radio' and @id='TestView1']")
+	WebElement privateViewRadioButton;
+	
+	@FindBy(xpath = "//input[@type='radio' and @id='modDetailed']")
+	WebElement detailedViewRadioButton;
+
+	@FindBy(xpath = "//input[@type='radio' and @id='ShareView']")
+	WebElement shareViewRadioButton;
+	
+	@FindBy(xpath = "//td[text()='Views (Default)']")
+	WebElement defaultViewtextOnMOD;
+	
+	@FindBy(xpath = "//td[text()='Views (Detailed)']")
+	WebElement detailedViewtextOnMOD;
+	
+	@FindBy(xpath = "//td[text()='Views (Share View)']")
+	WebElement shareViewtextOnMOD;
+
+	@FindBy(xpath = "//input[@id='viewNameText']")
+	WebElement viewNameTextbox;
+	
+	@FindBy(xpath = "//td[text()='Views (test12)']")
+	WebElement privateViewtextOnMOD;
+	
+	@FindBy(xpath = "//td[text()='Create']")
+	WebElement createMenu;
+	
+	@FindBy(xpath = "(//a[text()='Measure from Equations'])[1]")
+	WebElement measureFromEquationsOption;
+	
+	
+	@FindBy(xpath = "(//span[text()='Create Measure from Equations'])[2]")
+	WebElement createMeasureFromEquationsWindow;
+	
+	@FindBy(xpath = "(//a[text()='Approval Request'])[1]")
+	WebElement approvalRequestOption;
+	
+	@FindBy(xpath = "(//a[text()='Work Request'])[1]")
+	WebElement workRequestOption;
+	
+	
+	@FindBy(xpath = "//span[text()='Approval Request']")
+	WebElement approvalRequestWindowText;
+	
+	@FindBy(xpath = "//span[text()='Work Request']")
+	WebElement workRequestWindowText;
+	
+	public boolean workRequestWindowDisplayedMOD(){
+		return ((workRequestWindowText).isDisplayed());
+	}
+	
+	public boolean approvalWindowDisplayedMOD(){
+		return ((approvalRequestWindowText).isDisplayed());
+	}
+	
+	public void clickOnApprovalRequestMOD() {
+		action.moveToElement(approvalRequestOption).build().perform();
+		action.click(approvalRequestOption).build().perform();
+	}
+	
+	public boolean workRequestOptionDisplayed(){
+		return ((workRequestOption).isDisplayed());
+	}
+	
+	public boolean approvalRequestOptionDisplayed(){
+		return ((approvalRequestOption).isDisplayed());
+	}
+	
+	public boolean measureFromEquationsWindowDisplayed(){
+		return ((createMeasureFromEquationsWindow).isDisplayed());
+	}
+	public void clickOnMeasureFromEquations() {
+		action.moveToElement(measureFromEquationsOption).build().perform();
+		action.click(measureFromEquationsOption).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(createMeasureFromEquationsWindow));
+	}
+	
+	
+	public boolean measureFromEquationsOptionDisplayed() {
+		return ((measureFromEquationsOption).isDisplayed());
+	}
+	
+	public void clickOnCreate() {
+		action.moveToElement(createMenu).build().perform();
+		action.click(createMenu).build().perform();
+	}
+	
+	public void enterViewName(String viewName) {
+		action.moveToElement(viewNameTextbox).build().perform();
+		action.click(viewNameTextbox).build().perform();
+		viewNameTextbox.sendKeys(viewName);
+		js.executeScript("arguments[0].click();", okButton2);
+		wait.until(ExpectedConditions.visibilityOf(privateViewtextOnMOD));
+	}
+	
+	
+	public boolean verifySavePrivateViewActionDisplayed() {
+		return ((savePrivateViewOption).isDisplayed());
+	}
+	
+	public boolean defaultViewResultsDisplayed() {
+		return ((defaultViewtextOnMOD).isDisplayed());
+	}
+	
+	public boolean detailedViewResultsDisplayed() {
+		return ((detailedViewtextOnMOD).isDisplayed());
+	}
+	
+	public boolean privateViewResultsDisplayed() {
+		return ((privateViewtextOnMOD).isDisplayed());
+	}
+	public boolean shareViewResultsDisplayed() {
+		return ((shareViewtextOnMOD).isDisplayed());
+	}
+	
+	public void selectDefaultView() {
+		action.moveToElement(defaultViewRadioButton).build().perform();
+		action.click(defaultViewRadioButton).build().perform();
+		js.executeScript("arguments[0].click();", okButton2);
+		wait.until(ExpectedConditions.visibilityOf(defaultViewtextOnMOD));
+	}
+
+	public void selectPrivateView() {
+		action.moveToElement(privateViewRadioButton).build().perform();
+		action.click(privateViewRadioButton).build().perform();
+		js.executeScript("arguments[0].click();", okButton2);
+		wait.until(ExpectedConditions.visibilityOf(privateViewtextOnMOD));
+	}
+	
+	public void selectDetailedView() {
+		action.moveToElement(detailedViewRadioButton).build().perform();
+		action.click(detailedViewRadioButton).build().perform();
+		js.executeScript("arguments[0].click();", okButton2);
+		wait.until(ExpectedConditions.visibilityOf(detailedViewtextOnMOD));
+	}
+
+	public void selectShareView() {
+		action.moveToElement(shareViewRadioButton).build().perform();
+		action.click(shareViewRadioButton).build().perform();
+		js.executeScript("arguments[0].click();", okButton2);
+		wait.until(ExpectedConditions.visibilityOf(shareViewtextOnMOD));
+	}
+
+	public void clickSetDefaultViewOption() {
+		action.moveToElement(setDefaultViewOption).build().perform();
+		action.click(setDefaultViewOption).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(setDefaultViewBox));
+	}
+	public void clickSavePrivateViewOption() {
+		action.moveToElement(savePrivateViewOption).build().perform();
+		action.click(savePrivateViewOption).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(savePrivateViewBox));
+	}
+
+	public boolean defaultViewRadioButtonDisplayed() {
+		return ((defaultViewRadioButton).isDisplayed());
+	}
+	
+	public boolean privateViewRadioButtonDisplayed() {
+		return ((privateViewRadioButton).isDisplayed());
+	}
+	
+	public boolean detailedViewRadioButtonDisplayed() {
+		return ((detailedViewRadioButton).isDisplayed());
+	}
+
+	public boolean shareViewRadioButtonDisplayed() {
+		return ((shareViewRadioButton).isDisplayed());
+	}
+
+	public boolean verifySetDefaultViewActionDisplayed() {
+		return ((setDefaultViewOption).isDisplayed());
+	}
+
+	public boolean clearFilterOptionDisplayed() {
+		return ((clearFilterOption).isDisplayed());
+	}
+
+	public boolean verifyFilterIsRemoved() {
+		try {
+			if (filterImage.isDisplayed())
+				;
+
+		} catch (Throwable e) {
+			return false;
+		}
+		return false;
+
+	}
+
+	public void clickClearColumnFilterOption() {
+		action.moveToElement(filterClearColumnFilterOption).build().perform();
+		action.click(filterClearColumnFilterOption).build().perform();
+
+	}
+
+	public void clickClearFilter() {
+		action.moveToElement(clearFilterOption).build().perform();
+		action.click(clearFilterOption).build().perform();
+
+	}
+
+	public boolean verifyAllCheckBoxesSelected() {
+
+		for (WebElement checkBox : filterCheckBoxes) {
+			if (checkBox.isSelected()) {
+
+				// System.out.println("Checkbox is ON");
+				return true;
+			}
+		}
+		return false;
+	}
+
+	public boolean verifyBlankFilterApplied() {
+		return ((noRecordsFoundResults).isDisplayed());
+	}
+
+	public boolean verifyFilterClearColumnFilterOption() {
+		return ((filterClearColumnFilterOption).isDisplayed());
+	}
+
+	public boolean verifyFilterImageDisplayed() {
+		return ((filterImage).isDisplayed());
+	}
+
+	public boolean verifyFilterUIDisplayed() {
+		try {
+			if (filterUI.isDisplayed())
+				;
+
+		} catch (Throwable e) {
+			return false;
+		}
+		return false;
+
+	}
+
+	public boolean verifyFilterCancelButton() {
+		return ((filterCancelButton).isDisplayed());
+	}
+
+	public boolean verifyFilterCloseButton() {
+		return ((filterCloseButton).isDisplayed());
+	}
+
+	public boolean verifyFilterOkButton() {
+		return ((filterOkButton).isDisplayed());
+	}
+
+	public boolean verifyFilterBlankCheckBox() {
+		return ((filterBlankCheckbox).isDisplayed());
+	}
+
+	public boolean verifyFilterSelectAllCheckBox() {
+		return ((filterSelectAllCheckbox).isDisplayed());
+	}
+
+	public boolean verifyFilterSearchBox() {
+		return ((filterSearchBox).isDisplayed());
+	}
+
+	public void clickOnRLColumn() {
+		js.executeScript("arguments[0].click();", releaseLevelCol);
+
+	}
+
+	public void clickEditOnMOD() {
+		action.moveToElement(editMenu).build().perform();
+		action.click(editMenu).build().perform();
+	}
+
+	public boolean verifyEditMatAtRL0OptionFromEditMenuNotDisplayed() {
+		try {
+			if (editMatAtRL0FromEditMenu.isDisplayed())
+				;
+
+		} catch (Throwable e) {
+			return false;
+		}
+		return false;
+
+	}
+
+	public void selectUltraHighStrengthEle() {
+		js.executeScript("arguments[0].click();", ultraHighStrengthEle);
+	}
+
+	public PlotProcessInput clickOnBarChart() throws InterruptedException {
+
+		action.moveToElement(barChartLink).build().perform();
+		action.click(barChartLink).build().perform();
+		Thread.sleep(2000);
+		return new PlotProcessInput();
+	}
+	public boolean verifyBarChartDisabled()
+	{
+		return(disabledBarChartLink.isDisplayed());
+	}
+	
+	public boolean verifyBarChartEnabled()
+	{
+		return(enabledBarChartLink.isDisplayed());
+	}
+
 	
 	public ProcessesPage exportXmlSubmit() {
 		// js.executeScript("arguments[0].click();", exportExcelSubmit);
 		action.moveToElement(exportXmlSubmit).build().perform();
 		action.click(exportXmlSubmit).build().perform();
-	//	wait.until(ExpectedConditions.visibilityOf(exportProcessXml));
+		// wait.until(ExpectedConditions.visibilityOf(exportProcessXml));
 		return new ProcessesPage();
 	}
+
 	public ProcessesPage exportExcelSubmit() {
 		// js.executeScript("arguments[0].click();", exportExcelSubmit);
 		action.moveToElement(exportExcelSubmit).build().perform();
 		action.click(exportExcelSubmit).build().perform();
-		//wait.until(ExpectedConditions.visibilityOf(exportProcessExcel));
+		// wait.until(ExpectedConditions.visibilityOf(exportProcessExcel));
 		return new ProcessesPage();
 	}
-	
+
 	public void clickOnExportExcel() {
-		 //js.executeScript("arguments[0].click();", exportExcelOption);
+		// js.executeScript("arguments[0].click();", exportExcelOption);
 		action.moveToElement(exportExcelOption).doubleClick(exportExcelOption).build().perform();
-		//action.doubleClick(exportExcelOption).build().perform();
+		// action.doubleClick(exportExcelOption).build().perform();
 		wait.until(ExpectedConditions.visibilityOf(toExcel));
 
 	}
@@ -485,11 +899,13 @@ public class MaterialMOD extends TestBase {
 		action.click(selectPage).build().perform();
 		// action.moveToElement(selectAll).build().perform();
 		// action.click(selectAll).build().perform();
-		wait.until(ExpectedConditions.elementToBeClickable(plotAction));
+		//wait.until(ExpectedConditions.elementToBeClickable(plotAction));
+		
+		wait.until(ExpectedConditions.elementToBeClickable(assignSecLabelsLink));
 		// wait.until(ExpectedConditions.elementToBeClickable(exportExcelOption));
 		// js.executeScript("arguments[0].click();", selectPage);
 	}
-	
+
 	public void clickOnSelectPageForMoreRows() throws InterruptedException {
 
 		action.moveToElement(selectPage).build().perform();
@@ -524,13 +940,29 @@ public class MaterialMOD extends TestBase {
 	public void clickOnPlotAction() {
 		action.moveToElement(plotAction).build().perform();
 		action.click(plotAction).build().perform();
-		wait.until(ExpectedConditions.elementToBeClickable(plotTypeDropDown));
+		wait.until(ExpectedConditions.elementToBeClickable(scatterChartOption));
 
 		// js.executeScript("arguments[0].click();", plotAction);
 	}
+	
 
-	public void clickOnMatToPromote() {
+	public void clickOnScatterPlot() {
+		//action.moveToElement(scatterPlot).build().perform();
+		//action.sendKeys(Keys.ENTER).click(scatterPlot).build().perform();
+			//Select select = new Select(plotTypeDropDown);
+		
+				//select.selectByValue("xy");
+				action.moveToElement(scatterChartOption).click(scatterChartOption).perform();
+				
+		//	wait.until(ExpectedConditions.elementToBeSelected(yValues));
+		
+	}
+	
+
+	public MaterialSOD clickOnMatToPromote() {
+		action.moveToElement(caeMatFord).build().perform();
 		action.doubleClick(caeMatFord).build().perform();
+		return new MaterialSOD();
 	}
 
 	public void clickOnMatToDemote() {
@@ -618,21 +1050,23 @@ public class MaterialMOD extends TestBase {
 
 	}
 
-	public void selectRowsPerPageas3() {
+	public void selectRowsPerPageas3() throws InterruptedException {
 		Select selectRowsperpage = new Select(rowsPerPage);
 
 		selectRowsperpage.selectByVisibleText("3");
+		Thread.sleep(5000);
 
 		// wait.until(ExpectedConditions.visibilityOf(displayedRows3));
 
 	}
 
-	public void selectRowsPerPageas500() {
+	public void selectRowsPerPageas500() throws InterruptedException {
 		Select selectRowsperpage = new Select(rowsPerPage);
 
 		selectRowsperpage.selectByVisibleText("500");
 
 		wait.until(ExpectedConditions.visibilityOf(displayedRows500));
+		Thread.sleep(3000);
 
 	}
 
@@ -697,46 +1131,46 @@ public class MaterialMOD extends TestBase {
 		action.contextClick(firstEle).build().perform();
 		System.out.println("Right click action performed");
 	}
-	
+
 	public void clickOnMats() {
-		//action.moveToElement(firstEle).build().perform();
-		//action.click(firstEle).build().perform();
+		// action.moveToElement(firstEle).build().perform();
+		// action.click(firstEle).build().perform();
 		action.click();
 		js.executeScript("arguments[0].click();", firstEle);
 		System.out.println("click action performed");
 	}
+
 	public CompareProcessPage moveToActionClickAddToCompare() {
 		action.moveToElement(actionsOption).build().perform();
 		action.moveToElement(addToCompareOption).build().perform();
 		action.click(addToCompareOption).build().perform();
 		return new CompareProcessPage();
 	}
-	
+
 	public void moveToActions() {
 		action.moveToElement(actionsOption).build().perform();
-		
+
 	}
-	
+
 	public void clickOnCompare() {
 		action.click(compareOption).build().perform();
 		System.out.println("Compare option clicked");
 	}
 
-	/*public void doubleClickOnSecondMat() {
-		// action.moveToElement(secondEle).build().perform();
-		action.doubleClick(secondEle).build().perform();
-		if (sodNavConfirm.isDisplayed()) {
-			System.out.println("SOD of selected material is displayed");
-		} else {
-			System.out.println("SOD of selected material didn't display");
-		}
-	}*/
+	/*
+	 * public void doubleClickOnSecondMat() { //
+	 * action.moveToElement(secondEle).build().perform();
+	 * action.doubleClick(secondEle).build().perform(); if
+	 * (sodNavConfirm.isDisplayed()) {
+	 * System.out.println("SOD of selected material is displayed"); } else {
+	 * System.out.println("SOD of selected material didn't display"); } }
+	 */
 	public MaterialSOD doubleClickOnSecondMat() {
 		// action.moveToElement(secondEle).build().perform();
 		action.doubleClick(secondEle).build().perform();
 		return new MaterialSOD();
-		}
-	
+	}
+
 	public MaterialSOD doubleClickOnFirstMat() {
 		// action.moveToElement(secondEle).build().perform();
 		action.moveToElement(firstEle).build().perform();
@@ -764,6 +1198,16 @@ public class MaterialMOD extends TestBase {
 		}
 	}
 
+	public void selectCreatedAtCol() {
+		js.executeScript("arguments[0].scrollIntoView(true);", createdAtCol);
+		if (createdAtCol.isDisplayed()) {
+			action.click(createdAtCheckbox).build().perform();
+			System.out.println("Density checkbox selected successfully");
+		} else {
+			System.out.println("Density option not displayed");
+		}
+	}
+
 	public void clickOnOkButton() {
 		action.click(okButton1).build().perform();
 		action.click(okButton2).build().perform();
@@ -771,6 +1215,14 @@ public class MaterialMOD extends TestBase {
 
 	public void verifyDensityCol() {
 		if (densityColAdded.isDisplayed()) {
+			System.out.println("Density column added in MOD successfully");
+		} else {
+			System.out.println("Density column is not added on MOD");
+		}
+	}
+
+	public void verifyCreatedAtCol() {
+		if (createdAtColAdded.isDisplayed()) {
 			System.out.println("Density column added in MOD successfully");
 		} else {
 			System.out.println("Density column is not added on MOD");
@@ -795,16 +1247,14 @@ public class MaterialMOD extends TestBase {
 	public boolean verifyUnsubscribeAction() {
 		return ((unsubscribeAction).isDisplayed());
 	}
-	
 
 	public boolean verifyAddToCompareAction() {
 		return ((AddToCompareAction).isDisplayed());
 	}
-	
+
 	public boolean verifyAddToCompareOption() {
 		return ((addToCompareOption).isDisplayed());
 	}
-	
 
 	public void clickSubscribeAction() throws InterruptedException {
 		action.moveToElement(subscribeAction).build().perform();
@@ -815,14 +1265,14 @@ public class MaterialMOD extends TestBase {
 		// intercepted exception. We can't use implicit ot explicit wait here
 		// wait.until(ExpectedConditions.elementToBeClickable(dashboardPage));
 	}
-	
+
 	public void clickUnsubscribeAction() throws InterruptedException {
 		action.moveToElement(unsubscribeAction).build().perform();
 		action.click(unsubscribeAction).build().perform();
 		Thread.sleep(2000);
 	}
-	
-	public CompareProcessPage clickAddToCompareAction()  {
+
+	public CompareProcessPage clickAddToCompareAction() {
 		action.moveToElement(AddToCompareAction).build().perform();
 		action.click(AddToCompareAction).build().perform();
 		return new CompareProcessPage();
@@ -831,7 +1281,56 @@ public class MaterialMOD extends TestBase {
 	public void selectDensityFilter() {
 		js.executeScript("arguments[0].scrollIntoView(true);", densityColAdded);
 		js.executeScript("arguments[0].click();", densityColAdded);
-		action.click(densityFilter).build().perform();
+		action.click(filterOption).build().perform();
+	}
+
+	public void selectReleaseLevelFilter() {
+		js.executeScript("arguments[0].click();", releaseLevelCol);
+		action.click(filterOption).build().perform();
+	}
+
+	public void clickInReviewCheckbox() {
+		js.executeScript("arguments[0].click();", inReviewCheckbox);
+		action.moveToElement(okButton2).click(okButton2).build().perform();
+	}
+
+	public void clickInWorkCheckbox() {
+		js.executeScript("arguments[0].click();", inWorkCheckbox);
+		action.moveToElement(okButton2).click(okButton2).build().perform();
+	}
+
+	public void clickBlankCheckboxFilter() throws InterruptedException {
+		js.executeScript("arguments[0].click();", filterBlankCheckbox);
+		action.moveToElement(okButton2).click(okButton2).build().perform();
+		Thread.sleep(2000);
+	}
+
+	public void clickSelectAllCheckbox() {
+		js.executeScript("arguments[0].click();", filterSelectAllCheckbox);
+
+	}
+
+	public void clickSelectAllCheckboxFilter() {
+		js.executeScript("arguments[0].click();", filterSelectAllCheckbox);
+		action.moveToElement(okButton2).click(okButton2).build().perform();
+	}
+
+	public void clickProdCheckbox() {
+		js.executeScript("arguments[0].click();", prodCheckbox);
+		action.moveToElement(okButton2).click(okButton2).build().perform();
+	}
+
+	public EditMatProcess clickOnEditMatAtRL0OptionFromMOD() {
+		action.moveToElement(editMatAtRL0FromEditMenu).build().perform();
+		action.click(editMatAtRL0FromEditMenu).build().perform();
+		return new EditMatProcess();
+	}
+
+	public void selectCreatedAtSortDescending() throws InterruptedException {
+		js.executeScript("arguments[0].scrollIntoView(true);", createdAtColAdded);
+		js.executeScript("arguments[0].click();", createdAtColAdded);
+		action.click(sortDescendingFilter).build().perform();
+		Thread.sleep(2000);
 	}
 
 	public void setDensityRange() {
@@ -906,24 +1405,30 @@ public class MaterialMOD extends TestBase {
 
 		js.executeScript("arguments[0].click();", alloySteelEle);
 	}
+
 	public void selectFinishesEle() {
 		// action.doubleClick(alloySteelEle).build().perform();
 
 		js.executeScript("arguments[0].click();", finishesEle);
 	}
-	
+
 	public void selectIonomer() {
 		// action.doubleClick(alloySteelEle).build().perform();
 
 		js.executeScript("arguments[0].click();", IonomerEle);
 	}
-	
+
 	public void selectIndustrialGlass() {
 		// action.doubleClick(alloySteelEle).build().perform();
 
 		js.executeScript("arguments[0].click();", industrialGlassEle);
 	}
+	public void selectJoiningSealing() {
+		// action.doubleClick(alloySteelEle).build().perform();
 
+		js.executeScript("arguments[0].click();", joiningSealingEle);
+	}
+	
 	public void selectStainlessSteelPH14Ele() {
 		// action.doubleClick(alloySteelEle).build().perform();
 
@@ -1184,7 +1689,7 @@ public class MaterialMOD extends TestBase {
 		action.click(includeProjectCheckbox).build().perform();
 		action.click(allMatDatasCheckbox).build().perform();
 		Thread.sleep(3000);
-	//	wait.until(ExpectedConditions.elementToBeSelected(caeModelCheckbox));
+		// wait.until(ExpectedConditions.elementToBeSelected(caeModelCheckbox));
 
 	}
 }

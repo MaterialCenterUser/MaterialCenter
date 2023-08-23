@@ -9,9 +9,10 @@ import com.wiz.materialCenter.pages.NavigateWS;
 import com.wiz.materialCenter.pages.ProcessesPage;
 import com.wiz.materialCenter.util.TestBase;
 
+import cucumber.api.java.en.When;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import cucumber.api.java.en.And;
 
 public class CAEModelStepDef extends TestBase {
 	HomePage homePage = new HomePage();
@@ -21,7 +22,8 @@ public class CAEModelStepDef extends TestBase {
 	CAEProcessInput caeProccessInput = new CAEProcessInput();
 	ProcessesPage processessPage = new ProcessesPage();
 	MyWorkspacePage workSpacePage = new MyWorkspacePage();
-	@Given("user clicks on Config WS")
+	
+	@When("user clicks on Config WS")
 	public void user_clicks_on_Config_WS() {
 		//HomePage homePage = new HomePage();
 		homePage.clickOnConfiguration();
@@ -73,13 +75,13 @@ public class CAEModelStepDef extends TestBase {
 		screenshot(driver, System.currentTimeMillis());
 	}
 
-	@When("navigate to homepage")
-	public void navigate_to_homepage() throws InterruptedException {
-		//homePage = new HomePage();
-		homePage.clickOnDashboard();
-		Thread.sleep(3000);
-		screenshot(driver, System.currentTimeMillis());
-	}
+	
+	/*
+	 * @And("navigate to homepage") public void navigate_to_homepage_duplicate()
+	 * throws InterruptedException { //homePage = new HomePage();
+	 * homePage.clickOnDashboard(); Thread.sleep(3000); screenshot(driver,
+	 * System.currentTimeMillis()); }
+	 */
 	
 	@When("select CAE model process")
 	public void select_CAE_model_process() {

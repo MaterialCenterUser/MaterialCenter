@@ -25,12 +25,13 @@ public class LoginPage extends TestBase {
 	WebElement logoff;
 	
 	
-	public HomePage login(String uname, String pwd){
+	public HomePage login(String uname, String pwd) throws InterruptedException{
 		username.sendKeys(uname);
 		password.sendKeys(pwd);
 		//login.click();
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click();", login);
+		Thread.sleep(5000);
 		return new HomePage();
 	}
 	

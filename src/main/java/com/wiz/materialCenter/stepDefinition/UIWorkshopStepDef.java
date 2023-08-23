@@ -9,10 +9,11 @@ import com.wiz.materialCenter.pages.NavigateWS;
 import com.wiz.materialCenter.pages.SearchPage;
 import com.wiz.materialCenter.util.TestBase;
 
-import cucumber.api.java.en.And;
+import cucumber.api.java.en.When;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import cucumber.api.java.en.And;
+
 
 public class UIWorkshopStepDef extends TestBase {
 	
@@ -171,7 +172,14 @@ public class UIWorkshopStepDef extends TestBase {
 	    navigateWS.clickOnUltraHighStrength();
 	    screenshot(driver, System.currentTimeMillis());
 	}
-
+	@And("select ultra high strength")
+	public void select_ultra_high_strength() {
+	  //  navigateWS.clickOnFerrousExpand();
+	   // navigateWS.clickOnAlloySteelsExpand();
+	    matMod.selectUltraHighStrengthEle();
+	    screenshot(driver, System.currentTimeMillis());
+	}
+	
 	@When("select D-sixA Alloy Steel metal under ultra high strength")
 	public void select_D_sixA_Alloy_Steel_metal_under_ultra_high_strength() {
 	    matMod.selectAlloySteelEle();

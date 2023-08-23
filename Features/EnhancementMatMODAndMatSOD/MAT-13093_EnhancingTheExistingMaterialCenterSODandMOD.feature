@@ -142,6 +142,19 @@ And select add to compare action
 Then User gets compareresults page with property set displayed
 
 @MAT-21706 @Regression
+  Scenario: Generate CAE model of material
+    When user comes on Navigate WS
+    And user expands ceramics and glasses
+		And select industrial glass
+		And double click on first material
+    And click on create SA
+    And click on CAE model AUTO action
+    And click on Submit button
+    And navigate to homepage
+    And select CAE model process
+    Then CAE model should generate successfully
+
+@MAT-21706 @Regression
 Scenario: Verify add to compare option is available for CAE Model on SOD
 When user selects CAE Model from dropdown
 And click on search button from homepage

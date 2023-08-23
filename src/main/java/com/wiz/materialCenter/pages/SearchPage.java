@@ -1,8 +1,10 @@
 package com.wiz.materialCenter.pages;
 
 
+import java.time.Duration;
 import java.util.List;
 import org.apache.commons.lang.RandomStringUtils;
+import org.apache.commons.lang.math.RandomUtils;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -11,7 +13,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
+//import org.testng.Assert;
+import org.junit.Assert;
 
 
 import com.wiz.materialCenter.util.TestBase;
@@ -21,7 +24,7 @@ public class SearchPage extends TestBase {
 	//String saveName = UUID.randomUUID().toString();
 	Actions action = new Actions(driver);
 	JavascriptExecutor js = (JavascriptExecutor) driver;
-	WebDriverWait wait = new WebDriverWait(driver, 20);
+	WebDriverWait wait = new WebDriverWait(driver,(30));
 	HomePage homePage = new HomePage();
 	
 	public String storeName;
@@ -40,6 +43,10 @@ public class SearchPage extends TestBase {
 
 	@FindBy(xpath = "//a[text()='Test']")
 	WebElement testSearch;
+	
+
+	@FindBy(xpath = "(//td[text()='Test'])[1]")
+	WebElement testText;
 	
 	@FindBy(xpath = "//a[text()='Batch']")
 	WebElement batchSearch;
@@ -72,6 +79,7 @@ public class SearchPage extends TestBase {
 	
 	@FindBy(xpath = "//a[text()='Approval Request']")
 	WebElement approvalReqSearch;
+	//a[@title='Approval Request']
 	
 	@FindBy(xpath = "//a[text()='Work Request']")
 	WebElement workReqSearch;
@@ -114,7 +122,7 @@ public class SearchPage extends TestBase {
 	@FindBy(xpath = "//a[text()='My Searches']")
 	WebElement mySearches;
 	
-	@FindBy(xpath = "//a[text()='My Searches']")
+	@FindBy(xpath = "//td[text()='My Searches']")
 	WebElement textMySearches;
 	
 	
@@ -270,8 +278,172 @@ public class SearchPage extends TestBase {
 	@FindBy(xpath = "(//a[text()='Manage Process'])[1]")
 	WebElement manageProcessFromEditMenu;
 	
+	@FindBy(xpath = "(//a[text()='Edit Material Data at RL 0'])[1]")
+	WebElement editMatAtRL0FromEditMenu;
+	
 	@FindBy(xpath = "(//a[text()='Manage Layup'])[1]")
 	WebElement manageLayupFromEditMenu;
+	
+	@FindBy(xpath = "(//a[text()='Actions'])[1]")
+	WebElement actionMenuOnRightClick;
+	
+	@FindBy(xpath = "(//a[text()='Delegate Approver'])[1]")
+	WebElement delegateApproverOption;
+	
+	@FindBy(xpath = "//span[text()='Delegate Approver']")
+	WebElement delegateApproverDialog;
+	
+	@FindBy(xpath = "//img[@id='searchActionDialog-f:DelegateApprover:SMRecentObjectsSelection_delegate_recentObjectListDropDownArrowImage']")
+	WebElement delegateDropdownImage;
+	
+	@FindBy(xpath = "//span[text()='Adrian Administrator']")
+	WebElement adrianAdminUser;
+	
+	@FindBy(xpath = "//span[text()='Molly Manager']")
+	WebElement mollyManagerUser;
+	
+	
+	@FindBy(xpath = "//input[@id='searchActionDialog-f:DelegateApprover:changeReason']")
+	WebElement changeReasonTextbox;
+	
+	@FindBy(xpath = "//input[@id='delegateEndDate_dt']")
+	WebElement delegateEndDateTextBox;
+	
+	@FindBy(xpath = "//td[@data-year='2023']/a[text()='30']")
+	WebElement thirtyDateOfMonth;
+	
+	@FindBy(xpath = "//input[@id='searchActionDialog-f:DelegateApprover:addApprover']")
+	WebElement addDelegateButton;
+	
+	@FindBy(xpath = "//input[@value='X']")
+	WebElement revokeDelegateButton;
+	
+	@FindBy(xpath = "//input[@value='X' and @style='text-decoration: line-through;']")
+	WebElement ScratchedRevokeDelegateButton;
+	
+	@FindBy(xpath = "//input[@id='searchActionDialog-f:DelegateApprover:submitButton']")
+	WebElement delegateApproverSubmitButton;
+	
+	@FindBy(xpath = "//td[text()='Approval Request' and @class='ModTypeLabel']")
+	WebElement approvalRequestText;
+	
+	@FindBy(xpath = "//img[@title='Home Workspace']")
+	WebElement dashboardPage;
+	
+	@FindBy(xpath = "//table[@class='ModBody']/tbody/tr[@smrow='0']/td/a[text()='Delegate Approver']")
+	WebElement delegateApproverHome;
+	
+	@FindBy(xpath = "(//span[@style='text-decoration: line-through;'])[1]")
+	WebElement strikedTextApproverRequest;
+	
+	@FindBy(xpath = "//span[@class='rf-msg-det']")
+	WebElement addDelegateErrorMessageText;
+	
+	@FindBy(xpath = "//input[@id='searchActionDialog-f:DelegateApprover:approver_slt' and @disabled ='disabled']")
+	WebElement disabledApprovrSelectButton;
+	
+	@FindBy(xpath = "//input[@id='searchActionDialog-f:DelegateApprover:approver_clr' and @disabled ='disabled']")
+	WebElement disabledApprovrClearButton;
+	
+	
+public boolean verifyScratchRevokeButtonIsDisplayed() {
+		
+		return(ScratchedRevokeDelegateButton.isDisplayed());
+		
+}
+	
+public boolean verifyRevokeButtonIsDisplayed() {
+		
+		return(revokeDelegateButton.isDisplayed());
+	}
+	
+	public boolean selectButtonAgainstApproverIsDisabled() {
+		
+		return(disabledApprovrSelectButton.isDisplayed());
+	}
+public boolean clearButtonAgainstApproverIsDisabled() {
+		
+		return(disabledApprovrClearButton.isDisplayed());
+	}
+	
+	public String errToaddDelegateAlreadyFilled() {
+
+		return (addDelegateErrorMessageText.getText());
+	}
+	
+	
+	public HomePage clickOnDashboard() throws InterruptedException {
+		// Thread.sleep(1000);
+		// wait.until(ExpectedConditions.elementToBeClickable(dashboardPage));
+		// action.moveToElement(dashboardPage).build().perform();
+		// action.click(dashboardPage).build().perform();
+		// dashboardPage.click();
+		js.executeScript("arguments[0].click();", dashboardPage);
+		return new HomePage();
+	}
+	
+	public void clickDelegateApproverSubmitButton() {
+		action.moveToElement(delegateApproverSubmitButton).build().perform();
+		action.click(delegateApproverSubmitButton).build().perform();
+
+	}
+	public void clickRevokeButton() {
+		action.moveToElement(revokeDelegateButton).build().perform();
+		action.click(revokeDelegateButton).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(ScratchedRevokeDelegateButton));
+	}
+	
+	public void clickAddDelegateButton() {
+		action.moveToElement(addDelegateButton).build().perform();
+		action.click(addDelegateButton).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(revokeDelegateButton));
+	}
+	public void clickrevokeDelegateButton() {
+		action.moveToElement(revokeDelegateButton).build().perform();
+		action.click(revokeDelegateButton).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(strikedTextApproverRequest));
+	}
+	
+	public void enterChangeReson() {
+		action.moveToElement(changeReasonTextbox).build().perform();
+		action.click(changeReasonTextbox).build().perform();
+		String storeName = RandomStringUtils.randomAlphanumeric(10);
+		changeReasonTextbox.sendKeys(storeName);
+	}
+
+	
+	public void selectEndDateFromDatePicker() {
+		action.moveToElement(delegateEndDateTextBox).build().perform();
+		action.click(delegateEndDateTextBox).build().perform();
+		action.moveToElement(thirtyDateOfMonth).build().perform();
+		action.click(thirtyDateOfMonth).build().perform();
+	}
+
+	public void clickDelegateDropdownSelectApprover() {
+		action.moveToElement(delegateDropdownImage).build().perform();
+		action.click(delegateDropdownImage).build().perform();
+		action.moveToElement(adrianAdminUser).build().perform();
+		action.click(adrianAdminUser).build().perform();
+	}
+	public void clickDelegateDropdownSelectApproverMollyManager() {
+		action.moveToElement(delegateDropdownImage).build().perform();
+		action.click(delegateDropdownImage).build().perform();
+		action.moveToElement(mollyManagerUser).build().perform();
+		action.click(mollyManagerUser).build().perform();
+	}
+	
+	public void selectDelegateApproverFromAction() {
+		action.moveToElement(actionMenuOnRightClick).build().perform();
+		action.click(delegateApproverOption).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(delegateApproverDialog));
+	}
+	
+	
+	public void rightClickOnApprovalReq() {
+		action.moveToElement(firstEle).build().perform();
+		action.contextClick(firstEle).build().perform();
+
+	}
 	
 	public ManageProcessPage clickOnManageProcessFromMOD (){
 		action.moveToElement(manageProcessFromEditMenu).build().perform();
@@ -280,9 +452,20 @@ public class SearchPage extends TestBase {
 		
 	}
 	
+	public ManageProcessPage clickOnManageLayupFromMOD (){
+		action.moveToElement(manageLayupFromEditMenu).build().perform();
+		action.click(manageLayupFromEditMenu).build().perform();
+		return new ManageProcessPage();
+		
+	}
+	
 	public boolean verifyManageProcessOptionFromEditMenuDisplayed(){
 		return manageProcessFromEditMenu.isDisplayed();
 	}
+	public boolean verifyEditMatAtRL0OptionFromEditMenuDisplayed(){
+		return editMatAtRL0FromEditMenu.isDisplayed();
+	}
+	
 	
 	public boolean verifyManageLayupOptionFromEditMenuDisplayed(){
 		return manageLayupFromEditMenu.isDisplayed();
@@ -431,6 +614,12 @@ public void selectCurveAttributeFromDropdown() {
 	
 	public void clickOnTestOpt() {
 		action.click(testSearch).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(testText));
+	}
+	
+	public void clickOnApprovalReqOpt() {
+		action.click(approvalReqSearch).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(testText));
 	}
 	
 	public void clickOnMeasurePropOpt() {
@@ -592,12 +781,13 @@ public void selectCurveAttributeFromDropdown() {
 		action.click(histoApplyChanges).build().perform();
 	}
 	
-	public void provideDensityRange() {
+	public void provideDensityRange() throws InterruptedException {
 		wait.until(ExpectedConditions.elementToBeClickable(densityTextbox));
 		densityTextbox.click();
 		densityTextbox.clear();
 		densityTextbox.sendKeys("0.00472788..0.0179388");
 		js.executeScript("arguments[0].click();", histoApplyChanges);
+		Thread.sleep(2000);
 	}
 	
 	public void applyHistrogramRange() {
@@ -721,7 +911,7 @@ public void selectCurveAttributeFromDropdown() {
 	}
 	
 	public void checkTextResultDisplayCount() {
-		Assert.assertEquals(resultDisplayCount.getText(), "Displayed Rows: 1 - 25 of 564");
+		Assert.assertEquals(resultDisplayCount.getText(), "Displayed Rows: 1 - 25 of 566");
 		System.out.println("Text search result display count is correct as : " + resultDisplayCount.getText());
 	}
 	

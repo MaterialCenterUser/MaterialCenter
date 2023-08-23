@@ -1,5 +1,7 @@
 package com.wiz.materialCenter.pages;
 
+import java.time.Duration;
+
 import org.apache.commons.lang.RandomStringUtils;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -13,7 +15,7 @@ import com.wiz.materialCenter.util.TestBase;
 public class HomePage extends TestBase {
 
 	Actions action = new Actions(driver);
-	WebDriverWait wait = new WebDriverWait(driver, 20);
+	WebDriverWait wait = new WebDriverWait(driver,(30));
 	JavascriptExecutor js = (JavascriptExecutor) driver;
 
 	public HomePage() {
@@ -48,7 +50,7 @@ public class HomePage extends TestBase {
 	@FindBy(xpath = "//table[@title='Navigate']")
 	WebElement navigate;
 
-	@FindBy(xpath = "//table[@title='Configuration']")
+	@FindBy(xpath = "//a[@title='Configuration']")
 	WebElement config;
 
 	@FindBy(xpath = "//table[@title='Administration']")
@@ -141,6 +143,11 @@ public class HomePage extends TestBase {
 
 	@FindBy(xpath = "//tr[@smrow='0']/td/a[text()='Discard']")
 	WebElement discardProcess;
+	
+	
+	
+	@FindBy(xpath = "//input[@id='materialsDisclaimerDlgOnLogin-f:MaterialsDisclaimerWidget2db:okBtn']")
+	WebElement disclaimerOkButton;
 
 	@FindBy(xpath = "//img[@src='/MaterialCenter/themes/Default/images/close.gif']")
 	WebElement closeButton;
@@ -159,11 +166,16 @@ public class HomePage extends TestBase {
 	@FindBy(xpath = "//span[text()='Subscribed Materials']/following::a[text()='View All']")
 	WebElement SubscribedMaterialsViewAll;
 	
+	@FindBy(xpath = "(//span[text()='Approval Requests']/following::a[text()='View All'])[1]]")
+	WebElement approvalRequestsViewAll;
+	
+	
+	
 	@FindBy(xpath = "(//span[text()='Clipboard']/following::a[text()='View All'])[4]")
 	WebElement ClipBoardViewAll;
 
 	// @FindBy(xpath = "//span[text()='Log Off']")
-	@FindBy(xpath = "//a[@id='j_id_24']")
+	@FindBy(xpath = "//span[text()='Log Off']/parent::a")
 	WebElement logoffLink;
 
 	@FindBy(xpath = "//span[text()='OK']")
@@ -193,6 +205,38 @@ public class HomePage extends TestBase {
 	@FindBy(xpath = "//a[text()='My Workspace']")
 	WebElement linkMyWorkSpace;
 	
+	@FindBy(xpath = "//span[text()='Approval Requests']/following::table[@class='ModBody']/tbody/tr/td[@smcol='0']/a[1]")
+	WebElement firstApprovalRequestOnHomePage;
+	
+	@FindBy(xpath = "(//a[text()='Actions'])[1]")
+	WebElement actionMenuOnRightClick;
+	
+	
+	@FindBy(xpath = "(//a[text()='Delegate Approver'])[1]")
+	WebElement delegateApproverAction;
+	
+	@FindBy(xpath = "//table[@class='ModBody']/tbody/tr[@smrow='0']/td/a[text()='Delegate Approver']")
+	WebElement delegateApproverHome;
+
+
+	public ProcessesPage clickOnDelegateApproverProcessHome() {
+		action.moveToElement(delegateApproverHome).build().perform();
+		action.click(delegateApproverHome).build().perform();
+		return new ProcessesPage();
+	}
+
+	
+	public boolean verifyDelegateApproverOptionDisplayed(){
+		return (delegateApproverAction.isDisplayed());
+	}
+
+	
+	public void rightClickOnApprovalRequestsFromApprovalReSection() {
+
+		action.moveToElement(firstApprovalRequestOnHomePage).build().perform();
+		action.contextClick(firstApprovalRequestOnHomePage).build().perform();
+		action.moveToElement(actionMenuOnRightClick).build().perform();
+		}
 	
 	public boolean verifyHomePageDisplayed(){
 		return (linkMyWorkSpace.isDisplayed());
@@ -226,10 +270,12 @@ public class HomePage extends TestBase {
 		action.click(caeModelSearch).build().perform();
 	}
 
-	public SearchPage clickOnSearchButton() {
-		// js.executeScript("arguments[0].click();", searchButton);
-		action.moveToElement(searchButton).build().perform();
-		action.click(searchButton).build().perform();
+	public SearchPage clickOnSearchButton() throws InterruptedException {
+		//public void clickOnSearchButton() throws InterruptedException {
+		js.executeScript("arguments[0].click();", searchButton);
+		//action.moveToElement(searchButton).build().perform();
+		//action.click(searchButton).build().perform();
+		Thread.sleep(6000);
 		return new SearchPage();
 	}
 
@@ -270,7 +316,15 @@ public class HomePage extends TestBase {
 		return new MyWorkspacePage();
 	}
 	
-	
+	public MyWorkspacePage clickOnViewAllUnderApprovalRequest() {
+
+		/*
+		 * action.moveToElement(SubscribedMaterialsViewAll).build().perform();
+		 * action.click(SubscribedMaterialsViewAll).build().perform();
+		 */
+		js.executeScript("arguments[0].click();", approvalRequestsViewAll);
+		return new MyWorkspacePage();
+	}
 	public MyWorkspacePage clickOnViewAllUnderClipBoard() {
 
 		/*
@@ -288,8 +342,15 @@ public class HomePage extends TestBase {
 
 	public void closeDisclaimer() {
 
-		action.moveToElement(closeButton).build().perform();
-		action.click(closeButton).build().perform();
+	//action.moveToElement(closeButton).build().perform();
+	//action.click(closeButton).build().perform();
+	js.executeScript("arguments[0].click();", closeButton);
+	
+//action.moveToElement(disclaimerOkButton).build().perform();
+	//action.click(disclaimerOkButton).build().perform();
+		
+		
+		//js.executeScript("arguments[0].click();", closeButton);
 	}
 
 	public void clickOnMyWorkspace() {
@@ -315,7 +376,7 @@ public class HomePage extends TestBase {
 		return new SearchPage();
 	}
 
-	public void clickOnConfiguration() {
+	public ConfigurationWS clickOnConfiguration() {
 		action.moveToElement(config).build().perform();
 		action.click(config).build().perform();
 		// config.click();
@@ -324,6 +385,7 @@ public class HomePage extends TestBase {
 		 * System.out.println("User is on Configuration page"); } else {
 		 * System.out.println("User didn't reach Configuration page"); }
 		 */
+		return new ConfigurationWS();
 	}
 
 	public AdministrationPage clickOnAdministration() {

@@ -7,8 +7,11 @@ import com.wiz.materialCenter.pages.ProcessesPage;
 import com.wiz.materialCenter.pages.SecurityProcess;
 import com.wiz.materialCenter.util.TestBase;
 
-import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.And;
+
 
 public class SecurityPromoteStepDef extends TestBase {
 	HomePage homePage;
@@ -19,15 +22,31 @@ public class SecurityPromoteStepDef extends TestBase {
 	
 	@When("select material with In work release level")
 	public void select_material_with_In_work_release_level() {
-	    matMod = new MaterialMOD();
+	    //matMod = new MaterialMOD();
 	    matMod.clickOnMatToPromote();
 	    screenshot(driver, System.currentTimeMillis());
 	}
 
-	@When("click on promote action under security tab")
-	public void click_on_promote_action_under_security_tab() {
-	    matSod = new MaterialSOD();
+	@When("click on security action")
+	public void click_on_security_action() {
+	  //  matSod = new MaterialSOD();
 	    matSod.clickOnSecurity();
+	    screenshot(driver, System.currentTimeMillis());
+	}
+
+
+	@And("click on security action menu")
+	public void click_on_security_menu() {
+	  //  matSod = new MaterialSOD();
+	    matSod.clickOnSecurity();
+	    //matSod.clickOnPromoteAction();
+	    screenshot(driver, System.currentTimeMillis());
+	}
+	
+	@And("select promote action")
+	public void click_promote_action() {
+	  //  matSod = new MaterialSOD();
+	 //   matSod.clickOnSecurity();
 	    matSod.clickOnPromoteAction();
 	    screenshot(driver, System.currentTimeMillis());
 	}
@@ -35,7 +54,7 @@ public class SecurityPromoteStepDef extends TestBase {
 	@When("select target level as production")
 	public void select_target_level_as_production_and_click_on_next_button() {
 	  // promote = new SecurityProcess();
-		promote = new SecurityProcess();
+		//promote = new SecurityProcess();
 	   promote.clickOnTargetLevel();
 	   promote.selectProdLevel();
 	  // promote.clickOnNext();

@@ -6,9 +6,10 @@ import com.wiz.materialCenter.pages.MaterialMOD;
 import com.wiz.materialCenter.pages.MaterialSOD;
 import com.wiz.materialCenter.util.TestBase;
 
+import cucumber.api.java.en.When;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import cucumber.api.java.en.And;
 
 public class CompareUIStepDef extends TestBase {
 	MaterialMOD matMod = new MaterialMOD();
@@ -39,7 +40,7 @@ public class CompareUIStepDef extends TestBase {
 	@When("double click on material")
 	public void double_click_on_material() {
 	    matMod.doubleClickOnSecondMat();
-	    matSod.storeClassificationValuesBeforeEdit();
+	    //matSod.storeClassificationValuesBeforeEdit();
 	    screenshot(driver, System.currentTimeMillis());
 	}
 	

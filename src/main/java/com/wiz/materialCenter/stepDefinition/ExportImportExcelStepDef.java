@@ -9,9 +9,10 @@ import com.wiz.materialCenter.pages.ProcessesPage;
 import com.wiz.materialCenter.pages.SearchPage;
 import com.wiz.materialCenter.util.TestBase;
 
+import cucumber.api.java.en.When;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import cucumber.api.java.en.And;
 
 public class ExportImportExcelStepDef extends TestBase {
 	
@@ -69,10 +70,17 @@ public class ExportImportExcelStepDef extends TestBase {
 		}
 	@When("select data project")
 	public void select_data_project() {
-		ConfigurationWS config = new ConfigurationWS();
+	
 	    config.selectDataProject();
-	   // config.selectExcelToUplaod();
-	   // config.selectMasterMetalSchema();
+	  
+	    screenshot(driver, System.currentTimeMillis());
+	}
+	
+	@When("select data project to create material")
+	public void select_data_project_to_creat_MAt() {
+	
+	    config.selectDataProjectToCreatMat();
+	  
 	    screenshot(driver, System.currentTimeMillis());
 	}
 	@When("select excel file to upload")
@@ -89,6 +97,15 @@ public class ExportImportExcelStepDef extends TestBase {
 	    config.selectMasterMetalSchema();
 	    screenshot(driver, System.currentTimeMillis());
 	}
+	
+	@When("select master metal schema to create material")
+	public void select_master_metal_schema_CretaMat() throws InterruptedException {
+	    //config.selectDataProject();
+	   // config.selectExcelToUplaod();
+	    config.selectMasterMetalSchemaToCreateMat();
+	    screenshot(driver, System.currentTimeMillis());
+	}
+	
 	
 	@When("enter all details and select excel file from system for mapped")
 	public void enter_all_details_and_select_excel_file_from_system_for_mapped() {

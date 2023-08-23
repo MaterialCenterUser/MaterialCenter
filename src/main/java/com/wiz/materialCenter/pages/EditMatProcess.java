@@ -1,5 +1,7 @@
 package com.wiz.materialCenter.pages;
 
+import java.time.Duration;
+
 import org.apache.commons.lang.RandomStringUtils;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -17,13 +19,14 @@ public class EditMatProcess extends TestBase {
 
 	JavascriptExecutor js = (JavascriptExecutor) driver;
 	Actions action = new Actions(driver);
-	WebDriverWait wait = new WebDriverWait(driver, 20);
+	WebDriverWait wait = new WebDriverWait(driver,(30));
 	MaterialSOD matsod = new MaterialSOD();
 
 	public EditMatProcess() {
 		PageFactory.initElements(driver, this);
 	}
 
+	public String storeName;
 	/* Tabs xpath under edit material option */
 
 	@FindBy(xpath = "//span[text()='Init']")
@@ -88,9 +91,14 @@ public class EditMatProcess extends TestBase {
 	@FindBy(xpath = "//select[contains(@id,'CreateEditMaterial')]/option[text()='Mechanical - Curves']")
 	WebElement mechCurvesPropSet;
 
-	@FindBy(xpath = "(//td[@class='MatEditorTableOddRow']//input[@title='Value taken from like materials;'])[2]")
+	//@FindBy(xpath = "(//td[@class='MatEditorTableOddRow']//input[@title='Value taken from like materials;'])[2]")
+	
+	@FindBy(xpath = "(//input[@value='Select'])[3]")
 	WebElement selectFootnotesButtonForElasticModulus;
 
+	@FindBy(xpath = "(//span[text()='Footnotes'])[1]")
+	WebElement textFootnotes;
+	
 	@FindBy(xpath = "(//td[@class='MatEditorTableEvenRow']//input)[2]")
 	WebElement selectFootnotesButtonForSolderability;
 
@@ -100,7 +108,7 @@ public class EditMatProcess extends TestBase {
 	@FindBy(xpath = "(//select[@class='available']/option)[1]")
 	WebElement footnoteValue;
 
-	@FindBy(xpath = "//input[contains(@id,'FootnoteButtonsOK')]")
+	@FindBy(xpath = "//input[@id='FootnoteDialog-f:FootnoteButtonsOK']")
 	WebElement okButton;
 
 	@FindBy(xpath = "//input[contains(@id,'CreateCurveButtonsOK')]")
@@ -197,6 +205,142 @@ public class EditMatProcess extends TestBase {
 
 	@FindBy(xpath = "//input[@value='Add/Edit Footnote']")
 	WebElement addEditButton;
+	
+	@FindBy(xpath = "//input[contains(@id, 'AddAttrButtonsOK')]")
+	WebElement addAttributesButton;
+	
+	@FindBy(xpath = "//span[text()='Add Attributes']")
+	WebElement txtAddAttributesDialog;
+	
+	@FindBy(xpath = "//select[@class='available']/option[@title='Class']")
+	WebElement classAttribute;
+	
+	@FindBy(xpath = "//select[@class='available']/option[@title='Cas Number']")
+	WebElement casNumberAttribute;
+	
+	@FindBy(xpath = "//input[@id='AddAttributeDialog-f:AddAttrButtonsOK']")
+	WebElement okButtonAddAttribute;
+	
+	@FindBy(xpath = "//input[contains(@id, 'CreateEditMaterial:okBtn')]")
+	WebElement okButtonAddSource;
+	
+	@FindBy(xpath = "//input[contains(@id, 'CreateEditMaterial:srcEditButton')]")
+	WebElement EditButtonEditSource;
+	
+	@FindBy(xpath = "//input[contains(@id, 'CreateEditMaterial:srcRemoveButton')]")
+	WebElement RemoveButtonRemoveSource;
+	
+	
+	@FindBy(xpath = "(//span[text()='Class']/following::td/input)[1]")
+	WebElement classAttributeTextBox;
+	
+	@FindBy(xpath = "(//span[text()='Cas Number']/following::td/input)[1]")
+	WebElement casNumberAttributeTextBox;
+	
+	@FindBy(xpath = "(//span[text()='Source Name']/following::td/input)[1]")
+	WebElement sourceNameTextBox;
+	
+	
+	@FindBy(xpath = "(//span[text()='Common Name']/following::td/input)[1]")
+	WebElement commonNameTextBox;
+	
+	@FindBy(xpath = "//input[contains(@id, 'CreateEditMaterial:srcObj_slt')]")
+	WebElement existingSourceSelectButton;
+	
+	@FindBy(xpath = "//span[text()='Source']")
+	WebElement txtSourceWindow;
+
+	@FindBy(xpath = "//table[@class='ModBody']/tbody/tr[@smrow='0']")
+	WebElement firstSourceEle;
+	
+	@FindBy(xpath = "//tr[@class='WTKROW ']")
+	WebElement firstAddedSource;
+	
+	public void clickAddedSource(){
+		
+		action.moveToElement(firstAddedSource).build().perform();
+		action.click(firstAddedSource).build().perform();
+	}
+	public void doubleClickOnFirstSource(){
+	action.moveToElement(firstSourceEle).build().perform();
+	action.doubleClick(firstSourceEle).build().perform();
+}
+	
+	public void clickOnSelectButtonToSelectExistingSource() {
+
+		js.executeScript("arguments[0].click();", existingSourceSelectButton);
+		wait.until(ExpectedConditions.visibilityOf(txtSourceWindow));
+	}
+	
+	public void enterClassAttrValue(){
+		storeName = RandomStringUtils.randomNumeric(6);
+		action.moveToElement(classAttributeTextBox).build().perform();
+		action.click(classAttributeTextBox).build().perform();
+		classAttributeTextBox.sendKeys(storeName);
+	}
+	public void enterCASNumberAttrValue(){
+		storeName = RandomStringUtils.randomNumeric(6);
+		action.moveToElement(casNumberAttributeTextBox).build().perform();
+		action.click(casNumberAttributeTextBox).build().perform();
+		casNumberAttributeTextBox.sendKeys(storeName);
+	}
+	public void enterSourceNameOnSourcesTab(){
+		storeName = RandomStringUtils.randomAlphabetic(2);
+		action.moveToElement(sourceNameTextBox).build().perform();
+		action.click(sourceNameTextBox).build().perform();
+		sourceNameTextBox.sendKeys(storeName);
+	}
+	
+	
+public void editValueForCommonNameOnClassificationTab(){
+		
+		storeName = RandomStringUtils.randomNumeric(6);
+		action.moveToElement(commonNameTextBox).build().perform();
+		action.click(commonNameTextBox).build().perform();
+		commonNameTextBox.clear();
+		commonNameTextBox.sendKeys(storeName);
+	}
+public void removeClassAttributeValueFromClassficationTab(){
+
+	action.moveToElement(classAttributeTextBox).build().perform();
+	action.click(classAttributeTextBox).build().perform();
+	commonNameTextBox.clear();
+}
+
+	public void addClassAttributes(){
+		
+		action.moveToElement(classAttribute).build().perform();
+		action.doubleClick(classAttribute).build().perform();
+	}
+	
+	public void addCASNumberAttribute()
+	{
+		action.moveToElement(casNumberAttribute).build().perform();
+		action.doubleClick(casNumberAttribute).build().perform();
+	}
+	public void clickOkButtonAddAttributes(){
+		
+		js.executeScript("arguments[0].click();", okButtonAddAttribute);
+	}
+	
+	public void clickOnAddAttributesButton(){
+		js.executeScript("arguments[0].click();", addAttributesButton);
+		wait.until(ExpectedConditions.visibilityOf(txtAddAttributesDialog));
+		
+	}
+public void clickOkButtonAddSource(){
+		
+		js.executeScript("arguments[0].click();", okButtonAddSource);
+	}
+	
+public void clickEditToButtonEditSource(){
+	
+	js.executeScript("arguments[0].click();", EditButtonEditSource);
+}
+public void clickRemoveButtonToRemoveSource(){
+	
+	js.executeScript("arguments[0].click();", RemoveButtonRemoveSource);
+}
 
 	public void clickOnInitTab() {
 		action.click(initTab).build().perform();
@@ -211,7 +355,9 @@ public class EditMatProcess extends TestBase {
 	}
 
 	public void clickOnSourcesTab() {
-		action.click(sourcesTab).build().perform();
+		js.executeScript("arguments[0].click();", sourcesTab);
+		//action.click(sourcesTab).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(textMatAttribute));
 	}
 
 	public void clickOnParametersTab() {
@@ -332,9 +478,13 @@ public class EditMatProcess extends TestBase {
 
 	}
 
-	public void clickOnFootnotes() {
-		action.moveToElement(selectFootnotesButtonForElasticModulus).build().perform();
-		action.click(selectFootnotesButtonForElasticModulus).build().perform();
+	public void clickOnFootnotes() throws InterruptedException {
+		//action.moveToElement(selectFootnotesButtonForElasticModulus).build().perform();
+		//action.click(selectFootnotesButtonForElasticModulus).build().perform();
+		js.executeScript("return arguments[0].click();", selectFootnotesButtonForElasticModulus);
+		//Thread.sleep(30000);
+		wait.until(ExpectedConditions.visibilityOf(textFootnotes));
+				
 	}
 
 	public void selectFootnotesUnderSolderability() {
@@ -343,11 +493,19 @@ public class EditMatProcess extends TestBase {
 	}
 
 	public void linkFootnote() {
+		action.moveToElement(footnoteValue).build().perform();
 		action.doubleClick(footnoteValue).build().perform();
-		action.click(okButton).build().perform();
-		editSubmitButton();
+		//js.executeScript("arguments[0].click();", okButton);
+		//action.click(okButton).build().perform();
+		//editSubmitButton();
 	}
 
+
+	public void clickOkButtonFootnotes() {
+			js.executeScript("arguments[0].click();", okButton);
+		//action.click(okButton).build().perform();
+		//editSubmitButton();
+	}
 	public void provideInitSpecDefDetails() {
 		action.moveToElement(projectDropdown).build().perform();
 		action.click(projectDropdown).build().perform();
@@ -571,10 +729,11 @@ public class EditMatProcess extends TestBase {
 		// action.moveToElement(submitButton).build().perform();
 		// action.click(submitButton).build().perform();
 	}
-	public MaterialSOD clickSubmitButton() {
+	public MaterialSOD clickSubmitButton() throws InterruptedException {
 	//	action.moveToElement(submitButton).build().perform();
 		//action.click(submitButton).build().perform();
 		js.executeScript("arguments[0].click();", submitButton);
+		Thread.sleep(2000);
 		return new MaterialSOD();
 	}
 

@@ -9,9 +9,11 @@ import com.wiz.materialCenter.pages.ProcessesPage;
 import com.wiz.materialCenter.pages.SearchPage;
 import com.wiz.materialCenter.util.TestBase;
 
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.And;
+
 import org.junit.Assert;
 
 public class WatchFeatureStepDef extends TestBase {
@@ -334,7 +336,12 @@ public class WatchFeatureStepDef extends TestBase {
 		Assert.assertTrue(workSpacePage.verifyDoneStatus());
 		screenshot(driver, System.currentTimeMillis());
 	}
-
+	@And("click on auto refresh checkbox")
+	public void click_on_auto_refresh_checkbox() {
+		workSpacePage.clickOnAutomRefresh();
+		screenshot(driver, System.currentTimeMillis());
+	}
+	
 	@And("user selects Test from dropdown")
 	public void user_selects_Test_from_dropdown() {
 		homepage.selectTestFromSearchMenu();
@@ -352,7 +359,7 @@ public class WatchFeatureStepDef extends TestBase {
 	}
 
 	@And("click on search button from homepage")
-	public void click_on_search_button_from_homepage() {
+	public void click_on_search_button_from_homepage() throws InterruptedException {
 		homepage.clickOnSearchButton();
 	}
 

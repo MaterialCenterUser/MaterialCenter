@@ -5,10 +5,11 @@ import com.wiz.materialCenter.pages.MaterialSOD;
 import com.wiz.materialCenter.pages.SearchPage;
 import com.wiz.materialCenter.util.TestBase;
 
-import cucumber.api.java.en.And;
+import cucumber.api.java.en.When;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import cucumber.api.java.en.And;
+
 
 public class SearchStepDef extends TestBase {
 	SearchPage search = new SearchPage();
@@ -98,7 +99,7 @@ public class SearchStepDef extends TestBase {
 	
 	@Given("user is on search workspace")
 	public void user_is_on_search_workspace() {
-		homePage = new HomePage();
+		//homePage = new HomePage();
 	    homePage.clickOnSearch();
 	    screenshot(driver, System.currentTimeMillis());
 	}
@@ -123,7 +124,7 @@ public class SearchStepDef extends TestBase {
 	}
 
 	@When("user provides range using slider")
-	public void user_provides_range_using_slider() {
+	public void user_provides_range_using_slider() throws InterruptedException {
 	    search.expandDensityAttr();
 	    search.provideDensityRange();
 	    screenshot(driver, System.currentTimeMillis());

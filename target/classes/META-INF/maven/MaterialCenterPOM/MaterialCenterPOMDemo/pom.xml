@@ -121,9 +121,9 @@
 		<dependency>
    <groupId>com.sun</groupId>
    <artifactId>tools</artifactId>
-   <version>1.6</version>
+   <version>1.8</version>
    <scope>system</scope>
-   <systemPath>C:\Program Files\Java\jdk1.8.0_281\lib\tools.jar</systemPath>
+   <systemPath>E:\vipatil\MSC.Software\MaterialCenter\2023.1_CL916074_post15.2\java\lib\tools.jar</systemPath>
  </dependency>
  	
   </dependencies>

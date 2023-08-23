@@ -1,5 +1,7 @@
 package com.wiz.materialCenter.pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -18,7 +20,7 @@ public class SecurityProcess extends TestBase {
 	JavascriptExecutor js = (JavascriptExecutor)driver;
 	
 	EventFiringWebDriver eventDriver = new EventFiringWebDriver(driver);
-	WebDriverWait wait = new WebDriverWait(driver, 20);
+	WebDriverWait wait = new WebDriverWait(driver,(30));
 	public SecurityProcess() {
 		PageFactory.initElements(driver, this);
 	}
@@ -61,6 +63,7 @@ public class SecurityProcess extends TestBase {
 	WebElement dependentObjects;
 	
 	public void clickOnTargetLevel() {
+		action.moveToElement(targetLevel).build().perform();
 		action.click(targetLevel).build().perform();
 	}
 	
@@ -70,6 +73,11 @@ public class SecurityProcess extends TestBase {
 		select.selectByValue("2");
 	}
 	
+	public void selectReviewLevel() {
+		//action.click(productionLevel).build().perform();
+		Select select = new Select(targetLevel);
+		select.selectByValue("1");
+	}
 	public void clickOnNext() {
 		action.moveToElement(nextButton).build().perform();
 		action.click(nextButton).build().perform();

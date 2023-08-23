@@ -1,5 +1,6 @@
 package com.wiz.materialCenter.pages;
 
+import java.time.Duration;
 import java.util.List;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -16,7 +17,7 @@ public class PlotProcessInput extends TestBase{
 	
 	JavascriptExecutor js = (JavascriptExecutor) driver;
 	Actions action = new Actions(driver);
-	WebDriverWait wait = new WebDriverWait(driver, 20);
+	WebDriverWait wait = new WebDriverWait(driver,(30));
 	
 	public PlotProcessInput() {
 		PageFactory.initElements(driver, this);
@@ -113,6 +114,21 @@ public class PlotProcessInput extends TestBase{
 	@FindBy(xpath = "//table[@class='ModBody']/tbody/tr")
 	List<WebElement> materialMod;
 	
+	@FindBy(xpath = "//h2[text()='Bar Chart   ']")
+	WebElement textBarChart;
+	
+	@FindBy(xpath = "//button[@disabled='']/span[text()=' Plot']")
+	WebElement disabledPlotButton;
+	
+	
+public boolean barChartWithDisabledPlotButtonDisplayed(){
+		
+		return (disabledPlotButton.isDisplayed());
+	}
+	public boolean barChartDisplayed(){
+		
+		return (textBarChart.isDisplayed());
+	}
 	public void clickOnPlotType() {
 		action.click(plotTypeDropDown).build().perform();
 		//js.executeScript("arguments[0].click();", plotTypeDropDown);
@@ -143,7 +159,8 @@ public class PlotProcessInput extends TestBase{
 			Select select = new Select(plotTypeDropDown);
 		
 				select.selectByValue("xy");
-			
+				//action.moveToElement().click().perform();
+				
 		//	wait.until(ExpectedConditions.elementToBeSelected(yValues));
 		
 	}

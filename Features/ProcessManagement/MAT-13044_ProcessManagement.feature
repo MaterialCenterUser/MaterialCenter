@@ -16,6 +16,8 @@ And click on three
 And select first material
 And click on edit
 Then manage process option is displayed from edit menu on search results MOD
+Then the first process is removed from process component table
+
 
 @MAT-21743 @Regression
 Scenario: Verify that manage process option is available on SOD Edit menu
@@ -54,12 +56,13 @@ Then manage process page is displayed
 
 @MAT-21745 @Regression
 Scenario: Check if Project, Name & Type are pre-populated and disabled on Manage process UI
-When user comes on search WS
-And user click on material from search page
-And materials search results displayed
-And click on rows per page
-And click on three
-And double click on first result
+When user comes on Navigate WS
+And user expands metals
+And user expands ferrous metals
+And user expands alloy steels under ferrous metals
+And user expands ultra high strength
+And select D-sixA Alloy Steel metal under ultra high strength
+And double click on first material
 And click on edit on MatSOD
 And click on manage process from edit menu on SOD
 Then project is pre-populated and displayed as "/Data"
@@ -68,13 +71,10 @@ And type is pre-populated and displayed as "Material"
 
 @MAT-21746 @Regression
 Scenario: Verify Process Type drop down Values
-When user selects Materials from dropdown
-And user enters searchtext for test data search "ceramics"
-And click on search button from homepage
-And materials search results displayed
-And click on rows per page
-And click on three
-And double click on first result
+When user comes on Navigate WS
+And user expands ceramics and glasses
+And select industrial glass
+And double click on first material
 And click on edit on MatSOD
 And click on manage process from edit menu on SOD
 And click on process type dropdown
@@ -83,13 +83,10 @@ And second option in process type dropdown is displayed as "Metals"
 
 @MAT-21747 @Regression
 Scenario: Verify component dropdown when process type is selected as composites
-When user selects Materials from dropdown
-And user enters searchtext for test data search "ceramics"
-And click on search button from homepage
-And materials search results displayed
-And click on rows per page
-And click on three
-And double click on first result
+When user comes on Navigate WS
+And user expands ceramics and glasses
+And select industrial glass
+And double click on first material
 And click on edit on MatSOD
 And click on manage process from edit menu on SOD
 And select composites from process type dropdown
@@ -98,14 +95,11 @@ Then all the components listed are displayed as of selected process type composi
 
 
 @MAT-21747 @Regression
-Scenario: Verify component dropdown when process type is selected as composites
-When user selects Materials from dropdown
-And user enters searchtext for test data search "coatings"
-And click on search button from homepage
-And materials search results displayed
-And click on rows per page
-And click on three
-And double click on first result
+Scenario: Verify component dropdown when process type is selected as metals
+When user comes on Navigate WS
+And user expands ceramics and glasses
+And select industrial glass
+And double click on first material
 And click on edit on MatSOD
 And click on manage process from edit menu on SOD
 And select metals from process type dropdown
@@ -114,13 +108,10 @@ Then all the components listed are displayed as of selected process type metals
 
 @Regression
 Scenario: Verify material selection window is displayed after clicking on the select button displayed against process dropdown
-When user selects Materials from dropdown
-And user enters searchtext for test data search "coatings"
-And click on search button from homepage
-And materials search results displayed
-And click on rows per page
-And click on three
-And double click on first result
+When user comes on Navigate WS
+And user expands ceramics and glasses
+And select industrial glass
+And double click on first material
 And click on edit on MatSOD
 And click on manage process from edit menu on SOD
 And select composites from process type dropdown
@@ -130,13 +121,10 @@ Then verify material selection window is displayed
 
 @Regression
 Scenario: Verify the select button functionality for composites process type
-When user selects Materials from dropdown
-And user enters searchtext for test data search "coatings"
-And click on search button from homepage
-And materials search results displayed
-And click on rows per page
-And click on three
-And double click on first result
+When user comes on Navigate WS
+And user expands ceramics and glasses
+And select industrial glass
+And double click on first material
 And click on edit on MatSOD
 And click on manage process from edit menu on SOD
 And select composites from process type dropdown
@@ -150,13 +138,10 @@ And composites component is populated in process dropdown
 
 @Regression
 Scenario: Verify the select button functionality for metals process type
-When user selects Materials from dropdown
-And user enters searchtext for test data search "coatings"
-And click on search button from homepage
-And materials search results displayed
-And click on rows per page
-And click on three
-And double click on first result
+When user comes on Navigate WS
+And user expands ceramics and glasses
+And select industrial glass
+And double click on first material
 And click on edit on MatSOD
 And click on manage process from edit menu on SOD
 And select metals from process type dropdown
@@ -209,43 +194,19 @@ Then copy material error message is displayed as "lable.ManageProcess.Copy.No.Ma
 
 @MAT-21749 @Regression
 Scenario: check the add button functionality
-When user selects Materials from dropdown
-And user enters searchtext for test data search "coatings"
-And click on search button from homepage
-And materials search results displayed
-And click on rows per page
-And click on three
-And double click on first result
+When user comes on Navigate WS
+And user expands ceramics and glasses
+And select industrial glass
+And double click on first material
 And click on edit on MatSOD
 And click on manage process from edit menu on SOD
 And select composites from process type dropdown
-And click on select button displayed against process dropdown
-And click on rows per page
-And click on three
-And double click on first result
+And click on process dropdown
+And select first row from process dropdown
 And enter some value in time textbox
 And click on Add button on process page
 Then the process is added with material data and properties
 
-@MAT-21749 @Regression
-Scenario: check on Dynamic Link properties functionality
-When user selects Materials from dropdown
-And user enters searchtext for test data search "coatings"
-And click on search button from homepage
-And materials search results displayed
-And click on rows per page
-And click on three
-And double click on first result
-And click on edit on MatSOD
-And click on manage process from edit menu on SOD
-And select composites from process type dropdown
-And click on select button displayed against process dropdown
-And click on rows per page
-And click on three
-And double click on first result
-And enter some value in time textbox
-And click on Add button on process page
-Then the process is added with material data and properties
 
 @MAT-21748 @Regression
 Scenario: check on Dynamic Link properties functionality
@@ -259,10 +220,8 @@ And double click on first result
 And click on edit on MatSOD
 And click on manage process from edit menu on SOD
 And select composites from process type dropdown
-And click on select button displayed against process dropdown
-And click on rows per page
-And click on three
-And double click on first result
+And click on process dropdown
+And select first row from process dropdown
 And enter some value in time textbox
 And click on Add button on process page
 Then the link properties are displayed in added process order
@@ -280,10 +239,8 @@ And double click on first result
 And click on edit on MatSOD
 And click on manage process from edit menu on SOD
 And select composites from process type dropdown
-And click on select button displayed against process dropdown
-And click on rows per page
-And click on three
-And double click on first result
+And click on process dropdown
+And select first row from process dropdown
 And enter some value in time textbox
 And click on Add button on process page
 Then the composites process type displayed in process component table
@@ -300,10 +257,8 @@ And double click on first result
 And click on edit on MatSOD
 And click on manage process from edit menu on SOD
 And select metals from process type dropdown
-And click on select button displayed against process dropdown
-And click on rows per page
-And click on three
-And double click on first result
+And click on process dropdown
+And select first row from process dropdown
 And enter some value in time textbox
 And click on Add button on process page
 Then the metals process type displayed in process component table
@@ -320,10 +275,8 @@ And double click on first result
 And click on edit on MatSOD
 And click on manage process from edit menu on SOD
 And select composites from process type dropdown
-And click on select button displayed against process dropdown
-And click on rows per page
-And click on three
-And double click on first result
+And click on process dropdown
+And select first row from process dropdown
 And enter some value in time textbox
 And click on Add button on process page
 Then process properties are displayed in process component table
@@ -341,10 +294,8 @@ And double click on first result
 And click on edit on MatSOD
 And click on manage process from edit menu on SOD
 And select composites from process type dropdown
-And click on select button displayed against process dropdown
-And click on rows per page
-And click on three
-And double click on first result
+And click on process dropdown
+And select first row from process dropdown
 And enter some value in time textbox
 And click on Add button on process page
 Then order number is displayed in process component table
@@ -368,10 +319,8 @@ And double click on first result
 And enter some value in time textbox
 And click on Add button on process page
 And select metals from process type dropdown
-And click on select button displayed against process dropdown
-And click on rows per page
-And click on three
-And double click on first result
+And click on process dropdown
+And select first row from process dropdown
 And enter some value in time textbox
 And click on Add button on process page
 Then order number is displayed in process component table
@@ -467,13 +416,13 @@ Then link property value is not added and giving error message "The given value 
 
 @MAT-21770 @Regression
 Scenario: Check if Process tab is displayed on Material SOD if Material has Process Assembly
-When user selects Materials from dropdown
-And user enters searchtext for test data search "metals"
-And click on search button from homepage
-And materials search results displayed
-And click on rows per page
-And click on three
-And double click on first result
+When user comes on Navigate WS
+And user expands metals
+And user expands ferrous metals
+And user expands alloy steels under ferrous metals
+And user expands ultra high strength
+And select D-sixA Alloy Steel metal under ultra high strength
+And double click on material
 And click on edit on MatSOD
 And click on manage process from edit menu on SOD
 And select composites from process type dropdown
@@ -488,13 +437,13 @@ And process tab is displayed on material SOD page
 
 @MAT-21755 @Regression
 Scenario: Check if Discard Manager Process action deletes the created object
-When user selects Materials from dropdown
-And user enters searchtext for test data search "coatings"
-And click on search button from homepage
-And materials search results displayed
-And click on rows per page
-And click on three
-And double click on first result
+When user comes on Navigate WS
+And user expands metals
+And user expands ferrous metals
+And user expands alloy steels under ferrous metals
+And user expands ultra high strength
+And select D-sixA Alloy Steel metal under ultra high strength
+And double click on first material
 And click on edit on MatSOD
 And click on manage process from edit menu on SOD
 And select composites from process type dropdown
@@ -504,25 +453,22 @@ And enter some value in time textbox
 And click on Add button on process page
 And click on submit button on process page
 And navigate to homepage from material SOD page
-And user clicks on view all processes
-And click on rows per page
-And click on three
+#And user clicks on view all processes
+#And click on rows per page
+#And click on three
 And click on manage process link
 And user clicks on discard option
 And user clicks on submit button on manage process
-And user clicks on view all processes
+#And user clicks on view all processes
 Then discard of manage process is done successfully
 
 
 @MAT-21772 @Regression
 Scenario: Check the update button is displayed if user selects edit option on process page
-When user selects Materials from dropdown
-And user enters searchtext for test data search "ceramics"
-And click on search button from homepage
-And materials search results displayed
-And click on rows per page
-And click on three
-And double click on first result
+When user comes on Navigate WS
+And user expands ceramics and glasses
+And select industrial glass
+And double click on first material
 And click on edit on MatSOD
 And click on manage process from edit menu on SOD
 And select composites from process type dropdown
@@ -536,13 +482,10 @@ Then update button is displayed on process page to update the process
 
 @MAT-21772 @Regression
 Scenario: Check the edit functionality on process page
-When user selects Materials from dropdown
-And user enters searchtext for test data search "coatings"
-And click on search button from homepage
-And materials search results displayed
-And click on rows per page
-And click on three
-And double click on first result
+When user comes on Navigate WS
+And user expands ceramics and glasses
+And select industrial glass
+And double click on first material
 And click on edit on MatSOD
 And click on manage process from edit menu on SOD
 And select composites from process type dropdown
@@ -563,13 +506,10 @@ Then process is updated and update button is changed to add button
 
 @MAT-21773 @Regression
 Scenario: verify if the process component has been moved to first position
-When user selects Materials from dropdown
-And user enters searchtext for test data search "ceramics"
-And click on search button from homepage
-And materials search results displayed
-And click on rows per page
-And click on three
-And double click on first result
+When user comes on Navigate WS
+And user expands ceramics and glasses
+And select industrial glass
+And double click on first material
 And click on edit on MatSOD
 And click on manage process from edit menu on SOD
 And select composites from process type dropdown
@@ -593,13 +533,10 @@ Then the process is moved to first position in process component table
 
 @MAT-21776 @Regression
 Scenario: verify if the process component has been moved to last position
-When user selects Materials from dropdown
-And user enters searchtext for test data search "ceramics"
-And click on search button from homepage
-And materials search results displayed
-And click on rows per page
-And click on three
-And double click on first result
+When user comes on Navigate WS
+And user expands ceramics and glasses
+And select industrial glass
+And double click on first material
 And click on edit on MatSOD
 And click on manage process from edit menu on SOD
 And select composites from process type dropdown
@@ -623,13 +560,10 @@ Then the process is moved to last position in process component table
 
 @MAT-21774 @Regression
 Scenario: verify if the process component has been moved to up
-When user selects Materials from dropdown
-And user enters searchtext for test data search "ceramics"
-And click on search button from homepage
-And materials search results displayed
-And click on rows per page
-And click on three
-And double click on first result
+When user comes on Navigate WS
+And user expands ceramics and glasses
+And select industrial glass
+And double click on first material
 And click on edit on MatSOD
 And click on manage process from edit menu on SOD
 And select composites from process type dropdown
@@ -648,13 +582,10 @@ Then the process is moved to first position in process component table
 
 @MAT-21775 @Regression
 Scenario: verify if the process component has been moved to down
-When user selects Materials from dropdown
-And user enters searchtext for test data search "ceramics"
-And click on search button from homepage
-And materials search results displayed
-And click on rows per page
-And click on three
-And double click on first result
+When user comes on Navigate WS
+And user expands ceramics and glasses
+And select industrial glass
+And double click on first material
 And click on edit on MatSOD
 And click on manage process from edit menu on SOD
 And select composites from process type dropdown
@@ -674,13 +605,10 @@ Then the process is moved to last position in process component table
 
 @MAT-21775 @Regression
 Scenario: verify if the process component has been removed from process component table
-When user selects Materials from dropdown
-And user enters searchtext for test data search "ceramics"
-And click on search button from homepage
-And materials search results displayed
-And click on rows per page
-And click on three
-And double click on first result
+When user comes on Navigate WS
+And user expands ceramics and glasses
+And select industrial glass
+And double click on first material
 And click on edit on MatSOD
 And click on manage process from edit menu on SOD
 And select composites from process type dropdown
@@ -695,4 +623,3 @@ And enter some value in time textbox
 And click on Add button on process page
 And select the first process from process component table
 And click on remove button on process page
-Then the first process is removed from process component table

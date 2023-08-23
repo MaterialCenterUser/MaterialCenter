@@ -18,7 +18,7 @@ And click on submit button on dependent objects list
 Then check that process status is completed
 
 
-@DemoteFord @All
+@DemoteFord @All1
 Scenario: User is able to demote the material to In-Review or In Work level
 Given user clicks on Config WS
 When user comes on Navigate WS

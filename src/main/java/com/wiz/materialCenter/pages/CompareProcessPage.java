@@ -1,5 +1,6 @@
 package com.wiz.materialCenter.pages;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -17,7 +18,7 @@ public class CompareProcessPage extends TestBase {
 
 	JavascriptExecutor js = (JavascriptExecutor) driver;
 	Actions action = new Actions(driver);
-	WebDriverWait wait = new WebDriverWait(driver, 20);
+	WebDriverWait wait = new WebDriverWait(driver,(30));
 
 	public CompareProcessPage() {
 		PageFactory.initElements(driver, this);

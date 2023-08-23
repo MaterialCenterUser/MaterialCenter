@@ -7,9 +7,10 @@ import com.wiz.materialCenter.pages.MaterialSOD;
 import com.wiz.materialCenter.pages.ProcessesPage;
 import com.wiz.materialCenter.util.TestBase;
 
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.And;
 
 public class EditDeleteStepDef extends TestBase {
 
@@ -80,21 +81,27 @@ public class EditDeleteStepDef extends TestBase {
 	}
 
 	@When("click on select button against tensile elastic modulus")
-	public void click_on_select_button_against_tensile_elastic_modulus() {
+	public void click_on_select_button_against_tensile_elastic_modulus() throws InterruptedException {
 		editMat.clickOnFootnotes();
 		screenshot(driver, System.currentTimeMillis());
 		// editMat.linkFootnote();
 		// screenshot(driver, System.currentTimeMillis());
 	}
 
-	@When("add newly added footnotes to eleastic modulus property and submit")
+	@When("add newly added footnotes to eleastic modulus property")
 	public void add_newly_added_footnotes_to_property_and_submit() {
-		// editMat.clickOnFootnotes();
-		// screenshot(driver, System.currentTimeMillis());
 		editMat.linkFootnote();
 		screenshot(driver, System.currentTimeMillis());
 	}
+	@When("click on ok button to submit footnotes")
+	public void click_on_ok_button_to_submit_footnotes() {
+		// editMat.clickOnFootnotes();
+		// screenshot(driver, System.currentTimeMillis());
+		editMat.clickOkButtonFootnotes();
+		screenshot(driver, System.currentTimeMillis());
+	}
 
+	
 	@Then("verify that newly added footnotes is updated with property successfully")
 	public void verify_that_newly_added_footnotes_is_updated_with_property_successfully() {
 		matSod.verifyPropSetDisplay();
@@ -150,7 +157,7 @@ public class EditDeleteStepDef extends TestBase {
 	}
 
 	@And("click on submit button on edit materials page")
-	public void click_on_submit_button_on_edit_materials_page() {
+	public void click_on_submit_button_on_edit_materials_page() throws InterruptedException {
 		editMat.clickSubmitButton();
 	}
 

@@ -9,9 +9,11 @@ import com.wiz.materialCenter.pages.LoginPage;
 import com.wiz.materialCenter.util.TestBase;
 
 import cucumber.api.Scenario;
+import cucumber.api.java.en.When;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
-
 public class Hooks extends TestBase {
 	HomePage homePage;
 	LoginPage loginPage;
@@ -31,7 +33,7 @@ public class Hooks extends TestBase {
 	public void before() throws InterruptedException {
 		TestBase.initialization();
 		loginPage = new LoginPage();
-		homePage =  loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
+	//	homePage =  loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		try {
 		//	action.click(okButton).build().perform();
 			

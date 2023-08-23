@@ -6,6 +6,9 @@ Given user has already logged in to Material Center application
 |smroot|sdm|
 And homepage is displayed
 
+
+
+
   @CAEModel @All
   Scenario: Generate CAE model of material
     When user comes on Navigate WS

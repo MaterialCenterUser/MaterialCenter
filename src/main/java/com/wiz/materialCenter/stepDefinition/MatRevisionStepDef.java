@@ -7,9 +7,10 @@ import com.wiz.materialCenter.pages.NavigateWS;
 import com.wiz.materialCenter.pages.SearchPage;
 import com.wiz.materialCenter.util.TestBase;
 
+import cucumber.api.java.en.When;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import cucumber.api.java.en.And;
 
 public class MatRevisionStepDef extends TestBase {
 	
